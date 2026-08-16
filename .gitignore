@@ -1,0 +1,72 @@
+# ============================================================
+# Reverse Engineering Workspace - .gitignore
+# ============================================================
+
+# ----- File besar / binary APK & OBB -----
+*.apk
+*.obb
+*.jar
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+
+# ----- Tools bawaan (bukan buatan sendiri) -----
+/ghidra/
+/radare2/
+/Cutter/
+
+# ----- Hasil ekstraksi (generated, bisa di-reproduce) -----
+/extracted/
+/jp.konami.pesclubmanager/
+/original/
+/backups/
+/modified/
+
+# ----- File analisis berukuran besar -----
+analysis/libUE4_arm64_exports.json
+analysis/stage2_target_symbols_raw.txt
+analysis/stage3_asset_paths/main_pak_paths.txt
+analysis/stage3_asset_paths/patch_cpk_paths.txt
+
+# ----- File teks besar lainnya -----
+reports/inventory.md
+
+# ----- Python cache -----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ----- Virtual environment -----
+venv/
+.venv/
+env/
+.env
+
+# ----- Editor / IDE -----
+.vscode/
+.idea/
+*.suo
+*.user
+*.swp
+*.swo
+*~
+
+# ----- OS files -----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ----- Log files -----
+*.log
+
+# ----- Ghidra project files (kalau nanti dibuat di sini) -----
+*.gpr
+*.rep/

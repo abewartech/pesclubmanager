@@ -1,0 +1,2633 @@
+            ;-- method.onlinemode::ParameterPlayerDefine.SetPlayer_tmpdb::Player_const_:
+            ;-- onlinemode::ParameterPlayerDefine::SetPlayer(tmpdb::Player const&):
+            0x04b250f8      f40f1ef8       str x20, [sp, -0x20]!       ; onlinemode::ParameterPlayerDefine::SetPlayer(tmpdb::Player const&)
+            0x04b250fc      f37b01a9       stp x19, x30, [sp, 0x10]
+            0x04b25100      f30300aa       mov x19, x0
+            0x04b25104      001440f9       ldr x0, [x0, 0x28]
+            0x04b25108      f40301aa       mov x20, x1
+            0x04b2510c      f6fdff97       bl 0x4b248e4
+            0x04b25110      681640f9       ldr x8, [x19, 0x28]
+            0x04b25114      09008092       mov x9, -1
+            0x04b25118      09e500f9       str x9, [x8, section..dynsym]
+            0x04b2511c      880240f9       ldr x8, [x20]
+            0x04b25120      691640f9       ldr x9, [x19, 0x28]
+            0x04b25124      08fd7cd3       lsr x8, x8, 0x3c
+            0x04b25128      282102b9       str w8, [x9, 0x220]
+            0x04b2512c      f37b41a9       ldp x19, x30, [sp, 0x10]
+            0x04b25130      f40742f8       ldr x20, [sp], 0x20
+            0x04b25134      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetId___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetId() const:
+            0x04b25138      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetId() const
+            0x04b2513c      00c142f8       ldur x0, [x8, 0x2c]
+            0x04b25140      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetId___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetId() const:
+            0x04b25138      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetId() const
+            0x04b2513c      00c142f8       ldur x0, [x8, 0x2c]
+            0x04b25140      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetId_common::PlayerId_:
+            ;-- onlinemode::ParameterPlayerDefine::SetId(common::PlayerId):
+            0x04b25144      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetId(common::PlayerId)
+            0x04b25148      01c102f8       stur x1, [x8, 0x2c]
+            0x04b2514c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetId_common::PlayerId_:
+            ;-- onlinemode::ParameterPlayerDefine::SetId(common::PlayerId):
+            0x04b25144      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetId(common::PlayerId)
+            0x04b25148      01c102f8       stur x1, [x8, 0x2c]
+            0x04b2514c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetIdExclusionSeazonDataType___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetIdExclusionSeazonDataType() const:
+; onlinemode::ParameterPlayerDefine::GetIdExclusionSeazonDataType() co
+; nst
+            0x04b25150      081440f9       ldr x8, [x0, 0x28]
+            0x04b25154      083140b9       ldr w8, [x8, 0x30]
+            0x04b25158      00590012       and w0, w8, 0x7fffff
+            ;-- method.onlinemode::ParameterPlayerDefine.GetIdExclusionSeazonDataType___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetIdExclusionSeazonDataType() const:
+; onlinemode::ParameterPlayerDefine::GetIdExclusionSeazonDataType() co
+; nst
+            0x04b25150      081440f9       ldr x8, [x0, 0x28]
+            0x04b25154      083140b9       ldr w8, [x8, 0x30]
+            0x04b25158      00590012       and w0, w8, 0x7fffff
+            0x04b2515c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.ExcludeNationalBid_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::ExcludeNationalBid(unsigned int):
+            0x04b25160      00780812       and w0, w0, 0xff7fffff      ; onlinemode::ParameterPlayerDefine::ExcludeNationalBid(unsigned int)
+            0x04b25164      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.ExcludeSeasonBid_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::ExcludeSeasonBid(unsigned int):
+            0x04b25168      005c0012       and w0, w0, 0xffffff        ; onlinemode::ParameterPlayerDefine::ExcludeSeasonBid(unsigned int)
+            ;-- method.onlinemode::ParameterPlayerDefine.GetOriginalName___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetOriginalName() const:
+            0x04b253ec      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetOriginalName() const
+            0x04b253f0      00810991       add x0, x8, 0x260
+            0x04b253f4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetOriginalNameJp___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetOriginalNameJp() const:
+            0x04b253f8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetOriginalNameJp() const
+            0x04b253fc      00750a91       add x0, x8, 0x29d
+            0x04b25400      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetOriginalNameJp___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetOriginalNameJp() const:
+            0x04b253f8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetOriginalNameJp() const
+            0x04b253fc      00750a91       add x0, x8, 0x29d
+            0x04b25400      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetUserId___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetUserId() const:
+            0x04b25404      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetUserId() const
+            0x04b25408      00b941b9       ldr w0, [x8, 0x1b8]
+            0x04b2540c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetUserId___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetUserId() const:
+            0x04b25404      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetUserId() const
+            0x04b25408      00b941b9       ldr w0, [x8, 0x1b8]
+            0x04b2540c      c0035fd6       ret
+            ;-- onlinemode::ParameterPlayerDefine::GetName() const:
+            0x04b25410      f60f1df8       str x22, [sp, -0x30]!       ; onlinemode::ParameterPlayerDefine::GetName() const
+            0x04b25414      f55301a9       stp x21, x20, [sp, 0x10]
+            0x04b25418      f37b02a9       stp x19, x30, [sp, 0x20]
+            ;-- method.onlinemode::ParameterPlayerDefine.GetNameSimple___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetNameSimple() const:
+            0x04b254f8      091440f9       ldr x9, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetNameSimple() const
+            0x04b254fc      28dd4339       ldrb w8, [x9, 0xf7]
+        â”Œâ”€< 0x04b25500      48013836       tbz w8, 7, 0x4b25528
+        â”‚   0x04b25504      68620190       adrp x8, reloc.setPxSceneLimitsMaxNbBroadPhaseOverlaps_physx::PxSceneLimits__unsigned_int_ ; 0x7771000
+        â”‚   0x04b25508      083547f9       ldr x8, [x8, 0xe68]
+        â”‚   0x04b2550c      080140f9       ldr x8, [x8]
+       â”Œâ”€â”€< 0x04b25510      c80000b4       cbz x8, 0x4b25528
+       â”‚â”‚   0x04b25514      e90308aa       mov x9, x8
+       â”‚â”‚   0x04b25518      2a8d4838       ldrb w10, [x9, 0x88]!
+      â”Œâ”€â”€â”€< 0x04b2551c      aa000037       tbnz w10, 0, 0x4b25530
+      â”‚â”‚â”‚   0x04b25520      20050091       add x0, x9, 1
+      â”‚â”‚â”‚   0x04b25524      c0035fd6       ret
+      â”‚â””â””â”€> 0x04b25528      20e10091       add x0, x9, 0x38
+      â”‚     0x04b2552c      c0035fd6       ret
+      â””â”€â”€â”€> 0x04b25530      004d40f9       ldr x0, [x8, 0x98]
+            0x04b25534      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetName_char_const_:
+            ;-- onlinemode::ParameterPlayerDefine::SetName(char const*):
+            0x04b25538      091440f9       ldr x9, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetName(char const*)
+            0x04b2553c      e8031faa       mov x8, xzr
+            0x04b25540      2ae10091       add x10, x9, 0x38
+            ;-- method.onlinemode::ParameterPlayerDefine.SetName_char_const_:
+            ;-- onlinemode::ParameterPlayerDefine::SetName(char const*):
+            0x04b25538      091440f9       ldr x9, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetName(char const*)
+            0x04b2553c      e8031faa       mov x8, xzr
+            0x04b25540      2ae10091       add x10, x9, 0x38
+        â”Œâ”€> 0x04b25544      2b686838       ldrb w11, [x1, x8]
+       â”Œâ”€â”€< 0x04b25548      cb000034       cbz w11, 0x4b25560
+       â”‚â•Ž   0x04b2554c      4b692838       strb w11, [x10, x8]
+       â”‚â•Ž   0x04b25550      08050091       add x8, x8, 1
+       â”‚â•Ž   0x04b25554      1ff500f1       cmp x8, 0x3d                ; '='
+       â”‚â””â”€< 0x04b25558      61ffff54       b.ne 0x4b25544
+       â”‚    0x04b2555c      c0035fd6       ret
+       â””â”€â”€> 0x04b25560      2801088b       add x8, x9, x8
+            0x04b25564      1fe10039       strb wzr, [x8, 0x38]
+            0x04b25568      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetOriginalTeamId___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetOriginalTeamId() const:
+            0x04b2556c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetOriginalTeamId() const
+            0x04b25570      08dd40b9       ldr w8, [x8, 0xdc]
+            0x04b25574      007d0e53       lsr w0, w8, 0xe
+            ;-- method.onlinemode::ParameterPlayerDefine.GetOriginalTeamId___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetOriginalTeamId() const:
+            0x04b2556c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetOriginalTeamId() const
+            0x04b25570      08dd40b9       ldr w8, [x8, 0xdc]
+            0x04b25574      007d0e53       lsr w0, w8, 0xe
+            0x04b25578      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetTeamId_common::TeamKind_const__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetTeamId(common::TeamKind const&) const:
+; onlinemode::ParameterPlayerDefine::GetTeamId(common::TeamKind const&
+; ) const
+            0x04b2557c      091440f9       ldr x9, [x0, 0x28]
+            0x04b25580      2a0040b9       ldr w10, [x1]
+            0x04b25584      6b6201b0       adrp x11, reloc.vtable_for_menusystem::MenuSystemInterrupt ; 0x7772000
+            ;-- method.onlinemode::ParameterPlayerDefine.GetTeamId_common::TeamKind_const__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetTeamId(common::TeamKind const&) const:
+; onlinemode::ParameterPlayerDefine::GetTeamId(common::TeamKind const&
+; ) const
+            0x04b2557c      091440f9       ldr x9, [x0, 0x28]
+            0x04b25580      2a0040b9       ldr w10, [x1]
+            0x04b25584      6b6201b0       adrp x11, reloc.vtable_for_menusystem::MenuSystemInterrupt ; 0x7772000
+            0x04b25588      6b3d40f9       ldr x11, [x11, 0x78]
+            0x04b2558c      29090a8b       add x9, x9, x10, lsl 2
+            0x04b25590      29710391       add x9, x9, 0xdc
+            0x04b25594      5f090071       cmp w10, 2
+            0x04b25598      69c1899a       csel x9, x11, x9, gt
+            0x04b2559c      290140b9       ldr w9, [x9]
+            0x04b255a0      090100b9       str w9, [x8]
+            0x04b255a4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetTeamId_common::TeamKind_const__common::TeamId_:
+            ;-- onlinemode::ParameterPlayerDefine::SetTeamId(common::TeamKind const&, common::TeamId):
+; onlinemode::ParameterPlayerDefine::SetTeamId(common::TeamKind const&
+; , common::TeamId)
+            0x04b255a8      280040b9       ldr w8, [x1]
+            0x04b255ac      1f090071       cmp w8, 2
+        â”Œâ”€< 0x04b255b0      ac010054       b.gt 0x4b255e4
+            ;-- method.onlinemode::ParameterPlayerDefine.SetTeamId_common::TeamKind_const__common::TeamId_:
+            ;-- onlinemode::ParameterPlayerDefine::SetTeamId(common::TeamKind const&, common::TeamId):
+; onlinemode::ParameterPlayerDefine::SetTeamId(common::TeamKind const&
+; , common::TeamId)
+            0x04b255a8      280040b9       ldr w8, [x1]
+            0x04b255ac      1f090071       cmp w8, 2
+        â”Œâ”€< 0x04b255b0      ac010054       b.gt 0x4b255e4
+        â”‚   0x04b255b4      091440f9       ldr x9, [x0, 0x28]
+        â”‚   0x04b255b8      2809088b       add x8, x9, x8, lsl 2
+        â”‚   0x04b255bc      08710391       add x8, x8, 0xdc
+        â”‚   0x04b255c0      1f0102eb       cmp x8, x2
+       â”Œâ”€â”€< 0x04b255c4      00010054       b.eq 0x4b255e4
+       â”‚â”‚   0x04b255c8      490040b9       ldr w9, [x2]
+       â”‚â”‚   0x04b255cc      0a0140b9       ldr w10, [x8]
+       â”‚â”‚   0x04b255d0      2a350033       bfxil w10, w9, 0, 0xe
+       â”‚â”‚   0x04b255d4      0a0100b9       str w10, [x8]
+       â”‚â”‚   0x04b255d8      4a0040b9       ldr w10, [x2]
+       â”‚â”‚   0x04b255dc      2a350033       bfxil w10, w9, 0, 0xe
+       â”‚â”‚   0x04b255e0      0a0100b9       str w10, [x8]
+       â””â””â”€> 0x04b255e4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetPhy___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetPhy() const:
+            0x04b255e8      fe0f1ff8       str x30, [sp, -0x10]!       ; onlinemode::ParameterPlayerDefine::GetPhy() const
+            0x04b255ec      001440f9       ldr x0, [x0, 0x28]
+            0x04b255f0      810c8052       mov w1, 0x64                ; 'd'
+            ;-- method.onlinemode::ParameterPlayerDefine.GetPhy___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetPhy() const:
+            0x04b255e8      fe0f1ff8       str x30, [sp, -0x10]!       ; onlinemode::ParameterPlayerDefine::GetPhy() const
+            0x04b255ec      001440f9       ldr x0, [x0, 0x28]
+            0x04b255f0      810c8052       mov w1, 0x64                ; 'd'
+            0x04b255f4      a2018052       mov w2, 0xd
+            0x04b255f8      d4433b97       bl 0x19f6548
+            0x04b255fc      fe0741f8       ldr x30, [sp], 0x10
+            0x04b25600      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetSpd___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetSpd() const:
+            0x04b25604      fe0f1ff8       str x30, [sp, -0x10]!       ; onlinemode::ParameterPlayerDefine::GetSpd() const
+            0x04b25608      001440f9       ldr x0, [x0, 0x28]
+            0x04b2560c      810c8052       mov w1, 0x64                ; 'd'
+            ;-- method.onlinemode::ParameterPlayerDefine.GetSpd___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetSpd() const:
+            0x04b25604      fe0f1ff8       str x30, [sp, -0x10]!       ; onlinemode::ParameterPlayerDefine::GetSpd() const
+            0x04b25608      001440f9       ldr x0, [x0, 0x28]
+            0x04b2560c      810c8052       mov w1, 0x64                ; 'd'
+            0x04b25610      a2018052       mov w2, 0xd
+            0x04b25614      d1433b97       bl 0x19f6558
+            0x04b25618      fe0741f8       ldr x30, [sp], 0x10
+            0x04b2561c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetTec___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetTec() const:
+            0x04b25620      fe0f1ff8       str x30, [sp, -0x10]!       ; onlinemode::ParameterPlayerDefine::GetTec() const
+            0x04b25624      001440f9       ldr x0, [x0, 0x28]
+            0x04b25628      810c8052       mov w1, 0x64                ; 'd'
+            ;-- method.onlinemode::ParameterPlayerDefine.GetTec___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetTec() const:
+            0x04b25620      fe0f1ff8       str x30, [sp, -0x10]!       ; onlinemode::ParameterPlayerDefine::GetTec() const
+            0x04b25624      001440f9       ldr x0, [x0, 0x28]
+            0x04b25628      810c8052       mov w1, 0x64                ; 'd'
+            0x04b2562c      a2018052       mov w2, 0xd
+            0x04b25630      ce433b97       bl 0x19f6568
+            0x04b25634      fe0741f8       ldr x30, [sp], 0x10
+            0x04b25638      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetPhyRank___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetPhyRank() const:
+            0x04b2563c      fe0f1ff8       str x30, [sp, -0x10]!       ; onlinemode::ParameterPlayerDefine::GetPhyRank() const
+            0x04b25640      001440f9       ldr x0, [x0, 0x28]
+            0x04b25644      810c8052       mov w1, 0x64                ; 'd'
+            ;-- method.onlinemode::ParameterPlayerDefine.SetNationality_unsigned_short_:
+            ;-- onlinemode::ParameterPlayerDefine::SetNationality(unsigned short):
+            0x04b25908      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetNationality(unsigned short)
+            0x04b2590c      09414ff8       ldur x9, [x8, 0xf4]
+            0x04b25910      293c40b3       bfxil x9, x1, 0, 0x10
+            0x04b25914      09410ff8       stur x9, [x8, 0xf4]
+            0x04b25918      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetNamePrint___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetNamePrint() const:
+            0x04b2591c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetNamePrint() const
+            0x04b25920      cad70090       adrp x10, 0x661d000
+            0x04b25924      4af12691       add x10, x10, 0x9bc
+            ;-- method.onlinemode::ParameterPlayerDefine.GetNamePrint___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetNamePrint() const:
+            0x04b2591c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetNamePrint() const
+            0x04b25920      cad70090       adrp x10, 0x661d000
+            0x04b25924      4af12691       add x10, x10, 0x9bc
+            0x04b25928      09dd4339       ldrb w9, [x8, 0xf7]
+            0x04b2592c      08d50191       add x8, x8, 0x75
+            0x04b25930      3f011972       tst w9, 0x80
+            0x04b25934      00018a9a       csel x0, x8, x10, eq
+            0x04b25938      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetNamePrint_char_const_:
+            ;-- onlinemode::ParameterPlayerDefine::SetNamePrint(char const*):
+            0x04b2593c      29004039       ldrb w9, [x1]               ; onlinemode::ParameterPlayerDefine::SetNamePrint(char const*)
+            0x04b25940      081440f9       ldr x8, [x0, 0x28]
+        â”Œâ”€< 0x04b25944      09080034       cbz w9, 0x4b25a44
+            ;-- method.onlinemode::ParameterPlayerDefine.GetUniformNumber___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetUniformNumber() const:
+            0x04b25ae8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetUniformNumber() const
+            0x04b25aec      00ad41b9       ldr w0, [x8, 0x1ac]
+            0x04b25af0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetUniformNumber_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetUniformNumber(unsigned int):
+            0x04b25af4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetUniformNumber(unsigned int)
+            0x04b25af8      01ad01b9       str w1, [x8, 0x1ac]
+            0x04b25afc      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetUniformNumber_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetUniformNumber(unsigned int):
+            0x04b25af4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetUniformNumber(unsigned int)
+            0x04b25af8      01ad01b9       str w1, [x8, 0x1ac]
+            0x04b25afc      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetAge___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetAge() const:
+            0x04b25b00      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetAge() const
+            0x04b25b04      08714039       ldrb w8, [x8, 0x1c]
+            0x04b25b08      00150012       and w0, w8, 0x3f
+            ;-- method.onlinemode::ParameterPlayerDefine.GetAge___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetAge() const:
+            0x04b25b00      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetAge() const
+            0x04b25b04      08714039       ldrb w8, [x8, 0x1c]
+            0x04b25b08      00150012       and w0, w8, 0x3f
+            0x04b25b0c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetAge_unsigned_char_:
+            ;-- onlinemode::ParameterPlayerDefine::SetAge(unsigned char):
+            0x04b25b10      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetAge(unsigned char)
+            0x04b25b14      2a140012       and w10, w1, 0x3f
+            0x04b25b18      090d40f9       ldr x9, [x8, 0x18]
+            ;-- method.onlinemode::ParameterPlayerDefine.SetAge_unsigned_char_:
+            ;-- onlinemode::ParameterPlayerDefine::SetAge(unsigned char):
+            0x04b25b10      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetAge(unsigned char)
+            0x04b25b14      2a140012       and w10, w1, 0x3f
+            0x04b25b18      090d40f9       ldr x9, [x8, 0x18]
+            0x04b25b1c      491560b3       bfi x9, x10, 0x20, 6
+            0x04b25b20      090d00f9       str x9, [x8, 0x18]
+            0x04b25b24      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetStrongerFoot___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetStrongerFoot() const:
+            0x04b25b28      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetStrongerFoot() const
+            0x04b25b2c      080140b9       ldr w8, [x8]
+            0x04b25b30      007d1f53       lsr w0, w8, 0x1f
+            ;-- method.onlinemode::ParameterPlayerDefine.GetStrongerFoot___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetStrongerFoot() const:
+            0x04b25b28      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetStrongerFoot() const
+            0x04b25b2c      080140b9       ldr w8, [x8]
+            0x04b25b30      007d1f53       lsr w0, w8, 0x1f
+            0x04b25b34      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetStrongerFoot_tmpdb::Player::StrongerFoot_:
+            ;-- onlinemode::ParameterPlayerDefine::SetStrongerFoot(tmpdb::Player::StrongerFoot):
+; onlinemode::ParameterPlayerDefine::SetStrongerFoot(tmpdb::Player::St
+; rongerFoot)
+            0x04b25b38      081440f9       ldr x8, [x0, 0x28]
+            0x04b25b3c      2a000153       lsl w10, w1, 0x1f
+            0x04b25b40      090140f9       ldr x9, [x8]
+            ;-- method.onlinemode::ParameterPlayerDefine.SetStrongerFoot_tmpdb::Player::StrongerFoot_:
+            ;-- onlinemode::ParameterPlayerDefine::SetStrongerFoot(tmpdb::Player::StrongerFoot):
+; onlinemode::ParameterPlayerDefine::SetStrongerFoot(tmpdb::Player::St
+; rongerFoot)
+            0x04b25b38      081440f9       ldr x8, [x0, 0x28]
+            0x04b25b3c      2a000153       lsl w10, w1, 0x1f
+            0x04b25b40      090140f9       ldr x9, [x8]
+            0x04b25b44      29f96092       and x9, x9, 0xffffffff7fffffff
+            0x04b25b48      29010aaa       orr x9, x9, x10
+            0x04b25b4c      090100f9       str x9, [x8]
+            0x04b25b50      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetLicense___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetLicense() const:
+            0x04b25b54      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetLicense() const
+            0x04b25b58      000542b9       ldr w0, [x8, 0x204]
+            0x04b25b5c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetLicense___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetLicense() const:
+            0x04b25b54      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetLicense() const
+            0x04b25b58      000542b9       ldr w0, [x8, 0x204]
+            0x04b25b5c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetLicense_onlinemode::PlayerLicense_:
+            ;-- onlinemode::ParameterPlayerDefine::SetLicense(onlinemode::PlayerLicense):
+; onlinemode::ParameterPlayerDefine::SetLicense(onlinemode::PlayerLice
+; nse)
+            0x04b25b60      081440f9       ldr x8, [x0, 0x28]
+            0x04b25b64      010502b9       str w1, [x8, 0x204]
+            0x04b25b68      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetLicense_onlinemode::PlayerLicense_:
+            ;-- onlinemode::ParameterPlayerDefine::SetLicense(onlinemode::PlayerLicense):
+; onlinemode::ParameterPlayerDefine::SetLicense(onlinemode::PlayerLice
+; nse)
+            0x04b25b60      081440f9       ldr x8, [x0, 0x28]
+            0x04b25b64      010502b9       str w1, [x8, 0x204]
+            0x04b25b68      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetDevelopmentType___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetDevelopmentType() const:
+            0x04b25b6c      e0031f2a       mov w0, wzr                 ; onlinemode::ParameterPlayerDefine::GetDevelopmentType() const
+            0x04b25b70      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetDevelopmentType_tmpdb::Player::DevelopmentType_:
+            ;-- onlinemode::ParameterPlayerDefine::SetDevelopmentType(tmpdb::Player::DevelopmentType):
+; onlinemode::ParameterPlayerDefine::SetDevelopmentType(tmpdb::Player:
+; :DevelopmentType)
+            0x04b25b74      c0035fd6       ret
+        â•Ž   ;-- method.onlinemode::ParameterPlayerDefine.GetDevelopmentType___const:
+        â•Ž   ;-- onlinemode::ParameterPlayerDefine::GetDevelopmentType() const:
+        â•Ž   0x04b25b6c      e0031f2a       mov w0, wzr                 ; onlinemode::ParameterPlayerDefine::GetDevelopmentType() const
+        â•Ž   0x04b25b70      c0035fd6       ret
+        â•Ž   ;-- method.onlinemode::ParameterPlayerDefine.SetDevelopmentType_tmpdb::Player::DevelopmentType_:
+        â•Ž   ;-- onlinemode::ParameterPlayerDefine::SetDevelopmentType(tmpdb::Player::DevelopmentType):
+; onlinemode::ParameterPlayerDefine::SetDevelopmentType(tmpdb::Player:
+; :DevelopmentType)
+        â•Ž   0x04b25b74      c0035fd6       ret
+        â•Ž   ;-- method.onlinemode::ParameterPlayerDefine.GetData_unsigned_int__unsigned_int__const:
+        â•Ž   ;-- onlinemode::ParameterPlayerDefine::GetData(unsigned int, unsigned int&) const:
+; onlinemode::ParameterPlayerDefine::GetData(unsigned int, unsigned in
+; t&) const
+        â•Ž   0x04b25b78      001440f9       ldr x0, [x0, 0x28]
+        â””â”€< 0x04b25b7c      ab423b17       b 0x19f6628
+        â•Ž   ;-- method.onlinemode::ParameterPlayerDefine.SetDevelopmentType_tmpdb::Player::DevelopmentType_:
+        â•Ž   ;-- onlinemode::ParameterPlayerDefine::SetDevelopmentType(tmpdb::Player::DevelopmentType):
+; onlinemode::ParameterPlayerDefine::SetDevelopmentType(tmpdb::Player:
+; :DevelopmentType)
+        â•Ž   0x04b25b74      c0035fd6       ret
+        â•Ž   ;-- method.onlinemode::ParameterPlayerDefine.GetData_unsigned_int__unsigned_int__const:
+        â•Ž   ;-- onlinemode::ParameterPlayerDefine::GetData(unsigned int, unsigned int&) const:
+; onlinemode::ParameterPlayerDefine::GetData(unsigned int, unsigned in
+; t&) const
+        â•Ž   0x04b25b78      001440f9       ldr x0, [x0, 0x28]
+        â””â”€< 0x04b25b7c      ab423b17       b 0x19f6628
+            ;-- method.onlinemode::ParameterPlayerDefine.SetData_unsigned_int__unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetData(unsigned int, unsigned int):
+; onlinemode::ParameterPlayerDefine::SetData(unsigned int, unsigned in
+; t)
+            0x04b25b80      001440f9       ldr x0, [x0, 0x28]
+       â•Žâ•Ž   ;-- method.onlinemode::ParameterPlayerDefine.GetData_unsigned_int__unsigned_int__const:
+       â•Žâ•Ž   ;-- onlinemode::ParameterPlayerDefine::GetData(unsigned int, unsigned int&) const:
+; onlinemode::ParameterPlayerDefine::GetData(unsigned int, unsigned in
+; t&) const
+       â•Žâ•Ž   0x04b25b78      001440f9       ldr x0, [x0, 0x28]
+       â•Žâ””â”€< 0x04b25b7c      ab423b17       b 0x19f6628
+       â•Ž    ;-- method.onlinemode::ParameterPlayerDefine.SetData_unsigned_int__unsigned_int_:
+       â•Ž    ;-- onlinemode::ParameterPlayerDefine::SetData(unsigned int, unsigned int):
+; onlinemode::ParameterPlayerDefine::SetData(unsigned int, unsigned in
+; t)
+       â•Ž    0x04b25b80      001440f9       ldr x0, [x0, 0x28]
+       â””â”€â”€< 0x04b25b84      a14f3b17       b 0x19f9a08
+            ;-- method.onlinemode::ParameterPlayerDefine.GetOverAll_Position__tmpdb::Player::ConditionType__bool__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetOverAll(Position, tmpdb::Player::ConditionType, bool) const:
+; onlinemode::ParameterPlayerDefine::GetOverAll(Position, tmpdb::Playe
+; r::ConditionType, bool) const
+            0x04b25b88      ff8300d1       sub sp, sp, 0x20
+        â•Ž   ;-- method.onlinemode::ParameterPlayerDefine.SetData_unsigned_int__unsigned_int_:
+        â•Ž   ;-- onlinemode::ParameterPlayerDefine::SetData(unsigned int, unsigned int):
+; onlinemode::ParameterPlayerDefine::SetData(unsigned int, unsigned in
+; t)
+        â•Ž   0x04b25b80      001440f9       ldr x0, [x0, 0x28]
+        â””â”€< 0x04b25b84      a14f3b17       b 0x19f9a08
+            ;-- method.onlinemode::ParameterPlayerDefine.GetOverAll_Position__tmpdb::Player::ConditionType__bool__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetOverAll(Position, tmpdb::Player::ConditionType, bool) const:
+; onlinemode::ParameterPlayerDefine::GetOverAll(Position, tmpdb::Playe
+; r::ConditionType, bool) const
+            0x04b25b88      ff8300d1       sub sp, sp, 0x20
+            0x04b25b8c      f37b01a9       stp x19, x30, [sp, 0x10]
+            0x04b25b90      e10f00b9       str w1, [sp, 0xc]
+            ;-- method.onlinemode::ParameterPlayerDefine.GetOverallFromServer___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetOverallFromServer() const:
+            0x04b25bfc      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetOverallFromServer() const
+            0x04b25c00      001d42b9       ldr w0, [x8, 0x21c]
+            0x04b25c04      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetOverAll_tmpdb::util::PlayerOverAllKind__Position__tmpdb::Player::ConditionType__bool__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetOverAll(tmpdb::util::PlayerOverAllKind, Position, tmpdb::Player::ConditionType, bool) const:
+; onlinemode::ParameterPlayerDefine::GetOverAll(tmpdb::util::PlayerOve
+; rAllKind, Position, tmpdb::Player::ConditionType, bool) const
+            0x04b25c08      f37bbfa9       stp x19, x30, [sp, -0x10]!
+            0x04b25c0c      f303042a       mov w19, w4
+            0x04b25c10      3f100071       cmp w1, 4
+            ;-- method.onlinemode::ParameterPlayerDefine.GetOverAllTeamWork_Position__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetOverAllTeamWork(Position) const:
+; onlinemode::ParameterPlayerDefine::GetOverAllTeamWork(Position) cons
+            0x04b25ce0      081440f9       ldr x8, [x0, 0x28]
+            0x04b25ce4      082940b9       ldr w8, [x8, 0x28]
+            0x04b25ce8      00490c53       ubfx w0, w8, 0xc, 7
+            0x04b25cec      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetCaptainOverAll___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetCaptainOverAll() const:
+            0x04b25cf0      fe0f1ff8       str x30, [sp, -0x10]!       ; onlinemode::ParameterPlayerDefine::GetCaptainOverAll() const
+            0x04b25cf4      001440f9       ldr x0, [x0, 0x28]
+            0x04b25cf8      a8018052       mov w8, 0xd
+            ;-- method.onlinemode::ParameterPlayerDefine.GetCaptainOverAll___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetCaptainOverAll() const:
+            0x04b25cf0      fe0f1ff8       str x30, [sp, -0x10]!       ; onlinemode::ParameterPlayerDefine::GetCaptainOverAll() const
+            0x04b25cf4      001440f9       ldr x0, [x0, 0x28]
+            0x04b25cf8      a8018052       mov w8, 0xd
+            0x04b25cfc      e1330091       add x1, sp, 0xc
+            0x04b25d00      e2031f32       mov w2, 2
+            0x04b25d04      e80f00b9       str w8, [sp, 0xc]
+            0x04b25d08      cc413b97       bl 0x19f6438
+            0x04b25d0c      fe0741f8       ldr x30, [sp], 0x10
+            0x04b25d10      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetKickerOverAll_FreeKickKind__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetKickerOverAll(FreeKickKind) const:
+; onlinemode::ParameterPlayerDefine::GetKickerOverAll(FreeKickKind) co
+; nst
+            0x04b25d14      ff8300d1       sub sp, sp, 0x20
+            0x04b25d18      e89a01f0       adrp x8, 0x7e84000
+            0x04b25d1c      fe0b00f9       str x30, [sp, 0x10]
+            ;-- method.onlinemode::ParameterPlayerDefine.GetRegisteredPosition___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetRegisteredPosition() const:
+            0x04b25dbc      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetRegisteredPosition() const
+            0x04b25dc0      080140f9       ldr x8, [x8]
+            0x04b25dc4      00fd7cd3       lsr x0, x8, 0x3c
+            0x04b25dc8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetRegisteredPosition_Position_:
+            ;-- onlinemode::ParameterPlayerDefine::SetRegisteredPosition(Position):
+            0x04b25dcc      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetRegisteredPosition(Position)
+            0x04b25dd0      090140f9       ldr x9, [x8]
+            0x04b25dd4      290c44b3       bfi x9, x1, 0x3c, 4
+            ;-- method.onlinemode::ParameterPlayerDefine.SetRegisteredPosition_Position_:
+            ;-- onlinemode::ParameterPlayerDefine::SetRegisteredPosition(Position):
+            0x04b25dcc      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetRegisteredPosition(Position)
+            0x04b25dd0      090140f9       ldr x9, [x8]
+            0x04b25dd4      290c44b3       bfi x9, x1, 0x3c, 4
+            0x04b25dd8      090100f9       str x9, [x8]
+            0x04b25ddc      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetSquadPosition___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetSquadPosition() const:
+            0x04b25de0      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetSquadPosition() const
+            0x04b25de4      002142b9       ldr w0, [x8, 0x220]
+            0x04b25de8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetSquadPosition___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetSquadPosition() const:
+            0x04b25de0      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetSquadPosition() const
+            0x04b25de4      002142b9       ldr w0, [x8, 0x220]
+            0x04b25de8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetSquadPosition_Position_:
+            ;-- onlinemode::ParameterPlayerDefine::SetSquadPosition(Position):
+            0x04b25dec      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetSquadPosition(Position)
+            0x04b25df0      012102b9       str w1, [x8, 0x220]
+            0x04b25df4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetSquadPosition_Position_:
+            ;-- onlinemode::ParameterPlayerDefine::SetSquadPosition(Position):
+            0x04b25dec      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetSquadPosition(Position)
+            0x04b25df0      012102b9       str w1, [x8, 0x220]
+            0x04b25df4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetOrderNo___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetOrderNo() const:
+            0x04b25df8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetOrderNo() const
+            0x04b25dfc      002542b9       ldr w0, [x8, 0x224]
+            0x04b25e00      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetOrderNo___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetOrderNo() const:
+            0x04b25df8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetOrderNo() const
+            0x04b25dfc      002542b9       ldr w0, [x8, 0x224]
+            0x04b25e00      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetOrderNo_OrderNo_:
+            ;-- onlinemode::ParameterPlayerDefine::SetOrderNo(OrderNo):
+            0x04b25e04      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetOrderNo(OrderNo)
+            0x04b25e08      012502b9       str w1, [x8, 0x224]
+            0x04b25e0c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetOrderNo_OrderNo_:
+            ;-- onlinemode::ParameterPlayerDefine::SetOrderNo(OrderNo):
+            0x04b25e04      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetOrderNo(OrderNo)
+            0x04b25e08      012502b9       str w1, [x8, 0x224]
+            0x04b25e0c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.HasPositionAptitude_Position__const:
+            ;-- onlinemode::ParameterPlayerDefine::HasPositionAptitude(Position) const:
+; onlinemode::ParameterPlayerDefine::HasPositionAptitude(Position) con
+; st
+            0x04b25e10      fe0f1ff8       str x30, [sp, -0x10]!
+            0x04b25e14      3f300071       cmp w1, 0xc
+            0x04b25e18      49d70090       adrp x9, 0x660d000
+            ;-- method.onlinemode::ParameterPlayerDefine.HasPositionAptitude_Position__const:
+            ;-- onlinemode::ParameterPlayerDefine::HasPositionAptitude(Position) const:
+; onlinemode::ParameterPlayerDefine::HasPositionAptitude(Position) con
+; st
+            0x04b25e10      fe0f1ff8       str x30, [sp, -0x10]!
+            0x04b25e14      3f300071       cmp w1, 0xc
+            0x04b25e18      49d70090       adrp x9, 0x660d000
+            0x04b25e1c      e8c3811a       csel w8, wzr, w1, gt
+            0x04b25e20      29f13391       add x9, x9, 0xcfc
+            0x04b25e24      001440f9       ldr x0, [x0, 0x28]
+            0x04b25e28      215968b8       ldr w1, [x9, w8, uxtw 2]
+            0x04b25e2c      e2330091       add x2, sp, 0xc
+            0x04b25e30      ff0f00b9       str wzr, [sp, 0xc]
+            0x04b25e34      fd413b97       bl 0x19f6628
+            0x04b25e38      e80f40b9       ldr w8, [sp, 0xc]
+            0x04b25e3c      1f010071       cmp w8, 0
+            0x04b25e40      e0079f1a       cset w0, ne
+            0x04b25e44      fe0741f8       ldr x30, [sp], 0x10
+            0x04b25e48      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetSecondPosition__:
+            ;-- onlinemode::ParameterPlayerDefine::GetSecondPosition():
+            0x04b25e4c      f80f1cf8       str x24, [sp, -0x40]!       ; onlinemode::ParameterPlayerDefine::GetSecondPosition()
+            0x04b25e50      f75b01a9       stp x23, x22, [sp, 0x10]
+            0x04b25e54      f55302a9       stp x21, x20, [sp, 0x20]
+            ;-- method.onlinemode::ParameterPlayerDefine.GetPositionAptitude_Position__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetPositionAptitude(Position) const:
+; onlinemode::ParameterPlayerDefine::GetPositionAptitude(Position) con
+; st
+            0x04b26004      fe0f1ff8       str x30, [sp, -0x10]!
+            0x04b26008      3f300071       cmp w1, 0xc
+            0x04b2600c      29d700f0       adrp x9, 0x660d000
+            0x04b26010      e8c3811a       csel w8, wzr, w1, gt
+            0x04b26014      29f13391       add x9, x9, 0xcfc
+            0x04b26018      001440f9       ldr x0, [x0, 0x28]
+            0x04b2601c      215968b8       ldr w1, [x9, w8, uxtw 2]
+            0x04b26020      e2330091       add x2, sp, 0xc
+            0x04b26024      ff0f00b9       str wzr, [sp, 0xc]
+            0x04b26028      80413b97       bl 0x19f6628
+            0x04b2602c      e00f40b9       ldr w0, [sp, 0xc]
+            0x04b26030      fe0741f8       ldr x30, [sp], 0x10
+            0x04b26034      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetPositionAptitude_Position__unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetPositionAptitude(Position, unsigned int):
+; onlinemode::ParameterPlayerDefine::SetPositionAptitude(Position, uns
+; igned int)
+            0x04b26038      3f300071       cmp w1, 0xc
+            0x04b2603c      29d700f0       adrp x9, 0x660d000
+            0x04b26040      e8c3811a       csel w8, wzr, w1, gt
+        â•Ž   ;-- method.onlinemode::ParameterPlayerDefine.SetPositionAptitude_Position__unsigned_int_:
+        â•Ž   ;-- onlinemode::ParameterPlayerDefine::SetPositionAptitude(Position, unsigned int):
+; onlinemode::ParameterPlayerDefine::SetPositionAptitude(Position, uns
+; igned int)
+        â•Ž   0x04b26038      3f300071       cmp w1, 0xc
+        â•Ž   0x04b2603c      29d700f0       adrp x9, 0x660d000
+        â•Ž   0x04b26040      e8c3811a       csel w8, wzr, w1, gt
+        â•Ž   0x04b26044      29f13391       add x9, x9, 0xcfc
+        â•Ž   0x04b26048      001440f9       ldr x0, [x0, 0x28]
+        â•Ž   0x04b2604c      215968b8       ldr w1, [x9, w8, uxtw 2]
+        â””â”€< 0x04b26050      6e4e3b17       b 0x19f9a08
+            ;-- onlinemode::ParameterPlayerDefine::AddPositionAptitudeFromPositionFlag(unsigned int):
+; onlinemode::ParameterPlayerDefine::AddPositionAptitudeFromPositionFl
+; ag(unsigned int)
+            0x04b26054      081440f9       ldr x8, [x0, 0x28]
+            0x04b26058      2a040012       and w10, w1, 3
+            0x04b2605c      091140f9       ldr x9, [x8, 0x20]
+            ;-- method.onlinemode::ParameterPlayerDefine.GetAbilityParameter_tmpdb::Player::Ability__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetAbilityParameter(tmpdb::Player::Ability) const:
+; onlinemode::ParameterPlayerDefine::GetAbilityParameter(tmpdb::Player
+; ::Ability) const
+            0x04b26160      fe0f1ff8       str x30, [sp, -0x10]!
+            0x04b26164      3f740071       cmp w1, 0x1d
+            0x04b26168      48038052       mov w8, 0x1a
+            0x04b2616c      09d700f0       adrp x9, 0x6609000
+            0x04b26170      08c1811a       csel w8, w8, w1, gt
+            0x04b26174      29112091       add x9, x9, 0x804
+            0x04b26178      001440f9       ldr x0, [x0, 0x28]
+            0x04b2617c      215968b8       ldr w1, [x9, w8, uxtw 2]
+            0x04b26180      e2330091       add x2, sp, 0xc
+            0x04b26184      ff0f00b9       str wzr, [sp, 0xc]
+            0x04b26188      28413b97       bl 0x19f6628
+            0x04b2618c      e00f40b9       ldr w0, [sp, 0xc]
+            0x04b26190      fe0741f8       ldr x30, [sp], 0x10
+            0x04b26194      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetAbilityParameter_tmpdb::Player::Ability__unsigned_char_:
+            ;-- onlinemode::ParameterPlayerDefine::SetAbilityParameter(tmpdb::Player::Ability, unsigned char):
+; onlinemode::ParameterPlayerDefine::SetAbilityParameter(tmpdb::Player
+; ::Ability, unsigned char)
+            0x04b26198      3f740071       cmp w1, 0x1d
+            0x04b2619c      48038052       mov w8, 0x1a
+            0x04b261a0      09d700f0       adrp x9, 0x6609000
+        â•Ž   ;-- method.onlinemode::ParameterPlayerDefine.SetAbilityParameter_tmpdb::Player::Ability__unsigned_char_:
+        â•Ž   ;-- onlinemode::ParameterPlayerDefine::SetAbilityParameter(tmpdb::Player::Ability, unsigned char):
+; onlinemode::ParameterPlayerDefine::SetAbilityParameter(tmpdb::Player
+; ::Ability, unsigned char)
+        â•Ž   0x04b26198      3f740071       cmp w1, 0x1d
+        â•Ž   0x04b2619c      48038052       mov w8, 0x1a
+        â•Ž   0x04b261a0      09d700f0       adrp x9, 0x6609000
+        â•Ž   0x04b261a4      08c1811a       csel w8, w8, w1, gt
+        â•Ž   0x04b261a8      29112091       add x9, x9, 0x804
+        â•Ž   0x04b261ac      001440f9       ldr x0, [x0, 0x28]
+        â•Ž   0x04b261b0      215968b8       ldr w1, [x9, w8, uxtw 2]
+        â•Ž   0x04b261b4      421c0012       and w2, w2, 0xff
+        â””â”€< 0x04b261b8      144e3b17       b 0x19f9a08
+            ;-- method.onlinemode::ParameterPlayerDefine.SetAbilityParameterFromDB_tmpdb::Player::Ability__unsigned_short_:
+            ;-- onlinemode::ParameterPlayerDefine::SetAbilityParameterFromDB(tmpdb::Player::Ability, unsigned short):
+; onlinemode::ParameterPlayerDefine::SetAbilityParameterFromDB(tmpdb::
+; Player::Ability, unsigned short)
+            0x04b261bc      3f740071       cmp w1, 0x1d
+            0x04b261c0      49038052       mov w9, 0x1a
+            0x04b261c4      0ad700f0       adrp x10, 0x6609000
+        â•Ž   ;-- method.onlinemode::ParameterPlayerDefine.SetAbilityParameterFromDB_tmpdb::Player::Ability__unsigned_short_:
+        â•Ž   ;-- onlinemode::ParameterPlayerDefine::SetAbilityParameterFromDB(tmpdb::Player::Ability, unsigned short):
+; onlinemode::ParameterPlayerDefine::SetAbilityParameterFromDB(tmpdb::
+; Player::Ability, unsigned short)
+        â•Ž   0x04b261bc      3f740071       cmp w1, 0x1d
+        â•Ž   0x04b261c0      49038052       mov w9, 0x1a
+        â•Ž   0x04b261c4      0ad700f0       adrp x10, 0x6609000
+        â•Ž   0x04b261c8      29c1811a       csel w9, w9, w1, gt
+        â•Ž   0x04b261cc      4a112091       add x10, x10, 0x804
+        â•Ž   0x04b261d0      001440f9       ldr x0, [x0, 0x28]
+        â•Ž   0x04b261d4      415969b8       ldr w1, [x10, w9, uxtw 2]
+        â•Ž   0x04b261d8      e9a39052       mov w9, 0x851f
+        â•Ž   0x04b261dc      483c0012       and w8, w2, 0xffff
+        â•Ž   0x04b261e0      693daa72       movk w9, 0x51eb, lsl 16
+        â•Ž   0x04b261e4      087da99b       umull x8, w8, w9
+        â•Ž   0x04b261e8      02b165d3       ubfx x2, x8, 0x25, 8
+        â””â”€< 0x04b261ec      074e3b17       b 0x19f9a08
+            ;-- method.onlinemode::ParameterPlayerDefine.GetSecretAbilityParameter_tmpdb::Player::SecretAbility__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetSecretAbilityParameter(tmpdb::Player::SecretAbility) const:
+; onlinemode::ParameterPlayerDefine::GetSecretAbilityParameter(tmpdb::
+; Player::SecretAbility) const
+            0x04b261f0      fe0f1ff8       str x30, [sp, -0x10]!
+            0x04b261f4      3f040071       cmp w1, 1
+            0x04b261f8      69bc00f0       adrp x9, 0x62b5000
+            ;-- method.onlinemode::ParameterPlayerDefine.GetSecretAbilityParameter_tmpdb::Player::SecretAbility__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetSecretAbilityParameter(tmpdb::Player::SecretAbility) const:
+; onlinemode::ParameterPlayerDefine::GetSecretAbilityParameter(tmpdb::
+; Player::SecretAbility) const
+            0x04b261f0      fe0f1ff8       str x30, [sp, -0x10]!
+            0x04b261f4      3f040071       cmp w1, 1
+            0x04b261f8      69bc00f0       adrp x9, 0x62b5000
+            0x04b261fc      e8c3811a       csel w8, wzr, w1, gt
+            0x04b26200      29811991       add x9, x9, 0x660
+            0x04b26204      001440f9       ldr x0, [x0, 0x28]
+            0x04b26208      215968b8       ldr w1, [x9, w8, uxtw 2]
+            0x04b2620c      e2330091       add x2, sp, 0xc
+            0x04b26210      ff0f00b9       str wzr, [sp, 0xc]
+            0x04b26214      05413b97       bl 0x19f6628
+            0x04b26218      e00f40b9       ldr w0, [sp, 0xc]
+            0x04b2621c      fe0741f8       ldr x30, [sp], 0x10
+            0x04b26220      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetSecretAbilityParameter_tmpdb::Player::SecretAbility__unsigned_char_:
+            ;-- onlinemode::ParameterPlayerDefine::SetSecretAbilityParameter(tmpdb::Player::SecretAbility, unsigned char):
+; onlinemode::ParameterPlayerDefine::SetSecretAbilityParameter(tmpdb::
+; Player::SecretAbility, unsigned char)
+            0x04b26224      3f040071       cmp w1, 1
+            0x04b26228      69bc00f0       adrp x9, 0x62b5000
+            0x04b2622c      e8c3811a       csel w8, wzr, w1, gt
+        â•Ž   ;-- method.onlinemode::ParameterPlayerDefine.SetSecretAbilityParameter_tmpdb::Player::SecretAbility__unsigned_char_:
+        â•Ž   ;-- onlinemode::ParameterPlayerDefine::SetSecretAbilityParameter(tmpdb::Player::SecretAbility, unsigned char):
+; onlinemode::ParameterPlayerDefine::SetSecretAbilityParameter(tmpdb::
+; Player::SecretAbility, unsigned char)
+        â•Ž   0x04b26224      3f040071       cmp w1, 1
+        â•Ž   0x04b26228      69bc00f0       adrp x9, 0x62b5000
+        â•Ž   0x04b2622c      e8c3811a       csel w8, wzr, w1, gt
+        â•Ž   0x04b26230      29811991       add x9, x9, 0x660
+        â•Ž   0x04b26234      001440f9       ldr x0, [x0, 0x28]
+        â•Ž   0x04b26238      215968b8       ldr w1, [x9, w8, uxtw 2]
+        â•Ž   0x04b2623c      421c0012       and w2, w2, 0xff
+        â””â”€< 0x04b26240      f24d3b17       b 0x19f9a08
+            ;-- method.onlinemode::ParameterPlayerDefine.GetTrainedAbilityParameter_tmpdb::Player::Ability__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetTrainedAbilityParameter(tmpdb::Player::Ability) const:
+; onlinemode::ParameterPlayerDefine::GetTrainedAbilityParameter(tmpdb:
+; :Player::Ability) const
+            0x04b26244      fe0f1ff8       str x30, [sp, -0x10]!
+            0x04b26248      ff0f00b9       str wzr, [sp, 0xc]
+            0x04b2624c      3f740071       cmp w1, 0x1d
+            ;-- method.onlinemode::ParameterPlayerDefine.GetTrainedAbilityParameter_tmpdb::Player::Ability__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetTrainedAbilityParameter(tmpdb::Player::Ability) const:
+; onlinemode::ParameterPlayerDefine::GetTrainedAbilityParameter(tmpdb:
+; :Player::Ability) const
+            0x04b26244      fe0f1ff8       str x30, [sp, -0x10]!
+            0x04b26248      ff0f00b9       str wzr, [sp, 0xc]
+            0x04b2624c      3f740071       cmp w1, 0x1d
+            0x04b26250      48038052       mov w8, 0x1a
+            0x04b26254      0ad700f0       adrp x10, 0x6609000
+            0x04b26258      091440f9       ldr x9, [x0, 0x28]
+            0x04b2625c      08c1811a       csel w8, w8, w1, gt
+            0x04b26260      4a112091       add x10, x10, 0x804
+            0x04b26264      415968b8       ldr w1, [x10, w8, uxtw 2]
+            0x04b26268      20e10491       add x0, x9, 0x138
+            0x04b2626c      e2330091       add x2, sp, 0xc
+            0x04b26270      ee403b97       bl 0x19f6628
+            0x04b26274      e00f40b9       ldr w0, [sp, 0xc]
+            0x04b26278      fe0741f8       ldr x30, [sp], 0x10
+            0x04b2627c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetTrainedAbilityParameter_tmpdb::Player::Ability__unsigned_char_:
+            ;-- onlinemode::ParameterPlayerDefine::SetTrainedAbilityParameter(tmpdb::Player::Ability, unsigned char):
+; onlinemode::ParameterPlayerDefine::SetTrainedAbilityParameter(tmpdb:
+; :Player::Ability, unsigned char)
+            0x04b26280      3f740071       cmp w1, 0x1d
+            0x04b26284      49038052       mov w9, 0x1a
+            0x04b26288      0ad700f0       adrp x10, 0x6609000
+        â•Ž   ;-- method.onlinemode::ParameterPlayerDefine.SetTrainedAbilityParameter_tmpdb::Player::Ability__unsigned_char_:
+        â•Ž   ;-- onlinemode::ParameterPlayerDefine::SetTrainedAbilityParameter(tmpdb::Player::Ability, unsigned char):
+; onlinemode::ParameterPlayerDefine::SetTrainedAbilityParameter(tmpdb:
+; :Player::Ability, unsigned char)
+        â•Ž   0x04b26280      3f740071       cmp w1, 0x1d
+        â•Ž   0x04b26284      49038052       mov w9, 0x1a
+        â•Ž   0x04b26288      0ad700f0       adrp x10, 0x6609000
+        â•Ž   0x04b2628c      081440f9       ldr x8, [x0, 0x28]
+        â•Ž   0x04b26290      29c1811a       csel w9, w9, w1, gt
+        â•Ž   0x04b26294      4a112091       add x10, x10, 0x804
+        â•Ž   0x04b26298      415969b8       ldr w1, [x10, w9, uxtw 2]
+        â•Ž   0x04b2629c      421c0012       and w2, w2, 0xff
+        â•Ž   0x04b262a0      00e10491       add x0, x8, 0x138
+        â””â”€< 0x04b262a4      d94d3b17       b 0x19f9a08
+            ;-- method.onlinemode::ParameterPlayerDefine.SetTrainedAbilityParameterFromDB_tmpdb::Player::Ability__unsigned_short__unsigned_short_:
+            ;-- onlinemode::ParameterPlayerDefine::SetTrainedAbilityParameterFromDB(tmpdb::Player::Ability, unsigned short, unsigned short):
+; onlinemode::ParameterPlayerDefine::SetTrainedAbilityParameterFromDB(
+; tmpdb::Player::Ability, unsigned short, unsigned short)
+            0x04b262a8      483c0012       and w8, w2, 0xffff
+            0x04b262ac      0921236b       subs w9, w8, w3, uxth
+        â”Œâ”€< 0x04b262b0      c9000054       b.ls 0x4b262c8
+        â•Ž   ;-- method.onlinemode::ParameterPlayerDefine.SetTrainedAbilityParameterFromDB_tmpdb::Player::Ability__unsigned_short__unsigned_short_:
+        â•Ž   ;-- onlinemode::ParameterPlayerDefine::SetTrainedAbilityParameterFromDB(tmpdb::Player::Ability, unsigned short, unsigned short):
+; onlinemode::ParameterPlayerDefine::SetTrainedAbilityParameterFromDB(
+; tmpdb::Player::Ability, unsigned short, unsigned short)
+        â•Ž   0x04b262a8      483c0012       and w8, w2, 0xffff
+        â•Ž   0x04b262ac      0921236b       subs w9, w8, w3, uxth
+       â”Œâ”€â”€< 0x04b262b0      c9000054       b.ls 0x4b262c8
+       â”‚â•Ž   0x04b262b4      eaa39052       mov w10, 0x851f
+       â”‚â•Ž   0x04b262b8      6a3daa72       movk w10, 0x51eb, lsl 16
+       â”‚â•Ž   0x04b262bc      297daa9b       umull x9, w9, w10
+       â”‚â•Ž   0x04b262c0      29fd65d3       lsr x9, x9, 0x25
+      â”Œâ”€â”€â”€< 0x04b262c4      02000014       b 0x4b262cc
+      â”‚â””â”€â”€> 0x04b262c8      e9031f2a       mov w9, wzr
+      â””â”€â”€â”€> 0x04b262cc      eaa39052       mov w10, 0x851f
+        â•Ž   0x04b262d0      6a3daa72       movk w10, 0x51eb, lsl 16
+        â•Ž   0x04b262d4      3f740071       cmp w1, 0x1d
+        â•Ž   0x04b262d8      4c038052       mov w12, 0x1a
+        â•Ž   0x04b262dc      087daa9b       umull x8, w8, w10
+        â•Ž   0x04b262e0      8ac1811a       csel w10, w12, w1, gt
+        â•Ž   0x04b262e4      0cd700f0       adrp x12, 0x6609000
+        â•Ž   0x04b262e8      0b1440f9       ldr x11, [x0, 0x28]
+        â•Ž   0x04b262ec      8c112091       add x12, x12, 0x804
+        â•Ž   0x04b262f0      81596ab8       ldr w1, [x12, w10, uxtw 2]
+        â•Ž   0x04b262f4      08fd65d3       lsr x8, x8, 0x25
+        â•Ž   0x04b262f8      0201094b       sub w2, w8, w9
+        â•Ž   0x04b262fc      60e10491       add x0, x11, 0x138
+        â””â”€< 0x04b26300      c24d3b17       b 0x19f9a08
+            ;-- method.onlinemode::ParameterPlayerDefine.GetPlayStyle___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetPlayStyle() const:
+            0x04b26304      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetPlayStyle() const
+            ;-- method.onlinemode::ParameterPlayerDefine.GetPlayStyle___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetPlayStyle() const:
+            0x04b26304      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetPlayStyle() const
+            0x04b26308      080d40f9       ldr x8, [x8, 0x18]
+            0x04b2630c      00bd6bd3       ubfx x0, x8, 0x2b, 5
+            0x04b26310      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetPlayStyle_tmpdb::Player::PlayStyle_:
+            ;-- onlinemode::ParameterPlayerDefine::SetPlayStyle(tmpdb::Player::PlayStyle):
+; onlinemode::ParameterPlayerDefine::SetPlayStyle(tmpdb::Player::PlayS
+; tyle)
+            0x04b26314      081440f9       ldr x8, [x0, 0x28]
+            0x04b26318      2a100012       and w10, w1, 0x1f
+            0x04b2631c      090d40f9       ldr x9, [x8, 0x18]
+            ;-- method.onlinemode::ParameterPlayerDefine.SetPlayStyle_tmpdb::Player::PlayStyle_:
+            ;-- onlinemode::ParameterPlayerDefine::SetPlayStyle(tmpdb::Player::PlayStyle):
+; onlinemode::ParameterPlayerDefine::SetPlayStyle(tmpdb::Player::PlayS
+; tyle)
+            0x04b26314      081440f9       ldr x8, [x0, 0x28]
+            0x04b26318      2a100012       and w10, w1, 0x1f
+            0x04b2631c      090d40f9       ldr x9, [x8, 0x18]
+            0x04b26320      491155b3       bfi x9, x10, 0x2b, 5
+            0x04b26324      090d00f9       str x9, [x8, 0x18]
+            0x04b26328      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetPlayStyleHas_onlinemode::PlayStyleIndex__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetPlayStyleHas(onlinemode::PlayStyleIndex) const:
+; onlinemode::ParameterPlayerDefine::GetPlayStyleHas(onlinemode::PlayS
+; tyleIndex) const
+            0x04b2632c      3f040071       cmp w1, 1
+        â”Œâ”€< 0x04b26330      ac000054       b.gt 0x4b26344
+        â”‚   0x04b26334      081440f9       ldr x8, [x0, 0x28]
+            ;-- method.onlinemode::ParameterPlayerDefine.GetPlayStyleHas_onlinemode::PlayStyleIndex__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetPlayStyleHas(onlinemode::PlayStyleIndex) const:
+; onlinemode::ParameterPlayerDefine::GetPlayStyleHas(onlinemode::PlayS
+; tyleIndex) const
+            0x04b2632c      3f040071       cmp w1, 1
+        â”Œâ”€< 0x04b26330      ac000054       b.gt 0x4b26344
+        â”‚   0x04b26334      081440f9       ldr x8, [x0, 0x28]
+        â”‚   0x04b26338      0849218b       add x8, x8, w1, uxtw 2
+        â”‚   0x04b2633c      003943b9       ldr w0, [x8, 0x338]
+        â”‚   0x04b26340      c0035fd6       ret
+        â””â”€> 0x04b26344      e0031f2a       mov w0, wzr
+            0x04b26348      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetPlayStyleHas_onlinemode::PlayStyleIndex__tmpdb::Player::PlayStyle_:
+            ;-- onlinemode::ParameterPlayerDefine::SetPlayStyleHas(onlinemode::PlayStyleIndex, tmpdb::Player::PlayStyle):
+; onlinemode::ParameterPlayerDefine::SetPlayStyleHas(onlinemode::PlayS
+; tyleIndex, tmpdb::Player::PlayStyle)
+            0x04b2634c      3f040071       cmp w1, 1
+        â”Œâ”€< 0x04b26350      8c000054       b.gt 0x4b26360
+        â”‚   0x04b26354      081440f9       ldr x8, [x0, 0x28]
+            ;-- method.onlinemode::ParameterPlayerDefine.SetPlayStyleHas_onlinemode::PlayStyleIndex__tmpdb::Player::PlayStyle_:
+            ;-- onlinemode::ParameterPlayerDefine::SetPlayStyleHas(onlinemode::PlayStyleIndex, tmpdb::Player::PlayStyle):
+; onlinemode::ParameterPlayerDefine::SetPlayStyleHas(onlinemode::PlayS
+; tyleIndex, tmpdb::Player::PlayStyle)
+            0x04b2634c      3f040071       cmp w1, 1
+        â”Œâ”€< 0x04b26350      8c000054       b.gt 0x4b26360
+        â”‚   0x04b26354      081440f9       ldr x8, [x0, 0x28]
+        â”‚   0x04b26358      0849218b       add x8, x8, w1, uxtw 2
+        â”‚   0x04b2635c      023903b9       str w2, [x8, 0x338]
+        â””â”€> 0x04b26360      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetPlayStyleIndex___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetPlayStyleIndex() const:
+            0x04b26364      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetPlayStyleIndex() const
+            0x04b26368      090d40f9       ldr x9, [x8, 0x18]
+            0x04b2636c      29bd6bd3       ubfx x9, x9, 0x2b, 5
+            ;-- method.onlinemode::ParameterPlayerDefine.GetPlayStyleIndex___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetPlayStyleIndex() const:
+            0x04b26364      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetPlayStyleIndex() const
+            0x04b26368      090d40f9       ldr x9, [x8, 0x18]
+            0x04b2636c      29bd6bd3       ubfx x9, x9, 0x2b, 5
+        â”Œâ”€< 0x04b26370      e9000034       cbz w9, 0x4b2638c
+        â”‚   0x04b26374      0a3943b9       ldr w10, [x8, 0x338]
+       â”Œâ”€â”€< 0x04b26378      ea000034       cbz w10, 0x4b26394
+       â”‚â”‚   0x04b2637c      5f01096b       cmp w10, w9
+      â”Œâ”€â”€â”€< 0x04b26380      a1000054       b.ne 0x4b26394
+      â”‚â”‚â”‚   0x04b26384      e0031f2a       mov w0, wzr
+      â”‚â”‚â”‚   0x04b26388      c0035fd6       ret
+      â”‚â”‚â””â”€> 0x04b2638c      e0031f32       mov w0, 2
+      â”‚â”‚    0x04b26390      c0035fd6       ret
+      â””â””â”€â”€> 0x04b26394      083d43b9       ldr w8, [x8, 0x33c]
+            0x04b26398      1f01096b       cmp w8, w9
+            0x04b2639c      0409407a       ccmp w8, 0, 4, eq
+            0x04b263a0      e8030032       mov w8, 1
+            0x04b263a4      0015881a       cinc w0, w8, eq
+            0x04b263a8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetPlayStyleHasNum___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetPlayStyleHasNum() const:
+            0x04b263ac      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetPlayStyleHasNum() const
+            0x04b263b0      ea031f32       mov w10, 2
+            0x04b263b4      093d43b9       ldr w9, [x8, 0x33c]
+            ;-- method.onlinemode::ParameterPlayerDefine.GetPlayStyleHasNum___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetPlayStyleHasNum() const:
+            0x04b263ac      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetPlayStyleHasNum() const
+            0x04b263b0      ea031f32       mov w10, 2
+            0x04b263b4      093d43b9       ldr w9, [x8, 0x33c]
+            0x04b263b8      083943b9       ldr w8, [x8, 0x338]
+            0x04b263bc      3f010071       cmp w9, 0
+            0x04b263c0      e9079f1a       cset w9, ne
+            0x04b263c4      4a159f1a       csinc w10, w10, wzr, ne
+            0x04b263c8      1f010071       cmp w8, 0
+            0x04b263cc      20018a1a       csel w0, w9, w10, eq
+            0x04b263d0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.HasPlayStyleForCom_tmpdb::Player::PlayStyleForCom__const:
+            ;-- onlinemode::ParameterPlayerDefine::HasPlayStyleForCom(tmpdb::Player::PlayStyleForCom) const:
+; onlinemode::ParameterPlayerDefine::HasPlayStyleForCom(tmpdb::Player:
+; :PlayStyleForCom) const
+            0x04b263d4      fe0f1ff8       str x30, [sp, -0x10]!
+            0x04b263d8      3f180071       cmp w1, 6
+            0x04b263dc      09d700f0       adrp x9, 0x6609000
+            ;-- method.onlinemode::ParameterPlayerDefine.HasPlayStyleForCom_tmpdb::Player::PlayStyleForCom__const:
+            ;-- onlinemode::ParameterPlayerDefine::HasPlayStyleForCom(tmpdb::Player::PlayStyleForCom) const:
+; onlinemode::ParameterPlayerDefine::HasPlayStyleForCom(tmpdb::Player:
+; :PlayStyleForCom) const
+            0x04b263d4      fe0f1ff8       str x30, [sp, -0x10]!
+            0x04b263d8      3f180071       cmp w1, 6
+            0x04b263dc      09d700f0       adrp x9, 0x6609000
+            0x04b263e0      e8c3811a       csel w8, wzr, w1, gt
+            0x04b263e4      29812a91       add x9, x9, 0xaa0
+            0x04b263e8      001440f9       ldr x0, [x0, 0x28]
+            0x04b263ec      215968b8       ldr w1, [x9, w8, uxtw 2]
+            0x04b263f0      e2330091       add x2, sp, 0xc
+            0x04b263f4      ff0f00b9       str wzr, [sp, 0xc]
+            0x04b263f8      8c403b97       bl 0x19f6628
+            0x04b263fc      e80f40b9       ldr w8, [sp, 0xc]
+            0x04b26400      1f050071       cmp w8, 1
+            0x04b26404      e0179f1a       cset w0, eq
+            0x04b26408      fe0741f8       ldr x30, [sp], 0x10
+            0x04b2640c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.AddPlayStyleForCom_tmpdb::Player::PlayStyleForCom_:
+            ;-- onlinemode::ParameterPlayerDefine::AddPlayStyleForCom(tmpdb::Player::PlayStyleForCom):
+; onlinemode::ParameterPlayerDefine::AddPlayStyleForCom(tmpdb::Player:
+; :PlayStyleForCom)
+            0x04b26410      3f180071       cmp w1, 6
+            0x04b26414      09d700f0       adrp x9, 0x6609000
+            0x04b26418      e8c3811a       csel w8, wzr, w1, gt
+            ;-- method.onlinemode::ParameterPlayerDefine.GetSkillCard___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetSkillCard() const:
+            0x04b26450      ffc300d1       sub sp, sp, 0x30            ; onlinemode::ParameterPlayerDefine::GetSkillCard() const
+            0x04b26454      f55301a9       stp x21, x20, [sp, 0x10]
+            0x04b26458      15d700f0       adrp x21, 0x6609000
+            0x04b2645c      f37b02a9       stp x19, x30, [sp, 0x20]
+            0x04b26460      f40300aa       mov x20, x0
+            0x04b26464      f3031faa       mov x19, xzr
+            0x04b26468      b5f22a91       add x21, x21, 0xabc
+        â”Œâ”€> 0x04b2646c      801640f9       ldr x0, [x20, 0x28]
+        â•Ž   0x04b26470      a17a73b8       ldr w1, [x21, x19, lsl 2]
+        â•Ž   0x04b26474      e2330091       add x2, sp, 0xc
+        â•Ž   0x04b26478      ff0f00b9       str wzr, [sp, 0xc]
+        â•Ž   0x04b2647c      6b403b97       bl 0x19f6628
+        â•Ž   0x04b26480      e80f40b9       ldr w8, [sp, 0xc]
+        â•Ž   0x04b26484      1f050071       cmp w8, 1
+       â”Œâ”€â”€< 0x04b26488      a0000054       b.eq 0x4b2649c
+       â”‚â•Ž   0x04b2648c      73060091       add x19, x19, 1
+       â”‚â•Ž   0x04b26490      7fa600f1       cmp x19, 0x29               ; ')'
+       â”‚â””â”€< 0x04b26494      c3feff54       b.lo 0x4b2646c
+       â”‚    0x04b26498      33058052       mov w19, 0x29               ; ')'
+       â””â”€â”€> 0x04b2649c      e003132a       mov w0, w19
+            0x04b264a0      f37b42a9       ldp x19, x30, [sp, 0x20]
+            0x04b264a4      f55341a9       ldp x21, x20, [sp, 0x10]
+            0x04b264a8      ffc30091       add sp, sp, 0x30
+            0x04b264ac      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.HasSkillCard_tmpdb::Player::SkillCard__const:
+            ;-- onlinemode::ParameterPlayerDefine::HasSkillCard(tmpdb::Player::SkillCard) const:
+; onlinemode::ParameterPlayerDefine::HasSkillCard(tmpdb::Player::Skill
+; Card) const
+            0x04b264b0      fe0f1ff8       str x30, [sp, -0x10]!
+            0x04b264b4      001440f9       ldr x0, [x0, 0x28]
+            0x04b264b8      3fa00071       cmp w1, 0x28                ; '('
+            0x04b264bc      ff0f00b9       str wzr, [sp, 0xc]
+        â”Œâ”€< 0x04b264c0      69000054       b.ls 0x4b264cc
+        â”‚   0x04b264c4      61088052       mov w1, 0x43                ; 'C'
+       â”Œâ”€â”€< 0x04b264c8      04000014       b 0x4b264d8
+       â”‚â””â”€> 0x04b264cc      08d700f0       adrp x8, 0x6609000
+       â”‚    0x04b264d0      08f12a91       add x8, x8, 0xabc
+       â”‚    0x04b264d4      015961b8       ldr w1, [x8, w1, uxtw 2]
+       â””â”€â”€> 0x04b264d8      e2330091       add x2, sp, 0xc
+            0x04b264dc      53403b97       bl 0x19f6628
+            0x04b264e0      e80f40b9       ldr w8, [sp, 0xc]
+            0x04b264e4      1f050071       cmp w8, 1
+            0x04b264e8      e0179f1a       cset w0, eq
+            0x04b264ec      fe0741f8       ldr x30, [sp], 0x10
+            0x04b264f0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetSkillCard_unsigned_int__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetSkillCard(unsigned int) const:
+            0x04b264f4      ff0301d1       sub sp, sp, 0x40            ; onlinemode::ParameterPlayerDefine::GetSkillCard(unsigned int) const
+            0x04b264f8      f75b01a9       stp x23, x22, [sp, 0x10]
+            0x04b264fc      17d700f0       adrp x23, 0x6609000
+            ;-- method.onlinemode::ParameterPlayerDefine.GetAppearanceParameter_tmpdb::Player::Appearance__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetAppearanceParameter(tmpdb::Player::Appearance) const:
+; onlinemode::ParameterPlayerDefine::GetAppearanceParameter(tmpdb::Pla
+; yer::Appearance) const
+            0x04b26754      fe0f1ff8       str x30, [sp, -0x10]!
+            0x04b26758      3f040071       cmp w1, 1
+            0x04b2675c      69bc00f0       adrp x9, 0x62b5000
+            0x04b26760      e8c3811a       csel w8, wzr, w1, gt
+            0x04b26764      29a11991       add x9, x9, 0x668
+            0x04b26768      001440f9       ldr x0, [x0, 0x28]
+            0x04b2676c      215968b8       ldr w1, [x9, w8, uxtw 2]
+            0x04b26770      e2330091       add x2, sp, 0xc
+            0x04b26774      ff0f00b9       str wzr, [sp, 0xc]
+            0x04b26778      ac3f3b97       bl 0x19f6628
+            0x04b2677c      e00f40b9       ldr w0, [sp, 0xc]
+            0x04b26780      fe0741f8       ldr x30, [sp], 0x10
+            0x04b26784      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetAppearanceParameter_tmpdb::Player::Appearance__unsigned_char_:
+            ;-- onlinemode::ParameterPlayerDefine::SetAppearanceParameter(tmpdb::Player::Appearance, unsigned char):
+; onlinemode::ParameterPlayerDefine::SetAppearanceParameter(tmpdb::Pla
+; yer::Appearance, unsigned char)
+            0x04b26788      3f040071       cmp w1, 1
+            0x04b2678c      69bc00f0       adrp x9, 0x62b5000
+            0x04b26790      e8c3811a       csel w8, wzr, w1, gt
+        â•Ž   ;-- method.onlinemode::ParameterPlayerDefine.SetAppearanceParameter_tmpdb::Player::Appearance__unsigned_char_:
+        â•Ž   ;-- onlinemode::ParameterPlayerDefine::SetAppearanceParameter(tmpdb::Player::Appearance, unsigned char):
+; onlinemode::ParameterPlayerDefine::SetAppearanceParameter(tmpdb::Pla
+; yer::Appearance, unsigned char)
+        â•Ž   0x04b26788      3f040071       cmp w1, 1
+        â•Ž   0x04b2678c      69bc00f0       adrp x9, 0x62b5000
+        â•Ž   0x04b26790      e8c3811a       csel w8, wzr, w1, gt
+        â•Ž   0x04b26794      29a11991       add x9, x9, 0x668
+        â•Ž   0x04b26798      001440f9       ldr x0, [x0, 0x28]
+        â•Ž   0x04b2679c      215968b8       ldr w1, [x9, w8, uxtw 2]
+        â•Ž   0x04b267a0      421c0012       and w2, w2, 0xff
+        â””â”€< 0x04b267a4      994c3b17       b 0x19f9a08
+            ;-- method.onlinemode::ParameterPlayerDefine.GetInjuryLength___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetInjuryLength() const:
+            0x04b267a8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetInjuryLength() const
+            0x04b267ac      00e14339       ldrb w0, [x8, 0xf8]
+            0x04b267b0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetInjuryLength___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetInjuryLength() const:
+            0x04b267a8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetInjuryLength() const
+            0x04b267ac      00e14339       ldrb w0, [x8, 0xf8]
+            0x04b267b0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetInjuryLength_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetInjuryLength(unsigned int):
+            0x04b267b4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetInjuryLength(unsigned int)
+            0x04b267b8      2a1c0012       and w10, w1, 0xff
+            0x04b267bc      09414ff8       ldur x9, [x8, 0xf4]
+            ;-- method.onlinemode::ParameterPlayerDefine.SetInjuryLength_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetInjuryLength(unsigned int):
+            0x04b267b4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetInjuryLength(unsigned int)
+            0x04b267b8      2a1c0012       and w10, w1, 0xff
+            0x04b267bc      09414ff8       ldur x9, [x8, 0xf4]
+            0x04b267c0      491d60b3       bfi x9, x10, 0x20, 8
+            0x04b267c4      09410ff8       stur x9, [x8, 0xf4]
+            0x04b267c8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetStamina___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetStamina() const:
+            0x04b267cc      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetStamina() const
+            0x04b267d0      08d94339       ldrb w8, [x8, 0xf6]
+            0x04b267d4      00190012       and w0, w8, 0x7f
+            ;-- method.onlinemode::ParameterPlayerDefine.GetStamina___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetStamina() const:
+            0x04b267cc      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetStamina() const
+            0x04b267d0      08d94339       ldrb w8, [x8, 0xf6]
+            0x04b267d4      00190012       and w0, w8, 0x7f
+            0x04b267d8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetStamina_unsigned_char_:
+            ;-- onlinemode::ParameterPlayerDefine::SetStamina(unsigned char):
+            0x04b267dc      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetStamina(unsigned char)
+            0x04b267e0      2a184092       and x10, x1, 0x7f
+            0x04b267e4      09414ff8       ldur x9, [x8, 0xf4]
+            ;-- method.onlinemode::ParameterPlayerDefine.SetStamina_unsigned_char_:
+            ;-- onlinemode::ParameterPlayerDefine::SetStamina(unsigned char):
+            0x04b267dc      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetStamina(unsigned char)
+            0x04b267e0      2a184092       and x10, x1, 0x7f
+            0x04b267e4      09414ff8       ldur x9, [x8, 0xf4]
+            0x04b267e8      491970b3       bfi x9, x10, 0x10, 7
+            0x04b267ec      09410ff8       stur x9, [x8, 0xf4]
+            0x04b267f0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetCondition___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetCondition() const:
+            0x04b267f4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetCondition() const
+            0x04b267f8      08dd4339       ldrb w8, [x8, 0xf7]
+            0x04b267fc      00090012       and w0, w8, 7
+            ;-- method.onlinemode::ParameterPlayerDefine.GetCondition___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetCondition() const:
+            0x04b267f4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetCondition() const
+            0x04b267f8      08dd4339       ldrb w8, [x8, 0xf7]
+            0x04b267fc      00090012       and w0, w8, 7
+            0x04b26800      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetCondition_tmpdb::Player::ConditionType_:
+            ;-- onlinemode::ParameterPlayerDefine::SetCondition(tmpdb::Player::ConditionType):
+; onlinemode::ParameterPlayerDefine::SetCondition(tmpdb::Player::Condi
+; tionType)
+            0x04b26804      081440f9       ldr x8, [x0, 0x28]
+            0x04b26808      2a080012       and w10, w1, 7
+            0x04b2680c      09414ff8       ldur x9, [x8, 0xf4]
+            ;-- method.onlinemode::ParameterPlayerDefine.SetCondition_tmpdb::Player::ConditionType_:
+            ;-- onlinemode::ParameterPlayerDefine::SetCondition(tmpdb::Player::ConditionType):
+; onlinemode::ParameterPlayerDefine::SetCondition(tmpdb::Player::Condi
+; tionType)
+            0x04b26804      081440f9       ldr x8, [x0, 0x28]
+            0x04b26808      2a080012       and w10, w1, 7
+            0x04b2680c      09414ff8       ldur x9, [x8, 0xf4]
+            0x04b26810      490968b3       bfi x9, x10, 0x18, 3
+            0x04b26814      09410ff8       stur x9, [x8, 0xf4]
+            0x04b26818      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetMotivationValue___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetMotivationValue() const:
+            0x04b2681c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetMotivationValue() const
+            0x04b26820      00314839       ldrb w0, [x8, 0x20c]
+            0x04b26824      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetMotivationValue___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetMotivationValue() const:
+            0x04b2681c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetMotivationValue() const
+            0x04b26820      00314839       ldrb w0, [x8, 0x20c]
+            0x04b26824      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetMotivationValue_signed_char_:
+            ;-- onlinemode::ParameterPlayerDefine::SetMotivationValue(signed char):
+            0x04b26828      e87b1e32       mov w8, -3                  ; onlinemode::ParameterPlayerDefine::SetMotivationValue(signed char)
+            0x04b2682c      1f81216b       cmp w8, w1, sxtb
+        â”Œâ”€< 0x04b26830      8d000054       b.le 0x4b26840
+            ;-- method.onlinemode::ParameterPlayerDefine.GetMotivationTypeTmpdb___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetMotivationTypeTmpdb() const:
+            0x04b2692c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetMotivationTypeTmpdb() const
+            0x04b26930      08f540b9       ldr w8, [x8, 0xf4]
+            0x04b26934      00751b53       ubfx w0, w8, 0x1b, 3
+            0x04b26938      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetMotivationTypeOnlineMode___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetMotivationTypeOnlineMode() const:
+; onlinemode::ParameterPlayerDefine::GetMotivationTypeOnlineMode() con
+; st
+            0x04b2693c      081440f9       ldr x8, [x0, 0x28]
+            0x04b26940      0831c839       ldrsb w8, [x8, 0x20c]
+            0x04b26944      1f0d0031       cmn w8, 3
+            ;-- method.onlinemode::ParameterPlayerDefine.GetMotivationTypeOnlineMode___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetMotivationTypeOnlineMode() const:
+; onlinemode::ParameterPlayerDefine::GetMotivationTypeOnlineMode() con
+; st
+            0x04b2693c      081440f9       ldr x8, [x0, 0x28]
+            0x04b26940      0831c839       ldrsb w8, [x8, 0x20c]
+            0x04b26944      1f0d0031       cmn w8, 3
+        â”Œâ”€< 0x04b26948      6a000054       b.ge 0x4b26954
+        â”‚   0x04b2694c      e0031e32       mov w0, 4
+        â”‚   0x04b26950      c0035fd6       ret
+       â”Œâ””â”€> 0x04b26954      a800f837       tbnz w8, 0x1f, 0x4b26968
+       â”‚    0x04b26958      1f0d0071       cmp w8, 3
+       â”‚â”Œâ”€< 0x04b2695c      aa000054       b.ge 0x4b26970
+       â”‚â”‚   0x04b26960      e0031f32       mov w0, 2
+       â”‚â”‚   0x04b26964      c0035fd6       ret
+       â””â”€â”€> 0x04b26968      e0070032       mov w0, 3
+        â”‚   0x04b2696c      c0035fd6       ret
+        â””â”€> 0x04b26970      1f190071       cmp w8, 6
+            0x04b26974      e0a79f1a       cset w0, lt
+            0x04b26978      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetSalary___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetSalary() const:
+            0x04b2697c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetSalary() const
+            0x04b26980      00e941b9       ldr w0, [x8, 0x1e8]
+            0x04b26984      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetSalary___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetSalary() const:
+            0x04b2697c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetSalary() const
+            0x04b26980      00e941b9       ldr w0, [x8, 0x1e8]
+            0x04b26984      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetSalary_unsigned_int_const_:
+            ;-- onlinemode::ParameterPlayerDefine::SetSalary(unsigned int const&):
+            0x04b26988      280040b9       ldr w8, [x1]                ; onlinemode::ParameterPlayerDefine::SetSalary(unsigned int const&)
+            0x04b2698c      091440f9       ldr x9, [x0, 0x28]
+            0x04b26990      28e901b9       str w8, [x9, 0x1e8]
+            ;-- method.onlinemode::ParameterPlayerDefine.SetSalary_unsigned_int_const_:
+            ;-- onlinemode::ParameterPlayerDefine::SetSalary(unsigned int const&):
+            0x04b26988      280040b9       ldr w8, [x1]                ; onlinemode::ParameterPlayerDefine::SetSalary(unsigned int const&)
+            0x04b2698c      091440f9       ldr x9, [x0, 0x28]
+            0x04b26990      28e901b9       str w8, [x9, 0x1e8]
+            0x04b26994      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetMarketValue___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetMarketValue() const:
+            0x04b26998      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetMarketValue() const
+            0x04b2699c      00d140f9       ldr x0, [x8, 0x1a0]
+            0x04b269a0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetMarketValue___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetMarketValue() const:
+            0x04b26998      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetMarketValue() const
+            0x04b2699c      00d140f9       ldr x0, [x8, 0x1a0]
+            0x04b269a0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetMarketValue_long_:
+            ;-- onlinemode::ParameterPlayerDefine::SetMarketValue(long):
+            0x04b269a4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetMarketValue(long)
+            0x04b269a8      01d100f9       str x1, [x8, 0x1a0]
+            0x04b269ac      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetMarketValue_long_:
+            ;-- onlinemode::ParameterPlayerDefine::SetMarketValue(long):
+            0x04b269a4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetMarketValue(long)
+            0x04b269a8      01d100f9       str x1, [x8, 0x1a0]
+            0x04b269ac      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetSellPrice___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetSellPrice() const:
+            0x04b269b0      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetSellPrice() const
+            0x04b269b4      00a941b9       ldr w0, [x8, 0x1a8]
+            0x04b269b8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetSellPrice___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetSellPrice() const:
+            0x04b269b0      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetSellPrice() const
+            0x04b269b4      00a941b9       ldr w0, [x8, 0x1a8]
+            0x04b269b8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetSellPrice_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetSellPrice(unsigned int):
+            0x04b269bc      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetSellPrice(unsigned int)
+            0x04b269c0      01a901b9       str w1, [x8, 0x1a8]
+            0x04b269c4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetSellPrice_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetSellPrice(unsigned int):
+            0x04b269bc      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetSellPrice(unsigned int)
+            0x04b269c0      01a901b9       str w1, [x8, 0x1a8]
+            0x04b269c4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetGameSeason___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetGameSeason() const:
+            0x04b269c8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetGameSeason() const
+            0x04b269cc      006541b9       ldr w0, [x8, 0x164]
+            0x04b269d0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetGameSeason___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetGameSeason() const:
+            0x04b269c8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetGameSeason() const
+            0x04b269cc      006541b9       ldr w0, [x8, 0x164]
+            0x04b269d0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetGameSeason_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetGameSeason(unsigned int):
+            0x04b269d4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetGameSeason(unsigned int)
+            0x04b269d8      016501b9       str w1, [x8, 0x164]
+            0x04b269dc      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetGameSeason_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetGameSeason(unsigned int):
+            0x04b269d4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetGameSeason(unsigned int)
+            0x04b269d8      016501b9       str w1, [x8, 0x164]
+            0x04b269dc      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetGameSum___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetGameSum() const:
+            0x04b269e0      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetGameSum() const
+            0x04b269e4      006941b9       ldr w0, [x8, 0x168]
+            0x04b269e8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetGameSum___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetGameSum() const:
+            0x04b269e0      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetGameSum() const
+            0x04b269e4      006941b9       ldr w0, [x8, 0x168]
+            0x04b269e8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetGameSum_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetGameSum(unsigned int):
+            0x04b269ec      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetGameSum(unsigned int)
+            0x04b269f0      016901b9       str w1, [x8, 0x168]
+            0x04b269f4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetGameSum_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetGameSum(unsigned int):
+            0x04b269ec      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetGameSum(unsigned int)
+            0x04b269f0      016901b9       str w1, [x8, 0x168]
+            0x04b269f4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetGoalSeason___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetGoalSeason() const:
+            0x04b269f8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetGoalSeason() const
+            0x04b269fc      006d41b9       ldr w0, [x8, 0x16c]
+            0x04b26a00      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetGoalSeason___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetGoalSeason() const:
+            0x04b269f8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetGoalSeason() const
+            0x04b269fc      006d41b9       ldr w0, [x8, 0x16c]
+            0x04b26a00      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetGoalSeason_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetGoalSeason(unsigned int):
+            0x04b26a04      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetGoalSeason(unsigned int)
+            0x04b26a08      016d01b9       str w1, [x8, 0x16c]
+            0x04b26a0c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetGoalSeason_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetGoalSeason(unsigned int):
+            0x04b26a04      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetGoalSeason(unsigned int)
+            0x04b26a08      016d01b9       str w1, [x8, 0x16c]
+            0x04b26a0c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetGoalSum___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetGoalSum() const:
+            0x04b26a10      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetGoalSum() const
+            0x04b26a14      007141b9       ldr w0, [x8, 0x170]
+            0x04b26a18      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetGoalSum___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetGoalSum() const:
+            0x04b26a10      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetGoalSum() const
+            0x04b26a14      007141b9       ldr w0, [x8, 0x170]
+            0x04b26a18      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetGoalSum_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetGoalSum(unsigned int):
+            0x04b26a1c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetGoalSum(unsigned int)
+            0x04b26a20      017101b9       str w1, [x8, 0x170]
+            0x04b26a24      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetGoalSum_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetGoalSum(unsigned int):
+            0x04b26a1c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetGoalSum(unsigned int)
+            0x04b26a20      017101b9       str w1, [x8, 0x170]
+            0x04b26a24      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetAssistSeason___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetAssistSeason() const:
+            0x04b26a28      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetAssistSeason() const
+            0x04b26a2c      007541b9       ldr w0, [x8, 0x174]
+            0x04b26a30      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetAssistSeason___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetAssistSeason() const:
+            0x04b26a28      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetAssistSeason() const
+            0x04b26a2c      007541b9       ldr w0, [x8, 0x174]
+            0x04b26a30      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetAssistSeason_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetAssistSeason(unsigned int):
+            0x04b26a34      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetAssistSeason(unsigned int)
+            0x04b26a38      017501b9       str w1, [x8, 0x174]
+            0x04b26a3c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetAssistSeason_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetAssistSeason(unsigned int):
+            0x04b26a34      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetAssistSeason(unsigned int)
+            0x04b26a38      017501b9       str w1, [x8, 0x174]
+            0x04b26a3c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetAssistSum___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetAssistSum() const:
+            0x04b26a40      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetAssistSum() const
+            0x04b26a44      007941b9       ldr w0, [x8, 0x178]
+            0x04b26a48      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetAssistSum___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetAssistSum() const:
+            0x04b26a40      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetAssistSum() const
+            0x04b26a44      007941b9       ldr w0, [x8, 0x178]
+            0x04b26a48      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetAssistSum_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetAssistSum(unsigned int):
+            0x04b26a4c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetAssistSum(unsigned int)
+            0x04b26a50      017901b9       str w1, [x8, 0x178]
+            0x04b26a54      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetAssistSum_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetAssistSum(unsigned int):
+            0x04b26a4c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetAssistSum(unsigned int)
+            0x04b26a50      017901b9       str w1, [x8, 0x178]
+            0x04b26a54      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetPointSeason___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetPointSeason() const:
+            0x04b26a58      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetPointSeason() const
+            0x04b26a5c      007d41b9       ldr w0, [x8, 0x17c]
+            0x04b26a60      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetPointSeason___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetPointSeason() const:
+            0x04b26a58      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetPointSeason() const
+            0x04b26a5c      007d41b9       ldr w0, [x8, 0x17c]
+            0x04b26a60      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetPointSeason_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetPointSeason(unsigned int):
+            0x04b26a64      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetPointSeason(unsigned int)
+            0x04b26a68      017d01b9       str w1, [x8, 0x17c]
+            0x04b26a6c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetPointSeason_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetPointSeason(unsigned int):
+            0x04b26a64      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetPointSeason(unsigned int)
+            0x04b26a68      017d01b9       str w1, [x8, 0x17c]
+            0x04b26a6c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetPointSum___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetPointSum() const:
+            0x04b26a70      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetPointSum() const
+            0x04b26a74      008141b9       ldr w0, [x8, 0x180]
+            0x04b26a78      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetPointSum___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetPointSum() const:
+            0x04b26a70      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetPointSum() const
+            0x04b26a74      008141b9       ldr w0, [x8, 0x180]
+            0x04b26a78      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetPointSum_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetPointSum(unsigned int):
+            0x04b26a7c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetPointSum(unsigned int)
+            0x04b26a80      018101b9       str w1, [x8, 0x180]
+            0x04b26a84      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetPointSum_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetPointSum(unsigned int):
+            0x04b26a7c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetPointSum(unsigned int)
+            0x04b26a80      018101b9       str w1, [x8, 0x180]
+            0x04b26a84      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetYellowSeason___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetYellowSeason() const:
+            0x04b26a88      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetYellowSeason() const
+            0x04b26a8c      008541b9       ldr w0, [x8, 0x184]
+            0x04b26a90      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetYellowSeason___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetYellowSeason() const:
+            0x04b26a88      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetYellowSeason() const
+            0x04b26a8c      008541b9       ldr w0, [x8, 0x184]
+            0x04b26a90      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetYellowSeason_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetYellowSeason(unsigned int):
+            0x04b26a94      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetYellowSeason(unsigned int)
+            0x04b26a98      018501b9       str w1, [x8, 0x184]
+            0x04b26a9c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetYellowSeason_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetYellowSeason(unsigned int):
+            0x04b26a94      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetYellowSeason(unsigned int)
+            0x04b26a98      018501b9       str w1, [x8, 0x184]
+            0x04b26a9c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetYellowSum___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetYellowSum() const:
+            0x04b26aa0      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetYellowSum() const
+            0x04b26aa4      008941b9       ldr w0, [x8, 0x188]
+            0x04b26aa8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetYellowSum___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetYellowSum() const:
+            0x04b26aa0      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetYellowSum() const
+            0x04b26aa4      008941b9       ldr w0, [x8, 0x188]
+            0x04b26aa8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetYellowSum_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetYellowSum(unsigned int):
+            0x04b26aac      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetYellowSum(unsigned int)
+            0x04b26ab0      018901b9       str w1, [x8, 0x188]
+            0x04b26ab4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetYellowSum_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetYellowSum(unsigned int):
+            0x04b26aac      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetYellowSum(unsigned int)
+            0x04b26ab0      018901b9       str w1, [x8, 0x188]
+            0x04b26ab4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetSumYellow___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetSumYellow() const:
+            0x04b26ab8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetSumYellow() const
+            0x04b26abc      008d41b9       ldr w0, [x8, 0x18c]
+            0x04b26ac0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetSumYellow___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetSumYellow() const:
+            0x04b26ab8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetSumYellow() const
+            0x04b26abc      008d41b9       ldr w0, [x8, 0x18c]
+            0x04b26ac0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetSumYellow_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetSumYellow(unsigned int):
+            0x04b26ac4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetSumYellow(unsigned int)
+            0x04b26ac8      018d01b9       str w1, [x8, 0x18c]
+            0x04b26acc      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetSumYellow_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetSumYellow(unsigned int):
+            0x04b26ac4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetSumYellow(unsigned int)
+            0x04b26ac8      018d01b9       str w1, [x8, 0x18c]
+            0x04b26acc      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetYellowMaxTimes___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetYellowMaxTimes() const:
+            0x04b26ad0      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetYellowMaxTimes() const
+            0x04b26ad4      009141b9       ldr w0, [x8, 0x190]
+            0x04b26ad8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetYellowMaxTimes___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetYellowMaxTimes() const:
+            0x04b26ad0      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetYellowMaxTimes() const
+            0x04b26ad4      009141b9       ldr w0, [x8, 0x190]
+            0x04b26ad8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetYellowMaxTimes_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetYellowMaxTimes(unsigned int):
+            0x04b26adc      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetYellowMaxTimes(unsigned int)
+            0x04b26ae0      019101b9       str w1, [x8, 0x190]
+            0x04b26ae4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetYellowMaxTimes_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetYellowMaxTimes(unsigned int):
+            0x04b26adc      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetYellowMaxTimes(unsigned int)
+            0x04b26ae0      019101b9       str w1, [x8, 0x190]
+            0x04b26ae4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetRedSeason___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetRedSeason() const:
+            0x04b26ae8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetRedSeason() const
+            0x04b26aec      009541b9       ldr w0, [x8, 0x194]
+            0x04b26af0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetRedSeason___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetRedSeason() const:
+            0x04b26ae8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetRedSeason() const
+            0x04b26aec      009541b9       ldr w0, [x8, 0x194]
+            0x04b26af0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetRedSeason_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetRedSeason(unsigned int):
+            0x04b26af4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetRedSeason(unsigned int)
+            0x04b26af8      019501b9       str w1, [x8, 0x194]
+            0x04b26afc      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetRedSeason_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetRedSeason(unsigned int):
+            0x04b26af4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetRedSeason(unsigned int)
+            0x04b26af8      019501b9       str w1, [x8, 0x194]
+            0x04b26afc      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetRedSum___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetRedSum() const:
+            0x04b26b00      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetRedSum() const
+            0x04b26b04      009941b9       ldr w0, [x8, 0x198]
+            0x04b26b08      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetRedSum___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetRedSum() const:
+            0x04b26b00      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetRedSum() const
+            0x04b26b04      009941b9       ldr w0, [x8, 0x198]
+            0x04b26b08      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetRedSum_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetRedSum(unsigned int):
+            0x04b26b0c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetRedSum(unsigned int)
+            0x04b26b10      019901b9       str w1, [x8, 0x198]
+            0x04b26b14      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetRedSum_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetRedSum(unsigned int):
+            0x04b26b0c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetRedSum(unsigned int)
+            0x04b26b10      019901b9       str w1, [x8, 0x198]
+            0x04b26b14      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetRedSuspension___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetRedSuspension() const:
+            0x04b26b18      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetRedSuspension() const
+            0x04b26b1c      009d41b9       ldr w0, [x8, 0x19c]
+            0x04b26b20      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetRedSuspension___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetRedSuspension() const:
+            0x04b26b18      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetRedSuspension() const
+            0x04b26b1c      009d41b9       ldr w0, [x8, 0x19c]
+            0x04b26b20      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetRedSuspension_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetRedSuspension(unsigned int):
+            0x04b26b24      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetRedSuspension(unsigned int)
+            0x04b26b28      019d01b9       str w1, [x8, 0x19c]
+            0x04b26b2c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetRedSuspension_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetRedSuspension(unsigned int):
+            0x04b26b24      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetRedSuspension(unsigned int)
+            0x04b26b28      019d01b9       str w1, [x8, 0x19c]
+            0x04b26b2c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetLegendStatus___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetLegendStatus() const:
+            0x04b26b30      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetLegendStatus() const
+            0x04b26b34      00bd41b9       ldr w0, [x8, 0x1bc]
+            0x04b26b38      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetLegendStatus___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetLegendStatus() const:
+            0x04b26b30      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetLegendStatus() const
+            0x04b26b34      00bd41b9       ldr w0, [x8, 0x1bc]
+            0x04b26b38      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetLegendStatus_onlinemode::LegendStatus__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetLegendStatus(onlinemode::LegendStatus) const:
+; onlinemode::ParameterPlayerDefine::SetLegendStatus(onlinemode::Legen
+; dStatus) const
+            0x04b26b3c      081440f9       ldr x8, [x0, 0x28]
+            0x04b26b40      01bd01b9       str w1, [x8, 0x1bc]
+            0x04b26b44      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetLegendStatus_onlinemode::LegendStatus__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetLegendStatus(onlinemode::LegendStatus) const:
+; onlinemode::ParameterPlayerDefine::SetLegendStatus(onlinemode::Legen
+; dStatus) const
+            0x04b26b3c      081440f9       ldr x8, [x0, 0x28]
+            0x04b26b40      01bd01b9       str w1, [x8, 0x1bc]
+            0x04b26b44      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetRarity___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetRarity() const:
+            0x04b26b48      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetRarity() const
+            0x04b26b4c      00c141b9       ldr w0, [x8, 0x1c0]
+            0x04b26b50      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetRarity___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetRarity() const:
+            0x04b26b48      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetRarity() const
+            0x04b26b4c      00c141b9       ldr w0, [x8, 0x1c0]
+            0x04b26b50      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetRarity_onlinemode::Rarity__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetRarity(onlinemode::Rarity) const:
+; onlinemode::ParameterPlayerDefine::SetRarity(onlinemode::Rarity) con
+; st
+            0x04b26b54      081440f9       ldr x8, [x0, 0x28]
+            0x04b26b58      01c101b9       str w1, [x8, 0x1c0]
+            0x04b26b5c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetRarity_onlinemode::Rarity__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetRarity(onlinemode::Rarity) const:
+; onlinemode::ParameterPlayerDefine::SetRarity(onlinemode::Rarity) con
+; st
+            0x04b26b54      081440f9       ldr x8, [x0, 0x28]
+            0x04b26b58      01c101b9       str w1, [x8, 0x1c0]
+            0x04b26b5c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetMasterId___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetMasterId() const:
+            0x04b26b60      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetMasterId() const
+            0x04b26b64      00e940f9       ldr x0, [x8, 0x1d0]
+            0x04b26b68      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetMasterId___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetMasterId() const:
+            0x04b26b60      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetMasterId() const
+            0x04b26b64      00e940f9       ldr x0, [x8, 0x1d0]
+            0x04b26b68      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetMasterId_unsigned_long__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetMasterId(unsigned long) const:
+            0x04b26b6c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetMasterId(unsigned long) const
+            0x04b26b70      01e900f9       str x1, [x8, 0x1d0]
+            0x04b26b74      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetMasterId_unsigned_long__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetMasterId(unsigned long) const:
+            0x04b26b6c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetMasterId(unsigned long) const
+            0x04b26b70      01e900f9       str x1, [x8, 0x1d0]
+            0x04b26b74      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetPlayerId___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetPlayerId() const:
+            0x04b26b78      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetPlayerId() const
+            0x04b26b7c      00c142f8       ldur x0, [x8, 0x2c]
+            0x04b26b80      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetPlayerId___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetPlayerId() const:
+            0x04b26b78      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetPlayerId() const
+            0x04b26b7c      00c142f8       ldur x0, [x8, 0x2c]
+            0x04b26b80      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetPlayerId_common::PlayerId__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetPlayerId(common::PlayerId) const:
+; onlinemode::ParameterPlayerDefine::SetPlayerId(common::PlayerId) con
+; st
+            0x04b26b84      081440f9       ldr x8, [x0, 0x28]
+            0x04b26b88      01c102f8       stur x1, [x8, 0x2c]
+            0x04b26b8c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetPlayerId_common::PlayerId__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetPlayerId(common::PlayerId) const:
+; onlinemode::ParameterPlayerDefine::SetPlayerId(common::PlayerId) con
+; st
+            0x04b26b84      081440f9       ldr x8, [x0, 0x28]
+            0x04b26b88      01c102f8       stur x1, [x8, 0x2c]
+            0x04b26b8c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetAppearanceId___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetAppearanceId() const:
+            0x04b26b90      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetAppearanceId() const
+            0x04b26b94      00b141b9       ldr w0, [x8, 0x1b0]
+            0x04b26b98      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetAppearanceId___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetAppearanceId() const:
+            0x04b26b90      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetAppearanceId() const
+            0x04b26b94      00b141b9       ldr w0, [x8, 0x1b0]
+            0x04b26b98      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetAppearanceId_unsigned_int__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetAppearanceId(unsigned int) const:
+; onlinemode::ParameterPlayerDefine::SetAppearanceId(unsigned int) con
+; st
+            0x04b26b9c      081440f9       ldr x8, [x0, 0x28]
+            0x04b26ba0      01b101b9       str w1, [x8, 0x1b0]
+            0x04b26ba4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetAppearanceId_unsigned_int__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetAppearanceId(unsigned int) const:
+; onlinemode::ParameterPlayerDefine::SetAppearanceId(unsigned int) con
+; st
+            0x04b26b9c      081440f9       ldr x8, [x0, 0x28]
+            0x04b26ba0      01b101b9       str w1, [x8, 0x1b0]
+            0x04b26ba4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetSameCode___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetSameCode() const:
+            0x04b26ba8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetSameCode() const
+            0x04b26bac      00b541b9       ldr w0, [x8, 0x1b4]
+            0x04b26bb0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetSameCode___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetSameCode() const:
+            0x04b26ba8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetSameCode() const
+            0x04b26bac      00b541b9       ldr w0, [x8, 0x1b4]
+            0x04b26bb0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetSameCode_unsigned_int__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetSameCode(unsigned int) const:
+            0x04b26bb4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetSameCode(unsigned int) const
+            0x04b26bb8      01b501b9       str w1, [x8, 0x1b4]
+            0x04b26bbc      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetSameCode_unsigned_int__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetSameCode(unsigned int) const:
+            0x04b26bb4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetSameCode(unsigned int) const
+            0x04b26bb8      01b501b9       str w1, [x8, 0x1b4]
+            0x04b26bbc      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetSerialId___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetSerialId() const:
+            0x04b26bc0      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetSerialId() const
+            0x04b26bc4      00e540f9       ldr x0, [x8, 0x1c8]
+            0x04b26bc8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetSerialId___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetSerialId() const:
+            0x04b26bc0      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetSerialId() const
+            0x04b26bc4      00e540f9       ldr x0, [x8, 0x1c8]
+            0x04b26bc8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetSerialId_unsigned_long_:
+            ;-- onlinemode::ParameterPlayerDefine::SetSerialId(unsigned long):
+            0x04b26bcc      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetSerialId(unsigned long)
+            0x04b26bd0      01e500f9       str x1, [x8, section..dynsym]
+            0x04b26bd4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetSerialId_unsigned_long_:
+            ;-- onlinemode::ParameterPlayerDefine::SetSerialId(unsigned long):
+            0x04b26bcc      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetSerialId(unsigned long)
+            0x04b26bd0      01e500f9       str x1, [x8, section..dynsym]
+            0x04b26bd4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetUserId_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetUserId(unsigned int):
+            0x04b26bd8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetUserId(unsigned int)
+            0x04b26bdc      01b901b9       str w1, [x8, 0x1b8]
+            0x04b26be0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetUserId_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetUserId(unsigned int):
+            0x04b26bd8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetUserId(unsigned int)
+            0x04b26bdc      01b901b9       str w1, [x8, 0x1b8]
+            0x04b26be0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetCreateTime___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetCreateTime() const:
+            0x04b26be4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetCreateTime() const
+            0x04b26be8      001942b9       ldr w0, [x8, 0x218]
+            0x04b26bec      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetCreateTime___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetCreateTime() const:
+            0x04b26be4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetCreateTime() const
+            0x04b26be8      001942b9       ldr w0, [x8, 0x218]
+            0x04b26bec      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetCreateTime_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetCreateTime(unsigned int):
+            0x04b26bf0      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetCreateTime(unsigned int)
+            0x04b26bf4      011902b9       str w1, [x8, 0x218]
+            0x04b26bf8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetCreateTime_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetCreateTime(unsigned int):
+            0x04b26bf0      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetCreateTime(unsigned int)
+            0x04b26bf4      011902b9       str w1, [x8, 0x218]
+            0x04b26bf8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetOverallFromServer_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetOverallFromServer(unsigned int):
+; onlinemode::ParameterPlayerDefine::SetOverallFromServer(unsigned int
+            0x04b26bfc      081440f9       ldr x8, [x0, 0x28]
+            0x04b26c00      011d02b9       str w1, [x8, 0x21c]
+            0x04b26c04      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetOverallFromServer_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetOverallFromServer(unsigned int):
+; onlinemode::ParameterPlayerDefine::SetOverallFromServer(unsigned int
+            0x04b26bfc      081440f9       ldr x8, [x0, 0x28]
+            0x04b26c00      011d02b9       str w1, [x8, 0x21c]
+            0x04b26c04      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetPlayable___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetPlayable() const:
+            0x04b26c08      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetPlayable() const
+            0x04b26c0c      00d941b9       ldr w0, [x8, 0x1d8]
+            0x04b26c10      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetPlayable___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetPlayable() const:
+            0x04b26c08      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetPlayable() const
+            0x04b26c0c      00d941b9       ldr w0, [x8, 0x1d8]
+            0x04b26c10      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetPlayable_onlinemode::PlayableType__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetPlayable(onlinemode::PlayableType) const:
+; onlinemode::ParameterPlayerDefine::SetPlayable(onlinemode::PlayableT
+; ype) const
+            0x04b26c14      081440f9       ldr x8, [x0, 0x28]
+            0x04b26c18      01d901b9       str w1, [x8, 0x1d8]
+            0x04b26c1c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetPlayable_onlinemode::PlayableType__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetPlayable(onlinemode::PlayableType) const:
+; onlinemode::ParameterPlayerDefine::SetPlayable(onlinemode::PlayableT
+; ype) const
+            0x04b26c14      081440f9       ldr x8, [x0, 0x28]
+            0x04b26c18      01d901b9       str w1, [x8, 0x1d8]
+            0x04b26c1c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetContractPeriodMax___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetContractPeriodMax() const:
+            0x04b26c20      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetContractPeriodMax() const
+            0x04b26c24      00dd41b9       ldr w0, [x8, 0x1dc]
+            0x04b26c28      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetContractPeriodMax___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetContractPeriodMax() const:
+            0x04b26c20      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetContractPeriodMax() const
+            0x04b26c24      00dd41b9       ldr w0, [x8, 0x1dc]
+            0x04b26c28      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetContractPeriodMax_unsigned_int__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetContractPeriodMax(unsigned int) const:
+; onlinemode::ParameterPlayerDefine::SetContractPeriodMax(unsigned int
+; ) const
+            0x04b26c2c      081440f9       ldr x8, [x0, 0x28]
+            0x04b26c30      01dd01b9       str w1, [x8, 0x1dc]
+            0x04b26c34      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetContractPeriodMax_unsigned_int__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetContractPeriodMax(unsigned int) const:
+; onlinemode::ParameterPlayerDefine::SetContractPeriodMax(unsigned int
+; ) const
+            0x04b26c2c      081440f9       ldr x8, [x0, 0x28]
+            0x04b26c30      01dd01b9       str w1, [x8, 0x1dc]
+            0x04b26c34      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetContractPeriod___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetContractPeriod() const:
+            0x04b26c38      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetContractPeriod() const
+            0x04b26c3c      00e141b9       ldr w0, [x8, 0x1e0]
+            0x04b26c40      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetContractPeriod___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetContractPeriod() const:
+            0x04b26c38      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetContractPeriod() const
+            0x04b26c3c      00e141b9       ldr w0, [x8, 0x1e0]
+            0x04b26c40      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetContractPeriod_unsigned_int__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetContractPeriod(unsigned int) const:
+; onlinemode::ParameterPlayerDefine::SetContractPeriod(unsigned int) c
+; onst
+            0x04b26c44      081440f9       ldr x8, [x0, 0x28]
+            0x04b26c48      01e101b9       str w1, [x8, 0x1e0]
+            0x04b26c4c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetContractPeriod_unsigned_int__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetContractPeriod(unsigned int) const:
+; onlinemode::ParameterPlayerDefine::SetContractPeriod(unsigned int) c
+; onst
+            0x04b26c44      081440f9       ldr x8, [x0, 0x28]
+            0x04b26c48      01e101b9       str w1, [x8, 0x1e0]
+            0x04b26c4c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetContractPeriodRequest___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetContractPeriodRequest() const:
+            0x04b26c50      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetContractPeriodRequest() const
+            0x04b26c54      00e541b9       ldr w0, [x8, 0x1e4]
+            0x04b26c58      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetContractPeriodRequest___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetContractPeriodRequest() const:
+            0x04b26c50      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetContractPeriodRequest() const
+            0x04b26c54      00e541b9       ldr w0, [x8, 0x1e4]
+            0x04b26c58      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetNextSalary___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetNextSalary() const:
+            0x04b26c5c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetNextSalary() const
+            0x04b26c60      00ed41b9       ldr w0, [x8, 0x1ec]
+            0x04b26c64      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetNextSalary___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetNextSalary() const:
+            0x04b26c5c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetNextSalary() const
+            0x04b26c60      00ed41b9       ldr w0, [x8, 0x1ec]
+            0x04b26c64      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetNextSalary_unsigned_int__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetNextSalary(unsigned int) const:
+            0x04b26c68      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetNextSalary(unsigned int) const
+            0x04b26c6c      01ed01b9       str w1, [x8, 0x1ec]
+            0x04b26c70      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetNextSalary_unsigned_int__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetNextSalary(unsigned int) const:
+            0x04b26c68      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetNextSalary(unsigned int) const
+            0x04b26c6c      01ed01b9       str w1, [x8, 0x1ec]
+            0x04b26c70      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetContractPeriodRequest_unsigned_int__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetContractPeriodRequest(unsigned int) const:
+; onlinemode::ParameterPlayerDefine::SetContractPeriodRequest(unsigned
+; int) const
+            0x04b26c74      081440f9       ldr x8, [x0, 0x28]
+            0x04b26c78      01e501b9       str w1, [x8, 0x1e4]
+            0x04b26c7c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetContractPeriodRequest_unsigned_int__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetContractPeriodRequest(unsigned int) const:
+; onlinemode::ParameterPlayerDefine::SetContractPeriodRequest(unsigned
+; int) const
+            0x04b26c74      081440f9       ldr x8, [x0, 0x28]
+            0x04b26c78      01e501b9       str w1, [x8, 0x1e4]
+            0x04b26c7c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetContractSalary_unsigned_int__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetContractSalary(unsigned int) const:
+; onlinemode::ParameterPlayerDefine::GetContractSalary(unsigned int) c
+; onst
+            0x04b26c80      3f100071       cmp w1, 4
+        â”Œâ”€< 0x04b26c84      a8000054       b.hi 0x4b26c98
+        â”‚   0x04b26c88      081440f9       ldr x8, [x0, 0x28]
+            ;-- method.onlinemode::ParameterPlayerDefine.GetContractSalary_unsigned_int__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetContractSalary(unsigned int) const:
+; onlinemode::ParameterPlayerDefine::GetContractSalary(unsigned int) c
+; onst
+            0x04b26c80      3f100071       cmp w1, 4
+        â”Œâ”€< 0x04b26c84      a8000054       b.hi 0x4b26c98
+        â”‚   0x04b26c88      081440f9       ldr x8, [x0, 0x28]
+        â”‚   0x04b26c8c      0849218b       add x8, x8, w1, uxtw 2
+        â”‚   0x04b26c90      00f141b9       ldr w0, [x8, 0x1f0]
+        â”‚   0x04b26c94      c0035fd6       ret
+        â””â”€> 0x04b26c98      e0031f2a       mov w0, wzr
+            0x04b26c9c      c0035fd6       ret
+            ;-- onlinemode::ParameterPlayerDefine::SetContractSalaryListFromJson(Json::Value) const:
+; onlinemode::ParameterPlayerDefine::SetContractSalaryListFromJson(Jso
+; n::Value) const
+            0x04b26ca0      28204039       ldrb w8, [x1, 8]
+        â”Œâ”€< 0x04b26ca4      88160034       cbz w8, 0x4b26f74
+        â”‚   0x04b26ca8      1f1d0071       cmp w8, 7
+            ;-- method.onlinemode::ParameterPlayerDefine.GetContractStatus___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetContractStatus() const:
+            0x04b26f78      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetContractStatus() const
+            0x04b26f7c      001142b9       ldr w0, [x8, 0x210]
+            0x04b26f80      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetContractStatus_onlinemode::ContractStatus__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetContractStatus(onlinemode::ContractStatus) const:
+; onlinemode::ParameterPlayerDefine::SetContractStatus(onlinemode::Con
+; tractStatus) const
+            0x04b26f84      081440f9       ldr x8, [x0, 0x28]
+            0x04b26f88      011102b9       str w1, [x8, 0x210]
+            0x04b26f8c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetContractStatus_onlinemode::ContractStatus__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetContractStatus(onlinemode::ContractStatus) const:
+; onlinemode::ParameterPlayerDefine::SetContractStatus(onlinemode::Con
+; tractStatus) const
+            0x04b26f84      081440f9       ldr x8, [x0, 0x28]
+            0x04b26f88      011102b9       str w1, [x8, 0x210]
+            0x04b26f8c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetDeleteType___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetDeleteType() const:
+            0x04b26f90      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetDeleteType() const
+            0x04b26f94      001542b9       ldr w0, [x8, 0x214]
+            0x04b26f98      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetDeleteType___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetDeleteType() const:
+            0x04b26f90      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetDeleteType() const
+            0x04b26f94      001542b9       ldr w0, [x8, 0x214]
+            0x04b26f98      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetDeleteType_unsigned_int__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetDeleteType(unsigned int) const:
+            0x04b26f9c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetDeleteType(unsigned int) const
+            0x04b26fa0      011502b9       str w1, [x8, 0x214]
+            0x04b26fa4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetDeleteType_unsigned_int__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetDeleteType(unsigned int) const:
+            0x04b26f9c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetDeleteType(unsigned int) const
+            0x04b26fa0      011502b9       str w1, [x8, 0x214]
+            0x04b26fa4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetPlayerCategory___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetPlayerCategory() const:
+            0x04b26fa8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetPlayerCategory() const
+            0x04b26fac      000942b9       ldr w0, [x8, 0x208]
+            0x04b26fb0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetPlayerCategory___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetPlayerCategory() const:
+            0x04b26fa8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetPlayerCategory() const
+            0x04b26fac      000942b9       ldr w0, [x8, 0x208]
+            0x04b26fb0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetPlayerCategory_onlinemode::PlayerCategory__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetPlayerCategory(onlinemode::PlayerCategory) const:
+; onlinemode::ParameterPlayerDefine::SetPlayerCategory(onlinemode::Pla
+; yerCategory) const
+            0x04b26fb4      081440f9       ldr x8, [x0, 0x28]
+            0x04b26fb8      010902b9       str w1, [x8, 0x208]
+            0x04b26fbc      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetPlayerCategory_onlinemode::PlayerCategory__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetPlayerCategory(onlinemode::PlayerCategory) const:
+; onlinemode::ParameterPlayerDefine::SetPlayerCategory(onlinemode::Pla
+; yerCategory) const
+            0x04b26fb4      081440f9       ldr x8, [x0, 0x28]
+            0x04b26fb8      010902b9       str w1, [x8, 0x208]
+            0x04b26fbc      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetGrowthStartAge___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetGrowthStartAge() const:
+            0x04b26fc0      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetGrowthStartAge() const
+            0x04b26fc4      00a14839       ldrb w0, [x8, 0x228]
+            0x04b26fc8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetGrowthStartAge___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetGrowthStartAge() const:
+            0x04b26fc0      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetGrowthStartAge() const
+            0x04b26fc4      00a14839       ldrb w0, [x8, 0x228]
+            0x04b26fc8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetGrowthStartAge_unsigned_char__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetGrowthStartAge(unsigned char) const:
+; onlinemode::ParameterPlayerDefine::SetGrowthStartAge(unsigned char)
+; const
+            0x04b26fcc      081440f9       ldr x8, [x0, 0x28]
+            0x04b26fd0      01a10839       strb w1, [x8, 0x228]
+            0x04b26fd4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetGrowthStartAge_unsigned_char__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetGrowthStartAge(unsigned char) const:
+; onlinemode::ParameterPlayerDefine::SetGrowthStartAge(unsigned char)
+; const
+            0x04b26fcc      081440f9       ldr x8, [x0, 0x28]
+            0x04b26fd0      01a10839       strb w1, [x8, 0x228]
+            0x04b26fd4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetGrowthListBase___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetGrowthListBase() const:
+            0x04b26fd8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetGrowthListBase() const
+            0x04b26fdc      00c10891       add x0, x8, 0x230
+            0x04b26fe0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetGrowthListBase___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetGrowthListBase() const:
+            0x04b26fd8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetGrowthListBase() const
+            0x04b26fdc      00c10891       add x0, x8, 0x230
+            0x04b26fe0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetGrowthListTraining___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetGrowthListTraining() const:
+            0x04b26fe4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetGrowthListTraining() const
+            0x04b26fe8      00210991       add x0, x8, 0x248
+            0x04b26fec      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetGrowthListTraining___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetGrowthListTraining() const:
+            0x04b26fe4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetGrowthListTraining() const
+            0x04b26fe8      00210991       add x0, x8, 0x248
+            0x04b26fec      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetGrowthListBase_cobra::stl::vector_unsigned_char__cobra::stl::Allocator_unsigned_char____const_:
+            ;-- onlinemode::ParameterPlayerDefine::SetGrowthListBase(cobra::stl::vector<unsigned char, cobra::stl::Allocator<unsigned char> > const&):
+; onlinemode::ParameterPlayerDefine::SetGrowthListBase(cobra::stl::vec
+; tor<unsigned char, cobra::stl::Allocator<unsigned char> > const&)
+            0x04b26ff0      081440f9       ldr x8, [x0, 0x28]
+            0x04b26ff4      00c10891       add x0, x8, 0x230
+            0x04b26ff8      1f0001eb       cmp x0, x1
+        â•Ž   ;-- method.onlinemode::ParameterPlayerDefine.SetGrowthListBase_cobra::stl::vector_unsigned_char__cobra::stl::Allocator_unsigned_char____const_:
+        â•Ž   ;-- onlinemode::ParameterPlayerDefine::SetGrowthListBase(cobra::stl::vector<unsigned char, cobra::stl::Allocator<unsigned char> > const&):
+; onlinemode::ParameterPlayerDefine::SetGrowthListBase(cobra::stl::vec
+; tor<unsigned char, cobra::stl::Allocator<unsigned char> > const&)
+        â•Ž   0x04b26ff0      081440f9       ldr x8, [x0, 0x28]
+        â•Ž   0x04b26ff4      00c10891       add x0, x8, 0x230
+        â•Ž   0x04b26ff8      1f0001eb       cmp x0, x1
+       â”Œâ”€â”€< 0x04b26ffc      80000054       b.eq 0x4b2700c
+       â”‚â•Ž   0x04b27000      280840a9       ldp x8, x2, [x1]
+       â”‚â•Ž   0x04b27004      e10308aa       mov x1, x8
+       â”‚â””â”€< 0x04b27008      158bdd17       b 0x4289c5c
+       â””â”€â”€> 0x04b2700c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetGrowthListTraining_cobra::stl::vector_unsigned_char__cobra::stl::Allocator_unsigned_char____const_:
+            ;-- onlinemode::ParameterPlayerDefine::SetGrowthListTraining(cobra::stl::vector<unsigned char, cobra::stl::Allocator<unsigned char> > const&):
+; onlinemode::ParameterPlayerDefine::SetGrowthListTraining(cobra::stl:
+; :vector<unsigned char, cobra::stl::Allocator<unsigned char> > const&)
+            0x04b27010      081440f9       ldr x8, [x0, 0x28]
+            0x04b27014      00210991       add x0, x8, 0x248
+            0x04b27018      1f0001eb       cmp x0, x1
+        â•Ž   ;-- method.onlinemode::ParameterPlayerDefine.SetGrowthListTraining_cobra::stl::vector_unsigned_char__cobra::stl::Allocator_unsigned_char____const_:
+        â•Ž   ;-- onlinemode::ParameterPlayerDefine::SetGrowthListTraining(cobra::stl::vector<unsigned char, cobra::stl::Allocator<unsigned char> > const&):
+; onlinemode::ParameterPlayerDefine::SetGrowthListTraining(cobra::stl:
+; :vector<unsigned char, cobra::stl::Allocator<unsigned char> > const&)
+        â•Ž   0x04b27010      081440f9       ldr x8, [x0, 0x28]
+        â•Ž   0x04b27014      00210991       add x0, x8, 0x248
+        â•Ž   0x04b27018      1f0001eb       cmp x0, x1
+       â”Œâ”€â”€< 0x04b2701c      80000054       b.eq 0x4b2702c
+       â”‚â•Ž   0x04b27020      280840a9       ldp x8, x2, [x1]
+       â”‚â•Ž   0x04b27024      e10308aa       mov x1, x8
+       â”‚â””â”€< 0x04b27028      0d8bdd17       b 0x4289c5c
+       â””â”€â”€> 0x04b2702c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetOriginalName_char_const_:
+            ;-- onlinemode::ParameterPlayerDefine::SetOriginalName(char const*):
+            0x04b27030      091440f9       ldr x9, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetOriginalName(char const*)
+            0x04b27034      e8031faa       mov x8, xzr
+            0x04b27038      2a810991       add x10, x9, 0x260
+            ;-- method.onlinemode::ParameterPlayerDefine.SetOriginalName_char_const_:
+            ;-- onlinemode::ParameterPlayerDefine::SetOriginalName(char const*):
+            0x04b27030      091440f9       ldr x9, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetOriginalName(char const*)
+            0x04b27034      e8031faa       mov x8, xzr
+            0x04b27038      2a810991       add x10, x9, 0x260
+        â”Œâ”€> 0x04b2703c      2b686838       ldrb w11, [x1, x8]
+       â”Œâ”€â”€< 0x04b27040      cb000034       cbz w11, 0x4b27058
+       â”‚â•Ž   0x04b27044      4b692838       strb w11, [x10, x8]
+       â”‚â•Ž   0x04b27048      08050091       add x8, x8, 1
+       â”‚â•Ž   0x04b2704c      1ff500f1       cmp x8, 0x3d                ; '='
+       â”‚â””â”€< 0x04b27050      61ffff54       b.ne 0x4b2703c
+       â”‚    0x04b27054      c0035fd6       ret
+       â””â”€â”€> 0x04b27058      2801088b       add x8, x9, x8
+            0x04b2705c      1f810939       strb wzr, [x8, 0x260]
+            0x04b27060      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetOriginalNameJp_char_const_:
+            ;-- onlinemode::ParameterPlayerDefine::SetOriginalNameJp(char const*):
+            0x04b27064      091440f9       ldr x9, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetOriginalNameJp(char const*)
+            0x04b27068      e8031faa       mov x8, xzr
+            0x04b2706c      2a750a91       add x10, x9, 0x29d
+            ;-- method.onlinemode::ParameterPlayerDefine.SetOriginalNameJp_char_const_:
+            ;-- onlinemode::ParameterPlayerDefine::SetOriginalNameJp(char const*):
+            0x04b27064      091440f9       ldr x9, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetOriginalNameJp(char const*)
+            0x04b27068      e8031faa       mov x8, xzr
+            0x04b2706c      2a750a91       add x10, x9, 0x29d
+        â”Œâ”€> 0x04b27070      2b686838       ldrb w11, [x1, x8]
+       â”Œâ”€â”€< 0x04b27074      cb000034       cbz w11, 0x4b2708c
+       â”‚â•Ž   0x04b27078      4b692838       strb w11, [x10, x8]
+       â”‚â•Ž   0x04b2707c      08050091       add x8, x8, 1
+       â”‚â•Ž   0x04b27080      1ff500f1       cmp x8, 0x3d                ; '='
+       â”‚â””â”€< 0x04b27084      61ffff54       b.ne 0x4b27070
+       â”‚    0x04b27088      c0035fd6       ret
+       â””â”€â”€> 0x04b2708c      2801088b       add x8, x9, x8
+            0x04b27090      1f750a39       strb wzr, [x8, 0x29d]
+            0x04b27094      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetSeasonDataType___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetSeasonDataType() const:
+            0x04b27098      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetSeasonDataType() const
+            0x04b2709c      00dd42b9       ldr w0, [x8, 0x2dc]
+            0x04b270a0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetSeasonDataType___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetSeasonDataType() const:
+            0x04b27098      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetSeasonDataType() const
+            0x04b2709c      00dd42b9       ldr w0, [x8, 0x2dc]
+            0x04b270a0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetSeasonDataTypeRaw_bool__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetSeasonDataTypeRaw(bool) const:
+            0x04b270a4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetSeasonDataTypeRaw(bool) const
+        â”Œâ”€< 0x04b270a8      c1000037       tbnz w1, 0, 0x4b270c0
+        â”‚   0x04b270ac      090542b9       ldr w9, [x8, 0x204]
+            ;-- method.onlinemode::ParameterPlayerDefine.GetSeasonDataTypeRaw_bool__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetSeasonDataTypeRaw(bool) const:
+            0x04b270a4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetSeasonDataTypeRaw(bool) const
+        â”Œâ”€< 0x04b270a8      c1000037       tbnz w1, 0, 0x4b270c0
+        â”‚   0x04b270ac      090542b9       ldr w9, [x8, 0x204]
+        â”‚   0x04b270b0      3f090071       cmp w9, 2
+       â”Œâ”€â”€< 0x04b270b4      62000054       b.hs 0x4b270c0
+       â”‚â”‚   0x04b270b8      a0058052       mov w0, 0x2d                ; '-'
+       â”‚â”‚   0x04b270bc      c0035fd6       ret
+       â””â””â”€> 0x04b270c0      09214d39       ldrb w9, [x8, 0x348]
+        â”Œâ”€< 0x04b270c4      89010034       cbz w9, 0x4b270f4
+        â”‚   0x04b270c8      486201d0       adrp x8, reloc.setPxSceneLimitsMaxNbBroadPhaseOverlaps_physx::PxSceneLimits__unsigned_int_ ; 0x7771000
+        â”‚   0x04b270cc      08c146f9       ldr x8, [x8, 0xd80]
+        â”‚   0x04b270d0      080140f9       ldr x8, [x8]
+        â”‚   0x04b270d4      006960b9       ldr w0, [x8, 0x2068]
+        â”‚   0x04b270d8      1f640071       cmp w0, 0x19
+       â”Œâ”€â”€< 0x04b270dc      a3000054       b.lo 0x4b270f0
+      â”Œâ”€â”€â”€> 0x04b270e0      486201d0       adrp x8, reloc.setPxSceneLimitsMaxNbBroadPhaseOverlaps_physx::PxSceneLimits__unsigned_int_ ; 0x7771000
+      â•Žâ”‚â”‚   0x04b270e4      08c146f9       ldr x8, [x8, 0xd80]
+      â•Žâ”‚â”‚   0x04b270e8      080140f9       ldr x8, [x8]
+      â•Žâ”‚â”‚   0x04b270ec      006960b9       ldr w0, [x8, 0x2068]
+     â”Œâ”€â””â”€â”€> 0x04b270f0      c0035fd6       ret
+     â•Žâ•Ž â””â”€> 0x04b270f4      00cd4039       ldrb w0, [x8, 0x33]
+     â•Žâ•Ž     0x04b270f8      1f640071       cmp w0, 0x19
+     â•Žâ””â”€â”€â”€< 0x04b270fc      22ffff54       b.hs 0x4b270e0
+     â””â”€â”€â”€â”€< 0x04b27100      fcffff17       b 0x4b270f0
+            ;-- method.onlinemode::ParameterPlayerDefine.SetSeasonDataType_onlinemode::SeasonDataType__const:
+            ;-- onlinemode::ParameterPlayerDefine::SetSeasonDataType(onlinemode::SeasonDataType) const:
+; onlinemode::ParameterPlayerDefine::SetSeasonDataType(onlinemode::Sea
+; sonDataType) const
+            0x04b27104      081440f9       ldr x8, [x0, 0x28]
+            0x04b27108      01dd02b9       str w1, [x8, 0x2dc]
+            0x04b2710c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetSeasonDataType___const:
+            ;-- onlinemode::ParameterPlayerDefine::SetSeasonDataType() const:
+            0x04b27110      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetSeasonDataType() const
+            0x04b27114      0ac142f8       ldur x10, [x8, 0x2c]
+            0x04b27118      49fd78d3       lsr x9, x10, 0x38
+            ;-- method.onlinemode::ParameterPlayerDefine.IsValid___const:
+            ;-- onlinemode::ParameterPlayerDefine::IsValid() const:
+            0x04b271a8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::IsValid() const
+            0x04b271ac      08e540f9       ldr x8, [x8, 0x1c8]
+            0x04b271b0      1f0100f1       cmp x8, 0
+            0x04b271b4      e0079f1a       cset w0, ne
+            0x04b271b8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetDummyPlayerSerialId__:
+            ;-- onlinemode::ParameterPlayerDefine::SetDummyPlayerSerialId():
+            0x04b271bc      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetDummyPlayerSerialId()
+            0x04b271c0      09008092       mov x9, -1
+            0x04b271c4      09e500f9       str x9, [x8, section..dynsym]
+            ;-- method.onlinemode::ParameterPlayerDefine.SetDummyPlayerSerialId__:
+            ;-- onlinemode::ParameterPlayerDefine::SetDummyPlayerSerialId():
+            0x04b271bc      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetDummyPlayerSerialId()
+            0x04b271c0      09008092       mov x9, -1
+            0x04b271c4      09e500f9       str x9, [x8, section..dynsym]
+            0x04b271c8      c0035fd6       ret
+            ;-- onlinemode::ParameterPlayerDefine::SetParamFromTmpdb():
+            0x04b271cc      486201d0       adrp x8, reloc.setPxSceneLimitsMaxNbBroadPhaseOverlaps_physx::PxSceneLimits__unsigned_int_ ; 0x7771000 ; onlinemode::ParameterPlayerDefine::SetParamFromTmpdb()
+            0x04b271d0      083547f9       ldr x8, [x8, 0xe68]
+            0x04b271d4      090140f9       ldr x9, [x8]
+            ;-- method.onlinemode::ParameterPlayerDefine.SetFeaturedId_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetFeaturedId(unsigned int):
+            0x04b2addc      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetFeaturedId(unsigned int)
+            0x04b2ade0      015903b9       str w1, [x8, 0x358]
+            0x04b2ade4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.ClearQualityDataAll__:
+            ;-- onlinemode::ParameterPlayerDefine::ClearQualityDataAll():
+            0x04b2ade8      f553bea9       stp x21, x20, [sp, -0x20]!  ; onlinemode::ParameterPlayerDefine::ClearQualityDataAll()
+            0x04b2adec      f37b01a9       stp x19, x30, [sp, 0x10]
+            0x04b2adf0      131440f9       ldr x19, [x0, 0x28]
+            ;-- method.onlinemode::ParameterPlayerDefine.SetGrowthType_onlinemode::GrowthType_:
+            ;-- onlinemode::ParameterPlayerDefine::SetGrowthType(onlinemode::GrowthType):
+; onlinemode::ParameterPlayerDefine::SetGrowthType(onlinemode::GrowthT
+; ype)
+            0x04b2ae34      081440f9       ldr x8, [x0, 0x28]
+            0x04b2ae38      011d03b9       str w1, [x8, 0x31c]
+            0x04b2ae3c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetLimitBreakNum_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetLimitBreakNum(unsigned int):
+            0x04b2ae40      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetLimitBreakNum(unsigned int)
+            0x04b2ae44      014503b9       str w1, [x8, 0x344]
+            0x04b2ae48      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetLimitBreakNum_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetLimitBreakNum(unsigned int):
+            0x04b2ae40      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetLimitBreakNum(unsigned int)
+            0x04b2ae44      014503b9       str w1, [x8, 0x344]
+            0x04b2ae48      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetCupEntryRuleStatus_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetCupEntryRuleStatus(unsigned int):
+; onlinemode::ParameterPlayerDefine::SetCupEntryRuleStatus(unsigned in
+; t)
+            0x04b2ae4c      081440f9       ldr x8, [x0, 0x28]
+            0x04b2ae50      017903b9       str w1, [x8, 0x378]
+            0x04b2ae54      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetCupEntryRuleStatus_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetCupEntryRuleStatus(unsigned int):
+; onlinemode::ParameterPlayerDefine::SetCupEntryRuleStatus(unsigned in
+; t)
+            0x04b2ae4c      081440f9       ldr x8, [x0, 0x28]
+            0x04b2ae50      017903b9       str w1, [x8, 0x378]
+            0x04b2ae54      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetIsEnableElite_bool_:
+            ;-- onlinemode::ParameterPlayerDefine::SetIsEnableElite(bool):
+            0x04b2ae58      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetIsEnableElite(bool)
+            0x04b2ae5c      29000012       and w9, w1, 1
+            0x04b2ae60      09dd0c39       strb w9, [x8, 0x337]
+            ;-- method.onlinemode::ParameterPlayerDefine.SetIsEnableElite_bool_:
+            ;-- onlinemode::ParameterPlayerDefine::SetIsEnableElite(bool):
+            0x04b2ae58      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetIsEnableElite(bool)
+            0x04b2ae5c      29000012       and w9, w1, 1
+            0x04b2ae60      09dd0c39       strb w9, [x8, 0x337]
+            0x04b2ae64      c0035fd6       ret
+            ;-- onlinemode::ParameterPlayerDefine::PrepareDataFromJson(Json::Value const&, bool):
+; onlinemode::ParameterPlayerDefine::PrepareDataFromJson(Json::Value c
+; onst&, bool)
+            0x04b2ae68      ff0306d1       sub sp, sp, 0x180
+            0x04b2ae6c      e88b00fd       str d8, [sp, 0x110]
+            0x04b2ae70      fc6f12a9       stp x28, x27, [sp, 0x120]
+            ;-- method.onlinemode::ParameterPlayerDefine.SetUseFameBooster_bool_:
+            ;-- onlinemode::ParameterPlayerDefine::SetUseFameBooster(bool):
+            0x04b46774      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetUseFameBooster(bool)
+            0x04b46778      29000012       and w9, w1, 1
+            0x04b4677c      09d90c39       strb w9, [x8, 0x336]
+            0x04b46780      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetOrderStatus_unsigned_int__onlinemode::OrderStatus_:
+            ;-- onlinemode::ParameterPlayerDefine::SetOrderStatus(unsigned int, onlinemode::OrderStatus):
+; onlinemode::ParameterPlayerDefine::SetOrderStatus(unsigned int, onli
+; nemode::OrderStatus)
+            0x04b46784      3f080071       cmp w1, 2
+        â”Œâ”€< 0x04b46788      88000054       b.hi 0x4b46798
+        â”‚   0x04b4678c      081440f9       ldr x8, [x0, 0x28]
+            ;-- method.onlinemode::ParameterPlayerDefine.SetOrderStatus_unsigned_int__onlinemode::OrderStatus_:
+            ;-- onlinemode::ParameterPlayerDefine::SetOrderStatus(unsigned int, onlinemode::OrderStatus):
+; onlinemode::ParameterPlayerDefine::SetOrderStatus(unsigned int, onli
+; nemode::OrderStatus)
+            0x04b46784      3f080071       cmp w1, 2
+        â”Œâ”€< 0x04b46788      88000054       b.hi 0x4b46798
+        â”‚   0x04b4678c      081440f9       ldr x8, [x0, 0x28]
+        â”‚   0x04b46790      0849218b       add x8, x8, w1, uxtw 2
+        â”‚   0x04b46794      024d03b9       str w2, [x8, 0x34c]
+        â””â”€> 0x04b46798      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetLoanDealStatus_onlinemode::LOAN_DEAL_STATUS_:
+            ;-- onlinemode::ParameterPlayerDefine::SetLoanDealStatus(onlinemode::LOAN_DEAL_STATUS):
+; onlinemode::ParameterPlayerDefine::SetLoanDealStatus(onlinemode::LOA
+; N_DEAL_STATUS)
+            0x04b4679c      081440f9       ldr x8, [x0, 0x28]
+            0x04b467a0      013103b9       str w1, [x8, 0x330]
+            0x04b467a4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetLoanDealStatus_onlinemode::LOAN_DEAL_STATUS_:
+            ;-- onlinemode::ParameterPlayerDefine::SetLoanDealStatus(onlinemode::LOAN_DEAL_STATUS):
+; onlinemode::ParameterPlayerDefine::SetLoanDealStatus(onlinemode::LOA
+; N_DEAL_STATUS)
+            0x04b4679c      081440f9       ldr x8, [x0, 0x28]
+            0x04b467a0      013103b9       str w1, [x8, 0x330]
+            0x04b467a4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetMomentumValue_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetMomentumValue(unsigned int):
+            0x04b467a8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetMomentumValue(unsigned int)
+            0x04b467ac      015d03b9       str w1, [x8, 0x35c]
+            0x04b467b0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetMomentumValue_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetMomentumValue(unsigned int):
+            0x04b467a8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetMomentumValue(unsigned int)
+            0x04b467ac      015d03b9       str w1, [x8, 0x35c]
+            0x04b467b0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetBonusWT_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetBonusWT(unsigned int):
+            0x04b467b4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetBonusWT(unsigned int)
+            0x04b467b8      011103b9       str w1, [x8, 0x310]
+            0x04b467bc      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetBonusWT_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetBonusWT(unsigned int):
+            0x04b467b4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetBonusWT(unsigned int)
+            0x04b467b8      011103b9       str w1, [x8, 0x310]
+            0x04b467bc      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetEnablePlayerInLegendTeam_bool_:
+            ;-- onlinemode::ParameterPlayerDefine::SetEnablePlayerInLegendTeam(bool):
+            0x04b467c0      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetEnablePlayerInLegendTeam(bool)
+            0x04b467c4      29000012       and w9, w1, 1
+            0x04b467c8      09510c39       strb w9, [x8, 0x314]
+            ;-- method.onlinemode::ParameterPlayerDefine.SetEnablePlayerInLegendTeam_bool_:
+            ;-- onlinemode::ParameterPlayerDefine::SetEnablePlayerInLegendTeam(bool):
+            0x04b467c0      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetEnablePlayerInLegendTeam(bool)
+            0x04b467c4      29000012       and w9, w1, 1
+            0x04b467c8      09510c39       strb w9, [x8, 0x314]
+            0x04b467cc      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetRentalPlayerInfo_unsigned_char_:
+            ;-- onlinemode::ParameterPlayerDefine::SetRentalPlayerInfo(unsigned char):
+; onlinemode::ParameterPlayerDefine::SetRentalPlayerInfo(unsigned char
+            0x04b467d0      081440f9       ldr x8, [x0, 0x28]
+            0x04b467d4      01810c39       strb w1, [x8, 0x320]
+            0x04b467d8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetRentalPlayerInfo_unsigned_char_:
+            ;-- onlinemode::ParameterPlayerDefine::SetRentalPlayerInfo(unsigned char):
+; onlinemode::ParameterPlayerDefine::SetRentalPlayerInfo(unsigned char
+            0x04b467d0      081440f9       ldr x8, [x0, 0x28]
+            0x04b467d4      01810c39       strb w1, [x8, 0x320]
+            0x04b467d8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetFamePoint_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetFamePoint(unsigned int):
+            0x04b467dc      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetFamePoint(unsigned int)
+            0x04b467e0      011903b9       str w1, [x8, 0x318]
+            0x04b467e4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetFamePoint_unsigned_int_:
+            ;-- onlinemode::ParameterPlayerDefine::SetFamePoint(unsigned int):
+            0x04b467dc      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetFamePoint(unsigned int)
+            0x04b467e0      011903b9       str w1, [x8, 0x318]
+            0x04b467e4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetRentalReturnInfo_unsigned_int__unsigned_int__bool_:
+            ;-- onlinemode::ParameterPlayerDefine::SetRentalReturnInfo(unsigned int, unsigned int, bool):
+; onlinemode::ParameterPlayerDefine::SetRentalReturnInfo(unsigned int,
+; unsigned int, bool)
+            0x04b467e8      081440f9       ldr x8, [x0, 0x28]
+            0x04b467ec      69000012       and w9, w3, 1
+            0x04b467f0      012903b9       str w1, [x8, 0x328]
+            ;-- method.onlinemode::ParameterPlayerDefine.SetRentalReturnInfo_unsigned_int__unsigned_int__bool_:
+            ;-- onlinemode::ParameterPlayerDefine::SetRentalReturnInfo(unsigned int, unsigned int, bool):
+; onlinemode::ParameterPlayerDefine::SetRentalReturnInfo(unsigned int,
+; unsigned int, bool)
+            0x04b467e8      081440f9       ldr x8, [x0, 0x28]
+            0x04b467ec      69000012       and w9, w3, 1
+            0x04b467f0      012903b9       str w1, [x8, 0x328]
+            0x04b467f4      081440f9       ldr x8, [x0, 0x28]
+            0x04b467f8      022d03b9       str w2, [x8, 0x32c]
+            0x04b467fc      081440f9       ldr x8, [x0, 0x28]
+            0x04b46800      09910c39       strb w9, [x8, 0x324]
+            0x04b46804      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetIsAssociationRentalPlayer_bool_:
+            ;-- onlinemode::ParameterPlayerDefine::SetIsAssociationRentalPlayer(bool):
+; onlinemode::ParameterPlayerDefine::SetIsAssociationRentalPlayer(bool
+            0x04b46808      081440f9       ldr x8, [x0, 0x28]
+            0x04b4680c      29000012       and w9, w1, 1
+            0x04b46810      09d10c39       strb w9, [x8, 0x334]
+            ;-- method.onlinemode::ParameterPlayerDefine.SetIsAssociationRentalPlayer_bool_:
+            ;-- onlinemode::ParameterPlayerDefine::SetIsAssociationRentalPlayer(bool):
+; onlinemode::ParameterPlayerDefine::SetIsAssociationRentalPlayer(bool
+            0x04b46808      081440f9       ldr x8, [x0, 0x28]
+            0x04b4680c      29000012       and w9, w1, 1
+            0x04b46810      09d10c39       strb w9, [x8, 0x334]
+            0x04b46814      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.isQualityValid_onlinemode::QualityData_const__const:
+            ;-- onlinemode::ParameterPlayerDefine::isQualityValid(onlinemode::QualityData const&) const:
+; onlinemode::ParameterPlayerDefine::isQualityValid(onlinemode::Qualit
+; yData const&) const
+            0x04b46818      280040b9       ldr w8, [x1]
+            0x04b4681c      1f490271       cmp w8, 0x92
+        â”Œâ”€< 0x04b46820      61000054       b.ne 0x4b4682c
+            ;-- method.onlinemode::ParameterPlayerDefine.GetQualityDataCount___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetQualityDataCount() const:
+            0x04b469e8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetQualityDataCount() const
+            0x04b469ec      097541f9       ldr x9, [x8, 0x2e8]
+            0x04b469f0      087141f9       ldr x8, [x8, 0x2e0]
+            0x04b469f4      280108cb       sub x8, x9, x8
+            0x04b469f8      e9b68d52       mov w9, 0x6db7
+            0x04b469fc      08fd43d3       lsr x8, x8, 3
+            0x04b46a00      69dbb672       movk w9, 0xb6db, lsl 16
+            0x04b46a04      007d091b       mul w0, w8, w9
+            0x04b46a08      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetQualityDataCountSet___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetQualityDataCountSet() const:
+            0x04b46a0c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetQualityDataCountSet() const
+            0x04b46a10      097541f9       ldr x9, [x8, 0x2e8]
+            0x04b46a14      087141f9       ldr x8, [x8, 0x2e0]
+            ;-- method.onlinemode::ParameterPlayerDefine.GetQualityDataAll___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetQualityDataAll() const:
+            0x04b46d10      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetQualityDataAll() const
+            0x04b46d14      00810b91       add x0, x8, 0x2e0
+            0x04b46d18      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetQualityDataAll_cobra::stl::vector_onlinemode::QualityData__cobra::stl::Allocator_onlinemode::QualityData____const_:
+            ;-- onlinemode::ParameterPlayerDefine::SetQualityDataAll(cobra::stl::vector<onlinemode::QualityData, cobra::stl::Allocator<onlinemode::QualityData> > const&):
+; onlinemode::ParameterPlayerDefine::SetQualityDataAll(cobra::stl::vec
+; tor<onlinemode::QualityData, cobra::stl::Allocator<onlinemode::Quality
+; Data> > const&)
+            0x04b46d1c      081440f9       ldr x8, [x0, 0x28]
+            0x04b46d20      00810b91       add x0, x8, 0x2e0
+            0x04b46d24      1f0001eb       cmp x0, x1
+        â•Ž   ;-- method.onlinemode::ParameterPlayerDefine.SetQualityDataAll_cobra::stl::vector_onlinemode::QualityData__cobra::stl::Allocator_onlinemode::QualityData____const_:
+        â•Ž   ;-- onlinemode::ParameterPlayerDefine::SetQualityDataAll(cobra::stl::vector<onlinemode::QualityData, cobra::stl::Allocator<onlinemode::QualityData> > const&):
+; onlinemode::ParameterPlayerDefine::SetQualityDataAll(cobra::stl::vec
+; tor<onlinemode::QualityData, cobra::stl::Allocator<onlinemode::Quality
+; Data> > const&)
+        â•Ž   0x04b46d1c      081440f9       ldr x8, [x0, 0x28]
+        â•Ž   0x04b46d20      00810b91       add x0, x8, 0x2e0
+        â•Ž   0x04b46d24      1f0001eb       cmp x0, x1
+       â”Œâ”€â”€< 0x04b46d28      80000054       b.eq 0x4b46d38
+       â”‚â•Ž   0x04b46d2c      280840a9       ldp x8, x2, [x1]
+       â”‚â•Ž   0x04b46d30      e10308aa       mov x1, x8
+       â”‚â””â”€< 0x04b46d34      4877ff17       b 0x4b24a54
+       â””â”€â”€> 0x04b46d38      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.IsValidQuality_onlinemode::QualityType__const:
+            ;-- onlinemode::ParameterPlayerDefine::IsValidQuality(onlinemode::QualityType) const:
+; onlinemode::ParameterPlayerDefine::IsValidQuality(onlinemode::Qualit
+; yType) const
+            0x04b46d3c      081440f9       ldr x8, [x0, 0x28]
+            0x04b46d40      097541f9       ldr x9, [x8, 0x2e8]
+            0x04b46d44      087141f9       ldr x8, [x8, 0x2e0]
+            ;-- method.onlinemode::ParameterPlayerDefine.GetRetireBonusList___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetRetireBonusList() const:
+            0x04b46e68      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetRetireBonusList() const
+            0x04b46e6c      00e10b91       add x0, x8, 0x2f8
+            0x04b46e70      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.UpdateRetireBonusList__:
+            ;-- onlinemode::ParameterPlayerDefine::UpdateRetireBonusList():
+            0x04b46e74      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::UpdateRetireBonusList()
+            0x04b46e78      00e10b91       add x0, x8, 0x2f8
+            0x04b46e7c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.IsValidRetireBonusList__:
+            ;-- onlinemode::ParameterPlayerDefine::IsValidRetireBonusList():
+            0x04b46e80      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::IsValidRetireBonusList()
+            0x04b46e84      098141f9       ldr x9, [x8, 0x300]
+            0x04b46e88      087d41f9       ldr x8, [x8, 0x2f8]
+            0x04b46e8c      3f0108eb       cmp x9, x8
+            0x04b46e90      e0079f1a       cset w0, ne
+            0x04b46e94      c0035fd6       ret
+            ;-- method.onlinemode.GetQualityTypeFromMatchCharacteristics_match::PlayerCharacteristics_:
+            ;-- onlinemode::GetQualityTypeFromMatchCharacteristics(match::PlayerCharacteristics):
+; onlinemode::GetQualityTypeFromMatchCharacteristics(match::PlayerChar
+; acteristics)
+            0x04b46e98      08040051       sub w8, w0, 1
+            0x04b46e9c      1f410271       cmp w8, 0x90
+        â”Œâ”€< 0x04b46ea0      a8000054       b.hi 0x4b46eb4
+            ;-- method.onlinemode::ParameterPlayerDefine.GetBonusWT___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetBonusWT() const:
+            0x04b46ee0      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetBonusWT() const
+            0x04b46ee4      001143b9       ldr w0, [x8, 0x310]
+            0x04b46ee8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.IsEnablePlayerInLegendTeam___const:
+            ;-- onlinemode::ParameterPlayerDefine::IsEnablePlayerInLegendTeam() const:
+; onlinemode::ParameterPlayerDefine::IsEnablePlayerInLegendTeam() cons
+            0x04b46eec      081440f9       ldr x8, [x0, 0x28]
+            0x04b46ef0      00514c39       ldrb w0, [x8, 0x314]
+            0x04b46ef4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.IsEnablePlayerInLegendTeam___const:
+            ;-- onlinemode::ParameterPlayerDefine::IsEnablePlayerInLegendTeam() const:
+; onlinemode::ParameterPlayerDefine::IsEnablePlayerInLegendTeam() cons
+            0x04b46eec      081440f9       ldr x8, [x0, 0x28]
+            0x04b46ef0      00514c39       ldrb w0, [x8, 0x314]
+            0x04b46ef4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetFamePoint___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetFamePoint() const:
+            0x04b46ef8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetFamePoint() const
+            0x04b46efc      001943b9       ldr w0, [x8, 0x318]
+            0x04b46f00      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetFamePoint___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetFamePoint() const:
+            0x04b46ef8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetFamePoint() const
+            0x04b46efc      001943b9       ldr w0, [x8, 0x318]
+            0x04b46f00      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetRentalPlayerInfo___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetRentalPlayerInfo() const:
+            0x04b46f04      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetRentalPlayerInfo() const
+            0x04b46f08      00814c39       ldrb w0, [x8, 0x320]
+            0x04b46f0c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetRentalPlayerInfo___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetRentalPlayerInfo() const:
+            0x04b46f04      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetRentalPlayerInfo() const
+            0x04b46f08      00814c39       ldrb w0, [x8, 0x320]
+            0x04b46f0c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetRentalReturnInfo_Json::Value_const_:
+            ;-- onlinemode::ParameterPlayerDefine::SetRentalReturnInfo(Json::Value const&):
+; onlinemode::ParameterPlayerDefine::SetRentalReturnInfo(Json::Value c
+; onst&)
+            0x04b46f10      f963bca9       stp x25, x24, [sp, -0x40]!
+            0x04b46f14      f75b01a9       stp x23, x22, [sp, 0x10]
+            0x04b46f18      f55302a9       stp x21, x20, [sp, 0x20]
+            ;-- method.onlinemode::ParameterPlayerDefine.GetRentalReturnInfo__:
+            ;-- onlinemode::ParameterPlayerDefine::GetRentalReturnInfo():
+            0x04b474b0      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetRentalReturnInfo()
+            0x04b474b4      00910c91       add x0, x8, 0x324
+            0x04b474b8      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetLoanDealStatus___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetLoanDealStatus() const:
+            0x04b474bc      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetLoanDealStatus() const
+            0x04b474c0      003143b9       ldr w0, [x8, 0x330]
+            0x04b474c4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetLoanDealStatus___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetLoanDealStatus() const:
+            0x04b474bc      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetLoanDealStatus() const
+            0x04b474c0      003143b9       ldr w0, [x8, 0x330]
+            0x04b474c4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.IsAssociationRentalPlayer___const:
+            ;-- onlinemode::ParameterPlayerDefine::IsAssociationRentalPlayer() const:
+            0x04b474c8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::IsAssociationRentalPlayer() const
+            0x04b474cc      00d14c39       ldrb w0, [x8, 0x334]
+            0x04b474d0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.IsAssociationRentalPlayer___const:
+            ;-- onlinemode::ParameterPlayerDefine::IsAssociationRentalPlayer() const:
+            0x04b474c8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::IsAssociationRentalPlayer() const
+            0x04b474cc      00d14c39       ldrb w0, [x8, 0x334]
+            0x04b474d0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.isRealLegendPlayer___const:
+            ;-- onlinemode::ParameterPlayerDefine::isRealLegendPlayer() const:
+            0x04b474d4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::isRealLegendPlayer() const
+            0x04b474d8      090542b9       ldr w9, [x8, 0x204]
+            0x04b474dc      3f090071       cmp w9, 2
+            ;-- method.onlinemode::ParameterPlayerDefine.GetGrowthType___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetGrowthType() const:
+            0x04b47678      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetGrowthType() const
+            0x04b4767c      001d43b9       ldr w0, [x8, 0x31c]
+            0x04b47680      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.UseFameBooster___const:
+            ;-- onlinemode::ParameterPlayerDefine::UseFameBooster() const:
+            0x04b47684      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::UseFameBooster() const
+            0x04b47688      00d94c39       ldrb w0, [x8, 0x336]
+            0x04b4768c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.IsEnableElite___const:
+            ;-- onlinemode::ParameterPlayerDefine::IsEnableElite() const:
+            0x04b47690      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::IsEnableElite() const
+            0x04b47694      00dd4c39       ldrb w0, [x8, 0x337]
+            0x04b47698      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.IsRegulationOut___const:
+            ;-- onlinemode::ParameterPlayerDefine::IsRegulationOut() const:
+            0x04b4769c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::IsRegulationOut() const
+            0x04b476a0      00014d39       ldrb w0, [x8, 0x340]
+            0x04b476a4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.IsRegulationOut___const:
+            ;-- onlinemode::ParameterPlayerDefine::IsRegulationOut() const:
+            0x04b4769c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::IsRegulationOut() const
+            0x04b476a0      00014d39       ldrb w0, [x8, 0x340]
+            0x04b476a4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetIsRegulationOut_bool_:
+            ;-- onlinemode::ParameterPlayerDefine::SetIsRegulationOut(bool):
+            0x04b476a8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetIsRegulationOut(bool)
+            0x04b476ac      29000012       and w9, w1, 1
+            0x04b476b0      09010d39       strb w9, [x8, 0x340]
+            ;-- method.onlinemode::ParameterPlayerDefine.SetIsRegulationOut_bool_:
+            ;-- onlinemode::ParameterPlayerDefine::SetIsRegulationOut(bool):
+            0x04b476a8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetIsRegulationOut(bool)
+            0x04b476ac      29000012       and w9, w1, 1
+            0x04b476b0      09010d39       strb w9, [x8, 0x340]
+            0x04b476b4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.IsOnlineCupSeasonRegulationInAll_bool__const:
+            ;-- onlinemode::ParameterPlayerDefine::IsOnlineCupSeasonRegulationInAll(bool) const:
+; onlinemode::ParameterPlayerDefine::IsOnlineCupSeasonRegulationInAll(
+; bool) const
+            0x04b476b8      f553bea9       stp x21, x20, [sp, -0x20]!
+            0x04b476bc      f37b01a9       stp x19, x30, [sp, 0x10]
+            0x04b476c0      081440f9       ldr x8, [x0, 0x28]
+            ;-- method.onlinemode::ParameterPlayerDefine.GetCupEntryRuleStatus___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetCupEntryRuleStatus() const:
+            0x04b4776c      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetCupEntryRuleStatus() const
+            0x04b47770      ea070032       mov w10, 3
+            0x04b47774      09c541f9       ldr x9, [x8, 0x388]
+            0x04b47778      08c141f9       ldr x8, [x8, 0x380]
+            0x04b4777c      290108eb       subs x9, x9, x8
+            0x04b47780      29fd4293       asr x9, x9, 2
+            0x04b47784      e0038a1a       csel w0, wzr, w10, eq
+        â”Œâ”€< 0x04b47788      49010034       cbz w9, 0x4b477b0
+        â”‚   0x04b4778c      ea031f2a       mov w10, wzr
+       â”Œâ”€â”€> 0x04b47790      ea030a2a       mov w10, w10
+       â•Žâ”‚   0x04b47794      3f010aeb       cmp x9, x10
+      â”Œâ”€â”€â”€< 0x04b47798      e9000054       b.ls 0x4b477b4
+      â”‚â•Žâ”‚   0x04b4779c      0b796ab8       ldr w11, [x8, x10, lsl 2]
+      â”‚â•Žâ”‚   0x04b477a0      4a050011       add w10, w10, 1
+      â”‚â•Žâ”‚   0x04b477a4      5f01096b       cmp w10, w9
+      â”‚â•Žâ”‚   0x04b477a8      6001000a       and w0, w11, w0
+      â”‚â””â”€â”€< 0x04b477ac      23ffff54       b.lo 0x4b47790
+      â”‚ â””â”€> 0x04b477b0      c0035fd6       ret
+      â””â”€â”€â”€> 0x04b477b4      fe0f1ff8       str x30, [sp, -0x10]!
+            0x04b477b8      ac693997       bl sym.imp.abort
+            ;-- onlinemode::ParameterPlayerDefine::IsOnlineCupSeasonRegulationInLatest() const:
+; onlinemode::ParameterPlayerDefine::IsOnlineCupSeasonRegulationInLate
+; st() const
+            0x04b477bc      ff4302d1       sub sp, sp, 0x90
+            0x04b477c0      f63300f9       str x22, [sp, 0x60]
+            0x04b477c4      f55307a9       stp x21, x20, [sp, 0x70]
+            ;-- method.onlinemode::ParameterPlayerDefine.GetLimitBreakNum___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetLimitBreakNum() const:
+            0x04b479f8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetLimitBreakNum() const
+            0x04b479fc      004543b9       ldr w0, [x8, 0x344]
+            0x04b47a00      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetLimitBreakNumMax___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetLimitBreakNumMax() const:
+            0x04b47a04      f40f1ef8       str x20, [sp, -0x20]!       ; onlinemode::ParameterPlayerDefine::GetLimitBreakNumMax() const
+            0x04b47a08      f37b01a9       stp x19, x30, [sp, 0x10]
+            0x04b47a0c      486101d0       adrp x8, reloc.setPxSceneLimitsMaxNbBroadPhaseOverlaps_physx::PxSceneLimits__unsigned_int_ ; 0x7771000
+            ;-- method.onlinemode::ParameterPlayerDefine.IsComTeam___const:
+            ;-- onlinemode::ParameterPlayerDefine::IsComTeam() const:
+            0x04b47da4      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::IsComTeam() const
+            0x04b47da8      00214d39       ldrb w0, [x8, 0x348]
+            0x04b47dac      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetIsComTeam_bool_:
+            ;-- onlinemode::ParameterPlayerDefine::SetIsComTeam(bool):
+            0x04b47db0      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetIsComTeam(bool)
+            0x04b47db4      29000012       and w9, w1, 1
+            0x04b47db8      09210d39       strb w9, [x8, 0x348]
+            ;-- method.onlinemode::ParameterPlayerDefine.SetIsComTeam_bool_:
+            ;-- onlinemode::ParameterPlayerDefine::SetIsComTeam(bool):
+            0x04b47db0      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::SetIsComTeam(bool)
+            0x04b47db4      29000012       and w9, w1, 1
+            0x04b47db8      09210d39       strb w9, [x8, 0x348]
+            0x04b47dbc      c0035fd6       ret
+            ;-- onlinemode::ParameterPlayerDefine::GetSeasonDataTypeForSort() const:
+            0x04b47dc0      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetSeasonDataTypeForSort() const
+            0x04b47dc4      0a0542b9       ldr w10, [x8, 0x204]
+            0x04b47dc8      09dd42b9       ldr w9, [x8, 0x2dc]
+            ;-- method.onlinemode::ParameterPlayerDefine.GetFeaturedId___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetFeaturedId() const:
+            0x04b47ef8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetFeaturedId() const
+            0x04b47efc      005943b9       ldr w0, [x8, 0x358]
+            0x04b47f00      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetFeaturedIdInfo___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetFeaturedIdInfo() const:
+            0x04b47f04      4a6101d0       adrp x10, reloc.setPxSceneLimitsMaxNbBroadPhaseOverlaps_physx::PxSceneLimits__unsigned_int_ ; 0x7771000 ; onlinemode::ParameterPlayerDefine::GetFeaturedIdInfo() const
+            0x04b47f08      081440f9       ldr x8, [x0, 0x28]
+            0x04b47f0c      4ac146f9       ldr x10, [x10, 0xd80]
+            ;-- method.onlinemode::ParameterPlayerDefine.IsAssoCrashRegulationIn___const:
+            ;-- onlinemode::ParameterPlayerDefine::IsAssoCrashRegulationIn() const:
+            0x04b480c8      e0030032       mov w0, 1                   ; onlinemode::ParameterPlayerDefine::IsAssoCrashRegulationIn() const
+            0x04b480cc      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetOrderStatus_unsigned_int__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetOrderStatus(unsigned int) const:
+; onlinemode::ParameterPlayerDefine::GetOrderStatus(unsigned int) cons
+            0x04b480d0      3f080071       cmp w1, 2
+        â”Œâ”€< 0x04b480d4      a8000054       b.hi 0x4b480e8
+        â”‚   0x04b480d8      081440f9       ldr x8, [x0, 0x28]
+            ;-- method.onlinemode::ParameterPlayerDefine.GetOrderStatus_unsigned_int__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetOrderStatus(unsigned int) const:
+; onlinemode::ParameterPlayerDefine::GetOrderStatus(unsigned int) cons
+            0x04b480d0      3f080071       cmp w1, 2
+        â”Œâ”€< 0x04b480d4      a8000054       b.hi 0x4b480e8
+        â”‚   0x04b480d8      081440f9       ldr x8, [x0, 0x28]
+        â”‚   0x04b480dc      0849218b       add x8, x8, w1, uxtw 2
+        â”‚   0x04b480e0      004d43b9       ldr w0, [x8, 0x34c]
+        â”‚   0x04b480e4      c0035fd6       ret
+        â””â”€> 0x04b480e8      e0031f32       mov w0, 2
+            0x04b480ec      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetLegendReserveTeamPriorityForSort_unsigned_int__const:
+            ;-- onlinemode::ParameterPlayerDefine::GetLegendReserveTeamPriorityForSort(unsigned int) const:
+; onlinemode::ParameterPlayerDefine::GetLegendReserveTeamPriorityForSo
+; rt(unsigned int) const
+            0x04b480f0      88d500f0       adrp x8, 0x65fb000
+            0x04b480f4      08e12d91       add x8, x8, 0xb78
+            0x04b480f8      e9071e32       mov w9, 0xc
+            ;-- method.onlinemode::ParameterPlayerDefine.GetMomentumValue___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetMomentumValue() const:
+            0x04b482dc      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetMomentumValue() const
+            0x04b482e0      005d43b9       ldr w0, [x8, 0x35c]
+            0x04b482e4      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetMilestoneList___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetMilestoneList() const:
+            0x04b482e8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetMilestoneList() const
+            0x04b482ec      00810d91       add x0, x8, 0x360
+            0x04b482f0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetMilestoneList___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetMilestoneList() const:
+            0x04b482e8      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetMilestoneList() const
+            0x04b482ec      00810d91       add x0, x8, 0x360
+            0x04b482f0      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetMilestoneList_cobra::stl::vector_onlinemode::MilestoneInfo__cobra::stl::Allocator_onlinemode::MilestoneInfo____const_:
+            ;-- onlinemode::ParameterPlayerDefine::SetMilestoneList(cobra::stl::vector<onlinemode::MilestoneInfo, cobra::stl::Allocator<onlinemode::MilestoneInfo> > const&):
+; onlinemode::ParameterPlayerDefine::SetMilestoneList(cobra::stl::vect
+; or<onlinemode::MilestoneInfo, cobra::stl::Allocator<onlinemode::Milest
+; oneInfo> > const&)
+            0x04b482f4      081440f9       ldr x8, [x0, 0x28]
+            0x04b482f8      00810d91       add x0, x8, 0x360
+            0x04b482fc      1f0001eb       cmp x0, x1
+        â•Ž   ;-- method.onlinemode::ParameterPlayerDefine.SetMilestoneList_cobra::stl::vector_onlinemode::MilestoneInfo__cobra::stl::Allocator_onlinemode::MilestoneInfo____const_:
+        â•Ž   ;-- onlinemode::ParameterPlayerDefine::SetMilestoneList(cobra::stl::vector<onlinemode::MilestoneInfo, cobra::stl::Allocator<onlinemode::MilestoneInfo> > const&):
+; onlinemode::ParameterPlayerDefine::SetMilestoneList(cobra::stl::vect
+; or<onlinemode::MilestoneInfo, cobra::stl::Allocator<onlinemode::Milest
+; oneInfo> > const&)
+        â•Ž   0x04b482f4      081440f9       ldr x8, [x0, 0x28]
+        â•Ž   0x04b482f8      00810d91       add x0, x8, 0x360
+        â•Ž   0x04b482fc      1f0001eb       cmp x0, x1
+       â”Œâ”€â”€< 0x04b48300      80000054       b.eq 0x4b48310
+       â”‚â•Ž   0x04b48304      280840a9       ldp x8, x2, [x1]
+       â”‚â•Ž   0x04b48308      e10308aa       mov x1, x8
+       â”‚â””â”€< 0x04b4830c      a172ff17       b 0x4b24d90
+       â””â”€â”€> 0x04b48310      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetCupEntryRuleStatusList___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetCupEntryRuleStatusList() const:
+            0x04b48314      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetCupEntryRuleStatusList() const
+            0x04b48318      00010e91       add x0, x8, 0x380
+            0x04b4831c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.GetCupEntryRuleStatusList___const:
+            ;-- onlinemode::ParameterPlayerDefine::GetCupEntryRuleStatusList() const:
+            0x04b48314      081440f9       ldr x8, [x0, 0x28]          ; onlinemode::ParameterPlayerDefine::GetCupEntryRuleStatusList() const
+            0x04b48318      00010e91       add x0, x8, 0x380
+            0x04b4831c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerDefine.SetCupEntryRuleStatusList_cobra::stl::vector_unsigned_int__cobra::stl::Allocator_unsigned_int____const_:
+            ;-- onlinemode::ParameterPlayerDefine::SetCupEntryRuleStatusList(cobra::stl::vector<unsigned int, cobra::stl::Allocator<unsigned int> > const&):
+; onlinemode::ParameterPlayerDefine::SetCupEntryRuleStatusList(cobra::
+; stl::vector<unsigned int, cobra::stl::Allocator<unsigned int> > const&
+            0x04b48320      081440f9       ldr x8, [x0, 0x28]
+            0x04b48324      00010e91       add x0, x8, 0x380
+            0x04b48328      1f0001eb       cmp x0, x1
+        â•Ž   ;-- method.onlinemode::ParameterPlayerDefine.SetCupEntryRuleStatusList_cobra::stl::vector_unsigned_int__cobra::stl::Allocator_unsigned_int____const_:
+        â•Ž   ;-- onlinemode::ParameterPlayerDefine::SetCupEntryRuleStatusList(cobra::stl::vector<unsigned int, cobra::stl::Allocator<unsigned int> > const&):
+; onlinemode::ParameterPlayerDefine::SetCupEntryRuleStatusList(cobra::
+; stl::vector<unsigned int, cobra::stl::Allocator<unsigned int> > const&
+        â•Ž   0x04b48320      081440f9       ldr x8, [x0, 0x28]
+        â•Ž   0x04b48324      00010e91       add x0, x8, 0x380
+        â•Ž   0x04b48328      1f0001eb       cmp x0, x1
+       â”Œâ”€â”€< 0x04b4832c      80000054       b.eq 0x4b4833c
+       â”‚â•Ž   0x04b48330      280840a9       ldp x8, x2, [x1]
+       â”‚â•Ž   0x04b48334      e10308aa       mov x1, x8
+       â”‚â””â”€< 0x04b48338      3f76c417       b 0x3c65c34
+       â””â”€â”€> 0x04b4833c      c0035fd6       ret
+            ;-- method.onlinemode::ParameterPlayerPot.ParameterPlayerPot__:
+            ;-- onlinemode::ParameterPlayerPot::ParameterPlayerPot():
+            0x04b48340      686101d0       adrp x8, reloc.vtable_for_onlineapi::event::TacticsResetBoost ; 0x7776000 ; onlinemode::ParameterPlayerPot::ParameterPlayerPot()
+            0x04b48344      080946f9       ldr x8, [x8, 0xc10]
+            0x04b48348      00e4006f       movi v0.2d, 0000000000000000

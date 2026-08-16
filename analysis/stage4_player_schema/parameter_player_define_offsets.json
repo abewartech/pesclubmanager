@@ -1,0 +1,2028 @@
+[
+  {
+    "field_candidate": "Age",
+    "offsets": [
+      {
+        "offset_hex": "0x18",
+        "reads": [
+          "SetAge"
+        ],
+        "writes": [
+          "SetAge"
+        ],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": [
+          "0x04b25b14      2a140012       and w10, w1, 0x3f | 0x04b25b14      2a140012       and w10, w1, 0x3f | 0x04b25b1c      491560b3       bfi x9, x10, 0x20, 6"
+        ]
+      },
+      {
+        "offset_hex": "0x1c",
+        "reads": [
+          "GetAge"
+        ],
+        "writes": [],
+        "widths": [
+          "u8"
+        ],
+        "bitfield_evidence": [
+          "0x04b25b08      00150012       and w0, w8, 0x3f | 0x04b25b08      00150012       and w0, w8, 0x3f"
+        ]
+      }
+    ]
+  },
+  {
+    "field_candidate": "AppearanceId",
+    "offsets": [
+      {
+        "offset_hex": "0x1b0",
+        "reads": [
+          "GetAppearanceId"
+        ],
+        "writes": [
+          "SetAppearanceId"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "AssistSeason",
+    "offsets": [
+      {
+        "offset_hex": "0x174",
+        "reads": [
+          "GetAssistSeason"
+        ],
+        "writes": [
+          "SetAssistSeason"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "AssistSum",
+    "offsets": [
+      {
+        "offset_hex": "0x178",
+        "reads": [
+          "GetAssistSum"
+        ],
+        "writes": [
+          "SetAssistSum"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "AssociationRentalPlayer",
+    "offsets": [
+      {
+        "offset_hex": "0x334",
+        "reads": [
+          "IsAssociationRentalPlayer"
+        ],
+        "writes": [],
+        "widths": [
+          "u8"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "BonusWT",
+    "offsets": [
+      {
+        "offset_hex": "0x310",
+        "reads": [
+          "GetBonusWT"
+        ],
+        "writes": [
+          "SetBonusWT"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "ComTeam",
+    "offsets": [
+      {
+        "offset_hex": "0x348",
+        "reads": [
+          "IsComTeam"
+        ],
+        "writes": [],
+        "widths": [
+          "u8"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "Condition",
+    "offsets": [
+      {
+        "offset_hex": "0xf4",
+        "reads": [
+          "SetCondition"
+        ],
+        "writes": [
+          "SetCondition"
+        ],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": [
+          "0x04b26808      2a080012       and w10, w1, 7 | 0x04b26808      2a080012       and w10, w1, 7 | 0x04b26810      490968b3       bfi x9, x10, 0x18, 3"
+        ]
+      },
+      {
+        "offset_hex": "0xf7",
+        "reads": [
+          "GetCondition"
+        ],
+        "writes": [],
+        "widths": [
+          "u8"
+        ],
+        "bitfield_evidence": [
+          "0x04b267fc      00090012       and w0, w8, 7 | 0x04b267fc      00090012       and w0, w8, 7"
+        ]
+      }
+    ]
+  },
+  {
+    "field_candidate": "ContractPeriod",
+    "offsets": [
+      {
+        "offset_hex": "0x1e0",
+        "reads": [
+          "GetContractPeriod"
+        ],
+        "writes": [
+          "SetContractPeriod"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "ContractPeriodMax",
+    "offsets": [
+      {
+        "offset_hex": "0x1dc",
+        "reads": [
+          "GetContractPeriodMax"
+        ],
+        "writes": [
+          "SetContractPeriodMax"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "ContractPeriodRequest",
+    "offsets": [
+      {
+        "offset_hex": "0x1e4",
+        "reads": [
+          "GetContractPeriodRequest"
+        ],
+        "writes": [
+          "SetContractPeriodRequest"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "ContractSalary",
+    "offsets": [
+      {
+        "offset_hex": "0x1f0",
+        "reads": [
+          "GetContractSalary"
+        ],
+        "writes": [],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "ContractStatus",
+    "offsets": [
+      {
+        "offset_hex": "0x210",
+        "reads": [
+          "GetContractStatus"
+        ],
+        "writes": [
+          "SetContractStatus"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "CreateTime",
+    "offsets": [
+      {
+        "offset_hex": "0x218",
+        "reads": [
+          "GetCreateTime"
+        ],
+        "writes": [
+          "SetCreateTime"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "CupEntryRuleStatus",
+    "offsets": [
+      {
+        "offset_hex": "0x378",
+        "reads": [],
+        "writes": [
+          "SetCupEntryRuleStatus"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      },
+      {
+        "offset_hex": "0x380",
+        "reads": [
+          "GetCupEntryRuleStatus"
+        ],
+        "writes": [],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": [
+          "\u00e2\u201d\u201a\u00e2\u2022\u017d\u00e2\u201d\u201a   0x04b477a8      6001000a       and w0, w11, w0"
+        ]
+      },
+      {
+        "offset_hex": "0x388",
+        "reads": [
+          "GetCupEntryRuleStatus"
+        ],
+        "writes": [],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": [
+          "\u00e2\u201d\u201a\u00e2\u2022\u017d\u00e2\u201d\u201a   0x04b477a8      6001000a       and w0, w11, w0"
+        ]
+      }
+    ]
+  },
+  {
+    "field_candidate": "CupEntryRuleStatusList",
+    "offsets": [
+      {
+        "offset_hex": "0x380",
+        "reads": [],
+        "writes": [],
+        "widths": [
+          "pointer"
+        ],
+        "bitfield_evidence": []
+      },
+      {
+        "offset_hex": "0xc10",
+        "reads": [
+          "SetCupEntryRuleStatusList"
+        ],
+        "writes": [],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "DeleteType",
+    "offsets": [
+      {
+        "offset_hex": "0x214",
+        "reads": [
+          "GetDeleteType"
+        ],
+        "writes": [
+          "SetDeleteType"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "DummyPlayerSerialId",
+    "offsets": [
+      {
+        "offset_hex": "0xe68",
+        "reads": [
+          "SetDummyPlayerSerialId"
+        ],
+        "writes": [],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "EnableElite",
+    "offsets": [
+      {
+        "offset_hex": "0x337",
+        "reads": [
+          "IsEnableElite"
+        ],
+        "writes": [],
+        "widths": [
+          "u8"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "EnablePlayerInLegendTeam",
+    "offsets": [
+      {
+        "offset_hex": "0x314",
+        "reads": [
+          "IsEnablePlayerInLegendTeam"
+        ],
+        "writes": [
+          "SetEnablePlayerInLegendTeam"
+        ],
+        "widths": [
+          "u8"
+        ],
+        "bitfield_evidence": [
+          "0x04b467c4      29000012       and w9, w1, 1 | 0x04b467c4      29000012       and w9, w1, 1"
+        ]
+      }
+    ]
+  },
+  {
+    "field_candidate": "FamePoint",
+    "offsets": [
+      {
+        "offset_hex": "0x318",
+        "reads": [
+          "GetFamePoint"
+        ],
+        "writes": [
+          "SetFamePoint"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "FeaturedId",
+    "offsets": [
+      {
+        "offset_hex": "0x358",
+        "reads": [
+          "GetFeaturedId"
+        ],
+        "writes": [
+          "SetFeaturedId"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "GameSeason",
+    "offsets": [
+      {
+        "offset_hex": "0x164",
+        "reads": [
+          "GetGameSeason"
+        ],
+        "writes": [
+          "SetGameSeason"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "GameSum",
+    "offsets": [
+      {
+        "offset_hex": "0x168",
+        "reads": [
+          "GetGameSum"
+        ],
+        "writes": [
+          "SetGameSum"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "GoalSeason",
+    "offsets": [
+      {
+        "offset_hex": "0x16c",
+        "reads": [
+          "GetGoalSeason"
+        ],
+        "writes": [
+          "SetGoalSeason"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "GoalSum",
+    "offsets": [
+      {
+        "offset_hex": "0x170",
+        "reads": [
+          "GetGoalSum"
+        ],
+        "writes": [
+          "SetGoalSum"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "GrowthListBase",
+    "offsets": [
+      {
+        "offset_hex": "0x230",
+        "reads": [],
+        "writes": [],
+        "widths": [
+          "pointer"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "GrowthListTraining",
+    "offsets": [
+      {
+        "offset_hex": "0x248",
+        "reads": [],
+        "writes": [],
+        "widths": [
+          "pointer"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "GrowthStartAge",
+    "offsets": [
+      {
+        "offset_hex": "0x228",
+        "reads": [
+          "GetGrowthStartAge"
+        ],
+        "writes": [
+          "SetGrowthStartAge"
+        ],
+        "widths": [
+          "u8"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "GrowthType",
+    "offsets": [
+      {
+        "offset_hex": "0x31c",
+        "reads": [
+          "GetGrowthType"
+        ],
+        "writes": [
+          "SetGrowthType"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "Id",
+    "offsets": [
+      {
+        "offset_hex": "0x2c",
+        "reads": [
+          "GetId"
+        ],
+        "writes": [
+          "SetId"
+        ],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "IdExclusionSeazonDataType",
+    "offsets": [
+      {
+        "offset_hex": "0x30",
+        "reads": [
+          "GetIdExclusionSeazonDataType"
+        ],
+        "writes": [],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": [
+          "0x04b25158      00590012       and w0, w8, 0x7fffff | 0x04b25158      00590012       and w0, w8, 0x7fffff"
+        ]
+      }
+    ]
+  },
+  {
+    "field_candidate": "InjuryLength",
+    "offsets": [
+      {
+        "offset_hex": "0xf4",
+        "reads": [
+          "SetInjuryLength"
+        ],
+        "writes": [
+          "SetInjuryLength"
+        ],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": [
+          "0x04b267b8      2a1c0012       and w10, w1, 0xff | 0x04b267b8      2a1c0012       and w10, w1, 0xff | 0x04b267c0      491d60b3       bfi x9, x10, 0x20, 8"
+        ]
+      },
+      {
+        "offset_hex": "0xf8",
+        "reads": [
+          "GetInjuryLength"
+        ],
+        "writes": [],
+        "widths": [
+          "u8"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "IsAssociationRentalPlayer",
+    "offsets": [
+      {
+        "offset_hex": "0x334",
+        "reads": [],
+        "writes": [
+          "SetIsAssociationRentalPlayer"
+        ],
+        "widths": [
+          "u8"
+        ],
+        "bitfield_evidence": [
+          "0x04b4680c      29000012       and w9, w1, 1 | 0x04b4680c      29000012       and w9, w1, 1"
+        ]
+      }
+    ]
+  },
+  {
+    "field_candidate": "IsComTeam",
+    "offsets": [
+      {
+        "offset_hex": "0x204",
+        "reads": [
+          "SetIsComTeam"
+        ],
+        "writes": [],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": [
+          "0x04b47db4      29000012       and w9, w1, 1 | 0x04b47db4      29000012       and w9, w1, 1"
+        ]
+      },
+      {
+        "offset_hex": "0x2dc",
+        "reads": [
+          "SetIsComTeam"
+        ],
+        "writes": [],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": [
+          "0x04b47db4      29000012       and w9, w1, 1 | 0x04b47db4      29000012       and w9, w1, 1"
+        ]
+      },
+      {
+        "offset_hex": "0x348",
+        "reads": [],
+        "writes": [
+          "SetIsComTeam"
+        ],
+        "widths": [
+          "u8"
+        ],
+        "bitfield_evidence": [
+          "0x04b47db4      29000012       and w9, w1, 1 | 0x04b47db4      29000012       and w9, w1, 1"
+        ]
+      }
+    ]
+  },
+  {
+    "field_candidate": "IsEnableElite",
+    "offsets": [
+      {
+        "offset_hex": "0x337",
+        "reads": [],
+        "writes": [
+          "SetIsEnableElite"
+        ],
+        "widths": [
+          "u8"
+        ],
+        "bitfield_evidence": [
+          "0x04b2ae5c      29000012       and w9, w1, 1 | 0x04b2ae5c      29000012       and w9, w1, 1"
+        ]
+      }
+    ]
+  },
+  {
+    "field_candidate": "IsRegulationOut",
+    "offsets": [
+      {
+        "offset_hex": "0x340",
+        "reads": [],
+        "writes": [
+          "SetIsRegulationOut"
+        ],
+        "widths": [
+          "u8"
+        ],
+        "bitfield_evidence": [
+          "0x04b476ac      29000012       and w9, w1, 1 | 0x04b476ac      29000012       and w9, w1, 1"
+        ]
+      }
+    ]
+  },
+  {
+    "field_candidate": "LegendStatus",
+    "offsets": [
+      {
+        "offset_hex": "0x1bc",
+        "reads": [
+          "GetLegendStatus"
+        ],
+        "writes": [
+          "SetLegendStatus"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "License",
+    "offsets": [
+      {
+        "offset_hex": "0x204",
+        "reads": [
+          "GetLicense"
+        ],
+        "writes": [
+          "SetLicense"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "LimitBreakNum",
+    "offsets": [
+      {
+        "offset_hex": "0x344",
+        "reads": [
+          "GetLimitBreakNum"
+        ],
+        "writes": [
+          "SetLimitBreakNum"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "LoanDealStatus",
+    "offsets": [
+      {
+        "offset_hex": "0x330",
+        "reads": [
+          "GetLoanDealStatus"
+        ],
+        "writes": [
+          "SetLoanDealStatus"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "MarketValue",
+    "offsets": [
+      {
+        "offset_hex": "0x1a0",
+        "reads": [
+          "GetMarketValue"
+        ],
+        "writes": [
+          "SetMarketValue"
+        ],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "MasterId",
+    "offsets": [
+      {
+        "offset_hex": "0x1d0",
+        "reads": [
+          "GetMasterId"
+        ],
+        "writes": [
+          "SetMasterId"
+        ],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "MilestoneList",
+    "offsets": [
+      {
+        "offset_hex": "0x360",
+        "reads": [],
+        "writes": [],
+        "widths": [
+          "pointer"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "MomentumValue",
+    "offsets": [
+      {
+        "offset_hex": "0x35c",
+        "reads": [
+          "GetMomentumValue"
+        ],
+        "writes": [
+          "SetMomentumValue"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "MotivationTypeOnlineMode",
+    "offsets": [
+      {
+        "offset_hex": "0x20c",
+        "reads": [
+          "GetMotivationTypeOnlineMode"
+        ],
+        "writes": [],
+        "widths": [
+          "u8"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "MotivationTypeTmpdb",
+    "offsets": [
+      {
+        "offset_hex": "0xf4",
+        "reads": [
+          "GetMotivationTypeTmpdb"
+        ],
+        "writes": [],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": [
+          "0x04b26934      00751b53       ubfx w0, w8, 0x1b, 3"
+        ]
+      }
+    ]
+  },
+  {
+    "field_candidate": "MotivationValue",
+    "offsets": [
+      {
+        "offset_hex": "0x20c",
+        "reads": [
+          "GetMotivationValue"
+        ],
+        "writes": [],
+        "widths": [
+          "u8"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "Name",
+    "offsets": [
+      {
+        "offset_hex": "0x38",
+        "reads": [],
+        "writes": [],
+        "widths": [
+          "pointer"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "NamePrint",
+    "offsets": [
+      {
+        "offset_hex": "0x75",
+        "reads": [],
+        "writes": [],
+        "widths": [
+          "pointer"
+        ],
+        "bitfield_evidence": []
+      },
+      {
+        "offset_hex": "0xf7",
+        "reads": [
+          "GetNamePrint"
+        ],
+        "writes": [],
+        "widths": [
+          "u8"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "NameSimple",
+    "offsets": [
+      {
+        "offset_hex": "0x1",
+        "reads": [],
+        "writes": [],
+        "widths": [
+          "pointer"
+        ],
+        "bitfield_evidence": []
+      },
+      {
+        "offset_hex": "0x38",
+        "reads": [],
+        "writes": [],
+        "widths": [
+          "pointer"
+        ],
+        "bitfield_evidence": []
+      },
+      {
+        "offset_hex": "0x88",
+        "reads": [
+          "GetNameSimple"
+        ],
+        "writes": [],
+        "widths": [
+          "u8"
+        ],
+        "bitfield_evidence": []
+      },
+      {
+        "offset_hex": "0xf7",
+        "reads": [
+          "GetNameSimple"
+        ],
+        "writes": [],
+        "widths": [
+          "u8"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "Nationality",
+    "offsets": [
+      {
+        "offset_hex": "0xf4",
+        "reads": [
+          "SetNationality"
+        ],
+        "writes": [
+          "SetNationality"
+        ],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "NextSalary",
+    "offsets": [
+      {
+        "offset_hex": "0x1ec",
+        "reads": [
+          "GetNextSalary"
+        ],
+        "writes": [
+          "SetNextSalary"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "OrderNo",
+    "offsets": [
+      {
+        "offset_hex": "0x224",
+        "reads": [
+          "GetOrderNo"
+        ],
+        "writes": [
+          "SetOrderNo"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "OrderStatus",
+    "offsets": [
+      {
+        "offset_hex": "0x34c",
+        "reads": [
+          "GetOrderStatus"
+        ],
+        "writes": [
+          "SetOrderStatus"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "OriginalName",
+    "offsets": [
+      {
+        "offset_hex": "0x260",
+        "reads": [],
+        "writes": [],
+        "widths": [
+          "pointer"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "OriginalNameJp",
+    "offsets": [
+      {
+        "offset_hex": "0x29d",
+        "reads": [],
+        "writes": [],
+        "widths": [
+          "pointer"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "OriginalTeamId",
+    "offsets": [
+      {
+        "offset_hex": "0xdc",
+        "reads": [
+          "GetOriginalTeamId"
+        ],
+        "writes": [],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "OverallFromServer",
+    "offsets": [
+      {
+        "offset_hex": "0x21c",
+        "reads": [
+          "GetOverallFromServer"
+        ],
+        "writes": [
+          "SetOverallFromServer"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "OverAllTeamWork",
+    "offsets": [
+      {
+        "offset_hex": "0x28",
+        "reads": [
+          "GetOverAllTeamWork"
+        ],
+        "writes": [],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": [
+          "0x04b25ce8      00490c53       ubfx w0, w8, 0xc, 7"
+        ]
+      }
+    ]
+  },
+  {
+    "field_candidate": "Playable",
+    "offsets": [
+      {
+        "offset_hex": "0x1d8",
+        "reads": [
+          "GetPlayable"
+        ],
+        "writes": [
+          "SetPlayable"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "PlayerCategory",
+    "offsets": [
+      {
+        "offset_hex": "0x208",
+        "reads": [
+          "GetPlayerCategory"
+        ],
+        "writes": [
+          "SetPlayerCategory"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "PlayerId",
+    "offsets": [
+      {
+        "offset_hex": "0x2c",
+        "reads": [
+          "GetPlayerId"
+        ],
+        "writes": [
+          "SetPlayerId"
+        ],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "PlayStyle",
+    "offsets": [
+      {
+        "offset_hex": "0x18",
+        "reads": [
+          "GetPlayStyle",
+          "SetPlayStyle"
+        ],
+        "writes": [
+          "SetPlayStyle"
+        ],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": [
+          "0x04b2630c      00bd6bd3       ubfx x0, x8, 0x2b, 5",
+          "0x04b26318      2a100012       and w10, w1, 0x1f | 0x04b26318      2a100012       and w10, w1, 0x1f | 0x04b26320      491155b3       bfi x9, x10, 0x2b, 5"
+        ]
+      }
+    ]
+  },
+  {
+    "field_candidate": "PlayStyleHas",
+    "offsets": [
+      {
+        "offset_hex": "0x338",
+        "reads": [
+          "GetPlayStyleHas"
+        ],
+        "writes": [
+          "SetPlayStyleHas"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "PlayStyleHasNum",
+    "offsets": [
+      {
+        "offset_hex": "0x338",
+        "reads": [
+          "GetPlayStyleHasNum"
+        ],
+        "writes": [],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      },
+      {
+        "offset_hex": "0x33c",
+        "reads": [
+          "GetPlayStyleHasNum"
+        ],
+        "writes": [],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "PlayStyleIndex",
+    "offsets": [
+      {
+        "offset_hex": "0x18",
+        "reads": [
+          "GetPlayStyleIndex"
+        ],
+        "writes": [],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": [
+          "0x04b2636c      29bd6bd3       ubfx x9, x9, 0x2b, 5 | 0x04b2636c      29bd6bd3       ubfx x9, x9, 0x2b, 5"
+        ]
+      },
+      {
+        "offset_hex": "0x338",
+        "reads": [
+          "GetPlayStyleIndex"
+        ],
+        "writes": [],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": [
+          "0x04b2636c      29bd6bd3       ubfx x9, x9, 0x2b, 5 | 0x04b2636c      29bd6bd3       ubfx x9, x9, 0x2b, 5"
+        ]
+      },
+      {
+        "offset_hex": "0x33c",
+        "reads": [
+          "GetPlayStyleIndex"
+        ],
+        "writes": [],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": [
+          "0x04b2636c      29bd6bd3       ubfx x9, x9, 0x2b, 5 | 0x04b2636c      29bd6bd3       ubfx x9, x9, 0x2b, 5"
+        ]
+      }
+    ]
+  },
+  {
+    "field_candidate": "PointSeason",
+    "offsets": [
+      {
+        "offset_hex": "0x17c",
+        "reads": [
+          "GetPointSeason"
+        ],
+        "writes": [
+          "SetPointSeason"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "PointSum",
+    "offsets": [
+      {
+        "offset_hex": "0x180",
+        "reads": [
+          "GetPointSum"
+        ],
+        "writes": [
+          "SetPointSum"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "PositionAptitude",
+    "offsets": [
+      {
+        "offset_hex": "0x20",
+        "reads": [
+          "SetPositionAptitude"
+        ],
+        "writes": [],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": [
+          "0x04b26058      2a040012       and w10, w1, 3"
+        ]
+      }
+    ]
+  },
+  {
+    "field_candidate": "QualityDataAll",
+    "offsets": [
+      {
+        "offset_hex": "0x2e0",
+        "reads": [],
+        "writes": [],
+        "widths": [
+          "pointer"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "QualityDataCount",
+    "offsets": [
+      {
+        "offset_hex": "0x2e0",
+        "reads": [
+          "GetQualityDataCount"
+        ],
+        "writes": [],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": []
+      },
+      {
+        "offset_hex": "0x2e8",
+        "reads": [
+          "GetQualityDataCount"
+        ],
+        "writes": [],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "Rarity",
+    "offsets": [
+      {
+        "offset_hex": "0x1c0",
+        "reads": [
+          "GetRarity"
+        ],
+        "writes": [
+          "SetRarity"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "RedSeason",
+    "offsets": [
+      {
+        "offset_hex": "0x194",
+        "reads": [
+          "GetRedSeason"
+        ],
+        "writes": [
+          "SetRedSeason"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "RedSum",
+    "offsets": [
+      {
+        "offset_hex": "0x198",
+        "reads": [
+          "GetRedSum"
+        ],
+        "writes": [
+          "SetRedSum"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "RedSuspension",
+    "offsets": [
+      {
+        "offset_hex": "0x19c",
+        "reads": [
+          "GetRedSuspension"
+        ],
+        "writes": [
+          "SetRedSuspension"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "RegulationOut",
+    "offsets": [
+      {
+        "offset_hex": "0x340",
+        "reads": [
+          "IsRegulationOut"
+        ],
+        "writes": [],
+        "widths": [
+          "u8"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "RentalPlayerInfo",
+    "offsets": [
+      {
+        "offset_hex": "0x320",
+        "reads": [
+          "GetRentalPlayerInfo"
+        ],
+        "writes": [
+          "SetRentalPlayerInfo"
+        ],
+        "widths": [
+          "u8"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "RentalReturnInfo",
+    "offsets": [
+      {
+        "offset_hex": "0x324",
+        "reads": [],
+        "writes": [
+          "SetRentalReturnInfo"
+        ],
+        "widths": [
+          "pointer",
+          "u8"
+        ],
+        "bitfield_evidence": [
+          "0x04b467ec      69000012       and w9, w3, 1 | 0x04b467ec      69000012       and w9, w3, 1"
+        ]
+      },
+      {
+        "offset_hex": "0x328",
+        "reads": [],
+        "writes": [
+          "SetRentalReturnInfo"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": [
+          "0x04b467ec      69000012       and w9, w3, 1 | 0x04b467ec      69000012       and w9, w3, 1"
+        ]
+      },
+      {
+        "offset_hex": "0x32c",
+        "reads": [],
+        "writes": [
+          "SetRentalReturnInfo"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": [
+          "0x04b467ec      69000012       and w9, w3, 1 | 0x04b467ec      69000012       and w9, w3, 1"
+        ]
+      }
+    ]
+  },
+  {
+    "field_candidate": "RetireBonusList",
+    "offsets": [
+      {
+        "offset_hex": "0x2f8",
+        "reads": [],
+        "writes": [],
+        "widths": [
+          "pointer"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "Salary",
+    "offsets": [
+      {
+        "offset_hex": "0x1e8",
+        "reads": [
+          "GetSalary"
+        ],
+        "writes": [
+          "SetSalary"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "SameCode",
+    "offsets": [
+      {
+        "offset_hex": "0x1b4",
+        "reads": [
+          "GetSameCode"
+        ],
+        "writes": [
+          "SetSameCode"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "SeasonDataType",
+    "offsets": [
+      {
+        "offset_hex": "0x2c",
+        "reads": [
+          "SetSeasonDataType"
+        ],
+        "writes": [],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": []
+      },
+      {
+        "offset_hex": "0x2dc",
+        "reads": [
+          "GetSeasonDataType"
+        ],
+        "writes": [
+          "SetSeasonDataType"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "SeasonDataTypeRaw",
+    "offsets": [
+      {
+        "offset_hex": "0x33",
+        "reads": [
+          "GetSeasonDataTypeRaw"
+        ],
+        "writes": [],
+        "widths": [
+          "u8"
+        ],
+        "bitfield_evidence": []
+      },
+      {
+        "offset_hex": "0x204",
+        "reads": [
+          "GetSeasonDataTypeRaw"
+        ],
+        "writes": [],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      },
+      {
+        "offset_hex": "0x348",
+        "reads": [
+          "GetSeasonDataTypeRaw"
+        ],
+        "writes": [],
+        "widths": [
+          "u8"
+        ],
+        "bitfield_evidence": []
+      },
+      {
+        "offset_hex": "0xd80",
+        "reads": [
+          "GetSeasonDataTypeRaw"
+        ],
+        "writes": [],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": []
+      },
+      {
+        "offset_hex": "0x2068",
+        "reads": [
+          "GetSeasonDataTypeRaw"
+        ],
+        "writes": [],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "SellPrice",
+    "offsets": [
+      {
+        "offset_hex": "0x1a8",
+        "reads": [
+          "GetSellPrice"
+        ],
+        "writes": [
+          "SetSellPrice"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "SerialId",
+    "offsets": [
+      {
+        "offset_hex": "0x1c8",
+        "reads": [
+          "GetSerialId"
+        ],
+        "writes": [],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "SquadPosition",
+    "offsets": [
+      {
+        "offset_hex": "0x220",
+        "reads": [
+          "GetSquadPosition"
+        ],
+        "writes": [
+          "SetSquadPosition"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "Stamina",
+    "offsets": [
+      {
+        "offset_hex": "0xf4",
+        "reads": [
+          "SetStamina"
+        ],
+        "writes": [
+          "SetStamina"
+        ],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": [
+          "0x04b267e0      2a184092       and x10, x1, 0x7f | 0x04b267e0      2a184092       and x10, x1, 0x7f | 0x04b267e8      491970b3       bfi x9, x10, 0x10, 7"
+        ]
+      },
+      {
+        "offset_hex": "0xf6",
+        "reads": [
+          "GetStamina"
+        ],
+        "writes": [],
+        "widths": [
+          "u8"
+        ],
+        "bitfield_evidence": [
+          "0x04b267d4      00190012       and w0, w8, 0x7f | 0x04b267d4      00190012       and w0, w8, 0x7f"
+        ]
+      }
+    ]
+  },
+  {
+    "field_candidate": "SumYellow",
+    "offsets": [
+      {
+        "offset_hex": "0x18c",
+        "reads": [
+          "GetSumYellow"
+        ],
+        "writes": [
+          "SetSumYellow"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "TeamId",
+    "offsets": [
+      {
+        "offset_hex": "0xdc",
+        "reads": [],
+        "writes": [],
+        "widths": [
+          "pointer"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "TrainedAbilityParameter",
+    "offsets": [
+      {
+        "offset_hex": "0x138",
+        "reads": [],
+        "writes": [],
+        "widths": [
+          "pointer"
+        ],
+        "bitfield_evidence": [
+          "\u00e2\u2022\u017d   0x04b2629c      421c0012       and w2, w2, 0xff"
+        ]
+      }
+    ]
+  },
+  {
+    "field_candidate": "TrainedAbilityParameterFromDB",
+    "offsets": [
+      {
+        "offset_hex": "0x138",
+        "reads": [],
+        "writes": [],
+        "widths": [
+          "pointer"
+        ],
+        "bitfield_evidence": [
+          "0x04b262a8      483c0012       and w8, w2, 0xffff | \u00e2\u2022\u017d   0x04b262a8      483c0012       and w8, w2, 0xffff"
+        ]
+      }
+    ]
+  },
+  {
+    "field_candidate": "UniformNumber",
+    "offsets": [
+      {
+        "offset_hex": "0x1ac",
+        "reads": [
+          "GetUniformNumber"
+        ],
+        "writes": [
+          "SetUniformNumber"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "UseFameBooster",
+    "offsets": [
+      {
+        "offset_hex": "0x336",
+        "reads": [],
+        "writes": [
+          "SetUseFameBooster"
+        ],
+        "widths": [
+          "u8"
+        ],
+        "bitfield_evidence": [
+          "0x04b46778      29000012       and w9, w1, 1"
+        ]
+      }
+    ]
+  },
+  {
+    "field_candidate": "UserId",
+    "offsets": [
+      {
+        "offset_hex": "0x1b8",
+        "reads": [
+          "GetUserId"
+        ],
+        "writes": [
+          "SetUserId"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "Valid",
+    "offsets": [
+      {
+        "offset_hex": "0x1c8",
+        "reads": [
+          "IsValid"
+        ],
+        "writes": [],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "ValidRetireBonusList",
+    "offsets": [
+      {
+        "offset_hex": "0x2f8",
+        "reads": [
+          "IsValidRetireBonusList"
+        ],
+        "writes": [],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": []
+      },
+      {
+        "offset_hex": "0x300",
+        "reads": [
+          "IsValidRetireBonusList"
+        ],
+        "writes": [],
+        "widths": [
+          "u64"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "YellowMaxTimes",
+    "offsets": [
+      {
+        "offset_hex": "0x190",
+        "reads": [
+          "GetYellowMaxTimes"
+        ],
+        "writes": [
+          "SetYellowMaxTimes"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "YellowSeason",
+    "offsets": [
+      {
+        "offset_hex": "0x184",
+        "reads": [
+          "GetYellowSeason"
+        ],
+        "writes": [
+          "SetYellowSeason"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  },
+  {
+    "field_candidate": "YellowSum",
+    "offsets": [
+      {
+        "offset_hex": "0x188",
+        "reads": [
+          "GetYellowSum"
+        ],
+        "writes": [
+          "SetYellowSum"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "bitfield_evidence": []
+      }
+    ]
+  }
+]

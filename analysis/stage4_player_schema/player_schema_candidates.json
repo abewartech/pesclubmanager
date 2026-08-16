@@ -1,0 +1,3105 @@
+[
+  {
+    "field": "AbilityParameter",
+    "getters": [
+      "GetAbilityParameter"
+    ],
+    "setters": [
+      "SetAbilityParameter"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetAbilityParameter",
+        "address": "0x04b26160",
+        "size": 56
+      },
+      {
+        "method": "SetAbilityParameter",
+        "address": "0x04b26198",
+        "size": 36
+      }
+    ]
+  },
+  {
+    "field": "AbilityParameterFromDB",
+    "getters": [],
+    "setters": [
+      "SetAbilityParameterFromDB"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetAbilityParameterFromDB",
+        "address": "0x04b261bc",
+        "size": 52
+      }
+    ]
+  },
+  {
+    "field": "Age",
+    "getters": [
+      "GetAge"
+    ],
+    "setters": [
+      "SetAge"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetAge",
+        "address": "0x04b25b00",
+        "size": 16
+      },
+      {
+        "method": "SetAge",
+        "address": "0x04b25b10",
+        "size": 24
+      }
+    ]
+  },
+  {
+    "field": "AppearanceId",
+    "getters": [
+      "GetAppearanceId"
+    ],
+    "setters": [
+      "SetAppearanceId"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetAppearanceId",
+        "address": "0x04b26b9c",
+        "size": 12
+      },
+      {
+        "method": "GetAppearanceId",
+        "address": "0x04b26b90",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "AppearanceParameter",
+    "getters": [
+      "GetAppearanceParameter"
+    ],
+    "setters": [
+      "SetAppearanceParameter"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetAppearanceParameter",
+        "address": "0x04b26754",
+        "size": 52
+      },
+      {
+        "method": "SetAppearanceParameter",
+        "address": "0x04b26788",
+        "size": 32
+      }
+    ]
+  },
+  {
+    "field": "AssistSeason",
+    "getters": [
+      "GetAssistSeason"
+    ],
+    "setters": [
+      "SetAssistSeason"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetAssistSeason",
+        "address": "0x04b26a34",
+        "size": 12
+      },
+      {
+        "method": "GetAssistSeason",
+        "address": "0x04b26a28",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "AssistSum",
+    "getters": [
+      "GetAssistSum"
+    ],
+    "setters": [
+      "SetAssistSum"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetAssistSum",
+        "address": "0x04b26a4c",
+        "size": 12
+      },
+      {
+        "method": "GetAssistSum",
+        "address": "0x04b26a40",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "AssociationRentalPlayer",
+    "getters": [],
+    "setters": [],
+    "predicates": [
+      "IsAssociationRentalPlayer"
+    ],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "IsAssociationRentalPlayer",
+        "address": "0x04b474c8",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "AssoCrashRegulationIn",
+    "getters": [],
+    "setters": [],
+    "predicates": [
+      "IsAssoCrashRegulationIn"
+    ],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "IsAssoCrashRegulationIn",
+        "address": "0x04b480c8",
+        "size": 8
+      }
+    ]
+  },
+  {
+    "field": "BonusWT",
+    "getters": [
+      "GetBonusWT"
+    ],
+    "setters": [
+      "SetBonusWT"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetBonusWT",
+        "address": "0x04b467b4",
+        "size": 12
+      },
+      {
+        "method": "GetBonusWT",
+        "address": "0x04b46ee0",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "CaptainOverAll",
+    "getters": [
+      "GetCaptainOverAll"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetCaptainOverAll",
+        "address": "0x04b25cf0",
+        "size": 36
+      }
+    ]
+  },
+  {
+    "field": "ClassicTournamentLatestSeasonPlayer",
+    "getters": [],
+    "setters": [],
+    "predicates": [
+      "IsClassicTournamentLatestSeasonPlayer"
+    ],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "IsClassicTournamentLatestSeasonPlayer",
+        "address": "0x04b47500",
+        "size": 220
+      }
+    ]
+  },
+  {
+    "field": "ComTeam",
+    "getters": [],
+    "setters": [],
+    "predicates": [
+      "IsComTeam"
+    ],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "IsComTeam",
+        "address": "0x04b47da4",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "Condition",
+    "getters": [
+      "GetCondition"
+    ],
+    "setters": [
+      "SetCondition"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetCondition",
+        "address": "0x04b267f4",
+        "size": 16
+      },
+      {
+        "method": "SetCondition",
+        "address": "0x04b26804",
+        "size": 24
+      }
+    ]
+  },
+  {
+    "field": "ContractPeriod",
+    "getters": [
+      "GetContractPeriod"
+    ],
+    "setters": [
+      "SetContractPeriod"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetContractPeriod",
+        "address": "0x04b26c38",
+        "size": 12
+      },
+      {
+        "method": "SetContractPeriod",
+        "address": "0x04b26c44",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "ContractPeriodMax",
+    "getters": [
+      "GetContractPeriodMax"
+    ],
+    "setters": [
+      "SetContractPeriodMax"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetContractPeriodMax",
+        "address": "0x04b26c20",
+        "size": 12
+      },
+      {
+        "method": "SetContractPeriodMax",
+        "address": "0x04b26c2c",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "ContractPeriodRequest",
+    "getters": [
+      "GetContractPeriodRequest"
+    ],
+    "setters": [
+      "SetContractPeriodRequest"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetContractPeriodRequest",
+        "address": "0x04b26c50",
+        "size": 12
+      },
+      {
+        "method": "SetContractPeriodRequest",
+        "address": "0x04b26c74",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "ContractSalary",
+    "getters": [
+      "GetContractSalary"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetContractSalary",
+        "address": "0x04b26c80",
+        "size": 32
+      }
+    ]
+  },
+  {
+    "field": "ContractSalaryListFromJson",
+    "getters": [],
+    "setters": [
+      "SetContractSalaryListFromJson"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetContractSalaryListFromJson",
+        "address": "0x04b26ca0",
+        "size": 728
+      }
+    ]
+  },
+  {
+    "field": "ContractStatus",
+    "getters": [
+      "GetContractStatus"
+    ],
+    "setters": [
+      "SetContractStatus"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetContractStatus",
+        "address": "0x04b26f84",
+        "size": 12
+      },
+      {
+        "method": "GetContractStatus",
+        "address": "0x04b26f78",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "CreateTime",
+    "getters": [
+      "GetCreateTime"
+    ],
+    "setters": [
+      "SetCreateTime"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetCreateTime",
+        "address": "0x04b26bf0",
+        "size": 12
+      },
+      {
+        "method": "GetCreateTime",
+        "address": "0x04b26be4",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "CupEntryRuleStatus",
+    "getters": [
+      "GetCupEntryRuleStatus"
+    ],
+    "setters": [
+      "SetCupEntryRuleStatus"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetCupEntryRuleStatus",
+        "address": "0x04b4776c",
+        "size": 80
+      },
+      {
+        "method": "SetCupEntryRuleStatus",
+        "address": "0x04b2ae4c",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "CupEntryRuleStatusList",
+    "getters": [
+      "GetCupEntryRuleStatusList"
+    ],
+    "setters": [
+      "SetCupEntryRuleStatusList"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetCupEntryRuleStatusList",
+        "address": "0x04b48320",
+        "size": 32
+      },
+      {
+        "method": "GetCupEntryRuleStatusList",
+        "address": "0x04b48314",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "CupEntryRuleStatusListFromJson",
+    "getters": [],
+    "setters": [
+      "SetCupEntryRuleStatusListFromJson"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetCupEntryRuleStatusListFromJson",
+        "address": "0x04b2aaa8",
+        "size": 548
+      }
+    ]
+  },
+  {
+    "field": "Data",
+    "getters": [
+      "GetData"
+    ],
+    "setters": [
+      "SetData"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetData",
+        "address": "0x04b25b80",
+        "size": 8
+      },
+      {
+        "method": "GetData",
+        "address": "0x04b25b78",
+        "size": 8
+      }
+    ]
+  },
+  {
+    "field": "DataFromJson",
+    "getters": [],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [
+      "PrepareDataFromJson"
+    ],
+    "evidence": [
+      {
+        "method": "PrepareDataFromJson",
+        "address": "0x04b2ae68",
+        "size": 107808
+      }
+    ]
+  },
+  {
+    "field": "DataFromJsonForScoutingList",
+    "getters": [],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [
+      "PrepareDataFromJsonForScoutingList"
+    ],
+    "evidence": [
+      {
+        "method": "PrepareDataFromJsonForScoutingList",
+        "address": "0x04b276d8",
+        "size": 11688
+      }
+    ]
+  },
+  {
+    "field": "DeleteType",
+    "getters": [
+      "GetDeleteType"
+    ],
+    "setters": [
+      "SetDeleteType"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetDeleteType",
+        "address": "0x04b26f90",
+        "size": 12
+      },
+      {
+        "method": "SetDeleteType",
+        "address": "0x04b26f9c",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "DevelopmentType",
+    "getters": [
+      "GetDevelopmentType"
+    ],
+    "setters": [
+      "SetDevelopmentType"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetDevelopmentType",
+        "address": "0x04b25b74",
+        "size": 4
+      },
+      {
+        "method": "GetDevelopmentType",
+        "address": "0x04b25b6c",
+        "size": 8
+      }
+    ]
+  },
+  {
+    "field": "DummyData",
+    "getters": [],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [
+      "PrepareDummyData"
+    ],
+    "evidence": [
+      {
+        "method": "PrepareDummyData",
+        "address": "0x04b23ed0",
+        "size": 1516
+      }
+    ]
+  },
+  {
+    "field": "DummyPlayerSerialId",
+    "getters": [],
+    "setters": [
+      "SetDummyPlayerSerialId"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetDummyPlayerSerialId",
+        "address": "0x04b271bc",
+        "size": 16
+      }
+    ]
+  },
+  {
+    "field": "ElitePlayer",
+    "getters": [],
+    "setters": [],
+    "predicates": [
+      "IsElitePlayer"
+    ],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "IsElitePlayer",
+        "address": "0x04b48188",
+        "size": 340
+      }
+    ]
+  },
+  {
+    "field": "EnableElite",
+    "getters": [],
+    "setters": [],
+    "predicates": [
+      "IsEnableElite"
+    ],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "IsEnableElite",
+        "address": "0x04b47690",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "EnablePlayerInLegendTeam",
+    "getters": [],
+    "setters": [
+      "SetEnablePlayerInLegendTeam"
+    ],
+    "predicates": [
+      "IsEnablePlayerInLegendTeam"
+    ],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "IsEnablePlayerInLegendTeam",
+        "address": "0x04b46eec",
+        "size": 12
+      },
+      {
+        "method": "SetEnablePlayerInLegendTeam",
+        "address": "0x04b467c0",
+        "size": 16
+      }
+    ]
+  },
+  {
+    "field": "FamePoint",
+    "getters": [
+      "GetFamePoint"
+    ],
+    "setters": [
+      "SetFamePoint"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetFamePoint",
+        "address": "0x04b467dc",
+        "size": 12
+      },
+      {
+        "method": "GetFamePoint",
+        "address": "0x04b46ef8",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "FeaturedId",
+    "getters": [
+      "GetFeaturedId"
+    ],
+    "setters": [
+      "SetFeaturedId"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetFeaturedId",
+        "address": "0x04b2addc",
+        "size": 12
+      },
+      {
+        "method": "GetFeaturedId",
+        "address": "0x04b47ef8",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "FeaturedIdInfo",
+    "getters": [
+      "GetFeaturedIdInfo"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetFeaturedIdInfo",
+        "address": "0x04b47f04",
+        "size": 108
+      }
+    ]
+  },
+  {
+    "field": "GameSeason",
+    "getters": [
+      "GetGameSeason"
+    ],
+    "setters": [
+      "SetGameSeason"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetGameSeason",
+        "address": "0x04b269d4",
+        "size": 12
+      },
+      {
+        "method": "GetGameSeason",
+        "address": "0x04b269c8",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "GameSum",
+    "getters": [
+      "GetGameSum"
+    ],
+    "setters": [
+      "SetGameSum"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetGameSum",
+        "address": "0x04b269e0",
+        "size": 12
+      },
+      {
+        "method": "SetGameSum",
+        "address": "0x04b269ec",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "GoalSeason",
+    "getters": [
+      "GetGoalSeason"
+    ],
+    "setters": [
+      "SetGoalSeason"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetGoalSeason",
+        "address": "0x04b26a04",
+        "size": 12
+      },
+      {
+        "method": "GetGoalSeason",
+        "address": "0x04b269f8",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "GoalSum",
+    "getters": [
+      "GetGoalSum"
+    ],
+    "setters": [
+      "SetGoalSum"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetGoalSum",
+        "address": "0x04b26a10",
+        "size": 12
+      },
+      {
+        "method": "SetGoalSum",
+        "address": "0x04b26a1c",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "GrowthGraphParameter",
+    "getters": [],
+    "setters": [
+      "SetGrowthGraphParameter"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetGrowthGraphParameter",
+        "address": "0x04b2750c",
+        "size": 460
+      }
+    ]
+  },
+  {
+    "field": "GrowthListBase",
+    "getters": [
+      "GetGrowthListBase"
+    ],
+    "setters": [
+      "SetGrowthListBase"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetGrowthListBase",
+        "address": "0x04b26fd8",
+        "size": 12
+      },
+      {
+        "method": "SetGrowthListBase",
+        "address": "0x04b26ff0",
+        "size": 32
+      }
+    ]
+  },
+  {
+    "field": "GrowthListTraining",
+    "getters": [
+      "GetGrowthListTraining"
+    ],
+    "setters": [
+      "SetGrowthListTraining"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetGrowthListTraining",
+        "address": "0x04b27010",
+        "size": 32
+      },
+      {
+        "method": "GetGrowthListTraining",
+        "address": "0x04b26fe4",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "GrowthStartAge",
+    "getters": [
+      "GetGrowthStartAge"
+    ],
+    "setters": [
+      "SetGrowthStartAge"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetGrowthStartAge",
+        "address": "0x04b26fcc",
+        "size": 12
+      },
+      {
+        "method": "GetGrowthStartAge",
+        "address": "0x04b26fc0",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "GrowthType",
+    "getters": [
+      "GetGrowthType"
+    ],
+    "setters": [
+      "SetGrowthType"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetGrowthType",
+        "address": "0x04b47678",
+        "size": 12
+      },
+      {
+        "method": "SetGrowthType",
+        "address": "0x04b2ae34",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "Id",
+    "getters": [
+      "GetId"
+    ],
+    "setters": [
+      "SetId"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetId",
+        "address": "0x04b25144",
+        "size": 12
+      },
+      {
+        "method": "GetId",
+        "address": "0x04b25138",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "IdExclusionSeazonDataType",
+    "getters": [
+      "GetIdExclusionSeazonDataType"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetIdExclusionSeazonDataType",
+        "address": "0x04b25150",
+        "size": 16
+      }
+    ]
+  },
+  {
+    "field": "InjuryLength",
+    "getters": [
+      "GetInjuryLength"
+    ],
+    "setters": [
+      "SetInjuryLength"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetInjuryLength",
+        "address": "0x04b267a8",
+        "size": 12
+      },
+      {
+        "method": "SetInjuryLength",
+        "address": "0x04b267b4",
+        "size": 24
+      }
+    ]
+  },
+  {
+    "field": "IsAssociationRentalPlayer",
+    "getters": [],
+    "setters": [
+      "SetIsAssociationRentalPlayer"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetIsAssociationRentalPlayer",
+        "address": "0x04b46808",
+        "size": 16
+      }
+    ]
+  },
+  {
+    "field": "IsComTeam",
+    "getters": [],
+    "setters": [
+      "SetIsComTeam"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetIsComTeam",
+        "address": "0x04b47db0",
+        "size": 16
+      }
+    ]
+  },
+  {
+    "field": "IsEnableElite",
+    "getters": [],
+    "setters": [
+      "SetIsEnableElite"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetIsEnableElite",
+        "address": "0x04b2ae58",
+        "size": 16
+      }
+    ]
+  },
+  {
+    "field": "IsRegulationOut",
+    "getters": [],
+    "setters": [
+      "SetIsRegulationOut"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetIsRegulationOut",
+        "address": "0x04b476a8",
+        "size": 16
+      }
+    ]
+  },
+  {
+    "field": "KickerOverAll",
+    "getters": [
+      "GetKickerOverAll"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetKickerOverAll",
+        "address": "0x04b25d14",
+        "size": 168
+      }
+    ]
+  },
+  {
+    "field": "LegendReserveTeamPriorityForSort",
+    "getters": [
+      "GetLegendReserveTeamPriorityForSort"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetLegendReserveTeamPriorityForSort",
+        "address": "0x04b480f0",
+        "size": 152
+      }
+    ]
+  },
+  {
+    "field": "LegendStatus",
+    "getters": [
+      "GetLegendStatus"
+    ],
+    "setters": [
+      "SetLegendStatus"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetLegendStatus",
+        "address": "0x04b26b3c",
+        "size": 12
+      },
+      {
+        "method": "GetLegendStatus",
+        "address": "0x04b26b30",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "License",
+    "getters": [
+      "GetLicense"
+    ],
+    "setters": [
+      "SetLicense"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetLicense",
+        "address": "0x04b25b60",
+        "size": 12
+      },
+      {
+        "method": "GetLicense",
+        "address": "0x04b25b54",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "LimitBreakNum",
+    "getters": [
+      "GetLimitBreakNum"
+    ],
+    "setters": [
+      "SetLimitBreakNum"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetLimitBreakNum",
+        "address": "0x04b479f8",
+        "size": 12
+      },
+      {
+        "method": "SetLimitBreakNum",
+        "address": "0x04b2ae40",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "LimitBreakNumMax",
+    "getters": [
+      "GetLimitBreakNumMax"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetLimitBreakNumMax",
+        "address": "0x04b47a04",
+        "size": 100
+      }
+    ]
+  },
+  {
+    "field": "LimitBreakParaMax",
+    "getters": [
+      "GetLimitBreakParaMax"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetLimitBreakParaMax",
+        "address": "0x04b47a68",
+        "size": 208
+      }
+    ]
+  },
+  {
+    "field": "LimitBreakParaMaxNext",
+    "getters": [
+      "GetLimitBreakParaMaxNext"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetLimitBreakParaMaxNext",
+        "address": "0x04b47c0c",
+        "size": 216
+      }
+    ]
+  },
+  {
+    "field": "LimitBreakParaMaxNow",
+    "getters": [
+      "GetLimitBreakParaMaxNow"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetLimitBreakParaMaxNow",
+        "address": "0x04b47b38",
+        "size": 212
+      }
+    ]
+  },
+  {
+    "field": "LimitBreakParaMaxOriginal",
+    "getters": [
+      "GetLimitBreakParaMaxOriginal"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetLimitBreakParaMaxOriginal",
+        "address": "0x04b47ce4",
+        "size": 192
+      }
+    ]
+  },
+  {
+    "field": "LoanDealStatus",
+    "getters": [
+      "GetLoanDealStatus"
+    ],
+    "setters": [
+      "SetLoanDealStatus"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetLoanDealStatus",
+        "address": "0x04b474bc",
+        "size": 12
+      },
+      {
+        "method": "SetLoanDealStatus",
+        "address": "0x04b4679c",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "MarketValue",
+    "getters": [
+      "GetMarketValue"
+    ],
+    "setters": [
+      "SetMarketValue"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetMarketValue",
+        "address": "0x04b269a4",
+        "size": 12
+      },
+      {
+        "method": "GetMarketValue",
+        "address": "0x04b26998",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "MasterId",
+    "getters": [
+      "GetMasterId"
+    ],
+    "setters": [
+      "SetMasterId"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetMasterId",
+        "address": "0x04b26b6c",
+        "size": 12
+      },
+      {
+        "method": "GetMasterId",
+        "address": "0x04b26b60",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "MilestoneList",
+    "getters": [
+      "GetMilestoneList"
+    ],
+    "setters": [
+      "SetMilestoneList"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetMilestoneList",
+        "address": "0x04b482e8",
+        "size": 12
+      },
+      {
+        "method": "SetMilestoneList",
+        "address": "0x04b482f4",
+        "size": 32
+      }
+    ]
+  },
+  {
+    "field": "MilestoneListFromJson",
+    "getters": [],
+    "setters": [
+      "SetMilestoneListFromJson"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetMilestoneListFromJson",
+        "address": "0x04b45474",
+        "size": 1628
+      }
+    ]
+  },
+  {
+    "field": "MomentumValue",
+    "getters": [
+      "GetMomentumValue"
+    ],
+    "setters": [
+      "SetMomentumValue"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetMomentumValue",
+        "address": "0x04b482dc",
+        "size": 12
+      },
+      {
+        "method": "SetMomentumValue",
+        "address": "0x04b467a8",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "MotivationTypeOnlineMode",
+    "getters": [
+      "GetMotivationTypeOnlineMode"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetMotivationTypeOnlineMode",
+        "address": "0x04b2693c",
+        "size": 64
+      }
+    ]
+  },
+  {
+    "field": "MotivationTypeTmpdb",
+    "getters": [
+      "GetMotivationTypeTmpdb"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetMotivationTypeTmpdb",
+        "address": "0x04b2692c",
+        "size": 16
+      }
+    ]
+  },
+  {
+    "field": "MotivationValue",
+    "getters": [
+      "GetMotivationValue"
+    ],
+    "setters": [
+      "SetMotivationValue"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetMotivationValue",
+        "address": "0x04b2681c",
+        "size": 12
+      },
+      {
+        "method": "SetMotivationValue",
+        "address": "0x04b26828",
+        "size": 128
+      }
+    ]
+  },
+  {
+    "field": "MultiPositionAptitude",
+    "getters": [],
+    "setters": [],
+    "predicates": [
+      "HasMultiPositionAptitude"
+    ],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "HasMultiPositionAptitude",
+        "address": "0x04b25eec",
+        "size": 280
+      }
+    ]
+  },
+  {
+    "field": "Name",
+    "getters": [
+      "GetName"
+    ],
+    "setters": [
+      "SetName"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetName",
+        "address": "0x04b25538",
+        "size": 52
+      },
+      {
+        "method": "GetName",
+        "address": "0x04b25410",
+        "size": 232
+      }
+    ]
+  },
+  {
+    "field": "NameEditedForRc",
+    "getters": [],
+    "setters": [],
+    "predicates": [
+      "IsNameEditedForRc"
+    ],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "IsNameEditedForRc",
+        "address": "0x04b25170",
+        "size": 636
+      }
+    ]
+  },
+  {
+    "field": "NamePrint",
+    "getters": [
+      "GetNamePrint"
+    ],
+    "setters": [
+      "SetNamePrint"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetNamePrint",
+        "address": "0x04b2591c",
+        "size": 32
+      },
+      {
+        "method": "SetNamePrint",
+        "address": "0x04b2593c",
+        "size": 428
+      }
+    ]
+  },
+  {
+    "field": "NameSimple",
+    "getters": [
+      "GetNameSimple"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetNameSimple",
+        "address": "0x04b254f8",
+        "size": 64
+      }
+    ]
+  },
+  {
+    "field": "Nationality",
+    "getters": [
+      "GetNationality"
+    ],
+    "setters": [
+      "SetNationality"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetNationality",
+        "address": "0x04b25908",
+        "size": 20
+      },
+      {
+        "method": "GetNationality",
+        "address": "0x04b258a0",
+        "size": 104
+      }
+    ]
+  },
+  {
+    "field": "NextSalary",
+    "getters": [
+      "GetNextSalary"
+    ],
+    "setters": [
+      "SetNextSalary"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetNextSalary",
+        "address": "0x04b26c68",
+        "size": 12
+      },
+      {
+        "method": "GetNextSalary",
+        "address": "0x04b26c5c",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "OnlineCupSeasonRegulationInAll",
+    "getters": [],
+    "setters": [],
+    "predicates": [
+      "IsOnlineCupSeasonRegulationInAll"
+    ],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "IsOnlineCupSeasonRegulationInAll",
+        "address": "0x04b476b8",
+        "size": 180
+      }
+    ]
+  },
+  {
+    "field": "OnlineCupSeasonRegulationInLatest",
+    "getters": [],
+    "setters": [],
+    "predicates": [
+      "IsOnlineCupSeasonRegulationInLatest"
+    ],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "IsOnlineCupSeasonRegulationInLatest",
+        "address": "0x04b477bc",
+        "size": 572
+      }
+    ]
+  },
+  {
+    "field": "OrderNo",
+    "getters": [
+      "GetOrderNo"
+    ],
+    "setters": [
+      "SetOrderNo"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetOrderNo",
+        "address": "0x04b25df8",
+        "size": 12
+      },
+      {
+        "method": "SetOrderNo",
+        "address": "0x04b25e04",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "OrderStatus",
+    "getters": [
+      "GetOrderStatus"
+    ],
+    "setters": [
+      "SetOrderStatus"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetOrderStatus",
+        "address": "0x04b480d0",
+        "size": 32
+      },
+      {
+        "method": "SetOrderStatus",
+        "address": "0x04b46784",
+        "size": 24
+      }
+    ]
+  },
+  {
+    "field": "OriginalName",
+    "getters": [
+      "GetOriginalName"
+    ],
+    "setters": [
+      "SetOriginalName"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetOriginalName",
+        "address": "0x04b27030",
+        "size": 52
+      },
+      {
+        "method": "GetOriginalName",
+        "address": "0x04b253ec",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "OriginalNameJp",
+    "getters": [
+      "GetOriginalNameJp"
+    ],
+    "setters": [
+      "SetOriginalNameJp"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetOriginalNameJp",
+        "address": "0x04b27064",
+        "size": 52
+      },
+      {
+        "method": "GetOriginalNameJp",
+        "address": "0x04b253f8",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "OriginalTeamId",
+    "getters": [
+      "GetOriginalTeamId"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetOriginalTeamId",
+        "address": "0x04b2556c",
+        "size": 16
+      }
+    ]
+  },
+  {
+    "field": "OverAll",
+    "getters": [
+      "GetOverAll",
+      "GetOverAll"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetOverAll",
+        "address": "0x04b25b88",
+        "size": 116
+      },
+      {
+        "method": "GetOverAll",
+        "address": "0x04b25c08",
+        "size": 216
+      }
+    ]
+  },
+  {
+    "field": "OverallArrayFromString",
+    "getters": [
+      "GetOverallArrayFromString"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetOverallArrayFromString",
+        "address": "0x04b27410",
+        "size": 252
+      }
+    ]
+  },
+  {
+    "field": "OverallFromServer",
+    "getters": [
+      "GetOverallFromServer"
+    ],
+    "setters": [
+      "SetOverallFromServer"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetOverallFromServer",
+        "address": "0x04b26bfc",
+        "size": 12
+      },
+      {
+        "method": "GetOverallFromServer",
+        "address": "0x04b25bfc",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "OverAllTeamWork",
+    "getters": [
+      "GetOverAllTeamWork"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetOverAllTeamWork",
+        "address": "0x04b25ce0",
+        "size": 16
+      }
+    ]
+  },
+  {
+    "field": "ParamFromTmpdb",
+    "getters": [
+      "GetParamFromTmpdb"
+    ],
+    "setters": [
+      "SetParamFromTmpdb"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetParamFromTmpdb",
+        "address": "0x04b27384",
+        "size": 140
+      },
+      {
+        "method": "SetParamFromTmpdb",
+        "address": "0x04b271cc",
+        "size": 440
+      }
+    ]
+  },
+  {
+    "field": "Phy",
+    "getters": [
+      "GetPhy"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetPhy",
+        "address": "0x04b255e8",
+        "size": 28
+      }
+    ]
+  },
+  {
+    "field": "PhyRank",
+    "getters": [
+      "GetPhyRank"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetPhyRank",
+        "address": "0x04b2563c",
+        "size": 164
+      }
+    ]
+  },
+  {
+    "field": "Playable",
+    "getters": [
+      "GetPlayable"
+    ],
+    "setters": [
+      "SetPlayable"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetPlayable",
+        "address": "0x04b26c08",
+        "size": 12
+      },
+      {
+        "method": "SetPlayable",
+        "address": "0x04b26c14",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "Player",
+    "getters": [],
+    "setters": [
+      "SetPlayer"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetPlayer",
+        "address": "0x04b250f8",
+        "size": 64
+      }
+    ]
+  },
+  {
+    "field": "PlayerCategory",
+    "getters": [
+      "GetPlayerCategory"
+    ],
+    "setters": [
+      "SetPlayerCategory"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetPlayerCategory",
+        "address": "0x04b26fb4",
+        "size": 12
+      },
+      {
+        "method": "GetPlayerCategory",
+        "address": "0x04b26fa8",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "PlayerId",
+    "getters": [
+      "GetPlayerId"
+    ],
+    "setters": [
+      "SetPlayerId"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetPlayerId",
+        "address": "0x04b26b84",
+        "size": 12
+      },
+      {
+        "method": "GetPlayerId",
+        "address": "0x04b26b78",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "PlayerType",
+    "getters": [
+      "GetPlayerType"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetPlayerType",
+        "address": "0x04b25828",
+        "size": 120
+      }
+    ]
+  },
+  {
+    "field": "PlayStyle",
+    "getters": [
+      "GetPlayStyle"
+    ],
+    "setters": [
+      "SetPlayStyle"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetPlayStyle",
+        "address": "0x04b26304",
+        "size": 16
+      },
+      {
+        "method": "SetPlayStyle",
+        "address": "0x04b26314",
+        "size": 24
+      }
+    ]
+  },
+  {
+    "field": "PlayStyleForCom",
+    "getters": [],
+    "setters": [],
+    "predicates": [
+      "HasPlayStyleForCom"
+    ],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "HasPlayStyleForCom",
+        "address": "0x04b263d4",
+        "size": 60
+      }
+    ]
+  },
+  {
+    "field": "PlayStyleHas",
+    "getters": [
+      "GetPlayStyleHas"
+    ],
+    "setters": [
+      "SetPlayStyleHas"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetPlayStyleHas",
+        "address": "0x04b2632c",
+        "size": 32
+      },
+      {
+        "method": "SetPlayStyleHas",
+        "address": "0x04b2634c",
+        "size": 24
+      }
+    ]
+  },
+  {
+    "field": "PlayStyleHasNum",
+    "getters": [
+      "GetPlayStyleHasNum"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetPlayStyleHasNum",
+        "address": "0x04b263ac",
+        "size": 40
+      }
+    ]
+  },
+  {
+    "field": "PlayStyleIndex",
+    "getters": [
+      "GetPlayStyleIndex"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetPlayStyleIndex",
+        "address": "0x04b26364",
+        "size": 72
+      }
+    ]
+  },
+  {
+    "field": "PointSeason",
+    "getters": [
+      "GetPointSeason"
+    ],
+    "setters": [
+      "SetPointSeason"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetPointSeason",
+        "address": "0x04b26a64",
+        "size": 12
+      },
+      {
+        "method": "GetPointSeason",
+        "address": "0x04b26a58",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "PointSum",
+    "getters": [
+      "GetPointSum"
+    ],
+    "setters": [
+      "SetPointSum"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetPointSum",
+        "address": "0x04b26a7c",
+        "size": 12
+      },
+      {
+        "method": "GetPointSum",
+        "address": "0x04b26a70",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "PositionAptitude",
+    "getters": [
+      "GetPositionAptitude"
+    ],
+    "setters": [
+      "SetPositionAptitude"
+    ],
+    "predicates": [
+      "HasPositionAptitude"
+    ],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetPositionAptitude",
+        "address": "0x04b26004",
+        "size": 52
+      },
+      {
+        "method": "HasPositionAptitude",
+        "address": "0x04b25e10",
+        "size": 60
+      },
+      {
+        "method": "SetPositionAptitude",
+        "address": "0x04b26038",
+        "size": 28
+      }
+    ]
+  },
+  {
+    "field": "QualityByIndex",
+    "getters": [],
+    "setters": [
+      "SetQualityByIndex"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetQualityByIndex",
+        "address": "0x04b4683c",
+        "size": 112
+      }
+    ]
+  },
+  {
+    "field": "QualityDataAll",
+    "getters": [
+      "GetQualityDataAll"
+    ],
+    "setters": [
+      "SetQualityDataAll"
+    ],
+    "predicates": [],
+    "other_methods": [
+      "ClearQualityDataAll"
+    ],
+    "evidence": [
+      {
+        "method": "ClearQualityDataAll",
+        "address": "0x04b2ade8",
+        "size": 76
+      },
+      {
+        "method": "SetQualityDataAll",
+        "address": "0x04b46d1c",
+        "size": 32
+      },
+      {
+        "method": "GetQualityDataAll",
+        "address": "0x04b46d10",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "QualityDataByIndex",
+    "getters": [
+      "GetQualityDataByIndex"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetQualityDataByIndex",
+        "address": "0x04b46bd4",
+        "size": 140
+      }
+    ]
+  },
+  {
+    "field": "QualityDataByType",
+    "getters": [
+      "GetQualityDataByType"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetQualityDataByType",
+        "address": "0x04b46c60",
+        "size": 176
+      }
+    ]
+  },
+  {
+    "field": "QualityDataCount",
+    "getters": [
+      "GetQualityDataCount"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetQualityDataCount",
+        "address": "0x04b469e8",
+        "size": 36
+      }
+    ]
+  },
+  {
+    "field": "QualityDataCountSet",
+    "getters": [
+      "GetQualityDataCountSet"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetQualityDataCountSet",
+        "address": "0x04b46a0c",
+        "size": 228
+      }
+    ]
+  },
+  {
+    "field": "QualityDataCountUnlock",
+    "getters": [
+      "GetQualityDataCountUnlock"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetQualityDataCountUnlock",
+        "address": "0x04b46af0",
+        "size": 228
+      }
+    ]
+  },
+  {
+    "field": "QualityPriorityForSort",
+    "getters": [
+      "GetQualityPriorityForSort"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetQualityPriorityForSort",
+        "address": "0x04b47f70",
+        "size": 344
+      }
+    ]
+  },
+  {
+    "field": "Rarity",
+    "getters": [
+      "GetRarity"
+    ],
+    "setters": [
+      "SetRarity"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetRarity",
+        "address": "0x04b26b48",
+        "size": 12
+      },
+      {
+        "method": "SetRarity",
+        "address": "0x04b26b54",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "RealLatestPlayer",
+    "getters": [],
+    "setters": [],
+    "predicates": [
+      "IsRealLatestPlayer"
+    ],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "IsRealLatestPlayer",
+        "address": "0x04b475dc",
+        "size": 156
+      }
+    ]
+  },
+  {
+    "field": "RedSeason",
+    "getters": [
+      "GetRedSeason"
+    ],
+    "setters": [
+      "SetRedSeason"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetRedSeason",
+        "address": "0x04b26af4",
+        "size": 12
+      },
+      {
+        "method": "GetRedSeason",
+        "address": "0x04b26ae8",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "RedSum",
+    "getters": [
+      "GetRedSum"
+    ],
+    "setters": [
+      "SetRedSum"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetRedSum",
+        "address": "0x04b26b0c",
+        "size": 12
+      },
+      {
+        "method": "GetRedSum",
+        "address": "0x04b26b00",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "RedSuspension",
+    "getters": [
+      "GetRedSuspension"
+    ],
+    "setters": [
+      "SetRedSuspension"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetRedSuspension",
+        "address": "0x04b26b24",
+        "size": 12
+      },
+      {
+        "method": "GetRedSuspension",
+        "address": "0x04b26b18",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "RegisteredPosition",
+    "getters": [
+      "GetRegisteredPosition"
+    ],
+    "setters": [
+      "SetRegisteredPosition"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetRegisteredPosition",
+        "address": "0x04b25dbc",
+        "size": 16
+      },
+      {
+        "method": "SetRegisteredPosition",
+        "address": "0x04b25dcc",
+        "size": 20
+      }
+    ]
+  },
+  {
+    "field": "RegulationOut",
+    "getters": [],
+    "setters": [],
+    "predicates": [
+      "IsRegulationOut"
+    ],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "IsRegulationOut",
+        "address": "0x04b4769c",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "RentalPlayerInfo",
+    "getters": [
+      "GetRentalPlayerInfo"
+    ],
+    "setters": [
+      "SetRentalPlayerInfo"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetRentalPlayerInfo",
+        "address": "0x04b467d0",
+        "size": 12
+      },
+      {
+        "method": "GetRentalPlayerInfo",
+        "address": "0x04b46f04",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "RentalReturnInfo",
+    "getters": [
+      "GetRentalReturnInfo"
+    ],
+    "setters": [
+      "SetRentalReturnInfo",
+      "SetRentalReturnInfo"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetRentalReturnInfo",
+        "address": "0x04b467e8",
+        "size": 32
+      },
+      {
+        "method": "SetRentalReturnInfo",
+        "address": "0x04b46f10",
+        "size": 1440
+      },
+      {
+        "method": "GetRentalReturnInfo",
+        "address": "0x04b474b0",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "RetireBonusList",
+    "getters": [
+      "GetRetireBonusList"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [
+      "ClearRetireBonusList"
+    ],
+    "evidence": [
+      {
+        "method": "GetRetireBonusList",
+        "address": "0x04b46e68",
+        "size": 12
+      },
+      {
+        "method": "ClearRetireBonusList",
+        "address": "0x04b46728",
+        "size": 16
+      }
+    ]
+  },
+  {
+    "field": "Salary",
+    "getters": [
+      "GetSalary"
+    ],
+    "setters": [
+      "SetSalary"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetSalary",
+        "address": "0x04b26988",
+        "size": 16
+      },
+      {
+        "method": "GetSalary",
+        "address": "0x04b2697c",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "SameCode",
+    "getters": [
+      "GetSameCode"
+    ],
+    "setters": [
+      "SetSameCode"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetSameCode",
+        "address": "0x04b26bb4",
+        "size": 12
+      },
+      {
+        "method": "GetSameCode",
+        "address": "0x04b26ba8",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "SeasonDataType",
+    "getters": [
+      "GetSeasonDataType"
+    ],
+    "setters": [
+      "SetSeasonDataType",
+      "SetSeasonDataType"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetSeasonDataType",
+        "address": "0x04b27104",
+        "size": 12
+      },
+      {
+        "method": "SetSeasonDataType",
+        "address": "0x04b27110",
+        "size": 136
+      },
+      {
+        "method": "GetSeasonDataType",
+        "address": "0x04b27098",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "SeasonDataTypeForSort",
+    "getters": [
+      "GetSeasonDataTypeForSort"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetSeasonDataTypeForSort",
+        "address": "0x04b47dc0",
+        "size": 312
+      }
+    ]
+  },
+  {
+    "field": "SeasonDataTypeRaw",
+    "getters": [
+      "GetSeasonDataTypeRaw"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetSeasonDataTypeRaw",
+        "address": "0x04b270a4",
+        "size": 96
+      }
+    ]
+  },
+  {
+    "field": "SecondPosition",
+    "getters": [
+      "GetSecondPosition"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetSecondPosition",
+        "address": "0x04b25e4c",
+        "size": 160
+      }
+    ]
+  },
+  {
+    "field": "SecretAbilityParameter",
+    "getters": [
+      "GetSecretAbilityParameter"
+    ],
+    "setters": [
+      "SetSecretAbilityParameter"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetSecretAbilityParameter",
+        "address": "0x04b261f0",
+        "size": 52
+      },
+      {
+        "method": "SetSecretAbilityParameter",
+        "address": "0x04b26224",
+        "size": 32
+      }
+    ]
+  },
+  {
+    "field": "SellPrice",
+    "getters": [
+      "GetSellPrice"
+    ],
+    "setters": [
+      "SetSellPrice"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetSellPrice",
+        "address": "0x04b269bc",
+        "size": 12
+      },
+      {
+        "method": "GetSellPrice",
+        "address": "0x04b269b0",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "SerialId",
+    "getters": [
+      "GetSerialId"
+    ],
+    "setters": [
+      "SetSerialId"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetSerialId",
+        "address": "0x04b26bcc",
+        "size": 12
+      },
+      {
+        "method": "GetSerialId",
+        "address": "0x04b26bc0",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "SkillCard",
+    "getters": [
+      "GetSkillCard",
+      "GetSkillCard"
+    ],
+    "setters": [],
+    "predicates": [
+      "HasSkillCard"
+    ],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetSkillCard",
+        "address": "0x04b264f4",
+        "size": 124
+      },
+      {
+        "method": "GetSkillCard",
+        "address": "0x04b26450",
+        "size": 96
+      },
+      {
+        "method": "HasSkillCard",
+        "address": "0x04b264b0",
+        "size": 68
+      }
+    ]
+  },
+  {
+    "field": "Spd",
+    "getters": [
+      "GetSpd"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetSpd",
+        "address": "0x04b25604",
+        "size": 28
+      }
+    ]
+  },
+  {
+    "field": "SpdRank",
+    "getters": [
+      "GetSpdRank"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetSpdRank",
+        "address": "0x04b256e0",
+        "size": 164
+      }
+    ]
+  },
+  {
+    "field": "SquadPosition",
+    "getters": [
+      "GetSquadPosition"
+    ],
+    "setters": [
+      "SetSquadPosition"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetSquadPosition",
+        "address": "0x04b25dec",
+        "size": 12
+      },
+      {
+        "method": "GetSquadPosition",
+        "address": "0x04b25de0",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "Stamina",
+    "getters": [
+      "GetStamina"
+    ],
+    "setters": [
+      "SetStamina"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetStamina",
+        "address": "0x04b267cc",
+        "size": 16
+      },
+      {
+        "method": "SetStamina",
+        "address": "0x04b267dc",
+        "size": 24
+      }
+    ]
+  },
+  {
+    "field": "StrongerFoot",
+    "getters": [
+      "GetStrongerFoot"
+    ],
+    "setters": [
+      "SetStrongerFoot"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetStrongerFoot",
+        "address": "0x04b25b38",
+        "size": 28
+      },
+      {
+        "method": "GetStrongerFoot",
+        "address": "0x04b25b28",
+        "size": 16
+      }
+    ]
+  },
+  {
+    "field": "SumYellow",
+    "getters": [
+      "GetSumYellow"
+    ],
+    "setters": [
+      "SetSumYellow"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetSumYellow",
+        "address": "0x04b26ac4",
+        "size": 12
+      },
+      {
+        "method": "GetSumYellow",
+        "address": "0x04b26ab8",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "TeamId",
+    "getters": [
+      "GetTeamId"
+    ],
+    "setters": [
+      "SetTeamId"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetTeamId",
+        "address": "0x04b2557c",
+        "size": 44
+      },
+      {
+        "method": "SetTeamId",
+        "address": "0x04b255a8",
+        "size": 64
+      }
+    ]
+  },
+  {
+    "field": "Tec",
+    "getters": [
+      "GetTec"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetTec",
+        "address": "0x04b25620",
+        "size": 28
+      }
+    ]
+  },
+  {
+    "field": "TecRank",
+    "getters": [
+      "GetTecRank"
+    ],
+    "setters": [],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetTecRank",
+        "address": "0x04b25784",
+        "size": 164
+      }
+    ]
+  },
+  {
+    "field": "TrainedAbilityParameter",
+    "getters": [
+      "GetTrainedAbilityParameter"
+    ],
+    "setters": [
+      "SetTrainedAbilityParameter"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetTrainedAbilityParameter",
+        "address": "0x04b26280",
+        "size": 40
+      },
+      {
+        "method": "GetTrainedAbilityParameter",
+        "address": "0x04b26244",
+        "size": 60
+      }
+    ]
+  },
+  {
+    "field": "TrainedAbilityParameterFromDB",
+    "getters": [],
+    "setters": [
+      "SetTrainedAbilityParameterFromDB"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetTrainedAbilityParameterFromDB",
+        "address": "0x04b262a8",
+        "size": 92
+      }
+    ]
+  },
+  {
+    "field": "UniformNumber",
+    "getters": [
+      "GetUniformNumber"
+    ],
+    "setters": [
+      "SetUniformNumber"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetUniformNumber",
+        "address": "0x04b25ae8",
+        "size": 12
+      },
+      {
+        "method": "SetUniformNumber",
+        "address": "0x04b25af4",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "UseFameBooster",
+    "getters": [],
+    "setters": [
+      "SetUseFameBooster"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetUseFameBooster",
+        "address": "0x04b46774",
+        "size": 16
+      }
+    ]
+  },
+  {
+    "field": "UserId",
+    "getters": [
+      "GetUserId"
+    ],
+    "setters": [
+      "SetUserId"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "GetUserId",
+        "address": "0x04b25404",
+        "size": 12
+      },
+      {
+        "method": "SetUserId",
+        "address": "0x04b26bd8",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "Valid",
+    "getters": [],
+    "setters": [],
+    "predicates": [
+      "IsValid"
+    ],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "IsValid",
+        "address": "0x04b271a8",
+        "size": 20
+      }
+    ]
+  },
+  {
+    "field": "ValidQuality",
+    "getters": [],
+    "setters": [],
+    "predicates": [
+      "IsValidQuality",
+      "IsValidQuality"
+    ],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "IsValidQuality",
+        "address": "0x04b46d3c",
+        "size": 120
+      },
+      {
+        "method": "IsValidQuality",
+        "address": "0x04b46db4",
+        "size": 180
+      }
+    ]
+  },
+  {
+    "field": "ValidRetireBonusList",
+    "getters": [],
+    "setters": [],
+    "predicates": [
+      "IsValidRetireBonusList"
+    ],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "IsValidRetireBonusList",
+        "address": "0x04b46e80",
+        "size": 24
+      }
+    ]
+  },
+  {
+    "field": "YellowMaxTimes",
+    "getters": [
+      "GetYellowMaxTimes"
+    ],
+    "setters": [
+      "SetYellowMaxTimes"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetYellowMaxTimes",
+        "address": "0x04b26adc",
+        "size": 12
+      },
+      {
+        "method": "GetYellowMaxTimes",
+        "address": "0x04b26ad0",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "YellowSeason",
+    "getters": [
+      "GetYellowSeason"
+    ],
+    "setters": [
+      "SetYellowSeason"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetYellowSeason",
+        "address": "0x04b26a94",
+        "size": 12
+      },
+      {
+        "method": "GetYellowSeason",
+        "address": "0x04b26a88",
+        "size": 12
+      }
+    ]
+  },
+  {
+    "field": "YellowSum",
+    "getters": [
+      "GetYellowSum"
+    ],
+    "setters": [
+      "SetYellowSum"
+    ],
+    "predicates": [],
+    "other_methods": [],
+    "evidence": [
+      {
+        "method": "SetYellowSum",
+        "address": "0x04b26aac",
+        "size": 12
+      },
+      {
+        "method": "GetYellowSum",
+        "address": "0x04b26aa0",
+        "size": 12
+      }
+    ]
+  }
+]
