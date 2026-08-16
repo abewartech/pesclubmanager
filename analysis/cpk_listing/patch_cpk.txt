@@ -1,0 +1,18 @@
+# CRIWARE CPK Listing — patch.104050101.jp.konami.pesclubmanager.obb
+# Status: ENCRYPTED — @UTF tables could not be decrypted
+# Magic: CPK  (0x43504B20)
+# Size: 873,229,528 bytes (832.8 MB)
+# SHA-256: e6b194d430b7b095e6179645714d5da429e6566205eb7ccde7ea6169505ff1db
+#
+# Sections identified:
+#   0x0000: CPK header (encrypted @UTF block at 0x10, size=832)
+#   0x07FF: ITOC section
+#   0x0800: TOC section (encrypted @UTF block at 0x810, size=1232)
+#
+# Known key bytes (partial): 5F CB A7 B3 (positions 0-3 of XOR stream)
+# Key derivation algorithm: UNKNOWN
+#
+# File listing NOT AVAILABLE without CPK decryption.
+# Expected content (from libUE4.so/libafp-core.so string evidence):
+#   cpk_dat/common/anime/playerID/bin/Definedatatable.bin
+#   cpk_dat/common/anime/playerID/bin/Derivationdatatable.bin
