@@ -1,5 +1,5 @@
 field_candidate,method,category,function_address,function_size,offset_hex,offset,access,width,instruction,bitfield_evidence
-NameSimple,GetNameSimple,Get,0x04b254f8,64,0x1,1,address,pointer,"â”‚â”‚â”‚   0x04b25520      20050091       add x0, x9, 1",
+NameSimple,GetNameSimple,Get,0x04b254f8,64,0x1,1,address,pointer,"|||   0x04b25520      20050091       add x0, x9, 1",
 Age,SetAge,Set,0x04b25b10,24,0x18,24,read,u64,"0x04b25b18      090d40f9       ldr x9, [x8, 0x18]","0x04b25b14      2a140012       and w10, w1, 0x3f | 0x04b25b14      2a140012       and w10, w1, 0x3f | 0x04b25b1c      491560b3       bfi x9, x10, 0x20, 6"
 Age,SetAge,Set,0x04b25b10,24,0x18,24,read,u64,"0x04b25b18      090d40f9       ldr x9, [x8, 0x18]","0x04b25b14      2a140012       and w10, w1, 0x3f | 0x04b25b14      2a140012       and w10, w1, 0x3f | 0x04b25b1c      491560b3       bfi x9, x10, 0x20, 6"
 Age,SetAge,Set,0x04b25b10,24,0x18,24,write,u64,"0x04b25b20      090d00f9       str x9, [x8, 0x18]","0x04b25b14      2a140012       and w10, w1, 0x3f | 0x04b25b14      2a140012       and w10, w1, 0x3f | 0x04b25b1c      491560b3       bfi x9, x10, 0x20, 6"
@@ -24,12 +24,12 @@ PlayerId,SetPlayerId,Set,0x04b26b84,12,0x2c,44,write,u64,"0x04b26b88      01c102
 SeasonDataType,SetSeasonDataType,Set,0x04b27104,12,0x2c,44,read,u64,"0x04b27114      0ac142f8       ldur x10, [x8, 0x2c]",
 IdExclusionSeazonDataType,GetIdExclusionSeazonDataType,Get,0x04b25150,16,0x30,48,read,u32,"0x04b25154      083140b9       ldr w8, [x8, 0x30]","0x04b25158      00590012       and w0, w8, 0x7fffff | 0x04b25158      00590012       and w0, w8, 0x7fffff"
 IdExclusionSeazonDataType,GetIdExclusionSeazonDataType,Get,0x04b25150,16,0x30,48,read,u32,"0x04b25154      083140b9       ldr w8, [x8, 0x30]","0x04b25158      00590012       and w0, w8, 0x7fffff | 0x04b25158      00590012       and w0, w8, 0x7fffff"
-SeasonDataTypeRaw,GetSeasonDataTypeRaw,Get,0x04b270a4,96,0x33,51,read,u8,"â•Žâ•Ž â””â”€> 0x04b270f4      00cd4039       ldrb w0, [x8, 0x33]",
+SeasonDataTypeRaw,GetSeasonDataTypeRaw,Get,0x04b270a4,96,0x33,51,read,u8,":: `-> 0x04b270f4      00cd4039       ldrb w0, [x8, 0x33]",
 Name,SetName,Set,0x04b25538,52,0x38,56,address,pointer,"0x04b25540      2ae10091       add x10, x9, 0x38",
 Name,SetName,Set,0x04b25538,52,0x38,56,address,pointer,"0x04b25540      2ae10091       add x10, x9, 0x38",
-NameSimple,GetNameSimple,Get,0x04b254f8,64,0x38,56,address,pointer,"â”‚â””â””â”€> 0x04b25528      20e10091       add x0, x9, 0x38",
+NameSimple,GetNameSimple,Get,0x04b254f8,64,0x38,56,address,pointer,"|``-> 0x04b25528      20e10091       add x0, x9, 0x38",
 NamePrint,GetNamePrint,Get,0x04b2591c,32,0x75,117,address,pointer,"0x04b2592c      08d50191       add x8, x8, 0x75",
-NameSimple,GetNameSimple,Get,0x04b254f8,64,0x88,136,read,u8,"â”‚â”‚   0x04b25518      2a8d4838       ldrb w10, [x9, 0x88]!",
+NameSimple,GetNameSimple,Get,0x04b254f8,64,0x88,136,read,u8,"||   0x04b25518      2a8d4838       ldrb w10, [x9, 0x88]!",
 OriginalTeamId,GetOriginalTeamId,Get,0x04b2556c,16,0xdc,220,read,u32,"0x04b25570      08dd40b9       ldr w8, [x8, 0xdc]",
 OriginalTeamId,GetOriginalTeamId,Get,0x04b2556c,16,0xdc,220,read,u32,"0x04b25570      08dd40b9       ldr w8, [x8, 0xdc]",
 TeamId,GetTeamId,Get,0x04b2557c,44,0xdc,220,address,pointer,"0x04b25590      29710391       add x9, x9, 0xdc",
@@ -54,8 +54,8 @@ NameSimple,GetNameSimple,Get,0x04b254f8,64,0xf7,247,read,u8,"0x04b254fc      28d
 InjuryLength,GetInjuryLength,Get,0x04b267a8,12,0xf8,248,read,u8,"0x04b267ac      00e14339       ldrb w0, [x8, 0xf8]",
 InjuryLength,GetInjuryLength,Get,0x04b267a8,12,0xf8,248,read,u8,"0x04b267ac      00e14339       ldrb w0, [x8, 0xf8]",
 TrainedAbilityParameter,GetTrainedAbilityParameter,Get,0x04b26244,60,0x138,312,address,pointer,"0x04b26268      20e10491       add x0, x9, 0x138",
-TrainedAbilityParameter,SetTrainedAbilityParameter,Set,0x04b26280,40,0x138,312,address,pointer,"â•Ž   0x04b262a0      00e10491       add x0, x8, 0x138","â•Ž   0x04b2629c      421c0012       and w2, w2, 0xff"
-TrainedAbilityParameterFromDB,SetTrainedAbilityParameterFromDB,Set,0x04b262a8,92,0x138,312,address,pointer,"â•Ž   0x04b262fc      60e10491       add x0, x11, 0x138","0x04b262a8      483c0012       and w8, w2, 0xffff | â•Ž   0x04b262a8      483c0012       and w8, w2, 0xffff"
+TrainedAbilityParameter,SetTrainedAbilityParameter,Set,0x04b26280,40,0x138,312,address,pointer,":   0x04b262a0      00e10491       add x0, x8, 0x138",":   0x04b2629c      421c0012       and w2, w2, 0xff"
+TrainedAbilityParameterFromDB,SetTrainedAbilityParameterFromDB,Set,0x04b262a8,92,0x138,312,address,pointer,":   0x04b262fc      60e10491       add x0, x11, 0x138","0x04b262a8      483c0012       and w8, w2, 0xffff | :   0x04b262a8      483c0012       and w8, w2, 0xffff"
 GameSeason,GetGameSeason,Get,0x04b269c8,12,0x164,356,read,u32,"0x04b269cc      006541b9       ldr w0, [x8, 0x164]",
 GameSeason,GetGameSeason,Get,0x04b269c8,12,0x164,356,read,u32,"0x04b269cc      006541b9       ldr w0, [x8, 0x164]",
 GameSeason,SetGameSeason,Set,0x04b269d4,12,0x164,356,write,u32,"0x04b269d8      016501b9       str w1, [x8, 0x164]",
@@ -178,14 +178,14 @@ NextSalary,GetNextSalary,Get,0x04b26c5c,12,0x1ec,492,read,u32,"0x04b26c60      0
 NextSalary,GetNextSalary,Get,0x04b26c5c,12,0x1ec,492,read,u32,"0x04b26c60      00ed41b9       ldr w0, [x8, 0x1ec]",
 NextSalary,SetNextSalary,Set,0x04b26c68,12,0x1ec,492,write,u32,"0x04b26c6c      01ed01b9       str w1, [x8, 0x1ec]",
 NextSalary,SetNextSalary,Set,0x04b26c68,12,0x1ec,492,write,u32,"0x04b26c6c      01ed01b9       str w1, [x8, 0x1ec]",
-ContractSalary,GetContractSalary,Get,0x04b26c80,32,0x1f0,496,read,u32,"â”‚   0x04b26c90      00f141b9       ldr w0, [x8, 0x1f0]",
+ContractSalary,GetContractSalary,Get,0x04b26c80,32,0x1f0,496,read,u32,"|   0x04b26c90      00f141b9       ldr w0, [x8, 0x1f0]",
 IsComTeam,SetIsComTeam,Set,0x04b47db0,16,0x204,516,read,u32,"0x04b47dc4      0a0542b9       ldr w10, [x8, 0x204]","0x04b47db4      29000012       and w9, w1, 1 | 0x04b47db4      29000012       and w9, w1, 1"
 License,GetLicense,Get,0x04b25b54,12,0x204,516,read,u32,"0x04b25b58      000542b9       ldr w0, [x8, 0x204]",
 License,GetLicense,Get,0x04b25b54,12,0x204,516,read,u32,"0x04b25b58      000542b9       ldr w0, [x8, 0x204]",
 License,SetLicense,Set,0x04b25b60,12,0x204,516,write,u32,"0x04b25b64      010502b9       str w1, [x8, 0x204]",
 License,SetLicense,Set,0x04b25b60,12,0x204,516,write,u32,"0x04b25b64      010502b9       str w1, [x8, 0x204]",
-SeasonDataTypeRaw,GetSeasonDataTypeRaw,Get,0x04b270a4,96,0x204,516,read,u32,"â”‚   0x04b270ac      090542b9       ldr w9, [x8, 0x204]",
-SeasonDataTypeRaw,GetSeasonDataTypeRaw,Get,0x04b270a4,96,0x204,516,read,u32,"â”‚   0x04b270ac      090542b9       ldr w9, [x8, 0x204]",
+SeasonDataTypeRaw,GetSeasonDataTypeRaw,Get,0x04b270a4,96,0x204,516,read,u32,"|   0x04b270ac      090542b9       ldr w9, [x8, 0x204]",
+SeasonDataTypeRaw,GetSeasonDataTypeRaw,Get,0x04b270a4,96,0x204,516,read,u32,"|   0x04b270ac      090542b9       ldr w9, [x8, 0x204]",
 PlayerCategory,GetPlayerCategory,Get,0x04b26fa8,12,0x208,520,read,u32,"0x04b26fac      000942b9       ldr w0, [x8, 0x208]",
 PlayerCategory,GetPlayerCategory,Get,0x04b26fa8,12,0x208,520,read,u32,"0x04b26fac      000942b9       ldr w0, [x8, 0x208]",
 PlayerCategory,SetPlayerCategory,Set,0x04b26fb4,12,0x208,520,write,u32,"0x04b26fb8      010902b9       str w1, [x8, 0x208]",
@@ -223,11 +223,11 @@ GrowthStartAge,SetGrowthStartAge,Set,0x04b26fcc,12,0x228,552,write,u8,"0x04b26fd
 GrowthListBase,GetGrowthListBase,Get,0x04b26fd8,12,0x230,560,address,pointer,"0x04b26fdc      00c10891       add x0, x8, 0x230",
 GrowthListBase,GetGrowthListBase,Get,0x04b26fd8,12,0x230,560,address,pointer,"0x04b26fdc      00c10891       add x0, x8, 0x230",
 GrowthListBase,SetGrowthListBase,Set,0x04b26ff0,32,0x230,560,address,pointer,"0x04b26ff4      00c10891       add x0, x8, 0x230",
-GrowthListBase,SetGrowthListBase,Set,0x04b26ff0,32,0x230,560,address,pointer,"â•Ž   0x04b26ff4      00c10891       add x0, x8, 0x230",
+GrowthListBase,SetGrowthListBase,Set,0x04b26ff0,32,0x230,560,address,pointer,":   0x04b26ff4      00c10891       add x0, x8, 0x230",
 GrowthListTraining,GetGrowthListTraining,Get,0x04b26fe4,12,0x248,584,address,pointer,"0x04b26fe8      00210991       add x0, x8, 0x248",
 GrowthListTraining,GetGrowthListTraining,Get,0x04b26fe4,12,0x248,584,address,pointer,"0x04b26fe8      00210991       add x0, x8, 0x248",
 GrowthListTraining,SetGrowthListTraining,Set,0x04b27010,32,0x248,584,address,pointer,"0x04b27014      00210991       add x0, x8, 0x248",
-GrowthListTraining,SetGrowthListTraining,Set,0x04b27010,32,0x248,584,address,pointer,"â•Ž   0x04b27014      00210991       add x0, x8, 0x248",
+GrowthListTraining,SetGrowthListTraining,Set,0x04b27010,32,0x248,584,address,pointer,":   0x04b27014      00210991       add x0, x8, 0x248",
 OriginalName,GetOriginalName,Get,0x04b253ec,12,0x260,608,address,pointer,"0x04b253f0      00810991       add x0, x8, 0x260",
 OriginalName,SetOriginalName,Set,0x04b27030,52,0x260,608,address,pointer,"0x04b27038      2a810991       add x10, x9, 0x260",
 OriginalName,SetOriginalName,Set,0x04b27030,52,0x260,608,address,pointer,"0x04b27038      2a810991       add x10, x9, 0x260",
@@ -241,7 +241,7 @@ SeasonDataType,GetSeasonDataType,Get,0x04b27098,12,0x2dc,732,read,u32,"0x04b2709
 SeasonDataType,SetSeasonDataType,Set,0x04b27104,12,0x2dc,732,write,u32,"0x04b27108      01dd02b9       str w1, [x8, 0x2dc]",
 QualityDataAll,GetQualityDataAll,Get,0x04b46d10,12,0x2e0,736,address,pointer,"0x04b46d14      00810b91       add x0, x8, 0x2e0",
 QualityDataAll,SetQualityDataAll,Set,0x04b46d1c,32,0x2e0,736,address,pointer,"0x04b46d20      00810b91       add x0, x8, 0x2e0",
-QualityDataAll,SetQualityDataAll,Set,0x04b46d1c,32,0x2e0,736,address,pointer,"â•Ž   0x04b46d20      00810b91       add x0, x8, 0x2e0",
+QualityDataAll,SetQualityDataAll,Set,0x04b46d1c,32,0x2e0,736,address,pointer,":   0x04b46d20      00810b91       add x0, x8, 0x2e0",
 QualityDataCount,GetQualityDataCount,Get,0x04b469e8,36,0x2e0,736,read,u64,"0x04b469f0      087141f9       ldr x8, [x8, 0x2e0]",
 QualityDataCount,GetQualityDataCount,Get,0x04b469e8,36,0x2e8,744,read,u64,"0x04b469ec      097541f9       ldr x9, [x8, 0x2e8]",
 RetireBonusList,GetRetireBonusList,Get,0x04b46e68,12,0x2f8,760,address,pointer,"0x04b46e6c      00e10b91       add x0, x8, 0x2f8",
@@ -281,13 +281,13 @@ UseFameBooster,SetUseFameBooster,Set,0x04b46774,16,0x336,822,write,u8,"0x04b4677
 EnableElite,IsEnableElite,Is,0x04b47690,12,0x337,823,read,u8,"0x04b47694      00dd4c39       ldrb w0, [x8, 0x337]",
 IsEnableElite,SetIsEnableElite,Set,0x04b2ae58,16,0x337,823,write,u8,"0x04b2ae60      09dd0c39       strb w9, [x8, 0x337]","0x04b2ae5c      29000012       and w9, w1, 1 | 0x04b2ae5c      29000012       and w9, w1, 1"
 IsEnableElite,SetIsEnableElite,Set,0x04b2ae58,16,0x337,823,write,u8,"0x04b2ae60      09dd0c39       strb w9, [x8, 0x337]","0x04b2ae5c      29000012       and w9, w1, 1 | 0x04b2ae5c      29000012       and w9, w1, 1"
-PlayStyleHas,GetPlayStyleHas,Get,0x04b2632c,32,0x338,824,read,u32,"â”‚   0x04b2633c      003943b9       ldr w0, [x8, 0x338]",
-PlayStyleHas,SetPlayStyleHas,Set,0x04b2634c,24,0x338,824,write,u32,"â”‚   0x04b2635c      023903b9       str w2, [x8, 0x338]",
+PlayStyleHas,GetPlayStyleHas,Get,0x04b2632c,32,0x338,824,read,u32,"|   0x04b2633c      003943b9       ldr w0, [x8, 0x338]",
+PlayStyleHas,SetPlayStyleHas,Set,0x04b2634c,24,0x338,824,write,u32,"|   0x04b2635c      023903b9       str w2, [x8, 0x338]",
 PlayStyleHasNum,GetPlayStyleHasNum,Get,0x04b263ac,40,0x338,824,read,u32,"0x04b263b8      083943b9       ldr w8, [x8, 0x338]",
-PlayStyleIndex,GetPlayStyleIndex,Get,0x04b26364,72,0x338,824,read,u32,"â”‚   0x04b26374      0a3943b9       ldr w10, [x8, 0x338]","0x04b2636c      29bd6bd3       ubfx x9, x9, 0x2b, 5 | 0x04b2636c      29bd6bd3       ubfx x9, x9, 0x2b, 5"
+PlayStyleIndex,GetPlayStyleIndex,Get,0x04b26364,72,0x338,824,read,u32,"|   0x04b26374      0a3943b9       ldr w10, [x8, 0x338]","0x04b2636c      29bd6bd3       ubfx x9, x9, 0x2b, 5 | 0x04b2636c      29bd6bd3       ubfx x9, x9, 0x2b, 5"
 PlayStyleHasNum,GetPlayStyleHasNum,Get,0x04b263ac,40,0x33c,828,read,u32,"0x04b263b4      093d43b9       ldr w9, [x8, 0x33c]",
 PlayStyleHasNum,GetPlayStyleHasNum,Get,0x04b263ac,40,0x33c,828,read,u32,"0x04b263b4      093d43b9       ldr w9, [x8, 0x33c]",
-PlayStyleIndex,GetPlayStyleIndex,Get,0x04b26364,72,0x33c,828,read,u32,"â””â””â”€â”€> 0x04b26394      083d43b9       ldr w8, [x8, 0x33c]","0x04b2636c      29bd6bd3       ubfx x9, x9, 0x2b, 5 | 0x04b2636c      29bd6bd3       ubfx x9, x9, 0x2b, 5"
+PlayStyleIndex,GetPlayStyleIndex,Get,0x04b26364,72,0x33c,828,read,u32,"``--> 0x04b26394      083d43b9       ldr w8, [x8, 0x33c]","0x04b2636c      29bd6bd3       ubfx x9, x9, 0x2b, 5 | 0x04b2636c      29bd6bd3       ubfx x9, x9, 0x2b, 5"
 IsRegulationOut,SetIsRegulationOut,Set,0x04b476a8,16,0x340,832,write,u8,"0x04b476b0      09010d39       strb w9, [x8, 0x340]","0x04b476ac      29000012       and w9, w1, 1 | 0x04b476ac      29000012       and w9, w1, 1"
 IsRegulationOut,SetIsRegulationOut,Set,0x04b476a8,16,0x340,832,write,u8,"0x04b476b0      09010d39       strb w9, [x8, 0x340]","0x04b476ac      29000012       and w9, w1, 1 | 0x04b476ac      29000012       and w9, w1, 1"
 RegulationOut,IsRegulationOut,Is,0x04b4769c,12,0x340,832,read,u8,"0x04b476a0      00014d39       ldrb w0, [x8, 0x340]",
@@ -298,9 +298,9 @@ LimitBreakNum,SetLimitBreakNum,Set,0x04b2ae40,12,0x344,836,write,u32,"0x04b2ae44
 ComTeam,IsComTeam,Is,0x04b47da4,12,0x348,840,read,u8,"0x04b47da8      00214d39       ldrb w0, [x8, 0x348]",
 IsComTeam,SetIsComTeam,Set,0x04b47db0,16,0x348,840,write,u8,"0x04b47db8      09210d39       strb w9, [x8, 0x348]","0x04b47db4      29000012       and w9, w1, 1 | 0x04b47db4      29000012       and w9, w1, 1"
 IsComTeam,SetIsComTeam,Set,0x04b47db0,16,0x348,840,write,u8,"0x04b47db8      09210d39       strb w9, [x8, 0x348]","0x04b47db4      29000012       and w9, w1, 1 | 0x04b47db4      29000012       and w9, w1, 1"
-SeasonDataTypeRaw,GetSeasonDataTypeRaw,Get,0x04b270a4,96,0x348,840,read,u8,"â””â””â”€> 0x04b270c0      09214d39       ldrb w9, [x8, 0x348]",
-OrderStatus,GetOrderStatus,Get,0x04b480d0,32,0x34c,844,read,u32,"â”‚   0x04b480e0      004d43b9       ldr w0, [x8, 0x34c]",
-OrderStatus,SetOrderStatus,Set,0x04b46784,24,0x34c,844,write,u32,"â”‚   0x04b46794      024d03b9       str w2, [x8, 0x34c]",
+SeasonDataTypeRaw,GetSeasonDataTypeRaw,Get,0x04b270a4,96,0x348,840,read,u8,"``-> 0x04b270c0      09214d39       ldrb w9, [x8, 0x348]",
+OrderStatus,GetOrderStatus,Get,0x04b480d0,32,0x34c,844,read,u32,"|   0x04b480e0      004d43b9       ldr w0, [x8, 0x34c]",
+OrderStatus,SetOrderStatus,Set,0x04b46784,24,0x34c,844,write,u32,"|   0x04b46794      024d03b9       str w2, [x8, 0x34c]",
 FeaturedId,GetFeaturedId,Get,0x04b47ef8,12,0x358,856,read,u32,"0x04b47efc      005943b9       ldr w0, [x8, 0x358]",
 FeaturedId,SetFeaturedId,Set,0x04b2addc,12,0x358,856,write,u32,"0x04b2ade0      015903b9       str w1, [x8, 0x358]",
 MomentumValue,GetMomentumValue,Get,0x04b482dc,12,0x35c,860,read,u32,"0x04b482e0      005d43b9       ldr w0, [x8, 0x35c]",
@@ -309,18 +309,18 @@ MomentumValue,SetMomentumValue,Set,0x04b467a8,12,0x35c,860,write,u32,"0x04b467ac
 MilestoneList,GetMilestoneList,Get,0x04b482e8,12,0x360,864,address,pointer,"0x04b482ec      00810d91       add x0, x8, 0x360",
 MilestoneList,GetMilestoneList,Get,0x04b482e8,12,0x360,864,address,pointer,"0x04b482ec      00810d91       add x0, x8, 0x360",
 MilestoneList,SetMilestoneList,Set,0x04b482f4,32,0x360,864,address,pointer,"0x04b482f8      00810d91       add x0, x8, 0x360",
-MilestoneList,SetMilestoneList,Set,0x04b482f4,32,0x360,864,address,pointer,"â•Ž   0x04b482f8      00810d91       add x0, x8, 0x360",
+MilestoneList,SetMilestoneList,Set,0x04b482f4,32,0x360,864,address,pointer,":   0x04b482f8      00810d91       add x0, x8, 0x360",
 CupEntryRuleStatus,SetCupEntryRuleStatus,Set,0x04b2ae4c,12,0x378,888,write,u32,"0x04b2ae50      017903b9       str w1, [x8, 0x378]",
 CupEntryRuleStatus,SetCupEntryRuleStatus,Set,0x04b2ae4c,12,0x378,888,write,u32,"0x04b2ae50      017903b9       str w1, [x8, 0x378]",
-CupEntryRuleStatus,GetCupEntryRuleStatus,Get,0x04b4776c,80,0x380,896,read,u64,"0x04b47778      08c141f9       ldr x8, [x8, 0x380]","â”‚â•Žâ”‚   0x04b477a8      6001000a       and w0, w11, w0"
+CupEntryRuleStatus,GetCupEntryRuleStatus,Get,0x04b4776c,80,0x380,896,read,u64,"0x04b47778      08c141f9       ldr x8, [x8, 0x380]","|:|   0x04b477a8      6001000a       and w0, w11, w0"
 CupEntryRuleStatusList,GetCupEntryRuleStatusList,Get,0x04b48314,12,0x380,896,address,pointer,"0x04b48318      00010e91       add x0, x8, 0x380",
 CupEntryRuleStatusList,GetCupEntryRuleStatusList,Get,0x04b48314,12,0x380,896,address,pointer,"0x04b48318      00010e91       add x0, x8, 0x380",
 CupEntryRuleStatusList,SetCupEntryRuleStatusList,Set,0x04b48320,32,0x380,896,address,pointer,"0x04b48324      00010e91       add x0, x8, 0x380",
-CupEntryRuleStatusList,SetCupEntryRuleStatusList,Set,0x04b48320,32,0x380,896,address,pointer,"â•Ž   0x04b48324      00010e91       add x0, x8, 0x380",
-CupEntryRuleStatus,GetCupEntryRuleStatus,Get,0x04b4776c,80,0x388,904,read,u64,"0x04b47774      09c541f9       ldr x9, [x8, 0x388]","â”‚â•Žâ”‚   0x04b477a8      6001000a       and w0, w11, w0"
+CupEntryRuleStatusList,SetCupEntryRuleStatusList,Set,0x04b48320,32,0x380,896,address,pointer,":   0x04b48324      00010e91       add x0, x8, 0x380",
+CupEntryRuleStatus,GetCupEntryRuleStatus,Get,0x04b4776c,80,0x388,904,read,u64,"0x04b47774      09c541f9       ldr x9, [x8, 0x388]","|:|   0x04b477a8      6001000a       and w0, w11, w0"
 CupEntryRuleStatusList,SetCupEntryRuleStatusList,Set,0x04b48320,32,0xc10,3088,read,u64,"0x04b48344      080946f9       ldr x8, [x8, 0xc10]",
-SeasonDataTypeRaw,GetSeasonDataTypeRaw,Get,0x04b270a4,96,0xd80,3456,read,u64,"â”‚   0x04b270cc      08c146f9       ldr x8, [x8, 0xd80]",
-SeasonDataTypeRaw,GetSeasonDataTypeRaw,Get,0x04b270a4,96,0xd80,3456,read,u64,"â•Žâ”‚â”‚   0x04b270e4      08c146f9       ldr x8, [x8, 0xd80]",
+SeasonDataTypeRaw,GetSeasonDataTypeRaw,Get,0x04b270a4,96,0xd80,3456,read,u64,"|   0x04b270cc      08c146f9       ldr x8, [x8, 0xd80]",
+SeasonDataTypeRaw,GetSeasonDataTypeRaw,Get,0x04b270a4,96,0xd80,3456,read,u64,":||   0x04b270e4      08c146f9       ldr x8, [x8, 0xd80]",
 DummyPlayerSerialId,SetDummyPlayerSerialId,Set,0x04b271bc,16,0xe68,3688,read,u64,"0x04b271d0      083547f9       ldr x8, [x8, 0xe68]",
-SeasonDataTypeRaw,GetSeasonDataTypeRaw,Get,0x04b270a4,96,0x2068,8296,read,u32,"â”‚   0x04b270d4      006960b9       ldr w0, [x8, 0x2068]",
-SeasonDataTypeRaw,GetSeasonDataTypeRaw,Get,0x04b270a4,96,0x2068,8296,read,u32,"â•Žâ”‚â”‚   0x04b270ec      006960b9       ldr w0, [x8, 0x2068]",
+SeasonDataTypeRaw,GetSeasonDataTypeRaw,Get,0x04b270a4,96,0x2068,8296,read,u32,"|   0x04b270d4      006960b9       ldr w0, [x8, 0x2068]",
+SeasonDataTypeRaw,GetSeasonDataTypeRaw,Get,0x04b270a4,96,0x2068,8296,read,u32,":||   0x04b270ec      006960b9       ldr w0, [x8, 0x2068]",

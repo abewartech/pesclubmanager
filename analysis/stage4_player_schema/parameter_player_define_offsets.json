@@ -299,7 +299,7 @@
           "u64"
         ],
         "bitfield_evidence": [
-          "\u00e2\u201d\u201a\u00e2\u2022\u017d\u00e2\u201d\u201a   0x04b477a8      6001000a       and w0, w11, w0"
+          "|:|   0x04b477a8      6001000a       and w0, w11, w0"
         ]
       },
       {
@@ -312,7 +312,7 @@
           "u64"
         ],
         "bitfield_evidence": [
-          "\u00e2\u201d\u201a\u00e2\u2022\u017d\u00e2\u201d\u201a   0x04b477a8      6001000a       and w0, w11, w0"
+          "|:|   0x04b477a8      6001000a       and w0, w11, w0"
         ]
       }
     ]
@@ -1853,7 +1853,7 @@
           "pointer"
         ],
         "bitfield_evidence": [
-          "\u00e2\u2022\u017d   0x04b2629c      421c0012       and w2, w2, 0xff"
+          ":   0x04b2629c      421c0012       and w2, w2, 0xff"
         ]
       }
     ]
@@ -1869,7 +1869,7 @@
           "pointer"
         ],
         "bitfield_evidence": [
-          "0x04b262a8      483c0012       and w8, w2, 0xffff | \u00e2\u2022\u017d   0x04b262a8      483c0012       and w8, w2, 0xffff"
+          "0x04b262a8      483c0012       and w8, w2, 0xffff | :   0x04b262a8      483c0012       and w8, w2, 0xffff"
         ]
       }
     ]
