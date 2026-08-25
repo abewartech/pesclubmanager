@@ -1,0 +1,947 @@
+[
+  {
+    "json_key": "param_agility",
+    "category": "ability_parameter",
+    "field_candidate": "AbilityParameter",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: ability parameter array"
+  },
+  {
+    "json_key": "param_ball_spin_control",
+    "category": "ability_parameter",
+    "field_candidate": "AbilityParameter",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: ability parameter array"
+  },
+  {
+    "json_key": "param_body_balance",
+    "category": "ability_parameter",
+    "field_candidate": "AbilityParameter",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: ability parameter array"
+  },
+  {
+    "json_key": "param_defense_decision",
+    "category": "ability_parameter",
+    "field_candidate": "AbilityParameter",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: ability parameter array"
+  },
+  {
+    "json_key": "param_dribble",
+    "category": "ability_parameter",
+    "field_candidate": "AbilityParameter",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: ability parameter array"
+  },
+  {
+    "json_key": "param_gk_decision",
+    "category": "ability_parameter",
+    "field_candidate": "AbilityParameter",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: ability parameter array"
+  },
+  {
+    "json_key": "param_heading",
+    "category": "ability_parameter",
+    "field_candidate": "AbilityParameter",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: ability parameter array"
+  },
+  {
+    "json_key": "param_intercept",
+    "category": "ability_parameter",
+    "field_candidate": "AbilityParameter",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: ability parameter array"
+  },
+  {
+    "json_key": "param_jump",
+    "category": "ability_parameter",
+    "field_candidate": "AbilityParameter",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: ability parameter array"
+  },
+  {
+    "json_key": "param_kick_power",
+    "category": "ability_parameter",
+    "field_candidate": "AbilityParameter",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: ability parameter array"
+  },
+  {
+    "json_key": "param_long_pass",
+    "category": "ability_parameter",
+    "field_candidate": "AbilityParameter",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: ability parameter array"
+  },
+  {
+    "json_key": "param_offense_decision",
+    "category": "ability_parameter",
+    "field_candidate": "AbilityParameter",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: ability parameter array"
+  },
+  {
+    "json_key": "param_place_kicking",
+    "category": "ability_parameter",
+    "field_candidate": "AbilityParameter",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: ability parameter array"
+  },
+  {
+    "json_key": "param_r_foot_acc",
+    "category": "ability_parameter",
+    "field_candidate": "AbilityParameter",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: ability parameter array"
+  },
+  {
+    "json_key": "param_r_foot_frequency",
+    "category": "ability_parameter",
+    "field_candidate": "AbilityParameter",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: ability parameter array"
+  },
+  {
+    "json_key": "param_saving",
+    "category": "ability_parameter",
+    "field_candidate": "AbilityParameter",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: ability parameter array"
+  },
+  {
+    "json_key": "param_short_pass",
+    "category": "ability_parameter",
+    "field_candidate": "AbilityParameter",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: ability parameter array"
+  },
+  {
+    "json_key": "param_shot",
+    "category": "ability_parameter",
+    "field_candidate": "AbilityParameter",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: ability parameter array"
+  },
+  {
+    "json_key": "param_speed",
+    "category": "ability_parameter",
+    "field_candidate": "AbilityParameter",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: ability parameter array"
+  },
+  {
+    "json_key": "param_stamina",
+    "category": "ability_parameter",
+    "field_candidate": "AbilityParameter",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: ability parameter array"
+  },
+  {
+    "json_key": "param_teamwork",
+    "category": "ability_parameter",
+    "field_candidate": "AbilityParameter",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: ability parameter array"
+  },
+  {
+    "json_key": "param_trap",
+    "category": "ability_parameter",
+    "field_candidate": "AbilityParameter",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: ability parameter array"
+  },
+  {
+    "json_key": "LeftRight",
+    "category": "field",
+    "field_candidate": "",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "low",
+    "mapping_reason": "unmapped"
+  },
+  {
+    "json_key": "age",
+    "category": "field",
+    "field_candidate": "Age",
+    "native_offsets": "0x18, 0x1c",
+    "widths": "u64, u8",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "camulative_yellow_cards",
+    "category": "field",
+    "field_candidate": "SumYellow",
+    "native_offsets": "0x18c",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "condition_status",
+    "category": "field",
+    "field_candidate": "Condition",
+    "native_offsets": "0xf4, 0xf7",
+    "widths": "u64, u8",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "contract_period",
+    "category": "field",
+    "field_candidate": "ContractPeriod",
+    "native_offsets": "0x1e0",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "contract_period_max",
+    "category": "field",
+    "field_candidate": "ContractPeriodMax",
+    "native_offsets": "0x1dc",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "contract_period_request",
+    "category": "field",
+    "field_candidate": "ContractPeriodRequest",
+    "native_offsets": "0x1e4",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "contract_status",
+    "category": "field",
+    "field_candidate": "ContractStatus",
+    "native_offsets": "0x210",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "deleted",
+    "category": "field",
+    "field_candidate": "DeleteType",
+    "native_offsets": "0x214",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "durability",
+    "category": "field",
+    "field_candidate": "",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "low",
+    "mapping_reason": "unmapped"
+  },
+  {
+    "json_key": "e_09",
+    "category": "field",
+    "field_candidate": "",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "low",
+    "mapping_reason": "unmapped"
+  },
+  {
+    "json_key": "energy",
+    "category": "field",
+    "field_candidate": "",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "low",
+    "mapping_reason": "unmapped"
+  },
+  {
+    "json_key": "er_home_10",
+    "category": "field",
+    "field_candidate": "",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "low",
+    "mapping_reason": "unmapped"
+  },
+  {
+    "json_key": "height",
+    "category": "field",
+    "field_candidate": "",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "low",
+    "mapping_reason": "unmapped"
+  },
+  {
+    "json_key": "injury",
+    "category": "field",
+    "field_candidate": "InjuryLength",
+    "native_offsets": "0xf4, 0xf8",
+    "widths": "u64, u8",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "legend_status",
+    "category": "field",
+    "field_candidate": "LegendStatus",
+    "native_offsets": "0x1bc",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "normalized exact match"
+  },
+  {
+    "json_key": "licence",
+    "category": "field",
+    "field_candidate": "License",
+    "native_offsets": "0x204",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "master_id",
+    "category": "field",
+    "field_candidate": "MasterId",
+    "native_offsets": "0x1d0",
+    "widths": "u64",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "motivation",
+    "category": "field",
+    "field_candidate": "MotivationValue",
+    "native_offsets": "0x20c",
+    "widths": "u8",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "name",
+    "category": "field",
+    "field_candidate": "Name",
+    "native_offsets": "0x38",
+    "widths": "pointer",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "nationality",
+    "category": "field",
+    "field_candidate": "Nationality",
+    "native_offsets": "0xf4",
+    "widths": "u64",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "next_salary",
+    "category": "field",
+    "field_candidate": "NextSalary",
+    "native_offsets": "0x1ec",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "original_team_id",
+    "category": "field",
+    "field_candidate": "OriginalTeamId",
+    "native_offsets": "0xdc",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "playstyle",
+    "category": "field",
+    "field_candidate": "PlayStyle",
+    "native_offsets": "0x18",
+    "widths": "u64",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "position",
+    "category": "field",
+    "field_candidate": "RegisteredPosition",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "price",
+    "category": "field",
+    "field_candidate": "MarketValue",
+    "native_offsets": "0x1a0",
+    "widths": "u64",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "rarity",
+    "category": "field",
+    "field_candidate": "Rarity",
+    "native_offsets": "0x1c0",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "salary",
+    "category": "field",
+    "field_candidate": "Salary",
+    "native_offsets": "0x1e8",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "salary_list",
+    "category": "field",
+    "field_candidate": "ContractSalary",
+    "native_offsets": "0x1f0",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "sell_price",
+    "category": "field",
+    "field_candidate": "SellPrice",
+    "native_offsets": "0x1a8",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "serial_id",
+    "category": "field",
+    "field_candidate": "SerialId",
+    "native_offsets": "0x1c8",
+    "widths": "u64",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "stability",
+    "category": "field",
+    "field_candidate": "",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "low",
+    "mapping_reason": "unmapped"
+  },
+  {
+    "json_key": "stronger_foot",
+    "category": "field",
+    "field_candidate": "StrongerFoot",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "uniform_name",
+    "category": "field",
+    "field_candidate": "NamePrint",
+    "native_offsets": "0x75, 0xf7",
+    "widths": "pointer, u8",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "uniform_number",
+    "category": "field",
+    "field_candidate": "UniformNumber",
+    "native_offsets": "0x1ac",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "weight",
+    "category": "field",
+    "field_candidate": "",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "low",
+    "mapping_reason": "unmapped"
+  },
+  {
+    "json_key": "cb",
+    "category": "position_aptitude",
+    "field_candidate": "PositionAptitude",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: position aptitude bitfield/table"
+  },
+  {
+    "json_key": "cf",
+    "category": "position_aptitude",
+    "field_candidate": "PositionAptitude",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: position aptitude bitfield/table"
+  },
+  {
+    "json_key": "cmf",
+    "category": "position_aptitude",
+    "field_candidate": "PositionAptitude",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: position aptitude bitfield/table"
+  },
+  {
+    "json_key": "dmf",
+    "category": "position_aptitude",
+    "field_candidate": "PositionAptitude",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: position aptitude bitfield/table"
+  },
+  {
+    "json_key": "gk",
+    "category": "position_aptitude",
+    "field_candidate": "PositionAptitude",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: position aptitude bitfield/table"
+  },
+  {
+    "json_key": "lmf",
+    "category": "position_aptitude",
+    "field_candidate": "PositionAptitude",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: position aptitude bitfield/table"
+  },
+  {
+    "json_key": "lsb",
+    "category": "position_aptitude",
+    "field_candidate": "PositionAptitude",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: position aptitude bitfield/table"
+  },
+  {
+    "json_key": "lwg",
+    "category": "position_aptitude",
+    "field_candidate": "PositionAptitude",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: position aptitude bitfield/table"
+  },
+  {
+    "json_key": "omf",
+    "category": "position_aptitude",
+    "field_candidate": "PositionAptitude",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: position aptitude bitfield/table"
+  },
+  {
+    "json_key": "rmf",
+    "category": "position_aptitude",
+    "field_candidate": "PositionAptitude",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: position aptitude bitfield/table"
+  },
+  {
+    "json_key": "rsb",
+    "category": "position_aptitude",
+    "field_candidate": "PositionAptitude",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: position aptitude bitfield/table"
+  },
+  {
+    "json_key": "rwg",
+    "category": "position_aptitude",
+    "field_candidate": "PositionAptitude",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: position aptitude bitfield/table"
+  },
+  {
+    "json_key": "st",
+    "category": "position_aptitude",
+    "field_candidate": "PositionAptitude",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: position aptitude bitfield/table"
+  },
+  {
+    "json_key": "record_assist_season",
+    "category": "record",
+    "field_candidate": "AssistSeason",
+    "native_offsets": "0x174",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "record_assist_total",
+    "category": "record",
+    "field_candidate": "AssistSum",
+    "native_offsets": "0x178",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "record_average_rating_season",
+    "category": "record",
+    "field_candidate": "PointSeason",
+    "native_offsets": "0x17c",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "record_average_rating_total",
+    "category": "record",
+    "field_candidate": "PointSum",
+    "native_offsets": "0x180",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "record_goal_season",
+    "category": "record",
+    "field_candidate": "GoalSeason",
+    "native_offsets": "0x16c",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "record_goal_total",
+    "category": "record",
+    "field_candidate": "GoalSum",
+    "native_offsets": "0x170",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "record_match_season",
+    "category": "record",
+    "field_candidate": "GameSeason",
+    "native_offsets": "0x164",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "record_match_total",
+    "category": "record",
+    "field_candidate": "GameSum",
+    "native_offsets": "0x168",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "record_red_card_season",
+    "category": "record",
+    "field_candidate": "RedSeason",
+    "native_offsets": "0x194",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "record_red_card_total",
+    "category": "record",
+    "field_candidate": "RedSum",
+    "native_offsets": "0x198",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "record_yellow_card_season",
+    "category": "record",
+    "field_candidate": "YellowSeason",
+    "native_offsets": "0x184",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "record_yellow_card_total",
+    "category": "record",
+    "field_candidate": "YellowSum",
+    "native_offsets": "0x188",
+    "widths": "u32",
+    "confidence": "medium",
+    "mapping_reason": "direct synonym"
+  },
+  {
+    "json_key": "skill_acrobatic_shoot",
+    "category": "skill_card",
+    "field_candidate": "SkillCard",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: skill-card flags/list"
+  },
+  {
+    "json_key": "skill_back_spin_lob",
+    "category": "skill_card",
+    "field_candidate": "SkillCard",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: skill-card flags/list"
+  },
+  {
+    "json_key": "skill_captaincy",
+    "category": "skill_card",
+    "field_candidate": "SkillCard",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: skill-card flags/list"
+  },
+  {
+    "json_key": "skill_chasing",
+    "category": "skill_card",
+    "field_candidate": "SkillCard",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: skill-card flags/list"
+  },
+  {
+    "json_key": "skill_combative_spirit",
+    "category": "skill_card",
+    "field_candidate": "SkillCard",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: skill-card flags/list"
+  },
+  {
+    "json_key": "skill_control_curve",
+    "category": "skill_card",
+    "field_candidate": "SkillCard",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: skill-card flags/list"
+  },
+  {
+    "json_key": "skill_flip_flap",
+    "category": "skill_card",
+    "field_candidate": "SkillCard",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: skill-card flags/list"
+  },
+  {
+    "json_key": "skill_gk_long_throw",
+    "category": "skill_card",
+    "field_candidate": "SkillCard",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: skill-card flags/list"
+  },
+  {
+    "json_key": "skill_knuckle_shoot",
+    "category": "skill_card",
+    "field_candidate": "SkillCard",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: skill-card flags/list"
+  },
+  {
+    "json_key": "skill_long_throw",
+    "category": "skill_card",
+    "field_candidate": "SkillCard",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: skill-card flags/list"
+  },
+  {
+    "json_key": "skill_low_pant_kick",
+    "category": "skill_card",
+    "field_candidate": "SkillCard",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: skill-card flags/list"
+  },
+  {
+    "json_key": "skill_man_mark",
+    "category": "skill_card",
+    "field_candidate": "SkillCard",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: skill-card flags/list"
+  },
+  {
+    "json_key": "skill_one_touch_pass",
+    "category": "skill_card",
+    "field_candidate": "SkillCard",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: skill-card flags/list"
+  },
+  {
+    "json_key": "skill_one_touch_shoot",
+    "category": "skill_card",
+    "field_candidate": "SkillCard",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: skill-card flags/list"
+  },
+  {
+    "json_key": "skill_out_spin_kick",
+    "category": "skill_card",
+    "field_candidate": "SkillCard",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: skill-card flags/list"
+  },
+  {
+    "json_key": "skill_pin_point_cross",
+    "category": "skill_card",
+    "field_candidate": "SkillCard",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: skill-card flags/list"
+  },
+  {
+    "json_key": "skill_pivot_foot_touch",
+    "category": "skill_card",
+    "field_candidate": "SkillCard",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: skill-card flags/list"
+  },
+  {
+    "json_key": "skill_quick_touch",
+    "category": "skill_card",
+    "field_candidate": "SkillCard",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: skill-card flags/list"
+  },
+  {
+    "json_key": "skill_roulette",
+    "category": "skill_card",
+    "field_candidate": "SkillCard",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: skill-card flags/list"
+  },
+  {
+    "json_key": "skill_scissors",
+    "category": "skill_card",
+    "field_candidate": "SkillCard",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: skill-card flags/list"
+  },
+  {
+    "json_key": "skill_sombrero",
+    "category": "skill_card",
+    "field_candidate": "SkillCard",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: skill-card flags/list"
+  },
+  {
+    "json_key": "skill_super_sub",
+    "category": "skill_card",
+    "field_candidate": "SkillCard",
+    "native_offsets": "",
+    "widths": "",
+    "confidence": "medium",
+    "mapping_reason": "group: skill-card flags/list"
+  }
+]

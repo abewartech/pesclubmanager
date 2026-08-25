@@ -75,6 +75,10 @@ Detailed technical reports documenting each phase of the project can be found un
 *   **🧬 Schema & Offset Recovery**
     *   [reports/stage4_player_symbol_schema.md](reports/stage4_player_symbol_schema.md): Complete C++ namespace mapping for `onlinemode::ParameterPlayerDefine`.
     *   [reports/stage4_player_offset_schema.md](reports/stage4_player_offset_schema.md): 73+ high-confidence field offsets (e.g., `AppearanceId`, `ContractSalary`, `Rarity`, `SquadPosition`) extracted from disassembling getter/setter models.
+    *   [reports/stage6_player_cross_reference.md](reports/stage6_player_cross_reference.md): Read-only coverage report comparing normalized player records with native key/offset evidence.
+*   **Agent Handoff**
+    *   [AGENTS.md](AGENTS.md): Short operational guide for AI coding agents working in this workspace.
+    *   [docs/ai_agent_handoff.md](docs/ai_agent_handoff.md): Detailed context, safety boundaries, stage summary, commands, and next steps for another agent.
 
 ---
 

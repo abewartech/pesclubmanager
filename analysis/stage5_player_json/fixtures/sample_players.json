@@ -1,0 +1,32 @@
+{
+  "players": [
+    {
+      "serial_id": 101,
+      "master_id": 9001,
+      "name": "Sample Forward",
+      "age": 24,
+      "original_team_id": 77,
+      "salary": 1200,
+      "contract_period": 12,
+      "param_speed": 81,
+      "param_shot": 79,
+      "skill_one_touch_shoot": 1,
+      "cf": 3,
+      "record_goal_total": 18,
+      "mystery_flag": 5
+    },
+    {
+      "serial_id": 102,
+      "master_id": 9002,
+      "name": "Sample Keeper",
+      "rarity": 4,
+      "position": "gk",
+      "param_saving": 83,
+      "skill_gk_long_throw": 1,
+      "gk": 3
+    }
+  ],
+  "metadata": {
+    "name": "not a player because it has only one weak key"
+  }
+}

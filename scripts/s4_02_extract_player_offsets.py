@@ -108,6 +108,11 @@ def parse_disasm(rows):
         if not instr:
             continue
         addr, op, args = instr.groups()
+        ins_addr = int(addr, 16)
+        func_start = int(current["address"], 16)
+        func_end = func_start + int(current["size"])
+        if not (func_start <= ins_addr < func_end):
+            continue
         parsed[current["method"]].append({
             "address": "0x" + addr.lower(),
             "op": op,
@@ -177,7 +182,16 @@ def extract_offset(row, instructions):
         if ins["op"] in {"and", "bfi", "ubfx", "sbfiz"}:
             bitfield = (bitfield or []) + [ins["text"]]
 
-    return accesses, bitfield
+    deduped = []
+    seen = set()
+    for access in accesses:
+        key = (access["offset"], access["access"], access["width"], access["instruction"])
+        if key in seen:
+            continue
+        seen.add(key)
+        deduped.append(access)
+
+    return deduped, bitfield
 
 
 def main():
@@ -220,6 +234,7 @@ def main():
             "offset_hex": "",
             "reads": [],
             "writes": [],
+            "addresses": [],
             "widths": set(),
             "bitfield_evidence": set(),
         }),
@@ -234,6 +249,8 @@ def main():
             off["reads"].append(rec["method"])
         elif rec["access"] == "write":
             off["writes"].append(rec["method"])
+        elif rec["access"] == "address":
+            off["addresses"].append(rec["method"])
         if rec["bitfield_evidence"]:
             off["bitfield_evidence"].add(rec["bitfield_evidence"])
 
@@ -245,6 +262,7 @@ def main():
                 "offset_hex": off["offset_hex"],
                 "reads": sorted(set(off["reads"])),
                 "writes": sorted(set(off["writes"])),
+                "addresses": sorted(set(off["addresses"])),
                 "widths": sorted(off["widths"]),
                 "bitfield_evidence": sorted(off["bitfield_evidence"]),
             })
@@ -258,7 +276,11 @@ def main():
 
     high_conf = [
         item for item in json_ready
-        if len(item["offsets"]) == 1 and (item["offsets"][0]["reads"] or item["offsets"][0]["writes"])
+        if len(item["offsets"]) == 1 and (
+            item["offsets"][0]["reads"]
+            or item["offsets"][0]["writes"]
+            or item["offsets"][0]["addresses"]
+        )
     ]
     with REPORT.open("w", encoding="utf-8", newline="\n") as f:
         f.write("# Stage 4 Player Offset Schema\n\n")
@@ -267,15 +289,16 @@ def main():
         f.write(f"**Field access records:** {len(records):,}\n\n")
         f.write(f"**Single-offset field candidates:** {len(high_conf):,}\n\n")
         f.write("## High-Confidence Offset Candidates\n\n")
-        f.write("| Field | Offset | Widths | Reads | Writes | Notes |\n")
-        f.write("|---|---:|---|---|---|---|\n")
+        f.write("| Field | Offset | Widths | Reads | Writes | Address refs | Notes |\n")
+        f.write("|---|---:|---|---|---|---|---|\n")
         for item in high_conf[:140]:
             off = item["offsets"][0]
             notes = "bitfield" if off["bitfield_evidence"] else ""
             f.write(
                 f"| `{item['field_candidate']}` | `{off['offset_hex']}` | "
                 f"`{', '.join(off['widths'])}` | `{', '.join(off['reads']) or '-'}` | "
-                f"`{', '.join(off['writes']) or '-'}` | {notes} |\n"
+                f"`{', '.join(off['writes']) or '-'}` | "
+                f"`{', '.join(off['addresses']) or '-'}` | {notes} |\n"
             )
         f.write("\n## Outputs\n\n")
         f.write(f"- `{CSV_OUT.relative_to(WORKSPACE)}`\n")

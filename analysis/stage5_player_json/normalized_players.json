@@ -1,0 +1,253 @@
+{
+  "meta": {
+    "stage": "stage5_player_json_normalizer",
+    "input": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+    "scanned_files": [
+      "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json"
+    ],
+    "player_record_count": 2,
+    "read_only": true,
+    "key_offset_map": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage4_player_schema\\player_json_key_offset_map.json"
+  },
+  "players": [
+    {
+      "identity": {
+        "serial_id": 101,
+        "master_id": 9001
+      },
+      "profile": {
+        "name": "Sample Forward",
+        "age": 24
+      },
+      "team": {
+        "original_team_id": 77
+      },
+      "contract": {
+        "salary": 1200,
+        "contract_period": 12
+      },
+      "abilities": {
+        "param_speed": 81,
+        "param_shot": 79
+      },
+      "skills": {
+        "skill_one_touch_shoot": 1
+      },
+      "positions": {
+        "cf": 3
+      },
+      "records": {
+        "record_goal_total": 18
+      },
+      "raw_unmapped": {
+        "mystery_flag": 5
+      },
+      "native_evidence": {
+        "serial_id": {
+          "field_candidate": "SerialId",
+          "confidence": "medium",
+          "offsets": [
+            "0x1c8"
+          ],
+          "widths": [
+            "u64"
+          ]
+        },
+        "master_id": {
+          "field_candidate": "MasterId",
+          "confidence": "medium",
+          "offsets": [
+            "0x1d0"
+          ],
+          "widths": [
+            "u64"
+          ]
+        },
+        "name": {
+          "field_candidate": "Name",
+          "confidence": "medium",
+          "offsets": [
+            "0x38"
+          ],
+          "widths": [
+            "pointer"
+          ]
+        },
+        "age": {
+          "field_candidate": "Age",
+          "confidence": "medium",
+          "offsets": [
+            "0x18",
+            "0x1c"
+          ],
+          "widths": [
+            "u64",
+            "u8"
+          ]
+        },
+        "original_team_id": {
+          "field_candidate": "OriginalTeamId",
+          "confidence": "medium",
+          "offsets": [
+            "0xdc"
+          ],
+          "widths": [
+            "u32"
+          ]
+        },
+        "salary": {
+          "field_candidate": "Salary",
+          "confidence": "medium",
+          "offsets": [
+            "0x1e8"
+          ],
+          "widths": [
+            "u32"
+          ]
+        },
+        "contract_period": {
+          "field_candidate": "ContractPeriod",
+          "confidence": "medium",
+          "offsets": [
+            "0x1e0"
+          ],
+          "widths": [
+            "u32"
+          ]
+        },
+        "param_speed": {
+          "field_candidate": "AbilityParameter",
+          "confidence": "medium",
+          "offsets": [],
+          "widths": []
+        },
+        "param_shot": {
+          "field_candidate": "AbilityParameter",
+          "confidence": "medium",
+          "offsets": [],
+          "widths": []
+        },
+        "skill_one_touch_shoot": {
+          "field_candidate": "SkillCard",
+          "confidence": "medium",
+          "offsets": [],
+          "widths": []
+        },
+        "cf": {
+          "field_candidate": "PositionAptitude",
+          "confidence": "medium",
+          "offsets": [],
+          "widths": []
+        },
+        "record_goal_total": {
+          "field_candidate": "GoalSum",
+          "confidence": "medium",
+          "offsets": [
+            "0x170"
+          ],
+          "widths": [
+            "u32"
+          ]
+        }
+      },
+      "provenance": {
+        "source": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+        "json_pointer": "/players/0"
+      }
+    },
+    {
+      "identity": {
+        "serial_id": 102,
+        "master_id": 9002
+      },
+      "profile": {
+        "name": "Sample Keeper",
+        "rarity": 4,
+        "position": "gk"
+      },
+      "team": {},
+      "contract": {},
+      "abilities": {
+        "param_saving": 83
+      },
+      "skills": {
+        "skill_gk_long_throw": 1
+      },
+      "positions": {
+        "gk": 3
+      },
+      "records": {},
+      "raw_unmapped": {},
+      "native_evidence": {
+        "serial_id": {
+          "field_candidate": "SerialId",
+          "confidence": "medium",
+          "offsets": [
+            "0x1c8"
+          ],
+          "widths": [
+            "u64"
+          ]
+        },
+        "master_id": {
+          "field_candidate": "MasterId",
+          "confidence": "medium",
+          "offsets": [
+            "0x1d0"
+          ],
+          "widths": [
+            "u64"
+          ]
+        },
+        "name": {
+          "field_candidate": "Name",
+          "confidence": "medium",
+          "offsets": [
+            "0x38"
+          ],
+          "widths": [
+            "pointer"
+          ]
+        },
+        "rarity": {
+          "field_candidate": "Rarity",
+          "confidence": "medium",
+          "offsets": [
+            "0x1c0"
+          ],
+          "widths": [
+            "u32"
+          ]
+        },
+        "position": {
+          "field_candidate": "RegisteredPosition",
+          "confidence": "medium",
+          "offsets": [],
+          "widths": []
+        },
+        "param_saving": {
+          "field_candidate": "AbilityParameter",
+          "confidence": "medium",
+          "offsets": [],
+          "widths": []
+        },
+        "skill_gk_long_throw": {
+          "field_candidate": "SkillCard",
+          "confidence": "medium",
+          "offsets": [],
+          "widths": []
+        },
+        "gk": {
+          "field_candidate": "PositionAptitude",
+          "confidence": "medium",
+          "offsets": [],
+          "widths": []
+        }
+      },
+      "provenance": {
+        "source": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+        "json_pointer": "/players/1"
+      }
+    }
+  ]
+}

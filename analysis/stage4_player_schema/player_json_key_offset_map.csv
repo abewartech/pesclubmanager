@@ -1,0 +1,106 @@
+json_key,category,field_candidate,native_offsets,widths,confidence,mapping_reason
+param_agility,ability_parameter,AbilityParameter,,,medium,group: ability parameter array
+param_ball_spin_control,ability_parameter,AbilityParameter,,,medium,group: ability parameter array
+param_body_balance,ability_parameter,AbilityParameter,,,medium,group: ability parameter array
+param_defense_decision,ability_parameter,AbilityParameter,,,medium,group: ability parameter array
+param_dribble,ability_parameter,AbilityParameter,,,medium,group: ability parameter array
+param_gk_decision,ability_parameter,AbilityParameter,,,medium,group: ability parameter array
+param_heading,ability_parameter,AbilityParameter,,,medium,group: ability parameter array
+param_intercept,ability_parameter,AbilityParameter,,,medium,group: ability parameter array
+param_jump,ability_parameter,AbilityParameter,,,medium,group: ability parameter array
+param_kick_power,ability_parameter,AbilityParameter,,,medium,group: ability parameter array
+param_long_pass,ability_parameter,AbilityParameter,,,medium,group: ability parameter array
+param_offense_decision,ability_parameter,AbilityParameter,,,medium,group: ability parameter array
+param_place_kicking,ability_parameter,AbilityParameter,,,medium,group: ability parameter array
+param_r_foot_acc,ability_parameter,AbilityParameter,,,medium,group: ability parameter array
+param_r_foot_frequency,ability_parameter,AbilityParameter,,,medium,group: ability parameter array
+param_saving,ability_parameter,AbilityParameter,,,medium,group: ability parameter array
+param_short_pass,ability_parameter,AbilityParameter,,,medium,group: ability parameter array
+param_shot,ability_parameter,AbilityParameter,,,medium,group: ability parameter array
+param_speed,ability_parameter,AbilityParameter,,,medium,group: ability parameter array
+param_stamina,ability_parameter,AbilityParameter,,,medium,group: ability parameter array
+param_teamwork,ability_parameter,AbilityParameter,,,medium,group: ability parameter array
+param_trap,ability_parameter,AbilityParameter,,,medium,group: ability parameter array
+LeftRight,field,,,,low,unmapped
+age,field,Age,"0x18, 0x1c","u64, u8",medium,direct synonym
+camulative_yellow_cards,field,SumYellow,0x18c,u32,medium,direct synonym
+condition_status,field,Condition,"0xf4, 0xf7","u64, u8",medium,direct synonym
+contract_period,field,ContractPeriod,0x1e0,u32,medium,direct synonym
+contract_period_max,field,ContractPeriodMax,0x1dc,u32,medium,direct synonym
+contract_period_request,field,ContractPeriodRequest,0x1e4,u32,medium,direct synonym
+contract_status,field,ContractStatus,0x210,u32,medium,direct synonym
+deleted,field,DeleteType,0x214,u32,medium,direct synonym
+durability,field,,,,low,unmapped
+e_09,field,,,,low,unmapped
+energy,field,,,,low,unmapped
+er_home_10,field,,,,low,unmapped
+height,field,,,,low,unmapped
+injury,field,InjuryLength,"0xf4, 0xf8","u64, u8",medium,direct synonym
+legend_status,field,LegendStatus,0x1bc,u32,medium,normalized exact match
+licence,field,License,0x204,u32,medium,direct synonym
+master_id,field,MasterId,0x1d0,u64,medium,direct synonym
+motivation,field,MotivationValue,0x20c,u8,medium,direct synonym
+name,field,Name,0x38,pointer,medium,direct synonym
+nationality,field,Nationality,0xf4,u64,medium,direct synonym
+next_salary,field,NextSalary,0x1ec,u32,medium,direct synonym
+original_team_id,field,OriginalTeamId,0xdc,u32,medium,direct synonym
+playstyle,field,PlayStyle,0x18,u64,medium,direct synonym
+position,field,RegisteredPosition,,,medium,direct synonym
+price,field,MarketValue,0x1a0,u64,medium,direct synonym
+rarity,field,Rarity,0x1c0,u32,medium,direct synonym
+salary,field,Salary,0x1e8,u32,medium,direct synonym
+salary_list,field,ContractSalary,0x1f0,u32,medium,direct synonym
+sell_price,field,SellPrice,0x1a8,u32,medium,direct synonym
+serial_id,field,SerialId,0x1c8,u64,medium,direct synonym
+stability,field,,,,low,unmapped
+stronger_foot,field,StrongerFoot,,,medium,direct synonym
+uniform_name,field,NamePrint,"0x75, 0xf7","pointer, u8",medium,direct synonym
+uniform_number,field,UniformNumber,0x1ac,u32,medium,direct synonym
+weight,field,,,,low,unmapped
+cb,position_aptitude,PositionAptitude,,,medium,group: position aptitude bitfield/table
+cf,position_aptitude,PositionAptitude,,,medium,group: position aptitude bitfield/table
+cmf,position_aptitude,PositionAptitude,,,medium,group: position aptitude bitfield/table
+dmf,position_aptitude,PositionAptitude,,,medium,group: position aptitude bitfield/table
+gk,position_aptitude,PositionAptitude,,,medium,group: position aptitude bitfield/table
+lmf,position_aptitude,PositionAptitude,,,medium,group: position aptitude bitfield/table
+lsb,position_aptitude,PositionAptitude,,,medium,group: position aptitude bitfield/table
+lwg,position_aptitude,PositionAptitude,,,medium,group: position aptitude bitfield/table
+omf,position_aptitude,PositionAptitude,,,medium,group: position aptitude bitfield/table
+rmf,position_aptitude,PositionAptitude,,,medium,group: position aptitude bitfield/table
+rsb,position_aptitude,PositionAptitude,,,medium,group: position aptitude bitfield/table
+rwg,position_aptitude,PositionAptitude,,,medium,group: position aptitude bitfield/table
+st,position_aptitude,PositionAptitude,,,medium,group: position aptitude bitfield/table
+record_assist_season,record,AssistSeason,0x174,u32,medium,direct synonym
+record_assist_total,record,AssistSum,0x178,u32,medium,direct synonym
+record_average_rating_season,record,PointSeason,0x17c,u32,medium,direct synonym
+record_average_rating_total,record,PointSum,0x180,u32,medium,direct synonym
+record_goal_season,record,GoalSeason,0x16c,u32,medium,direct synonym
+record_goal_total,record,GoalSum,0x170,u32,medium,direct synonym
+record_match_season,record,GameSeason,0x164,u32,medium,direct synonym
+record_match_total,record,GameSum,0x168,u32,medium,direct synonym
+record_red_card_season,record,RedSeason,0x194,u32,medium,direct synonym
+record_red_card_total,record,RedSum,0x198,u32,medium,direct synonym
+record_yellow_card_season,record,YellowSeason,0x184,u32,medium,direct synonym
+record_yellow_card_total,record,YellowSum,0x188,u32,medium,direct synonym
+skill_acrobatic_shoot,skill_card,SkillCard,,,medium,group: skill-card flags/list
+skill_back_spin_lob,skill_card,SkillCard,,,medium,group: skill-card flags/list
+skill_captaincy,skill_card,SkillCard,,,medium,group: skill-card flags/list
+skill_chasing,skill_card,SkillCard,,,medium,group: skill-card flags/list
+skill_combative_spirit,skill_card,SkillCard,,,medium,group: skill-card flags/list
+skill_control_curve,skill_card,SkillCard,,,medium,group: skill-card flags/list
+skill_flip_flap,skill_card,SkillCard,,,medium,group: skill-card flags/list
+skill_gk_long_throw,skill_card,SkillCard,,,medium,group: skill-card flags/list
+skill_knuckle_shoot,skill_card,SkillCard,,,medium,group: skill-card flags/list
+skill_long_throw,skill_card,SkillCard,,,medium,group: skill-card flags/list
+skill_low_pant_kick,skill_card,SkillCard,,,medium,group: skill-card flags/list
+skill_man_mark,skill_card,SkillCard,,,medium,group: skill-card flags/list
+skill_one_touch_pass,skill_card,SkillCard,,,medium,group: skill-card flags/list
+skill_one_touch_shoot,skill_card,SkillCard,,,medium,group: skill-card flags/list
+skill_out_spin_kick,skill_card,SkillCard,,,medium,group: skill-card flags/list
+skill_pin_point_cross,skill_card,SkillCard,,,medium,group: skill-card flags/list
+skill_pivot_foot_touch,skill_card,SkillCard,,,medium,group: skill-card flags/list
+skill_quick_touch,skill_card,SkillCard,,,medium,group: skill-card flags/list
+skill_roulette,skill_card,SkillCard,,,medium,group: skill-card flags/list
+skill_scissors,skill_card,SkillCard,,,medium,group: skill-card flags/list
+skill_sombrero,skill_card,SkillCard,,,medium,group: skill-card flags/list
+skill_super_sub,skill_card,SkillCard,,,medium,group: skill-card flags/list

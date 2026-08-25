@@ -1,0 +1,107 @@
+bucket,json_key,sections,occurrences,field_candidate,category,confidence,offsets,widths,mapping_reason
+observed_with_offset,age,profile,1,Age,field,medium,"0x18, 0x1c","u64, u8",direct synonym
+observed_with_offset,contract_period,contract,1,ContractPeriod,field,medium,0x1e0,u32,direct synonym
+observed_with_offset,master_id,identity,2,MasterId,field,medium,0x1d0,u64,direct synonym
+observed_with_offset,name,profile,2,Name,field,medium,0x38,pointer,direct synonym
+observed_with_offset,original_team_id,team,1,OriginalTeamId,field,medium,0xdc,u32,direct synonym
+observed_with_offset,rarity,profile,1,Rarity,field,medium,0x1c0,u32,direct synonym
+observed_with_offset,record_goal_total,records,1,GoalSum,record,medium,0x170,u32,direct synonym
+observed_with_offset,salary,contract,1,Salary,field,medium,0x1e8,u32,direct synonym
+observed_with_offset,serial_id,identity,2,SerialId,field,medium,0x1c8,u64,direct synonym
+observed_without_offset,cf,positions,1,PositionAptitude,position_aptitude,medium,,,group: position aptitude bitfield/table
+observed_without_offset,gk,positions,1,PositionAptitude,position_aptitude,medium,,,group: position aptitude bitfield/table
+observed_without_offset,param_saving,abilities,1,AbilityParameter,ability_parameter,medium,,,group: ability parameter array
+observed_without_offset,param_shot,abilities,1,AbilityParameter,ability_parameter,medium,,,group: ability parameter array
+observed_without_offset,param_speed,abilities,1,AbilityParameter,ability_parameter,medium,,,group: ability parameter array
+observed_without_offset,position,profile,1,RegisteredPosition,field,medium,,,direct synonym
+observed_without_offset,skill_gk_long_throw,skills,1,SkillCard,skill_card,medium,,,group: skill-card flags/list
+observed_without_offset,skill_one_touch_shoot,skills,1,SkillCard,skill_card,medium,,,group: skill-card flags/list
+observed_unmapped,mystery_flag,raw_unmapped,1,,,,,,
+native_unobserved,LeftRight,,,,field,low,,,unmapped
+native_unobserved,camulative_yellow_cards,,,SumYellow,field,medium,0x18c,u32,direct synonym
+native_unobserved,cb,,,PositionAptitude,position_aptitude,medium,,,group: position aptitude bitfield/table
+native_unobserved,cmf,,,PositionAptitude,position_aptitude,medium,,,group: position aptitude bitfield/table
+native_unobserved,condition_status,,,Condition,field,medium,"0xf4, 0xf7","u64, u8",direct synonym
+native_unobserved,contract_period_max,,,ContractPeriodMax,field,medium,0x1dc,u32,direct synonym
+native_unobserved,contract_period_request,,,ContractPeriodRequest,field,medium,0x1e4,u32,direct synonym
+native_unobserved,contract_status,,,ContractStatus,field,medium,0x210,u32,direct synonym
+native_unobserved,deleted,,,DeleteType,field,medium,0x214,u32,direct synonym
+native_unobserved,dmf,,,PositionAptitude,position_aptitude,medium,,,group: position aptitude bitfield/table
+native_unobserved,durability,,,,field,low,,,unmapped
+native_unobserved,e_09,,,,field,low,,,unmapped
+native_unobserved,energy,,,,field,low,,,unmapped
+native_unobserved,er_home_10,,,,field,low,,,unmapped
+native_unobserved,height,,,,field,low,,,unmapped
+native_unobserved,injury,,,InjuryLength,field,medium,"0xf4, 0xf8","u64, u8",direct synonym
+native_unobserved,legend_status,,,LegendStatus,field,medium,0x1bc,u32,normalized exact match
+native_unobserved,licence,,,License,field,medium,0x204,u32,direct synonym
+native_unobserved,lmf,,,PositionAptitude,position_aptitude,medium,,,group: position aptitude bitfield/table
+native_unobserved,lsb,,,PositionAptitude,position_aptitude,medium,,,group: position aptitude bitfield/table
+native_unobserved,lwg,,,PositionAptitude,position_aptitude,medium,,,group: position aptitude bitfield/table
+native_unobserved,motivation,,,MotivationValue,field,medium,0x20c,u8,direct synonym
+native_unobserved,nationality,,,Nationality,field,medium,0xf4,u64,direct synonym
+native_unobserved,next_salary,,,NextSalary,field,medium,0x1ec,u32,direct synonym
+native_unobserved,omf,,,PositionAptitude,position_aptitude,medium,,,group: position aptitude bitfield/table
+native_unobserved,param_agility,,,AbilityParameter,ability_parameter,medium,,,group: ability parameter array
+native_unobserved,param_ball_spin_control,,,AbilityParameter,ability_parameter,medium,,,group: ability parameter array
+native_unobserved,param_body_balance,,,AbilityParameter,ability_parameter,medium,,,group: ability parameter array
+native_unobserved,param_defense_decision,,,AbilityParameter,ability_parameter,medium,,,group: ability parameter array
+native_unobserved,param_dribble,,,AbilityParameter,ability_parameter,medium,,,group: ability parameter array
+native_unobserved,param_gk_decision,,,AbilityParameter,ability_parameter,medium,,,group: ability parameter array
+native_unobserved,param_heading,,,AbilityParameter,ability_parameter,medium,,,group: ability parameter array
+native_unobserved,param_intercept,,,AbilityParameter,ability_parameter,medium,,,group: ability parameter array
+native_unobserved,param_jump,,,AbilityParameter,ability_parameter,medium,,,group: ability parameter array
+native_unobserved,param_kick_power,,,AbilityParameter,ability_parameter,medium,,,group: ability parameter array
+native_unobserved,param_long_pass,,,AbilityParameter,ability_parameter,medium,,,group: ability parameter array
+native_unobserved,param_offense_decision,,,AbilityParameter,ability_parameter,medium,,,group: ability parameter array
+native_unobserved,param_place_kicking,,,AbilityParameter,ability_parameter,medium,,,group: ability parameter array
+native_unobserved,param_r_foot_acc,,,AbilityParameter,ability_parameter,medium,,,group: ability parameter array
+native_unobserved,param_r_foot_frequency,,,AbilityParameter,ability_parameter,medium,,,group: ability parameter array
+native_unobserved,param_short_pass,,,AbilityParameter,ability_parameter,medium,,,group: ability parameter array
+native_unobserved,param_stamina,,,AbilityParameter,ability_parameter,medium,,,group: ability parameter array
+native_unobserved,param_teamwork,,,AbilityParameter,ability_parameter,medium,,,group: ability parameter array
+native_unobserved,param_trap,,,AbilityParameter,ability_parameter,medium,,,group: ability parameter array
+native_unobserved,playstyle,,,PlayStyle,field,medium,0x18,u64,direct synonym
+native_unobserved,price,,,MarketValue,field,medium,0x1a0,u64,direct synonym
+native_unobserved,record_assist_season,,,AssistSeason,record,medium,0x174,u32,direct synonym
+native_unobserved,record_assist_total,,,AssistSum,record,medium,0x178,u32,direct synonym
+native_unobserved,record_average_rating_season,,,PointSeason,record,medium,0x17c,u32,direct synonym
+native_unobserved,record_average_rating_total,,,PointSum,record,medium,0x180,u32,direct synonym
+native_unobserved,record_goal_season,,,GoalSeason,record,medium,0x16c,u32,direct synonym
+native_unobserved,record_match_season,,,GameSeason,record,medium,0x164,u32,direct synonym
+native_unobserved,record_match_total,,,GameSum,record,medium,0x168,u32,direct synonym
+native_unobserved,record_red_card_season,,,RedSeason,record,medium,0x194,u32,direct synonym
+native_unobserved,record_red_card_total,,,RedSum,record,medium,0x198,u32,direct synonym
+native_unobserved,record_yellow_card_season,,,YellowSeason,record,medium,0x184,u32,direct synonym
+native_unobserved,record_yellow_card_total,,,YellowSum,record,medium,0x188,u32,direct synonym
+native_unobserved,rmf,,,PositionAptitude,position_aptitude,medium,,,group: position aptitude bitfield/table
+native_unobserved,rsb,,,PositionAptitude,position_aptitude,medium,,,group: position aptitude bitfield/table
+native_unobserved,rwg,,,PositionAptitude,position_aptitude,medium,,,group: position aptitude bitfield/table
+native_unobserved,salary_list,,,ContractSalary,field,medium,0x1f0,u32,direct synonym
+native_unobserved,sell_price,,,SellPrice,field,medium,0x1a8,u32,direct synonym
+native_unobserved,skill_acrobatic_shoot,,,SkillCard,skill_card,medium,,,group: skill-card flags/list
+native_unobserved,skill_back_spin_lob,,,SkillCard,skill_card,medium,,,group: skill-card flags/list
+native_unobserved,skill_captaincy,,,SkillCard,skill_card,medium,,,group: skill-card flags/list
+native_unobserved,skill_chasing,,,SkillCard,skill_card,medium,,,group: skill-card flags/list
+native_unobserved,skill_combative_spirit,,,SkillCard,skill_card,medium,,,group: skill-card flags/list
+native_unobserved,skill_control_curve,,,SkillCard,skill_card,medium,,,group: skill-card flags/list
+native_unobserved,skill_flip_flap,,,SkillCard,skill_card,medium,,,group: skill-card flags/list
+native_unobserved,skill_knuckle_shoot,,,SkillCard,skill_card,medium,,,group: skill-card flags/list
+native_unobserved,skill_long_throw,,,SkillCard,skill_card,medium,,,group: skill-card flags/list
+native_unobserved,skill_low_pant_kick,,,SkillCard,skill_card,medium,,,group: skill-card flags/list
+native_unobserved,skill_man_mark,,,SkillCard,skill_card,medium,,,group: skill-card flags/list
+native_unobserved,skill_one_touch_pass,,,SkillCard,skill_card,medium,,,group: skill-card flags/list
+native_unobserved,skill_out_spin_kick,,,SkillCard,skill_card,medium,,,group: skill-card flags/list
+native_unobserved,skill_pin_point_cross,,,SkillCard,skill_card,medium,,,group: skill-card flags/list
+native_unobserved,skill_pivot_foot_touch,,,SkillCard,skill_card,medium,,,group: skill-card flags/list
+native_unobserved,skill_quick_touch,,,SkillCard,skill_card,medium,,,group: skill-card flags/list
+native_unobserved,skill_roulette,,,SkillCard,skill_card,medium,,,group: skill-card flags/list
+native_unobserved,skill_scissors,,,SkillCard,skill_card,medium,,,group: skill-card flags/list
+native_unobserved,skill_sombrero,,,SkillCard,skill_card,medium,,,group: skill-card flags/list
+native_unobserved,skill_super_sub,,,SkillCard,skill_card,medium,,,group: skill-card flags/list
+native_unobserved,st,,,PositionAptitude,position_aptitude,medium,,,group: position aptitude bitfield/table
+native_unobserved,stability,,,,field,low,,,unmapped
+native_unobserved,stronger_foot,,,StrongerFoot,field,medium,,,direct synonym
+native_unobserved,uniform_name,,,NamePrint,field,medium,"0x75, 0xf7","pointer, u8",direct synonym
+native_unobserved,uniform_number,,,UniformNumber,field,medium,0x1ac,u32,direct synonym
+native_unobserved,weight,,,,field,low,,,unmapped

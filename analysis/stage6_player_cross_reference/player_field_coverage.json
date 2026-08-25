@@ -1,0 +1,1389 @@
+{
+  "summary": {
+    "player_count": 2,
+    "observed_key_count": 18,
+    "mapped_key_count": 105,
+    "observed_with_offset_count": 9,
+    "observed_without_offset_count": 8,
+    "observed_unmapped_count": 1,
+    "native_unobserved_count": 88,
+    "read_only": true
+  },
+  "sources": {
+    "normalized_players": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\normalized_players.json",
+    "key_offset_map": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage4_player_schema\\player_json_key_offset_map.json"
+  },
+  "coverage": {
+    "observed_with_offset": [
+      {
+        "json_key": "age",
+        "sections": [
+          "profile"
+        ],
+        "occurrences": 1,
+        "examples": [
+          {
+            "player_index": 0,
+            "section": "profile",
+            "value": 24,
+            "source": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+            "json_pointer": "/players/0"
+          }
+        ],
+        "field_candidate": "Age",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0x18",
+          "0x1c"
+        ],
+        "widths": [
+          "u64",
+          "u8"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "contract_period",
+        "sections": [
+          "contract"
+        ],
+        "occurrences": 1,
+        "examples": [
+          {
+            "player_index": 0,
+            "section": "contract",
+            "value": 12,
+            "source": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+            "json_pointer": "/players/0"
+          }
+        ],
+        "field_candidate": "ContractPeriod",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0x1e0"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "master_id",
+        "sections": [
+          "identity"
+        ],
+        "occurrences": 2,
+        "examples": [
+          {
+            "player_index": 0,
+            "section": "identity",
+            "value": 9001,
+            "source": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+            "json_pointer": "/players/0"
+          },
+          {
+            "player_index": 1,
+            "section": "identity",
+            "value": 9002,
+            "source": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+            "json_pointer": "/players/1"
+          }
+        ],
+        "field_candidate": "MasterId",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0x1d0"
+        ],
+        "widths": [
+          "u64"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "name",
+        "sections": [
+          "profile"
+        ],
+        "occurrences": 2,
+        "examples": [
+          {
+            "player_index": 0,
+            "section": "profile",
+            "value": "Sample Forward",
+            "source": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+            "json_pointer": "/players/0"
+          },
+          {
+            "player_index": 1,
+            "section": "profile",
+            "value": "Sample Keeper",
+            "source": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+            "json_pointer": "/players/1"
+          }
+        ],
+        "field_candidate": "Name",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0x38"
+        ],
+        "widths": [
+          "pointer"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "original_team_id",
+        "sections": [
+          "team"
+        ],
+        "occurrences": 1,
+        "examples": [
+          {
+            "player_index": 0,
+            "section": "team",
+            "value": 77,
+            "source": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+            "json_pointer": "/players/0"
+          }
+        ],
+        "field_candidate": "OriginalTeamId",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0xdc"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "rarity",
+        "sections": [
+          "profile"
+        ],
+        "occurrences": 1,
+        "examples": [
+          {
+            "player_index": 1,
+            "section": "profile",
+            "value": 4,
+            "source": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+            "json_pointer": "/players/1"
+          }
+        ],
+        "field_candidate": "Rarity",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0x1c0"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "record_goal_total",
+        "sections": [
+          "records"
+        ],
+        "occurrences": 1,
+        "examples": [
+          {
+            "player_index": 0,
+            "section": "records",
+            "value": 18,
+            "source": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+            "json_pointer": "/players/0"
+          }
+        ],
+        "field_candidate": "GoalSum",
+        "category": "record",
+        "confidence": "medium",
+        "offsets": [
+          "0x170"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "salary",
+        "sections": [
+          "contract"
+        ],
+        "occurrences": 1,
+        "examples": [
+          {
+            "player_index": 0,
+            "section": "contract",
+            "value": 1200,
+            "source": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+            "json_pointer": "/players/0"
+          }
+        ],
+        "field_candidate": "Salary",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0x1e8"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "serial_id",
+        "sections": [
+          "identity"
+        ],
+        "occurrences": 2,
+        "examples": [
+          {
+            "player_index": 0,
+            "section": "identity",
+            "value": 101,
+            "source": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+            "json_pointer": "/players/0"
+          },
+          {
+            "player_index": 1,
+            "section": "identity",
+            "value": 102,
+            "source": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+            "json_pointer": "/players/1"
+          }
+        ],
+        "field_candidate": "SerialId",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0x1c8"
+        ],
+        "widths": [
+          "u64"
+        ],
+        "mapping_reason": "direct synonym"
+      }
+    ],
+    "observed_without_offset": [
+      {
+        "json_key": "cf",
+        "sections": [
+          "positions"
+        ],
+        "occurrences": 1,
+        "examples": [
+          {
+            "player_index": 0,
+            "section": "positions",
+            "value": 3,
+            "source": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+            "json_pointer": "/players/0"
+          }
+        ],
+        "field_candidate": "PositionAptitude",
+        "category": "position_aptitude",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: position aptitude bitfield/table"
+      },
+      {
+        "json_key": "gk",
+        "sections": [
+          "positions"
+        ],
+        "occurrences": 1,
+        "examples": [
+          {
+            "player_index": 1,
+            "section": "positions",
+            "value": 3,
+            "source": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+            "json_pointer": "/players/1"
+          }
+        ],
+        "field_candidate": "PositionAptitude",
+        "category": "position_aptitude",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: position aptitude bitfield/table"
+      },
+      {
+        "json_key": "param_saving",
+        "sections": [
+          "abilities"
+        ],
+        "occurrences": 1,
+        "examples": [
+          {
+            "player_index": 1,
+            "section": "abilities",
+            "value": 83,
+            "source": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+            "json_pointer": "/players/1"
+          }
+        ],
+        "field_candidate": "AbilityParameter",
+        "category": "ability_parameter",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: ability parameter array"
+      },
+      {
+        "json_key": "param_shot",
+        "sections": [
+          "abilities"
+        ],
+        "occurrences": 1,
+        "examples": [
+          {
+            "player_index": 0,
+            "section": "abilities",
+            "value": 79,
+            "source": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+            "json_pointer": "/players/0"
+          }
+        ],
+        "field_candidate": "AbilityParameter",
+        "category": "ability_parameter",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: ability parameter array"
+      },
+      {
+        "json_key": "param_speed",
+        "sections": [
+          "abilities"
+        ],
+        "occurrences": 1,
+        "examples": [
+          {
+            "player_index": 0,
+            "section": "abilities",
+            "value": 81,
+            "source": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+            "json_pointer": "/players/0"
+          }
+        ],
+        "field_candidate": "AbilityParameter",
+        "category": "ability_parameter",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: ability parameter array"
+      },
+      {
+        "json_key": "position",
+        "sections": [
+          "profile"
+        ],
+        "occurrences": 1,
+        "examples": [
+          {
+            "player_index": 1,
+            "section": "profile",
+            "value": "gk",
+            "source": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+            "json_pointer": "/players/1"
+          }
+        ],
+        "field_candidate": "RegisteredPosition",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "skill_gk_long_throw",
+        "sections": [
+          "skills"
+        ],
+        "occurrences": 1,
+        "examples": [
+          {
+            "player_index": 1,
+            "section": "skills",
+            "value": 1,
+            "source": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+            "json_pointer": "/players/1"
+          }
+        ],
+        "field_candidate": "SkillCard",
+        "category": "skill_card",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: skill-card flags/list"
+      },
+      {
+        "json_key": "skill_one_touch_shoot",
+        "sections": [
+          "skills"
+        ],
+        "occurrences": 1,
+        "examples": [
+          {
+            "player_index": 0,
+            "section": "skills",
+            "value": 1,
+            "source": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+            "json_pointer": "/players/0"
+          }
+        ],
+        "field_candidate": "SkillCard",
+        "category": "skill_card",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: skill-card flags/list"
+      }
+    ],
+    "observed_unmapped": [
+      {
+        "json_key": "mystery_flag",
+        "sections": [
+          "raw_unmapped"
+        ],
+        "occurrences": 1,
+        "examples": [
+          {
+            "player_index": 0,
+            "section": "raw_unmapped",
+            "value": 5,
+            "source": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\fixtures\\sample_players.json",
+            "json_pointer": "/players/0"
+          }
+        ]
+      }
+    ],
+    "native_unobserved": [
+      {
+        "json_key": "LeftRight",
+        "field_candidate": "",
+        "category": "field",
+        "confidence": "low",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "unmapped"
+      },
+      {
+        "json_key": "camulative_yellow_cards",
+        "field_candidate": "SumYellow",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0x18c"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "cb",
+        "field_candidate": "PositionAptitude",
+        "category": "position_aptitude",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: position aptitude bitfield/table"
+      },
+      {
+        "json_key": "cmf",
+        "field_candidate": "PositionAptitude",
+        "category": "position_aptitude",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: position aptitude bitfield/table"
+      },
+      {
+        "json_key": "condition_status",
+        "field_candidate": "Condition",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0xf4",
+          "0xf7"
+        ],
+        "widths": [
+          "u64",
+          "u8"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "contract_period_max",
+        "field_candidate": "ContractPeriodMax",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0x1dc"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "contract_period_request",
+        "field_candidate": "ContractPeriodRequest",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0x1e4"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "contract_status",
+        "field_candidate": "ContractStatus",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0x210"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "deleted",
+        "field_candidate": "DeleteType",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0x214"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "dmf",
+        "field_candidate": "PositionAptitude",
+        "category": "position_aptitude",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: position aptitude bitfield/table"
+      },
+      {
+        "json_key": "durability",
+        "field_candidate": "",
+        "category": "field",
+        "confidence": "low",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "unmapped"
+      },
+      {
+        "json_key": "e_09",
+        "field_candidate": "",
+        "category": "field",
+        "confidence": "low",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "unmapped"
+      },
+      {
+        "json_key": "energy",
+        "field_candidate": "",
+        "category": "field",
+        "confidence": "low",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "unmapped"
+      },
+      {
+        "json_key": "er_home_10",
+        "field_candidate": "",
+        "category": "field",
+        "confidence": "low",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "unmapped"
+      },
+      {
+        "json_key": "height",
+        "field_candidate": "",
+        "category": "field",
+        "confidence": "low",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "unmapped"
+      },
+      {
+        "json_key": "injury",
+        "field_candidate": "InjuryLength",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0xf4",
+          "0xf8"
+        ],
+        "widths": [
+          "u64",
+          "u8"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "legend_status",
+        "field_candidate": "LegendStatus",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0x1bc"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "normalized exact match"
+      },
+      {
+        "json_key": "licence",
+        "field_candidate": "License",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0x204"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "lmf",
+        "field_candidate": "PositionAptitude",
+        "category": "position_aptitude",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: position aptitude bitfield/table"
+      },
+      {
+        "json_key": "lsb",
+        "field_candidate": "PositionAptitude",
+        "category": "position_aptitude",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: position aptitude bitfield/table"
+      },
+      {
+        "json_key": "lwg",
+        "field_candidate": "PositionAptitude",
+        "category": "position_aptitude",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: position aptitude bitfield/table"
+      },
+      {
+        "json_key": "motivation",
+        "field_candidate": "MotivationValue",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0x20c"
+        ],
+        "widths": [
+          "u8"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "nationality",
+        "field_candidate": "Nationality",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0xf4"
+        ],
+        "widths": [
+          "u64"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "next_salary",
+        "field_candidate": "NextSalary",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0x1ec"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "omf",
+        "field_candidate": "PositionAptitude",
+        "category": "position_aptitude",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: position aptitude bitfield/table"
+      },
+      {
+        "json_key": "param_agility",
+        "field_candidate": "AbilityParameter",
+        "category": "ability_parameter",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: ability parameter array"
+      },
+      {
+        "json_key": "param_ball_spin_control",
+        "field_candidate": "AbilityParameter",
+        "category": "ability_parameter",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: ability parameter array"
+      },
+      {
+        "json_key": "param_body_balance",
+        "field_candidate": "AbilityParameter",
+        "category": "ability_parameter",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: ability parameter array"
+      },
+      {
+        "json_key": "param_defense_decision",
+        "field_candidate": "AbilityParameter",
+        "category": "ability_parameter",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: ability parameter array"
+      },
+      {
+        "json_key": "param_dribble",
+        "field_candidate": "AbilityParameter",
+        "category": "ability_parameter",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: ability parameter array"
+      },
+      {
+        "json_key": "param_gk_decision",
+        "field_candidate": "AbilityParameter",
+        "category": "ability_parameter",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: ability parameter array"
+      },
+      {
+        "json_key": "param_heading",
+        "field_candidate": "AbilityParameter",
+        "category": "ability_parameter",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: ability parameter array"
+      },
+      {
+        "json_key": "param_intercept",
+        "field_candidate": "AbilityParameter",
+        "category": "ability_parameter",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: ability parameter array"
+      },
+      {
+        "json_key": "param_jump",
+        "field_candidate": "AbilityParameter",
+        "category": "ability_parameter",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: ability parameter array"
+      },
+      {
+        "json_key": "param_kick_power",
+        "field_candidate": "AbilityParameter",
+        "category": "ability_parameter",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: ability parameter array"
+      },
+      {
+        "json_key": "param_long_pass",
+        "field_candidate": "AbilityParameter",
+        "category": "ability_parameter",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: ability parameter array"
+      },
+      {
+        "json_key": "param_offense_decision",
+        "field_candidate": "AbilityParameter",
+        "category": "ability_parameter",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: ability parameter array"
+      },
+      {
+        "json_key": "param_place_kicking",
+        "field_candidate": "AbilityParameter",
+        "category": "ability_parameter",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: ability parameter array"
+      },
+      {
+        "json_key": "param_r_foot_acc",
+        "field_candidate": "AbilityParameter",
+        "category": "ability_parameter",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: ability parameter array"
+      },
+      {
+        "json_key": "param_r_foot_frequency",
+        "field_candidate": "AbilityParameter",
+        "category": "ability_parameter",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: ability parameter array"
+      },
+      {
+        "json_key": "param_short_pass",
+        "field_candidate": "AbilityParameter",
+        "category": "ability_parameter",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: ability parameter array"
+      },
+      {
+        "json_key": "param_stamina",
+        "field_candidate": "AbilityParameter",
+        "category": "ability_parameter",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: ability parameter array"
+      },
+      {
+        "json_key": "param_teamwork",
+        "field_candidate": "AbilityParameter",
+        "category": "ability_parameter",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: ability parameter array"
+      },
+      {
+        "json_key": "param_trap",
+        "field_candidate": "AbilityParameter",
+        "category": "ability_parameter",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: ability parameter array"
+      },
+      {
+        "json_key": "playstyle",
+        "field_candidate": "PlayStyle",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0x18"
+        ],
+        "widths": [
+          "u64"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "price",
+        "field_candidate": "MarketValue",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0x1a0"
+        ],
+        "widths": [
+          "u64"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "record_assist_season",
+        "field_candidate": "AssistSeason",
+        "category": "record",
+        "confidence": "medium",
+        "offsets": [
+          "0x174"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "record_assist_total",
+        "field_candidate": "AssistSum",
+        "category": "record",
+        "confidence": "medium",
+        "offsets": [
+          "0x178"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "record_average_rating_season",
+        "field_candidate": "PointSeason",
+        "category": "record",
+        "confidence": "medium",
+        "offsets": [
+          "0x17c"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "record_average_rating_total",
+        "field_candidate": "PointSum",
+        "category": "record",
+        "confidence": "medium",
+        "offsets": [
+          "0x180"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "record_goal_season",
+        "field_candidate": "GoalSeason",
+        "category": "record",
+        "confidence": "medium",
+        "offsets": [
+          "0x16c"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "record_match_season",
+        "field_candidate": "GameSeason",
+        "category": "record",
+        "confidence": "medium",
+        "offsets": [
+          "0x164"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "record_match_total",
+        "field_candidate": "GameSum",
+        "category": "record",
+        "confidence": "medium",
+        "offsets": [
+          "0x168"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "record_red_card_season",
+        "field_candidate": "RedSeason",
+        "category": "record",
+        "confidence": "medium",
+        "offsets": [
+          "0x194"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "record_red_card_total",
+        "field_candidate": "RedSum",
+        "category": "record",
+        "confidence": "medium",
+        "offsets": [
+          "0x198"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "record_yellow_card_season",
+        "field_candidate": "YellowSeason",
+        "category": "record",
+        "confidence": "medium",
+        "offsets": [
+          "0x184"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "record_yellow_card_total",
+        "field_candidate": "YellowSum",
+        "category": "record",
+        "confidence": "medium",
+        "offsets": [
+          "0x188"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "rmf",
+        "field_candidate": "PositionAptitude",
+        "category": "position_aptitude",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: position aptitude bitfield/table"
+      },
+      {
+        "json_key": "rsb",
+        "field_candidate": "PositionAptitude",
+        "category": "position_aptitude",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: position aptitude bitfield/table"
+      },
+      {
+        "json_key": "rwg",
+        "field_candidate": "PositionAptitude",
+        "category": "position_aptitude",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: position aptitude bitfield/table"
+      },
+      {
+        "json_key": "salary_list",
+        "field_candidate": "ContractSalary",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0x1f0"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "sell_price",
+        "field_candidate": "SellPrice",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0x1a8"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "skill_acrobatic_shoot",
+        "field_candidate": "SkillCard",
+        "category": "skill_card",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: skill-card flags/list"
+      },
+      {
+        "json_key": "skill_back_spin_lob",
+        "field_candidate": "SkillCard",
+        "category": "skill_card",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: skill-card flags/list"
+      },
+      {
+        "json_key": "skill_captaincy",
+        "field_candidate": "SkillCard",
+        "category": "skill_card",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: skill-card flags/list"
+      },
+      {
+        "json_key": "skill_chasing",
+        "field_candidate": "SkillCard",
+        "category": "skill_card",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: skill-card flags/list"
+      },
+      {
+        "json_key": "skill_combative_spirit",
+        "field_candidate": "SkillCard",
+        "category": "skill_card",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: skill-card flags/list"
+      },
+      {
+        "json_key": "skill_control_curve",
+        "field_candidate": "SkillCard",
+        "category": "skill_card",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: skill-card flags/list"
+      },
+      {
+        "json_key": "skill_flip_flap",
+        "field_candidate": "SkillCard",
+        "category": "skill_card",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: skill-card flags/list"
+      },
+      {
+        "json_key": "skill_knuckle_shoot",
+        "field_candidate": "SkillCard",
+        "category": "skill_card",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: skill-card flags/list"
+      },
+      {
+        "json_key": "skill_long_throw",
+        "field_candidate": "SkillCard",
+        "category": "skill_card",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: skill-card flags/list"
+      },
+      {
+        "json_key": "skill_low_pant_kick",
+        "field_candidate": "SkillCard",
+        "category": "skill_card",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: skill-card flags/list"
+      },
+      {
+        "json_key": "skill_man_mark",
+        "field_candidate": "SkillCard",
+        "category": "skill_card",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: skill-card flags/list"
+      },
+      {
+        "json_key": "skill_one_touch_pass",
+        "field_candidate": "SkillCard",
+        "category": "skill_card",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: skill-card flags/list"
+      },
+      {
+        "json_key": "skill_out_spin_kick",
+        "field_candidate": "SkillCard",
+        "category": "skill_card",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: skill-card flags/list"
+      },
+      {
+        "json_key": "skill_pin_point_cross",
+        "field_candidate": "SkillCard",
+        "category": "skill_card",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: skill-card flags/list"
+      },
+      {
+        "json_key": "skill_pivot_foot_touch",
+        "field_candidate": "SkillCard",
+        "category": "skill_card",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: skill-card flags/list"
+      },
+      {
+        "json_key": "skill_quick_touch",
+        "field_candidate": "SkillCard",
+        "category": "skill_card",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: skill-card flags/list"
+      },
+      {
+        "json_key": "skill_roulette",
+        "field_candidate": "SkillCard",
+        "category": "skill_card",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: skill-card flags/list"
+      },
+      {
+        "json_key": "skill_scissors",
+        "field_candidate": "SkillCard",
+        "category": "skill_card",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: skill-card flags/list"
+      },
+      {
+        "json_key": "skill_sombrero",
+        "field_candidate": "SkillCard",
+        "category": "skill_card",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: skill-card flags/list"
+      },
+      {
+        "json_key": "skill_super_sub",
+        "field_candidate": "SkillCard",
+        "category": "skill_card",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: skill-card flags/list"
+      },
+      {
+        "json_key": "st",
+        "field_candidate": "PositionAptitude",
+        "category": "position_aptitude",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "group: position aptitude bitfield/table"
+      },
+      {
+        "json_key": "stability",
+        "field_candidate": "",
+        "category": "field",
+        "confidence": "low",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "unmapped"
+      },
+      {
+        "json_key": "stronger_foot",
+        "field_candidate": "StrongerFoot",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "uniform_name",
+        "field_candidate": "NamePrint",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0x75",
+          "0xf7"
+        ],
+        "widths": [
+          "pointer",
+          "u8"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "uniform_number",
+        "field_candidate": "UniformNumber",
+        "category": "field",
+        "confidence": "medium",
+        "offsets": [
+          "0x1ac"
+        ],
+        "widths": [
+          "u32"
+        ],
+        "mapping_reason": "direct synonym"
+      },
+      {
+        "json_key": "weight",
+        "field_candidate": "",
+        "category": "field",
+        "confidence": "low",
+        "offsets": [],
+        "widths": [],
+        "mapping_reason": "unmapped"
+      }
+    ]
+  }
+}
