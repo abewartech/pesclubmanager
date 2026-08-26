@@ -70,3 +70,10 @@ desktop.ini
 # ----- Ghidra project files (kalau nanti dibuat di sini) -----
 *.gpr
 *.rep/
+Cutter-v2.5.0-macOS-arm64.dmg
+apktool-mcp-server/
+dex2jar/
+fridare-v4.0.8-darwin-amd64/
+ghidra_*
+jadx-1.5.6/
+radare2-6.2.0/
