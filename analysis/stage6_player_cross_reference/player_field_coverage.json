@@ -10,8 +10,8 @@
     "read_only": true
   },
   "sources": {
-    "normalized_players": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage5_player_json\\normalized_players.json",
-    "key_offset_map": "C:\\Users\\rahma\\Documents\\projects\\abe\\reverse_engineering\\analysis\\stage4_player_schema\\player_json_key_offset_map.json"
+    "normalized_players": "/Users/it-admiinistrator/Documents/apps/web-sos-indonesia/others/pesclubmanager/analysis/stage5_player_json/normalized_players.json",
+    "key_offset_map": "/Users/it-admiinistrator/Documents/apps/web-sos-indonesia/others/pesclubmanager/analysis/stage4_player_schema/player_json_key_offset_map.json"
   },
   "coverage": {
     "observed_with_offset": [

@@ -1,0 +1,313 @@
+Activity Resolver Table:
+  Schemes:
+      pesclubmanager:
+        ede1ba2 jp.konami.pesclubmanager/com.epicgames.ue4.GameActivity filter 2495033
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "pesclubmanager"
+        ede1ba2 jp.konami.pesclubmanager/com.epicgames.ue4.GameActivity filter a18dff0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "pesclubmanager"
+          Scheme: "pescmgetparam"
+          Authority: "konaminet.jp": -1
+          Authority: "konaminet.jp": -1
+      fbconnect:
+        4a64fee jp.konami.pesclubmanager/com.facebook.CustomTabActivity filter 73ebc8f
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "fbconnect"
+          Authority: "cct.jp.konami.pesclubmanager": -1
+      pescmgetparam:
+        ede1ba2 jp.konami.pesclubmanager/com.epicgames.ue4.GameActivity filter a18dff0
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "pesclubmanager"
+          Scheme: "pescmgetparam"
+          Authority: "konaminet.jp": -1
+          Authority: "konaminet.jp": -1
+        ede1ba2 jp.konami.pesclubmanager/com.epicgames.ue4.GameActivity filter 472a969
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "pescmgetparam"
+          Authority: "konaminet.jp": -1
+
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        ce44f84 jp.konami.pesclubmanager/com.epicgames.ue4.SplashActivity filter 188436d
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED:
+        794bd08 jp.konami.pesclubmanager/com.facebook.CurrentAccessTokenExpirationBroadcastReceiver filter 81d1ca1
+          Action: "com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"
+      com.android.vending.INSTALL_REFERRER:
+        8c40b1c jp.konami.pesclubmanager/com.epicgames.ue4.MulticastBroadcastReceiver filter a837325
+          Action: "com.android.vending.INSTALL_REFERRER"
+        aab7cfa jp.konami.pesclubmanager/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver filter e7492ab
+          Action: "com.android.vending.INSTALL_REFERRER"
+      com.google.android.c2dm.intent.RECEIVE:
+        8a46ec6 jp.konami.pesclubmanager/com.google.firebase.iid.FirebaseInstanceIdReceiver filter ae7ae87
+          Action: "com.google.android.c2dm.intent.RECEIVE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.google.firebase.INSTANCE_ID_EVENT:
+        8e8b152 jp.konami.pesclubmanager/jp.konami.android.common.FirebaseInstanceIdServiceDerived filter 886ac23
+          Action: "com.google.firebase.INSTANCE_ID_EVENT"
+      com.google.firebase.MESSAGING_EVENT:
+        f3ca1b4 jp.konami.pesclubmanager/jp.konami.android.common.FirebaseMessagingServiceDerived filter b4de1dd
+          Action: "com.google.firebase.MESSAGING_EVENT"
+        fdc2520 jp.konami.pesclubmanager/com.google.firebase.messaging.FirebaseMessagingService filter acbbed9
+          Action: "com.google.firebase.MESSAGING_EVENT"
+          mPriority=-500, originPriority=null, mOrder=0, mHasStaticPartialTypes=false, mHasDynamicPartialTypes=false
+
+Domain verification status:
+
+Registered ContentProviders:
+  jp.konami.pesclubmanager/com.google.firebase.provider.FirebaseInitProvider:
+    Provider{30ad451 jp.konami.pesclubmanager/com.google.firebase.provider.FirebaseInitProvider}
+  jp.konami.pesclubmanager/com.facebook.internal.FacebookInitProvider:
+    Provider{ff344b6 jp.konami.pesclubmanager/com.facebook.internal.FacebookInitProvider}
+  jp.konami.pesclubmanager/com.facebook.FacebookContentProvider:
+    Provider{447e5b7 jp.konami.pesclubmanager/com.facebook.FacebookContentProvider}
+
+ContentProvider Authorities:
+  [jp.konami.pesclubmanager.firebaseinitprovider]:
+    Provider{30ad451 jp.konami.pesclubmanager/com.google.firebase.provider.FirebaseInitProvider}
+      applicationInfo=ApplicationInfo{ff65e66 jp.konami.pesclubmanager}
+  [com.facebook.app.FacebookContentProvider1528647507380560]:
+    Provider{447e5b7 jp.konami.pesclubmanager/com.facebook.FacebookContentProvider}
+      applicationInfo=ApplicationInfo{58d75a7 jp.konami.pesclubmanager}
+  [jp.konami.pesclubmanager.FacebookInitProvider]:
+    Provider{ff344b6 jp.konami.pesclubmanager/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{d3e2a54 jp.konami.pesclubmanager}
+
+Key Set Manager:
+  [jp.konami.pesclubmanager]
+      Signing KeySets: 130
+
+Packages:
+  Package [jp.konami.pesclubmanager] (6b88339):
+    appId=10375
+    pkg=Package{e6b2653 jp.konami.pesclubmanager}
+    codePath=/data/app/~~XMXBYXieZw-haE_gj1HsKg==/jp.konami.pesclubmanager-uR_larhH0f5OzOyxXG5kwQ==
+    resourcePath=/data/app/~~XMXBYXieZw-haE_gj1HsKg==/jp.konami.pesclubmanager-uR_larhH0f5OzOyxXG5kwQ==
+    legacyNativeLibraryDir=/data/app/~~XMXBYXieZw-haE_gj1HsKg==/jp.konami.pesclubmanager-uR_larhH0f5OzOyxXG5kwQ==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=104050101 minSdk=21 targetSdk=29
+    minExtensionVersions=[]
+    versionName=4.5.1
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesLibraries:
+      android.test.base
+    usesOptionalLibraries:
+      org.apache.http.legacy
+    usesLibraryFiles:
+      /system/framework/android.test.base.jar
+      /system/framework/org.apache.http.legacy.jar
+    timeStamp=2026-08-26 10:27:46
+    lastUpdateTime=2026-08-26 10:27:47
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=com.android.shell
+    originatingPackageName=null
+    packageSource=1
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{7ecb90 version:2, signatures:[59aac867], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    requested permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+      jp.konami.pesclubmanager.permission.C2D_MESSAGE
+      jp.konami.UEFAFLICK.permission.IncentiveProvider
+      android.permission.POST_NOTIFICATIONS
+      com.google.android.c2dm.permission.RECEIVE
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.BLUETOOTH
+      android.permission.CHANGE_WIFI_MULTICAST_STATE
+      android.permission.INTERNET
+      com.android.vending.CHECK_LICENSE
+      com.android.vending.BILLING
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_MEDIA_IMAGES
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.DISABLE_KEYGUARD
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.VIBRATE
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.WAKE_LOCK
+      android.permission.BLUETOOTH_SCAN
+    install permissions:
+      com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE: granted=true
+      com.google.android.c2dm.permission.RECEIVE: granted=true
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.CHANGE_WIFI_MULTICAST_STATE: granted=true
+      android.permission.INTERNET: granted=true
+      com.android.vending.CHECK_LICENSE: granted=true
+      com.android.vending.BILLING: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      android.permission.DISABLE_KEYGUARD: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=174788 deDataInode=174864 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 ofs=0 pdm=false instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/jp.konami.pesclubmanager
+      firstInstallTime=2026-08-26 10:27:47
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-lBjf.frro
+        /data/resource-cache/com.android.systemui-accent-b3ds.frro
+        /data/resource-cache/com.android.systemui-dynamic-JccQ.frro
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_MEDIA_AUDIO: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_MEDIA_VIDEO: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+    User 999: ceDataInode=0 deDataInode=0 installed=false hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 ofs=0 pdm=false instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=null
+      firstInstallTime=2026-08-26 10:27:47
+      uninstallReason=0
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.BLUETOOTH_CONNECT: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_MEDIA_AUDIO: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_MEDIA_VIDEO: granted=false, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.BLUETOOTH_ADVERTISE: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.BLUETOOTH_SCAN: granted=true, flags=[ REVOKE_WHEN_REQUESTED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.android.settings.intelligence:
+      jp.konami.pesclubmanager
+    com.android.systemui:
+      jp.konami.pesclubmanager
+    com.google.android.as.oss:
+      jp.konami.pesclubmanager
+    com.oppo.quicksearchbox:
+      jp.konami.pesclubmanager
+    com.oplus.account:
+      jp.konami.pesclubmanager
+    com.oplus.themestore:
+      jp.konami.pesclubmanager
+    com.coloros.oshare:
+      jp.konami.pesclubmanager
+    com.oplus.games:
+      jp.konami.pesclubmanager
+    com.oplus.doublewake.settings:
+      jp.konami.pesclubmanager
+    com.heytap.htms:
+      jp.konami.pesclubmanager
+    com.oplus.pay:
+      jp.konami.pesclubmanager
+    com.redteamobile.roaming:
+      jp.konami.pesclubmanager
+    com.coloros.onekeylockscreen:
+      jp.konami.pesclubmanager
+    com.heytap.wallet:
+      jp.konami.pesclubmanager
+    com.lemon.lvoverseas:
+      jp.konami.pesclubmanager
+    com.gojek.gopay:
+      jp.konami.pesclubmanager
+    com.block.juggle:
+      jp.konami.pesclubmanager
+    com.oakever.tiletrip:
+      jp.konami.pesclubmanager
+    jp.konami.pesam:
+      jp.konami.pesclubmanager
+    jp.konami.wecc:
+      jp.konami.pesclubmanager
+    com.whatsapp:
+      jp.konami.pesclubmanager
+    com.hutchgames.formularacing:
+      jp.konami.pesclubmanager
+    zx.azenith:
+      jp.konami.pesclubmanager
+    com.community.mbox.in:
+      jp.konami.pesclubmanager
+    com.facebook.katana:
+      jp.konami.pesclubmanager
+    com.ggv.roworldsea.aos:
+      jp.konami.pesclubmanager
+    com.evozi.injector:
+      jp.konami.pesclubmanager
+    com.google.android.play.games:
+      jp.konami.pesclubmanager
+    com.netmarble.tskgb:
+      jp.konami.pesclubmanager
+  queryable via interaction:
+    User 0:
+      [com.oplus.owkservice,com.mediatek,com.android.inputdevices,com.mediatek.location.lppe.main,com.android.localtransport,com.oplus.obrain,com.wapi.wapicertmanager,com.mediatek.atci.service,com.oplus.sau,com.oplus.lfeh,com.oplus.postmanservice,com.heytap.mcs,com.oplus.engineernetwork,com.oplus.onetrace,com.oplus.securitypermission,com.oplus.wirelesssettings,android,com.oplus.trafficmonitor,com.oplus.battery,com.oplus.stdid,oplus,com.android.DeviceAsWebcam,com.oplus.olc,com.oplus.atlas,com.oplus.mediaturbo,com.android.keychain,com.android.settings,com.oplus.engineermode,com.oplus.athena,com.oplus.exsystemservice,com.android.server.telecom,com.oplus.powermonitor,com.android.providers.settings,com.oplus.appplatform,com.oplus.audio.effectcenter,com.oplus.sauhelper,com.oplus.wifibackuprestore,com.oplus.notificationmanager,com.oplus.logkit,com.oplus.safecenter,com.android.location.fused,com.oplus.qualityprotect,com.android.dynsystem,com.oplus.subsys,com.oplus.healthservice]:
+        jp.konami.pesclubmanager
+      com.android.vending:
+        jp.konami.pesclubmanager
+      com.google.android.gms:
+        jp.konami.pesclubmanager
+      com.google.android.permissioncontroller:
+        jp.konami.pesclubmanager
+      com.google.android.inputmethod.latin:
+        jp.konami.pesclubmanager
+      jp.konami.pesclubmanager:
+        com.google.android.webview
+    User 999:
+  queryable via uses-library:
+
+Dexopt state:
+  [jp.konami.pesclubmanager]
+    path: /data/app/~~XMXBYXieZw-haE_gj1HsKg==/jp.konami.pesclubmanager-uR_larhH0f5OzOyxXG5kwQ==/base.apk
+      arm64: [status=verify] [reason=install] [primary-abi]
+        [location is /data/app/~~XMXBYXieZw-haE_gj1HsKg==/jp.konami.pesclubmanager-uR_larhH0f5OzOyxXG5kwQ==/oat/arm64/base.odex]
+
+Compiler stats:
+  [jp.konami.pesclubmanager]
+     base.apk - 546

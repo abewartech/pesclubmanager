@@ -1,0 +1,1001 @@
+[
+  {
+    "field_candidate": "AppearanceId",
+    "confidence": "LOW",
+    "offsets": [
+      "0x1b0"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [
+      "SetAppearanceId"
+    ],
+    "accessor_functions": [
+      "GetAppearanceId"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "AssociationRentalPlayer",
+    "confidence": "LOW",
+    "offsets": [
+      "0x334"
+    ],
+    "widths": [
+      "u8"
+    ],
+    "setter_functions": [],
+    "accessor_functions": [
+      "IsAssociationRentalPlayer"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "BonusWT",
+    "confidence": "LOW",
+    "offsets": [
+      "0x310"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [
+      "SetBonusWT"
+    ],
+    "accessor_functions": [
+      "GetBonusWT"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "ComTeam",
+    "confidence": "LOW",
+    "offsets": [
+      "0x348"
+    ],
+    "widths": [
+      "u8"
+    ],
+    "setter_functions": [],
+    "accessor_functions": [
+      "IsComTeam"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "CreateTime",
+    "confidence": "LOW",
+    "offsets": [
+      "0x218"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [
+      "SetCreateTime"
+    ],
+    "accessor_functions": [
+      "GetCreateTime"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "CupEntryRuleStatus",
+    "confidence": "LOW",
+    "offsets": [
+      "0x378",
+      "0x380",
+      "0x388"
+    ],
+    "widths": [
+      "u32",
+      "u64"
+    ],
+    "setter_functions": [
+      "SetCupEntryRuleStatus"
+    ],
+    "accessor_functions": [
+      "GetCupEntryRuleStatus"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "CupEntryRuleStatusList",
+    "confidence": "LOW",
+    "offsets": [
+      "0x380"
+    ],
+    "widths": [
+      "pointer"
+    ],
+    "setter_functions": [
+      "SetCupEntryRuleStatusList"
+    ],
+    "accessor_functions": [
+      "GetCupEntryRuleStatusList"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "EnableElite",
+    "confidence": "LOW",
+    "offsets": [
+      "0x337"
+    ],
+    "widths": [
+      "u8"
+    ],
+    "setter_functions": [],
+    "accessor_functions": [
+      "IsEnableElite"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "EnablePlayerInLegendTeam",
+    "confidence": "LOW",
+    "offsets": [
+      "0x314"
+    ],
+    "widths": [
+      "u8"
+    ],
+    "setter_functions": [
+      "SetEnablePlayerInLegendTeam"
+    ],
+    "accessor_functions": [
+      "IsEnablePlayerInLegendTeam"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "FamePoint",
+    "confidence": "LOW",
+    "offsets": [
+      "0x318"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [
+      "SetFamePoint"
+    ],
+    "accessor_functions": [
+      "GetFamePoint"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "FeaturedId",
+    "confidence": "LOW",
+    "offsets": [
+      "0x358"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [
+      "SetFeaturedId"
+    ],
+    "accessor_functions": [
+      "GetFeaturedId"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "GrowthListBase",
+    "confidence": "LOW",
+    "offsets": [
+      "0x230"
+    ],
+    "widths": [
+      "pointer"
+    ],
+    "setter_functions": [
+      "SetGrowthListBase"
+    ],
+    "accessor_functions": [
+      "GetGrowthListBase"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "GrowthListTraining",
+    "confidence": "LOW",
+    "offsets": [
+      "0x248"
+    ],
+    "widths": [
+      "pointer"
+    ],
+    "setter_functions": [
+      "SetGrowthListTraining"
+    ],
+    "accessor_functions": [
+      "GetGrowthListTraining"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "GrowthStartAge",
+    "confidence": "LOW",
+    "offsets": [
+      "0x228"
+    ],
+    "widths": [
+      "u8"
+    ],
+    "setter_functions": [
+      "SetGrowthStartAge"
+    ],
+    "accessor_functions": [
+      "GetGrowthStartAge"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "GrowthType",
+    "confidence": "LOW",
+    "offsets": [
+      "0x31c"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [
+      "SetGrowthType"
+    ],
+    "accessor_functions": [
+      "GetGrowthType"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "Id",
+    "confidence": "LOW",
+    "offsets": [
+      "0x2c"
+    ],
+    "widths": [
+      "u64"
+    ],
+    "setter_functions": [
+      "SetId"
+    ],
+    "accessor_functions": [
+      "GetId"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "IdExclusionSeazonDataType",
+    "confidence": "LOW",
+    "offsets": [
+      "0x30"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [],
+    "accessor_functions": [
+      "GetIdExclusionSeazonDataType"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "IsAssociationRentalPlayer",
+    "confidence": "LOW",
+    "offsets": [
+      "0x334"
+    ],
+    "widths": [
+      "u8"
+    ],
+    "setter_functions": [
+      "SetIsAssociationRentalPlayer"
+    ],
+    "accessor_functions": [],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "IsComTeam",
+    "confidence": "LOW",
+    "offsets": [
+      "0x348"
+    ],
+    "widths": [
+      "u8"
+    ],
+    "setter_functions": [
+      "SetIsComTeam"
+    ],
+    "accessor_functions": [],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "IsEnableElite",
+    "confidence": "LOW",
+    "offsets": [
+      "0x337"
+    ],
+    "widths": [
+      "u8"
+    ],
+    "setter_functions": [
+      "SetIsEnableElite"
+    ],
+    "accessor_functions": [],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "IsRegulationOut",
+    "confidence": "LOW",
+    "offsets": [
+      "0x340"
+    ],
+    "widths": [
+      "u8"
+    ],
+    "setter_functions": [
+      "SetIsRegulationOut"
+    ],
+    "accessor_functions": [],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "LimitBreakNum",
+    "confidence": "LOW",
+    "offsets": [
+      "0x344"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [
+      "SetLimitBreakNum"
+    ],
+    "accessor_functions": [
+      "GetLimitBreakNum"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "LoanDealStatus",
+    "confidence": "LOW",
+    "offsets": [
+      "0x330"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [
+      "SetLoanDealStatus"
+    ],
+    "accessor_functions": [
+      "GetLoanDealStatus"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "MilestoneList",
+    "confidence": "LOW",
+    "offsets": [
+      "0x360"
+    ],
+    "widths": [
+      "pointer"
+    ],
+    "setter_functions": [
+      "SetMilestoneList"
+    ],
+    "accessor_functions": [
+      "GetMilestoneList"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "MomentumValue",
+    "confidence": "LOW",
+    "offsets": [
+      "0x35c"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [
+      "SetMomentumValue"
+    ],
+    "accessor_functions": [
+      "GetMomentumValue"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "MotivationTypeOnlineMode",
+    "confidence": "LOW",
+    "offsets": [
+      "0x20c"
+    ],
+    "widths": [
+      "u8"
+    ],
+    "setter_functions": [],
+    "accessor_functions": [
+      "GetMotivationTypeOnlineMode"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "MotivationTypeTmpdb",
+    "confidence": "LOW",
+    "offsets": [
+      "0xf4"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [],
+    "accessor_functions": [
+      "GetMotivationTypeTmpdb"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "NameSimple",
+    "confidence": "LOW",
+    "offsets": [
+      "0x1",
+      "0x38",
+      "0x88",
+      "0xf7"
+    ],
+    "widths": [
+      "pointer",
+      "u8"
+    ],
+    "setter_functions": [],
+    "accessor_functions": [
+      "GetNameSimple"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "OrderNo",
+    "confidence": "LOW",
+    "offsets": [
+      "0x224"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [
+      "SetOrderNo"
+    ],
+    "accessor_functions": [
+      "GetOrderNo"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "OrderStatus",
+    "confidence": "LOW",
+    "offsets": [
+      "0x34c"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [
+      "SetOrderStatus"
+    ],
+    "accessor_functions": [
+      "GetOrderStatus"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "OriginalName",
+    "confidence": "LOW",
+    "offsets": [
+      "0x260"
+    ],
+    "widths": [
+      "pointer"
+    ],
+    "setter_functions": [
+      "SetOriginalName"
+    ],
+    "accessor_functions": [
+      "GetOriginalName"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "OriginalNameJp",
+    "confidence": "LOW",
+    "offsets": [
+      "0x29d"
+    ],
+    "widths": [
+      "pointer"
+    ],
+    "setter_functions": [
+      "SetOriginalNameJp"
+    ],
+    "accessor_functions": [
+      "GetOriginalNameJp"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "OverAllTeamWork",
+    "confidence": "LOW",
+    "offsets": [
+      "0x28"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [],
+    "accessor_functions": [
+      "GetOverAllTeamWork"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "OverallFromServer",
+    "confidence": "LOW",
+    "offsets": [
+      "0x21c"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [
+      "SetOverallFromServer"
+    ],
+    "accessor_functions": [
+      "GetOverallFromServer"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "PlayStyleHas",
+    "confidence": "LOW",
+    "offsets": [
+      "0x338"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [
+      "SetPlayStyleHas"
+    ],
+    "accessor_functions": [
+      "GetPlayStyleHas"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "PlayStyleHasNum",
+    "confidence": "LOW",
+    "offsets": [
+      "0x338",
+      "0x33c"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [],
+    "accessor_functions": [
+      "GetPlayStyleHasNum"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "PlayStyleIndex",
+    "confidence": "LOW",
+    "offsets": [
+      "0x18",
+      "0x338",
+      "0x33c"
+    ],
+    "widths": [
+      "u32",
+      "u64"
+    ],
+    "setter_functions": [],
+    "accessor_functions": [
+      "GetPlayStyleIndex"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "Playable",
+    "confidence": "LOW",
+    "offsets": [
+      "0x1d8"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [
+      "SetPlayable"
+    ],
+    "accessor_functions": [
+      "GetPlayable"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "PlayerCategory",
+    "confidence": "LOW",
+    "offsets": [
+      "0x208"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [
+      "SetPlayerCategory"
+    ],
+    "accessor_functions": [
+      "GetPlayerCategory"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "PlayerId",
+    "confidence": "LOW",
+    "offsets": [
+      "0x2c"
+    ],
+    "widths": [
+      "u64"
+    ],
+    "setter_functions": [
+      "SetPlayerId"
+    ],
+    "accessor_functions": [
+      "GetPlayerId"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "QualityDataAll",
+    "confidence": "LOW",
+    "offsets": [
+      "0x2e0"
+    ],
+    "widths": [
+      "pointer"
+    ],
+    "setter_functions": [
+      "SetQualityDataAll"
+    ],
+    "accessor_functions": [
+      "GetQualityDataAll"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "QualityDataCount",
+    "confidence": "LOW",
+    "offsets": [
+      "0x2e0",
+      "0x2e8"
+    ],
+    "widths": [
+      "u64"
+    ],
+    "setter_functions": [],
+    "accessor_functions": [
+      "GetQualityDataCount"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "RedSuspension",
+    "confidence": "LOW",
+    "offsets": [
+      "0x19c"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [
+      "SetRedSuspension"
+    ],
+    "accessor_functions": [
+      "GetRedSuspension"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "RegulationOut",
+    "confidence": "LOW",
+    "offsets": [
+      "0x340"
+    ],
+    "widths": [
+      "u8"
+    ],
+    "setter_functions": [],
+    "accessor_functions": [
+      "IsRegulationOut"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "RentalPlayerInfo",
+    "confidence": "LOW",
+    "offsets": [
+      "0x320"
+    ],
+    "widths": [
+      "u8"
+    ],
+    "setter_functions": [
+      "SetRentalPlayerInfo"
+    ],
+    "accessor_functions": [
+      "GetRentalPlayerInfo"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "RentalReturnInfo",
+    "confidence": "LOW",
+    "offsets": [
+      "0x324",
+      "0x328",
+      "0x32c"
+    ],
+    "widths": [
+      "pointer",
+      "u32",
+      "u8"
+    ],
+    "setter_functions": [
+      "SetRentalReturnInfo"
+    ],
+    "accessor_functions": [
+      "GetRentalReturnInfo"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "RetireBonusList",
+    "confidence": "LOW",
+    "offsets": [
+      "0x2f8"
+    ],
+    "widths": [
+      "pointer"
+    ],
+    "setter_functions": [],
+    "accessor_functions": [
+      "GetRetireBonusList"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "SameCode",
+    "confidence": "LOW",
+    "offsets": [
+      "0x1b4"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [
+      "SetSameCode"
+    ],
+    "accessor_functions": [
+      "GetSameCode"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "SeasonDataType",
+    "confidence": "LOW",
+    "offsets": [
+      "0x2dc"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [
+      "SetSeasonDataType"
+    ],
+    "accessor_functions": [
+      "GetSeasonDataType"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "SeasonDataTypeRaw",
+    "confidence": "LOW",
+    "offsets": [
+      "0x204",
+      "0x2068",
+      "0x33",
+      "0x348",
+      "0xd80"
+    ],
+    "widths": [
+      "u32",
+      "u64",
+      "u8"
+    ],
+    "setter_functions": [],
+    "accessor_functions": [
+      "GetSeasonDataTypeRaw"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "SquadPosition",
+    "confidence": "LOW",
+    "offsets": [
+      "0x220"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [
+      "SetSquadPosition"
+    ],
+    "accessor_functions": [
+      "GetSquadPosition"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "Stamina",
+    "confidence": "LOW",
+    "offsets": [
+      "0xf4",
+      "0xf6"
+    ],
+    "widths": [
+      "u64",
+      "u8"
+    ],
+    "setter_functions": [
+      "SetStamina"
+    ],
+    "accessor_functions": [
+      "GetStamina"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "TeamId",
+    "confidence": "LOW",
+    "offsets": [
+      "0xdc"
+    ],
+    "widths": [
+      "pointer"
+    ],
+    "setter_functions": [],
+    "accessor_functions": [
+      "GetTeamId"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "TrainedAbilityParameter",
+    "confidence": "LOW",
+    "offsets": [
+      "0x138"
+    ],
+    "widths": [
+      "pointer"
+    ],
+    "setter_functions": [
+      "SetTrainedAbilityParameter"
+    ],
+    "accessor_functions": [
+      "GetTrainedAbilityParameter"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "TrainedAbilityParameterFromDB",
+    "confidence": "LOW",
+    "offsets": [
+      "0x138"
+    ],
+    "widths": [
+      "pointer"
+    ],
+    "setter_functions": [
+      "SetTrainedAbilityParameterFromDB"
+    ],
+    "accessor_functions": [],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "UseFameBooster",
+    "confidence": "LOW",
+    "offsets": [
+      "0x336"
+    ],
+    "widths": [
+      "u8"
+    ],
+    "setter_functions": [
+      "SetUseFameBooster"
+    ],
+    "accessor_functions": [],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "UserId",
+    "confidence": "LOW",
+    "offsets": [
+      "0x1b8"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [
+      "SetUserId"
+    ],
+    "accessor_functions": [
+      "GetUserId"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "Valid",
+    "confidence": "LOW",
+    "offsets": [
+      "0x1c8"
+    ],
+    "widths": [
+      "u64"
+    ],
+    "setter_functions": [],
+    "accessor_functions": [
+      "IsValid"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "ValidRetireBonusList",
+    "confidence": "LOW",
+    "offsets": [
+      "0x2f8",
+      "0x300"
+    ],
+    "widths": [
+      "u64"
+    ],
+    "setter_functions": [],
+    "accessor_functions": [
+      "IsValidRetireBonusList"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  },
+  {
+    "field_candidate": "YellowMaxTimes",
+    "confidence": "LOW",
+    "offsets": [
+      "0x190"
+    ],
+    "widths": [
+      "u32"
+    ],
+    "setter_functions": [
+      "SetYellowMaxTimes"
+    ],
+    "accessor_functions": [
+      "GetYellowMaxTimes"
+    ],
+    "reason": "native offset evidence has no Stage 4 JSON-key correlation"
+  }
+]

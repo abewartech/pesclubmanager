@@ -1,0 +1,311 @@
+{
+  "meta": {
+    "normalized_input": "/Users/it-admiinistrator/Documents/apps/web-sos-indonesia/others/pesclubmanager/analysis/stage5_player_json/normalized_players.json",
+    "mapping_input": "/Users/it-admiinistrator/Documents/apps/web-sos-indonesia/others/pesclubmanager/analysis/stage6/player_json_key_mapping.json",
+    "player_count": 2,
+    "read_only": true
+  },
+  "players": [
+    {
+      "index": 1,
+      "name": "Sample Forward",
+      "serial_id": 101,
+      "master_id": 9001,
+      "position": "cf",
+      "original_team_id": 77,
+      "salary": 1200,
+      "mapping_summary": "HIGH:8, MEDIUM:4, UNKNOWN:1",
+      "mapping_evidence": [
+        {
+          "json_key": "age",
+          "field_candidate": "Age",
+          "confidence": "HIGH",
+          "offsets": [
+            "0x18",
+            "0x1c"
+          ],
+          "widths": [
+            "u64",
+            "u8"
+          ],
+          "setter_functions": [
+            "SetAge"
+          ],
+          "accessor_functions": [
+            "GetAge"
+          ]
+        },
+        {
+          "json_key": "cf",
+          "field_candidate": "PositionAptitude",
+          "confidence": "MEDIUM",
+          "offsets": [],
+          "widths": [],
+          "setter_functions": [],
+          "accessor_functions": []
+        },
+        {
+          "json_key": "contract_period",
+          "field_candidate": "ContractPeriod",
+          "confidence": "HIGH",
+          "offsets": [
+            "0x1e0"
+          ],
+          "widths": [
+            "u32"
+          ],
+          "setter_functions": [
+            "SetContractPeriod"
+          ],
+          "accessor_functions": [
+            "GetContractPeriod"
+          ]
+        },
+        {
+          "json_key": "master_id",
+          "field_candidate": "MasterId",
+          "confidence": "HIGH",
+          "offsets": [
+            "0x1d0"
+          ],
+          "widths": [
+            "u64"
+          ],
+          "setter_functions": [
+            "SetMasterId"
+          ],
+          "accessor_functions": [
+            "GetMasterId"
+          ]
+        },
+        {
+          "json_key": "mystery_flag",
+          "field_candidate": "",
+          "confidence": "UNKNOWN",
+          "offsets": [],
+          "widths": [],
+          "setter_functions": [],
+          "accessor_functions": []
+        },
+        {
+          "json_key": "name",
+          "field_candidate": "Name",
+          "confidence": "HIGH",
+          "offsets": [
+            "0x38"
+          ],
+          "widths": [
+            "pointer"
+          ],
+          "setter_functions": [
+            "SetName"
+          ],
+          "accessor_functions": []
+        },
+        {
+          "json_key": "original_team_id",
+          "field_candidate": "OriginalTeamId",
+          "confidence": "HIGH",
+          "offsets": [
+            "0xdc"
+          ],
+          "widths": [
+            "u32"
+          ],
+          "setter_functions": [],
+          "accessor_functions": [
+            "GetOriginalTeamId"
+          ]
+        },
+        {
+          "json_key": "param_shot",
+          "field_candidate": "AbilityParameter",
+          "confidence": "MEDIUM",
+          "offsets": [],
+          "widths": [],
+          "setter_functions": [],
+          "accessor_functions": []
+        },
+        {
+          "json_key": "param_speed",
+          "field_candidate": "AbilityParameter",
+          "confidence": "MEDIUM",
+          "offsets": [],
+          "widths": [],
+          "setter_functions": [],
+          "accessor_functions": []
+        },
+        {
+          "json_key": "record_goal_total",
+          "field_candidate": "GoalSum",
+          "confidence": "HIGH",
+          "offsets": [
+            "0x170"
+          ],
+          "widths": [
+            "u32"
+          ],
+          "setter_functions": [
+            "SetGoalSum"
+          ],
+          "accessor_functions": [
+            "GetGoalSum"
+          ]
+        },
+        {
+          "json_key": "salary",
+          "field_candidate": "Salary",
+          "confidence": "HIGH",
+          "offsets": [
+            "0x1e8"
+          ],
+          "widths": [
+            "u32"
+          ],
+          "setter_functions": [
+            "SetSalary"
+          ],
+          "accessor_functions": [
+            "GetSalary"
+          ]
+        },
+        {
+          "json_key": "serial_id",
+          "field_candidate": "SerialId",
+          "confidence": "HIGH",
+          "offsets": [
+            "0x1c8"
+          ],
+          "widths": [
+            "u64"
+          ],
+          "setter_functions": [],
+          "accessor_functions": [
+            "GetSerialId"
+          ]
+        },
+        {
+          "json_key": "skill_one_touch_shoot",
+          "field_candidate": "SkillCard",
+          "confidence": "MEDIUM",
+          "offsets": [],
+          "widths": [],
+          "setter_functions": [],
+          "accessor_functions": []
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Sample Keeper",
+      "serial_id": 102,
+      "master_id": 9002,
+      "position": "gk",
+      "original_team_id": "",
+      "salary": "",
+      "mapping_summary": "HIGH:4, MEDIUM:4",
+      "mapping_evidence": [
+        {
+          "json_key": "gk",
+          "field_candidate": "PositionAptitude",
+          "confidence": "MEDIUM",
+          "offsets": [],
+          "widths": [],
+          "setter_functions": [],
+          "accessor_functions": []
+        },
+        {
+          "json_key": "master_id",
+          "field_candidate": "MasterId",
+          "confidence": "HIGH",
+          "offsets": [
+            "0x1d0"
+          ],
+          "widths": [
+            "u64"
+          ],
+          "setter_functions": [
+            "SetMasterId"
+          ],
+          "accessor_functions": [
+            "GetMasterId"
+          ]
+        },
+        {
+          "json_key": "name",
+          "field_candidate": "Name",
+          "confidence": "HIGH",
+          "offsets": [
+            "0x38"
+          ],
+          "widths": [
+            "pointer"
+          ],
+          "setter_functions": [
+            "SetName"
+          ],
+          "accessor_functions": []
+        },
+        {
+          "json_key": "param_saving",
+          "field_candidate": "AbilityParameter",
+          "confidence": "MEDIUM",
+          "offsets": [],
+          "widths": [],
+          "setter_functions": [],
+          "accessor_functions": []
+        },
+        {
+          "json_key": "position",
+          "field_candidate": "RegisteredPosition",
+          "confidence": "MEDIUM",
+          "offsets": [],
+          "widths": [],
+          "setter_functions": [],
+          "accessor_functions": []
+        },
+        {
+          "json_key": "rarity",
+          "field_candidate": "Rarity",
+          "confidence": "HIGH",
+          "offsets": [
+            "0x1c0"
+          ],
+          "widths": [
+            "u32"
+          ],
+          "setter_functions": [
+            "SetRarity"
+          ],
+          "accessor_functions": [
+            "GetRarity"
+          ]
+        },
+        {
+          "json_key": "serial_id",
+          "field_candidate": "SerialId",
+          "confidence": "HIGH",
+          "offsets": [
+            "0x1c8"
+          ],
+          "widths": [
+            "u64"
+          ],
+          "setter_functions": [],
+          "accessor_functions": [
+            "GetSerialId"
+          ]
+        },
+        {
+          "json_key": "skill_gk_long_throw",
+          "field_candidate": "SkillCard",
+          "confidence": "MEDIUM",
+          "offsets": [],
+          "widths": [],
+          "setter_functions": [],
+          "accessor_functions": []
+        }
+      ]
+    }
+  ]
+}

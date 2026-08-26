@@ -4,11 +4,11 @@
 
 | # | Path | Size (MB) | Version | Magic | Entries |
 |---|------|-----------|---------|-------|---------|
-| 1 | `extracted\obb_main\PesMobile\Content\Paks\PesMobile-Android_ETC1.pak` | 752.91 | v8 | 0x5A6F12E1 ✓ | 50,748 |
+| 1 | `extracted/obb_main/PesMobile/Content/Paks/PesMobile-Android_ETC1.pak` | 752.91 | v8 | 0x5A6F12E1 ✓ | 50,748 |
 
 ## PAK #1 Details
 
-**Path:** `extracted\obb_main\PesMobile\Content\Paks\PesMobile-Android_ETC1.pak`
+**Path:** `extracted/obb_main/PesMobile/Content/Paks/PesMobile-Android_ETC1.pak`
 
 **Size:** 789,485,288 bytes (752.91 MB)
 

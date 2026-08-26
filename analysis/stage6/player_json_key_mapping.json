@@ -1,0 +1,2360 @@
+{
+  "summary": {
+    "prepare_function_count": 1,
+    "json_key_count": 105,
+    "mapped_json_key_count": 97,
+    "unknown_json_key_count": 8,
+    "native_offset_fields_without_json_key_count": 60,
+    "confidence_counts": {
+      "HIGH": 38,
+      "MEDIUM": 59,
+      "UNKNOWN": 8
+    },
+    "read_only": true
+  },
+  "sources": {
+    "json_keys": "analysis/stage4_player_schema/parameter_player_define_json_keys.json",
+    "key_offset_map": "analysis/stage4_player_schema/player_json_key_offset_map.json",
+    "offsets": "analysis/stage4_player_schema/parameter_player_define_offsets.json",
+    "offset_report": "reports/stage4_player_offset_schema.md",
+    "prepare_data_from_json_addresses": [
+      "0x04b2ae68"
+    ]
+  },
+  "mappings": [
+    {
+      "json_key": "LeftRight",
+      "category": "field",
+      "field_candidate": "",
+      "confidence": "UNKNOWN",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "unmapped",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3ac28",
+          "literal_address": "0x0643d030"
+        }
+      ]
+    },
+    {
+      "json_key": "age",
+      "category": "field",
+      "field_candidate": "Age",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x18",
+        "0x1c"
+      ],
+      "widths": [
+        "u64",
+        "u8"
+      ],
+      "setter_functions": [
+        "SetAge"
+      ],
+      "accessor_functions": [
+        "GetAge"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2da78",
+          "literal_address": "0x064e3555"
+        }
+      ]
+    },
+    {
+      "json_key": "camulative_yellow_cards",
+      "category": "field",
+      "field_candidate": "SumYellow",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x18c"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetSumYellow"
+      ],
+      "accessor_functions": [
+        "GetSumYellow"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2f8f8",
+          "literal_address": "0x064e2d5a"
+        }
+      ]
+    },
+    {
+      "json_key": "cb",
+      "category": "position_aptitude",
+      "field_candidate": "PositionAptitude",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: position aptitude bitfield/table",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3e70c",
+          "literal_address": "0x06506e78"
+        }
+      ]
+    },
+    {
+      "json_key": "cf",
+      "category": "position_aptitude",
+      "field_candidate": "PositionAptitude",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: position aptitude bitfield/table",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3f790",
+          "literal_address": "0x06506e7b"
+        }
+      ]
+    },
+    {
+      "json_key": "cmf",
+      "category": "position_aptitude",
+      "field_candidate": "PositionAptitude",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: position aptitude bitfield/table",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3ed0c",
+          "literal_address": "0x065560d2"
+        }
+      ]
+    },
+    {
+      "json_key": "condition_status",
+      "category": "field",
+      "field_candidate": "Condition",
+      "confidence": "HIGH",
+      "offsets": [
+        "0xf4",
+        "0xf7"
+      ],
+      "widths": [
+        "u64",
+        "u8"
+      ],
+      "setter_functions": [
+        "SetCondition"
+      ],
+      "accessor_functions": [
+        "GetCondition"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2f58c",
+          "literal_address": "0x064e2d49"
+        }
+      ]
+    },
+    {
+      "json_key": "contract_period",
+      "category": "field",
+      "field_candidate": "ContractPeriod",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x1e0"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetContractPeriod"
+      ],
+      "accessor_functions": [
+        "GetContractPeriod"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3fe54",
+          "literal_address": "0x064e2eca"
+        }
+      ]
+    },
+    {
+      "json_key": "contract_period_max",
+      "category": "field",
+      "field_candidate": "ContractPeriodMax",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x1dc"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetContractPeriodMax"
+      ],
+      "accessor_functions": [
+        "GetContractPeriodMax"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3fce0",
+          "literal_address": "0x064e2eb6"
+        }
+      ]
+    },
+    {
+      "json_key": "contract_period_request",
+      "category": "field",
+      "field_candidate": "ContractPeriodRequest",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x1e4"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetContractPeriodRequest"
+      ],
+      "accessor_functions": [
+        "GetContractPeriodRequest"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3ffcc",
+          "literal_address": "0x064e2eda"
+        }
+      ]
+    },
+    {
+      "json_key": "contract_status",
+      "category": "field",
+      "field_candidate": "ContractStatus",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x210"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetContractStatus"
+      ],
+      "accessor_functions": [
+        "GetContractStatus"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b40140",
+          "literal_address": "0x064e2ef2"
+        }
+      ]
+    },
+    {
+      "json_key": "deleted",
+      "category": "field",
+      "field_candidate": "DeleteType",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x214"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetDeleteType"
+      ],
+      "accessor_functions": [
+        "GetDeleteType"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b402b4",
+          "literal_address": "0x064e2f02"
+        }
+      ]
+    },
+    {
+      "json_key": "dmf",
+      "category": "position_aptitude",
+      "field_candidate": "PositionAptitude",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: position aptitude bitfield/table",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3eb8c",
+          "literal_address": "0x065560bc"
+        }
+      ]
+    },
+    {
+      "json_key": "durability",
+      "category": "field",
+      "field_candidate": "",
+      "confidence": "UNKNOWN",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "unmapped",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b32b2c",
+          "literal_address": "0x06506f89"
+        }
+      ]
+    },
+    {
+      "json_key": "e_09",
+      "category": "field",
+      "field_candidate": "",
+      "confidence": "UNKNOWN",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "unmapped",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b45120",
+          "literal_address": "0x06549008"
+        }
+      ]
+    },
+    {
+      "json_key": "energy",
+      "category": "field",
+      "field_candidate": "",
+      "confidence": "UNKNOWN",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "unmapped",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2f28c",
+          "literal_address": "0x0656826a"
+        }
+      ]
+    },
+    {
+      "json_key": "er_home_10",
+      "category": "field",
+      "field_candidate": "",
+      "confidence": "UNKNOWN",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "unmapped",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b44138",
+          "literal_address": "0x06549030"
+        }
+      ]
+    },
+    {
+      "json_key": "gk",
+      "category": "position_aptitude",
+      "field_candidate": "PositionAptitude",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: position aptitude bitfield/table",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3e58c",
+          "literal_address": "0x06567ec3"
+        }
+      ]
+    },
+    {
+      "json_key": "height",
+      "category": "field",
+      "field_candidate": "",
+      "confidence": "UNKNOWN",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "unmapped",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2e0c4",
+          "literal_address": "0x0652439f"
+        }
+      ]
+    },
+    {
+      "json_key": "injury",
+      "category": "field",
+      "field_candidate": "InjuryLength",
+      "confidence": "HIGH",
+      "offsets": [
+        "0xf4",
+        "0xf8"
+      ],
+      "widths": [
+        "u64",
+        "u8"
+      ],
+      "setter_functions": [
+        "SetInjuryLength"
+      ],
+      "accessor_functions": [
+        "GetInjuryLength"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2f40c",
+          "literal_address": "0x0656827b"
+        }
+      ]
+    },
+    {
+      "json_key": "legend_status",
+      "category": "field",
+      "field_candidate": "LegendStatus",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x1bc"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetLegendStatus"
+      ],
+      "accessor_functions": [
+        "GetLegendStatus"
+      ],
+      "mapping_reason": "normalized exact match",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3f910",
+          "literal_address": "0x064e2ea8"
+        }
+      ]
+    },
+    {
+      "json_key": "licence",
+      "category": "field",
+      "field_candidate": "License",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x204"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetLicense"
+      ],
+      "accessor_functions": [
+        "GetLicense"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2e6cc",
+          "literal_address": "0x064e2d27"
+        }
+      ]
+    },
+    {
+      "json_key": "lmf",
+      "category": "position_aptitude",
+      "field_candidate": "PositionAptitude",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: position aptitude bitfield/table",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3ee8c",
+          "literal_address": "0x06556187"
+        }
+      ]
+    },
+    {
+      "json_key": "lsb",
+      "category": "position_aptitude",
+      "field_candidate": "PositionAptitude",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: position aptitude bitfield/table",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3e88c",
+          "literal_address": "0x06556148"
+        }
+      ]
+    },
+    {
+      "json_key": "lwg",
+      "category": "position_aptitude",
+      "field_candidate": "PositionAptitude",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: position aptitude bitfield/table",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3f30c",
+          "literal_address": "0x065561c3"
+        }
+      ]
+    },
+    {
+      "json_key": "master_id",
+      "category": "field",
+      "field_candidate": "MasterId",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x1d0"
+      ],
+      "widths": [
+        "u64"
+      ],
+      "setter_functions": [
+        "SetMasterId"
+      ],
+      "accessor_functions": [
+        "GetMasterId"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3316c",
+          "literal_address": "0x065690f2"
+        }
+      ]
+    },
+    {
+      "json_key": "motivation",
+      "category": "field",
+      "field_candidate": "MotivationValue",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x20c"
+      ],
+      "widths": [
+        "u8"
+      ],
+      "setter_functions": [],
+      "accessor_functions": [
+        "GetMotivationValue"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2f70c",
+          "literal_address": "0x06568282"
+        }
+      ]
+    },
+    {
+      "json_key": "name",
+      "category": "field",
+      "field_candidate": "Name",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x38"
+      ],
+      "widths": [
+        "pointer"
+      ],
+      "setter_functions": [
+        "SetName"
+      ],
+      "accessor_functions": [],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2b100",
+          "literal_address": "0x064343fa"
+        }
+      ]
+    },
+    {
+      "json_key": "nationality",
+      "category": "field",
+      "field_candidate": "Nationality",
+      "confidence": "HIGH",
+      "offsets": [
+        "0xf4"
+      ],
+      "widths": [
+        "u64"
+      ],
+      "setter_functions": [
+        "SetNationality"
+      ],
+      "accessor_functions": [],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2e3cc",
+          "literal_address": "0x06569906"
+        }
+      ]
+    },
+    {
+      "json_key": "next_salary",
+      "category": "field",
+      "field_candidate": "NextSalary",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x1ec"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetNextSalary"
+      ],
+      "accessor_functions": [
+        "GetNextSalary"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2eb38",
+          "literal_address": "0x064e2d3d"
+        }
+      ]
+    },
+    {
+      "json_key": "omf",
+      "category": "position_aptitude",
+      "field_candidate": "PositionAptitude",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: position aptitude bitfield/table",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3f18c",
+          "literal_address": "0x065560e8"
+        }
+      ]
+    },
+    {
+      "json_key": "original_team_id",
+      "category": "field",
+      "field_candidate": "OriginalTeamId",
+      "confidence": "HIGH",
+      "offsets": [
+        "0xdc"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [],
+      "accessor_functions": [
+        "GetOriginalTeamId"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2e550",
+          "literal_address": "0x064e2d16"
+        }
+      ]
+    },
+    {
+      "json_key": "param_agility",
+      "category": "ability_parameter",
+      "field_candidate": "AbilityParameter",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: ability parameter array",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3203c",
+          "literal_address": "0x06566792"
+        }
+      ]
+    },
+    {
+      "json_key": "param_ball_spin_control",
+      "category": "ability_parameter",
+      "field_candidate": "AbilityParameter",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: ability parameter array",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b316d4",
+          "literal_address": "0x0656673d"
+        }
+      ]
+    },
+    {
+      "json_key": "param_body_balance",
+      "category": "ability_parameter",
+      "field_candidate": "AbilityParameter",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: ability parameter array",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b321cc",
+          "literal_address": "0x0656676e"
+        }
+      ]
+    },
+    {
+      "json_key": "param_defense_decision",
+      "category": "ability_parameter",
+      "field_candidate": "AbilityParameter",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: ability parameter array",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b319f8",
+          "literal_address": "0x0656669d"
+        }
+      ]
+    },
+    {
+      "json_key": "param_dribble",
+      "category": "ability_parameter",
+      "field_candidate": "AbilityParameter",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: ability parameter array",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b30f04",
+          "literal_address": "0x065666c6"
+        }
+      ]
+    },
+    {
+      "json_key": "param_gk_decision",
+      "category": "ability_parameter",
+      "field_candidate": "AbilityParameter",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: ability parameter array",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3267c",
+          "literal_address": "0x065666b4"
+        }
+      ]
+    },
+    {
+      "json_key": "param_heading",
+      "category": "ability_parameter",
+      "field_candidate": "AbilityParameter",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: ability parameter array",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b31868",
+          "literal_address": "0x0656670b"
+        }
+      ]
+    },
+    {
+      "json_key": "param_intercept",
+      "category": "ability_parameter",
+      "field_candidate": "AbilityParameter",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: ability parameter array",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b31b88",
+          "literal_address": "0x06566719"
+        }
+      ]
+    },
+    {
+      "json_key": "param_jump",
+      "category": "ability_parameter",
+      "field_candidate": "AbilityParameter",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: ability parameter array",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3235c",
+          "literal_address": "0x065667a0"
+        }
+      ]
+    },
+    {
+      "json_key": "param_kick_power",
+      "category": "ability_parameter",
+      "field_candidate": "AbilityParameter",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: ability parameter array",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b31d18",
+          "literal_address": "0x06566781"
+        }
+      ]
+    },
+    {
+      "json_key": "param_long_pass",
+      "category": "ability_parameter",
+      "field_candidate": "AbilityParameter",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: ability parameter array",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b31224",
+          "literal_address": "0x065666fb"
+        }
+      ]
+    },
+    {
+      "json_key": "param_offense_decision",
+      "category": "ability_parameter",
+      "field_candidate": "AbilityParameter",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: ability parameter array",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b30bdc",
+          "literal_address": "0x06566686"
+        }
+      ]
+    },
+    {
+      "json_key": "param_place_kicking",
+      "category": "ability_parameter",
+      "field_candidate": "AbilityParameter",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: ability parameter array",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b31544",
+          "literal_address": "0x06566729"
+        }
+      ]
+    },
+    {
+      "json_key": "param_r_foot_acc",
+      "category": "ability_parameter",
+      "field_candidate": "AbilityParameter",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: ability parameter array",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b32e4c",
+          "literal_address": "0x064e2e97"
+        }
+      ]
+    },
+    {
+      "json_key": "param_r_foot_frequency",
+      "category": "ability_parameter",
+      "field_candidate": "AbilityParameter",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: ability parameter array",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b32cbc",
+          "literal_address": "0x064e2e80"
+        }
+      ]
+    },
+    {
+      "json_key": "param_saving",
+      "category": "ability_parameter",
+      "field_candidate": "AbilityParameter",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: ability parameter array",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3280c",
+          "literal_address": "0x06566755"
+        }
+      ]
+    },
+    {
+      "json_key": "param_short_pass",
+      "category": "ability_parameter",
+      "field_candidate": "AbilityParameter",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: ability parameter array",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b31094",
+          "literal_address": "0x065666ea"
+        }
+      ]
+    },
+    {
+      "json_key": "param_shot",
+      "category": "ability_parameter",
+      "field_candidate": "AbilityParameter",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: ability parameter array",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b313b4",
+          "literal_address": "0x065666df"
+        }
+      ]
+    },
+    {
+      "json_key": "param_speed",
+      "category": "ability_parameter",
+      "field_candidate": "AbilityParameter",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: ability parameter array",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b31eac",
+          "literal_address": "0x06566762"
+        }
+      ]
+    },
+    {
+      "json_key": "param_stamina",
+      "category": "ability_parameter",
+      "field_candidate": "AbilityParameter",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: ability parameter array",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b324ec",
+          "literal_address": "0x065667ab"
+        }
+      ]
+    },
+    {
+      "json_key": "param_teamwork",
+      "category": "ability_parameter",
+      "field_candidate": "AbilityParameter",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: ability parameter array",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b32fdc",
+          "literal_address": "0x065667b9"
+        }
+      ]
+    },
+    {
+      "json_key": "param_trap",
+      "category": "ability_parameter",
+      "field_candidate": "AbilityParameter",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: ability parameter array",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b30d74",
+          "literal_address": "0x065666d4"
+        }
+      ]
+    },
+    {
+      "json_key": "playstyle",
+      "category": "field",
+      "field_candidate": "PlayStyle",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x18"
+      ],
+      "widths": [
+        "u64"
+      ],
+      "setter_functions": [
+        "SetPlayStyle"
+      ],
+      "accessor_functions": [
+        "GetPlayStyle"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2ef98",
+          "literal_address": "0x06567962"
+        }
+      ]
+    },
+    {
+      "json_key": "position",
+      "category": "field",
+      "field_candidate": "RegisteredPosition",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3e3f4",
+          "literal_address": "0x06554610"
+        }
+      ]
+    },
+    {
+      "json_key": "price",
+      "category": "field",
+      "field_candidate": "MarketValue",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x1a0"
+      ],
+      "widths": [
+        "u64"
+      ],
+      "setter_functions": [
+        "SetMarketValue"
+      ],
+      "accessor_functions": [
+        "GetMarketValue"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2ecac",
+          "literal_address": "0x064e3559"
+        }
+      ]
+    },
+    {
+      "json_key": "rarity",
+      "category": "field",
+      "field_candidate": "Rarity",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x1c0"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetRarity"
+      ],
+      "accessor_functions": [
+        "GetRarity"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2f118",
+          "literal_address": "0x065690d7"
+        }
+      ]
+    },
+    {
+      "json_key": "record_assist_season",
+      "category": "record",
+      "field_candidate": "AssistSeason",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x174"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetAssistSeason"
+      ],
+      "accessor_functions": [
+        "GetAssistSeason"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b301b0",
+          "literal_address": "0x064e2dd2"
+        }
+      ]
+    },
+    {
+      "json_key": "record_assist_total",
+      "category": "record",
+      "field_candidate": "AssistSum",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x178"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetAssistSum"
+      ],
+      "accessor_functions": [
+        "GetAssistSum"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3003c",
+          "literal_address": "0x064e2dbe"
+        }
+      ]
+    },
+    {
+      "json_key": "record_average_rating_season",
+      "category": "record",
+      "field_candidate": "PointSeason",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x17c"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetPointSeason"
+      ],
+      "accessor_functions": [
+        "GetPointSeason"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b30498",
+          "literal_address": "0x064e2e03"
+        }
+      ]
+    },
+    {
+      "json_key": "record_average_rating_total",
+      "category": "record",
+      "field_candidate": "PointSum",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x180"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetPointSum"
+      ],
+      "accessor_functions": [
+        "GetPointSum"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b30324",
+          "literal_address": "0x064e2de7"
+        }
+      ]
+    },
+    {
+      "json_key": "record_goal_season",
+      "category": "record",
+      "field_candidate": "GoalSeason",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x16c"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetGoalSeason"
+      ],
+      "accessor_functions": [
+        "GetGoalSeason"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2fec8",
+          "literal_address": "0x064e2dab"
+        }
+      ]
+    },
+    {
+      "json_key": "record_goal_total",
+      "category": "record",
+      "field_candidate": "GoalSum",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x170"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetGoalSum"
+      ],
+      "accessor_functions": [
+        "GetGoalSum"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2fd54",
+          "literal_address": "0x064e2d99"
+        }
+      ]
+    },
+    {
+      "json_key": "record_match_season",
+      "category": "record",
+      "field_candidate": "GameSeason",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x164"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetGameSeason"
+      ],
+      "accessor_functions": [
+        "GetGameSeason"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2fbe0",
+          "literal_address": "0x064e2d85"
+        }
+      ]
+    },
+    {
+      "json_key": "record_match_total",
+      "category": "record",
+      "field_candidate": "GameSum",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x168"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetGameSum"
+      ],
+      "accessor_functions": [
+        "GetGameSum"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2fa6c",
+          "literal_address": "0x064e2d72"
+        }
+      ]
+    },
+    {
+      "json_key": "record_red_card_season",
+      "category": "record",
+      "field_candidate": "RedSeason",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x194"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetRedSeason"
+      ],
+      "accessor_functions": [
+        "GetRedSeason"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b30a68",
+          "literal_address": "0x064e2e69"
+        }
+      ]
+    },
+    {
+      "json_key": "record_red_card_total",
+      "category": "record",
+      "field_candidate": "RedSum",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x198"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetRedSum"
+      ],
+      "accessor_functions": [
+        "GetRedSum"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b308f4",
+          "literal_address": "0x064e2e53"
+        }
+      ]
+    },
+    {
+      "json_key": "record_yellow_card_season",
+      "category": "record",
+      "field_candidate": "YellowSeason",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x184"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetYellowSeason"
+      ],
+      "accessor_functions": [
+        "GetYellowSeason"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b30780",
+          "literal_address": "0x064e2e39"
+        }
+      ]
+    },
+    {
+      "json_key": "record_yellow_card_total",
+      "category": "record",
+      "field_candidate": "YellowSum",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x188"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetYellowSum"
+      ],
+      "accessor_functions": [
+        "GetYellowSum"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3060c",
+          "literal_address": "0x064e2e20"
+        }
+      ]
+    },
+    {
+      "json_key": "rmf",
+      "category": "position_aptitude",
+      "field_candidate": "PositionAptitude",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: position aptitude bitfield/table",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3f00c",
+          "literal_address": "0x06556170"
+        }
+      ]
+    },
+    {
+      "json_key": "rsb",
+      "category": "position_aptitude",
+      "field_candidate": "PositionAptitude",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: position aptitude bitfield/table",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3ea0c",
+          "literal_address": "0x06556132"
+        }
+      ]
+    },
+    {
+      "json_key": "rwg",
+      "category": "position_aptitude",
+      "field_candidate": "PositionAptitude",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: position aptitude bitfield/table",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3f48c",
+          "literal_address": "0x065561ad"
+        }
+      ]
+    },
+    {
+      "json_key": "salary",
+      "category": "field",
+      "field_candidate": "Salary",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x1e8"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetSalary"
+      ],
+      "accessor_functions": [
+        "GetSalary"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2e9c4",
+          "literal_address": "0x065595dd"
+        }
+      ]
+    },
+    {
+      "json_key": "salary_list",
+      "category": "field",
+      "field_candidate": "ContractSalary",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x1f0"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [],
+      "accessor_functions": [
+        "GetContractSalary"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b40428",
+          "literal_address": "0x0656908c"
+        }
+      ]
+    },
+    {
+      "json_key": "sell_price",
+      "category": "field",
+      "field_candidate": "SellPrice",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x1a8"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetSellPrice"
+      ],
+      "accessor_functions": [
+        "GetSellPrice"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2ee24",
+          "literal_address": "0x064e325c"
+        }
+      ]
+    },
+    {
+      "json_key": "serial_id",
+      "category": "field",
+      "field_candidate": "SerialId",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x1c8"
+      ],
+      "widths": [
+        "u64"
+      ],
+      "setter_functions": [],
+      "accessor_functions": [
+        "GetSerialId"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2dc38",
+          "literal_address": "0x065690e8"
+        }
+      ]
+    },
+    {
+      "json_key": "skill_acrobatic_shoot",
+      "category": "skill_card",
+      "field_candidate": "SkillCard",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: skill-card flags/list",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3d1c4",
+          "literal_address": "0x06566856"
+        }
+      ]
+    },
+    {
+      "json_key": "skill_back_spin_lob",
+      "category": "skill_card",
+      "field_candidate": "SkillCard",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: skill-card flags/list",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3df68",
+          "literal_address": "0x06566897"
+        }
+      ]
+    },
+    {
+      "json_key": "skill_captaincy",
+      "category": "skill_card",
+      "field_candidate": "SkillCard",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: skill-card flags/list",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3cd38",
+          "literal_address": "0x0656692b"
+        }
+      ]
+    },
+    {
+      "json_key": "skill_chasing",
+      "category": "skill_card",
+      "field_candidate": "SkillCard",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: skill-card flags/list",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3d040",
+          "literal_address": "0x0656691d"
+        }
+      ]
+    },
+    {
+      "json_key": "skill_combative_spirit",
+      "category": "skill_card",
+      "field_candidate": "SkillCard",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: skill-card flags/list",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3dadc",
+          "literal_address": "0x0656694b"
+        }
+      ]
+    },
+    {
+      "json_key": "skill_control_curve",
+      "category": "skill_card",
+      "field_candidate": "SkillCard",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: skill-card flags/list",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3e0ec",
+          "literal_address": "0x0656682e"
+        }
+      ]
+    },
+    {
+      "json_key": "skill_flip_flap",
+      "category": "skill_card",
+      "field_candidate": "SkillCard",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: skill-card flags/list",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3c420",
+          "literal_address": "0x065667d7"
+        }
+      ]
+    },
+    {
+      "json_key": "skill_gk_long_throw",
+      "category": "skill_card",
+      "field_candidate": "SkillCard",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: skill-card flags/list",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3d650",
+          "literal_address": "0x065668fa"
+        }
+      ]
+    },
+    {
+      "json_key": "skill_knuckle_shoot",
+      "category": "skill_card",
+      "field_candidate": "SkillCard",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: skill-card flags/list",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3d348",
+          "literal_address": "0x06566842"
+        }
+      ]
+    },
+    {
+      "json_key": "skill_long_throw",
+      "category": "skill_card",
+      "field_candidate": "SkillCard",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: skill-card flags/list",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3cbb4",
+          "literal_address": "0x065668e9"
+        }
+      ]
+    },
+    {
+      "json_key": "skill_low_pant_kick",
+      "category": "skill_card",
+      "field_candidate": "SkillCard",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: skill-card flags/list",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3d7d4",
+          "literal_address": "0x065668d5"
+        }
+      ]
+    },
+    {
+      "json_key": "skill_man_mark",
+      "category": "skill_card",
+      "field_candidate": "SkillCard",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: skill-card flags/list",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3cebc",
+          "literal_address": "0x0656690e"
+        }
+      ]
+    },
+    {
+      "json_key": "skill_one_touch_pass",
+      "category": "skill_card",
+      "field_candidate": "SkillCard",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: skill-card flags/list",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3dc60",
+          "literal_address": "0x06566882"
+        }
+      ]
+    },
+    {
+      "json_key": "skill_one_touch_shoot",
+      "category": "skill_card",
+      "field_candidate": "SkillCard",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: skill-card flags/list",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3dde4",
+          "literal_address": "0x0656686c"
+        }
+      ]
+    },
+    {
+      "json_key": "skill_out_spin_kick",
+      "category": "skill_card",
+      "field_candidate": "SkillCard",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: skill-card flags/list",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3d4cc",
+          "literal_address": "0x065668c1"
+        }
+      ]
+    },
+    {
+      "json_key": "skill_pin_point_cross",
+      "category": "skill_card",
+      "field_candidate": "SkillCard",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: skill-card flags/list",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3e270",
+          "literal_address": "0x065668ab"
+        }
+      ]
+    },
+    {
+      "json_key": "skill_pivot_foot_touch",
+      "category": "skill_card",
+      "field_candidate": "SkillCard",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: skill-card flags/list",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3c8ac",
+          "literal_address": "0x06566817"
+        }
+      ]
+    },
+    {
+      "json_key": "skill_quick_touch",
+      "category": "skill_card",
+      "field_candidate": "SkillCard",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: skill-card flags/list",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3c728",
+          "literal_address": "0x06566805"
+        }
+      ]
+    },
+    {
+      "json_key": "skill_roulette",
+      "category": "skill_card",
+      "field_candidate": "SkillCard",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: skill-card flags/list",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3c5a4",
+          "literal_address": "0x065667e7"
+        }
+      ]
+    },
+    {
+      "json_key": "skill_scissors",
+      "category": "skill_card",
+      "field_candidate": "SkillCard",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: skill-card flags/list",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b33270",
+          "literal_address": "0x065667c8"
+        }
+      ]
+    },
+    {
+      "json_key": "skill_sombrero",
+      "category": "skill_card",
+      "field_candidate": "SkillCard",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: skill-card flags/list",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3ca30",
+          "literal_address": "0x065667f6"
+        }
+      ]
+    },
+    {
+      "json_key": "skill_super_sub",
+      "category": "skill_card",
+      "field_candidate": "SkillCard",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: skill-card flags/list",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3d958",
+          "literal_address": "0x0656693b"
+        }
+      ]
+    },
+    {
+      "json_key": "st",
+      "category": "position_aptitude",
+      "field_candidate": "PositionAptitude",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "group: position aptitude bitfield/table",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3f610",
+          "literal_address": "0x0656c7f8"
+        }
+      ]
+    },
+    {
+      "json_key": "stability",
+      "category": "field",
+      "field_candidate": "",
+      "confidence": "UNKNOWN",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "unmapped",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3299c",
+          "literal_address": "0x06506f7f"
+        }
+      ]
+    },
+    {
+      "json_key": "stronger_foot",
+      "category": "field",
+      "field_candidate": "StrongerFoot",
+      "confidence": "MEDIUM",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2e840",
+          "literal_address": "0x064e2d2f"
+        }
+      ]
+    },
+    {
+      "json_key": "uniform_name",
+      "category": "field",
+      "field_candidate": "NamePrint",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x75",
+        "0xf7"
+      ],
+      "widths": [
+        "pointer",
+        "u8"
+      ],
+      "setter_functions": [],
+      "accessor_functions": [
+        "GetNamePrint"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2d81c",
+          "literal_address": "0x064e2d09"
+        }
+      ]
+    },
+    {
+      "json_key": "uniform_number",
+      "category": "field",
+      "field_candidate": "UniformNumber",
+      "confidence": "HIGH",
+      "offsets": [
+        "0x1ac"
+      ],
+      "widths": [
+        "u32"
+      ],
+      "setter_functions": [
+        "SetUniformNumber"
+      ],
+      "accessor_functions": [
+        "GetUniformNumber"
+      ],
+      "mapping_reason": "direct synonym",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2de3c",
+          "literal_address": "0x0656751c"
+        }
+      ]
+    },
+    {
+      "json_key": "weight",
+      "category": "field",
+      "field_candidate": "",
+      "confidence": "UNKNOWN",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "unmapped",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2e248",
+          "literal_address": "0x06506e71"
+        }
+      ]
+    }
+  ],
+  "unknown_json_keys": [
+    {
+      "json_key": "LeftRight",
+      "category": "field",
+      "field_candidate": "",
+      "confidence": "UNKNOWN",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "unmapped",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3ac28",
+          "literal_address": "0x0643d030"
+        }
+      ]
+    },
+    {
+      "json_key": "durability",
+      "category": "field",
+      "field_candidate": "",
+      "confidence": "UNKNOWN",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "unmapped",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b32b2c",
+          "literal_address": "0x06506f89"
+        }
+      ]
+    },
+    {
+      "json_key": "e_09",
+      "category": "field",
+      "field_candidate": "",
+      "confidence": "UNKNOWN",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "unmapped",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b45120",
+          "literal_address": "0x06549008"
+        }
+      ]
+    },
+    {
+      "json_key": "energy",
+      "category": "field",
+      "field_candidate": "",
+      "confidence": "UNKNOWN",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "unmapped",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2f28c",
+          "literal_address": "0x0656826a"
+        }
+      ]
+    },
+    {
+      "json_key": "er_home_10",
+      "category": "field",
+      "field_candidate": "",
+      "confidence": "UNKNOWN",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "unmapped",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b44138",
+          "literal_address": "0x06549030"
+        }
+      ]
+    },
+    {
+      "json_key": "height",
+      "category": "field",
+      "field_candidate": "",
+      "confidence": "UNKNOWN",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "unmapped",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2e0c4",
+          "literal_address": "0x0652439f"
+        }
+      ]
+    },
+    {
+      "json_key": "stability",
+      "category": "field",
+      "field_candidate": "",
+      "confidence": "UNKNOWN",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "unmapped",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b3299c",
+          "literal_address": "0x06506f7f"
+        }
+      ]
+    },
+    {
+      "json_key": "weight",
+      "category": "field",
+      "field_candidate": "",
+      "confidence": "UNKNOWN",
+      "offsets": [],
+      "widths": [],
+      "setter_functions": [],
+      "accessor_functions": [],
+      "mapping_reason": "unmapped",
+      "prepare_data_from_json_evidence": [
+        {
+          "function_address": "0x04b2ae68",
+          "instruction_address": "0x04b2e248",
+          "literal_address": "0x06506e71"
+        }
+      ]
+    }
+  ]
+}

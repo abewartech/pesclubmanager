@@ -16,8 +16,8 @@ Stage 6 compares Stage 5 normalized player-shaped JSON with Stage 4 native key/o
 
 ## Outputs
 
-- JSON: `C:\Users\rahma\Documents\projects\abe\reverse_engineering\analysis\stage6_player_cross_reference\player_field_coverage.json`
-- CSV: `C:\Users\rahma\Documents\projects\abe\reverse_engineering\analysis\stage6_player_cross_reference\player_field_coverage.csv`
+- JSON: `/Users/it-admiinistrator/Documents/apps/web-sos-indonesia/others/pesclubmanager/analysis/stage6_player_cross_reference/player_field_coverage.json`
+- CSV: `/Users/it-admiinistrator/Documents/apps/web-sos-indonesia/others/pesclubmanager/analysis/stage6_player_cross_reference/player_field_coverage.csv`
 
 ## Observed With Offset
 

@@ -162,11 +162,36 @@ Always check `reports/stage4_player_offset_schema.md` and `analysis/stage4_playe
 - Stage 5 currently normalizes JSON-like records only. It is not a binary CPK/PAK table parser.
 - Git may fail with `dubious ownership` in this workspace. Do not change global git config without user approval.
 
+## Stage 6.2 Usage
+
+Static JSON-key -> native-field setter/accessor correlation (read-only).
+
+```powershell
+python .\scripts\s6_02_trace_json_key_setters.py
+```
+
+Outputs under `analysis/stage6/`:
+- `player_json_key_mapping.json` (105 keys; 97 with candidates)
+- `mapping_confidence_report.csv`
+- `new_fields_candidates.json` (native-only field candidates)
+- `prepare_data_from_json_address.txt`
+- `reports/stage6_json_key_mapping_report.md`
+
+## Stage 7 Usage
+
+Read-only offline viewer over Stage 5 normalized players.
+
+```powershell
+python .\scripts\s7_01_player_viewer.py
+python .\scripts\s7_01_player_viewer.py --mapping .\analysis\stage6\player_json_key_mapping.json
+python .\scripts\s7_01_player_viewer.py --mapping .\analysis\stage6\player_json_key_mapping.json --csv-output .\analysis\stage7_player_view\players_view.csv --json-output .\analysis\stage7_player_view\players_view.json
+```
+
+See `reports/stage7_player_viewer.md`.
+
 ## Recommended Next Work
 
-1. Search extracted/local data for real JSON-like player records and run Stage 5 normalizer on them.
-2. Run Stage 6 on real normalized records and compare coverage against the fixture baseline.
-3. Improve Stage 4 key-to-setter correlation by tracing `PrepareDataFromJson` calls for `observed_without_offset` and noisy fields.
-4. Add a read-only table/CSV export from normalized players.
-5. Build an offline viewer only after real records normalize cleanly.
-6. Design an editor only after read-only parsing is proven against multiple real samples.
+1. Extract the OBB read-only via the Stage 3 `PAK`/`CPK` extractors, then re-scan leaves for the 105 `PrepareDataFromJson` key markers (raw OBB scan found zero occurrences of high-signal keys, so player data is nested/compressed or UE4 `UDataTable`-serialized — see `reports/stage7_player_viewer.md`).
+2. Once real player-shaped records are located, run Stage 5 normalizer then Stage 6/6.2 and compare coverage against the fixture baseline.
+3. Raise confidence on `MEDIUM` grouped fields (ability parameter array, skill-card list, position-aptitude table) by tracing `PrepareDataFromJson` array/buffer stores.
+4. Editor design (Stage 8) stays blocked until read-only parsing is proven against multiple real samples.

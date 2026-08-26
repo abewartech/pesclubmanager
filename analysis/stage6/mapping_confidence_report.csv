@@ -1,0 +1,166 @@
+evidence_scope,json_key,field_candidate,confidence,offsets,widths,setter_functions,accessor_functions,mapping_reason
+json_key_mapping,LeftRight,,UNKNOWN,,,,,unmapped
+json_key_mapping,age,Age,HIGH,"0x18, 0x1c","u64, u8",SetAge,GetAge,direct synonym
+json_key_mapping,camulative_yellow_cards,SumYellow,HIGH,0x18c,u32,SetSumYellow,GetSumYellow,direct synonym
+json_key_mapping,cb,PositionAptitude,MEDIUM,,,,,group: position aptitude bitfield/table
+json_key_mapping,cf,PositionAptitude,MEDIUM,,,,,group: position aptitude bitfield/table
+json_key_mapping,cmf,PositionAptitude,MEDIUM,,,,,group: position aptitude bitfield/table
+json_key_mapping,condition_status,Condition,HIGH,"0xf4, 0xf7","u64, u8",SetCondition,GetCondition,direct synonym
+json_key_mapping,contract_period,ContractPeriod,HIGH,0x1e0,u32,SetContractPeriod,GetContractPeriod,direct synonym
+json_key_mapping,contract_period_max,ContractPeriodMax,HIGH,0x1dc,u32,SetContractPeriodMax,GetContractPeriodMax,direct synonym
+json_key_mapping,contract_period_request,ContractPeriodRequest,HIGH,0x1e4,u32,SetContractPeriodRequest,GetContractPeriodRequest,direct synonym
+json_key_mapping,contract_status,ContractStatus,HIGH,0x210,u32,SetContractStatus,GetContractStatus,direct synonym
+json_key_mapping,deleted,DeleteType,HIGH,0x214,u32,SetDeleteType,GetDeleteType,direct synonym
+json_key_mapping,dmf,PositionAptitude,MEDIUM,,,,,group: position aptitude bitfield/table
+json_key_mapping,durability,,UNKNOWN,,,,,unmapped
+json_key_mapping,e_09,,UNKNOWN,,,,,unmapped
+json_key_mapping,energy,,UNKNOWN,,,,,unmapped
+json_key_mapping,er_home_10,,UNKNOWN,,,,,unmapped
+json_key_mapping,gk,PositionAptitude,MEDIUM,,,,,group: position aptitude bitfield/table
+json_key_mapping,height,,UNKNOWN,,,,,unmapped
+json_key_mapping,injury,InjuryLength,HIGH,"0xf4, 0xf8","u64, u8",SetInjuryLength,GetInjuryLength,direct synonym
+json_key_mapping,legend_status,LegendStatus,HIGH,0x1bc,u32,SetLegendStatus,GetLegendStatus,normalized exact match
+json_key_mapping,licence,License,HIGH,0x204,u32,SetLicense,GetLicense,direct synonym
+json_key_mapping,lmf,PositionAptitude,MEDIUM,,,,,group: position aptitude bitfield/table
+json_key_mapping,lsb,PositionAptitude,MEDIUM,,,,,group: position aptitude bitfield/table
+json_key_mapping,lwg,PositionAptitude,MEDIUM,,,,,group: position aptitude bitfield/table
+json_key_mapping,master_id,MasterId,HIGH,0x1d0,u64,SetMasterId,GetMasterId,direct synonym
+json_key_mapping,motivation,MotivationValue,HIGH,0x20c,u8,,GetMotivationValue,direct synonym
+json_key_mapping,name,Name,HIGH,0x38,pointer,SetName,,direct synonym
+json_key_mapping,nationality,Nationality,HIGH,0xf4,u64,SetNationality,,direct synonym
+json_key_mapping,next_salary,NextSalary,HIGH,0x1ec,u32,SetNextSalary,GetNextSalary,direct synonym
+json_key_mapping,omf,PositionAptitude,MEDIUM,,,,,group: position aptitude bitfield/table
+json_key_mapping,original_team_id,OriginalTeamId,HIGH,0xdc,u32,,GetOriginalTeamId,direct synonym
+json_key_mapping,param_agility,AbilityParameter,MEDIUM,,,,,group: ability parameter array
+json_key_mapping,param_ball_spin_control,AbilityParameter,MEDIUM,,,,,group: ability parameter array
+json_key_mapping,param_body_balance,AbilityParameter,MEDIUM,,,,,group: ability parameter array
+json_key_mapping,param_defense_decision,AbilityParameter,MEDIUM,,,,,group: ability parameter array
+json_key_mapping,param_dribble,AbilityParameter,MEDIUM,,,,,group: ability parameter array
+json_key_mapping,param_gk_decision,AbilityParameter,MEDIUM,,,,,group: ability parameter array
+json_key_mapping,param_heading,AbilityParameter,MEDIUM,,,,,group: ability parameter array
+json_key_mapping,param_intercept,AbilityParameter,MEDIUM,,,,,group: ability parameter array
+json_key_mapping,param_jump,AbilityParameter,MEDIUM,,,,,group: ability parameter array
+json_key_mapping,param_kick_power,AbilityParameter,MEDIUM,,,,,group: ability parameter array
+json_key_mapping,param_long_pass,AbilityParameter,MEDIUM,,,,,group: ability parameter array
+json_key_mapping,param_offense_decision,AbilityParameter,MEDIUM,,,,,group: ability parameter array
+json_key_mapping,param_place_kicking,AbilityParameter,MEDIUM,,,,,group: ability parameter array
+json_key_mapping,param_r_foot_acc,AbilityParameter,MEDIUM,,,,,group: ability parameter array
+json_key_mapping,param_r_foot_frequency,AbilityParameter,MEDIUM,,,,,group: ability parameter array
+json_key_mapping,param_saving,AbilityParameter,MEDIUM,,,,,group: ability parameter array
+json_key_mapping,param_short_pass,AbilityParameter,MEDIUM,,,,,group: ability parameter array
+json_key_mapping,param_shot,AbilityParameter,MEDIUM,,,,,group: ability parameter array
+json_key_mapping,param_speed,AbilityParameter,MEDIUM,,,,,group: ability parameter array
+json_key_mapping,param_stamina,AbilityParameter,MEDIUM,,,,,group: ability parameter array
+json_key_mapping,param_teamwork,AbilityParameter,MEDIUM,,,,,group: ability parameter array
+json_key_mapping,param_trap,AbilityParameter,MEDIUM,,,,,group: ability parameter array
+json_key_mapping,playstyle,PlayStyle,HIGH,0x18,u64,SetPlayStyle,GetPlayStyle,direct synonym
+json_key_mapping,position,RegisteredPosition,MEDIUM,,,,,direct synonym
+json_key_mapping,price,MarketValue,HIGH,0x1a0,u64,SetMarketValue,GetMarketValue,direct synonym
+json_key_mapping,rarity,Rarity,HIGH,0x1c0,u32,SetRarity,GetRarity,direct synonym
+json_key_mapping,record_assist_season,AssistSeason,HIGH,0x174,u32,SetAssistSeason,GetAssistSeason,direct synonym
+json_key_mapping,record_assist_total,AssistSum,HIGH,0x178,u32,SetAssistSum,GetAssistSum,direct synonym
+json_key_mapping,record_average_rating_season,PointSeason,HIGH,0x17c,u32,SetPointSeason,GetPointSeason,direct synonym
+json_key_mapping,record_average_rating_total,PointSum,HIGH,0x180,u32,SetPointSum,GetPointSum,direct synonym
+json_key_mapping,record_goal_season,GoalSeason,HIGH,0x16c,u32,SetGoalSeason,GetGoalSeason,direct synonym
+json_key_mapping,record_goal_total,GoalSum,HIGH,0x170,u32,SetGoalSum,GetGoalSum,direct synonym
+json_key_mapping,record_match_season,GameSeason,HIGH,0x164,u32,SetGameSeason,GetGameSeason,direct synonym
+json_key_mapping,record_match_total,GameSum,HIGH,0x168,u32,SetGameSum,GetGameSum,direct synonym
+json_key_mapping,record_red_card_season,RedSeason,HIGH,0x194,u32,SetRedSeason,GetRedSeason,direct synonym
+json_key_mapping,record_red_card_total,RedSum,HIGH,0x198,u32,SetRedSum,GetRedSum,direct synonym
+json_key_mapping,record_yellow_card_season,YellowSeason,HIGH,0x184,u32,SetYellowSeason,GetYellowSeason,direct synonym
+json_key_mapping,record_yellow_card_total,YellowSum,HIGH,0x188,u32,SetYellowSum,GetYellowSum,direct synonym
+json_key_mapping,rmf,PositionAptitude,MEDIUM,,,,,group: position aptitude bitfield/table
+json_key_mapping,rsb,PositionAptitude,MEDIUM,,,,,group: position aptitude bitfield/table
+json_key_mapping,rwg,PositionAptitude,MEDIUM,,,,,group: position aptitude bitfield/table
+json_key_mapping,salary,Salary,HIGH,0x1e8,u32,SetSalary,GetSalary,direct synonym
+json_key_mapping,salary_list,ContractSalary,HIGH,0x1f0,u32,,GetContractSalary,direct synonym
+json_key_mapping,sell_price,SellPrice,HIGH,0x1a8,u32,SetSellPrice,GetSellPrice,direct synonym
+json_key_mapping,serial_id,SerialId,HIGH,0x1c8,u64,,GetSerialId,direct synonym
+json_key_mapping,skill_acrobatic_shoot,SkillCard,MEDIUM,,,,,group: skill-card flags/list
+json_key_mapping,skill_back_spin_lob,SkillCard,MEDIUM,,,,,group: skill-card flags/list
+json_key_mapping,skill_captaincy,SkillCard,MEDIUM,,,,,group: skill-card flags/list
+json_key_mapping,skill_chasing,SkillCard,MEDIUM,,,,,group: skill-card flags/list
+json_key_mapping,skill_combative_spirit,SkillCard,MEDIUM,,,,,group: skill-card flags/list
+json_key_mapping,skill_control_curve,SkillCard,MEDIUM,,,,,group: skill-card flags/list
+json_key_mapping,skill_flip_flap,SkillCard,MEDIUM,,,,,group: skill-card flags/list
+json_key_mapping,skill_gk_long_throw,SkillCard,MEDIUM,,,,,group: skill-card flags/list
+json_key_mapping,skill_knuckle_shoot,SkillCard,MEDIUM,,,,,group: skill-card flags/list
+json_key_mapping,skill_long_throw,SkillCard,MEDIUM,,,,,group: skill-card flags/list
+json_key_mapping,skill_low_pant_kick,SkillCard,MEDIUM,,,,,group: skill-card flags/list
+json_key_mapping,skill_man_mark,SkillCard,MEDIUM,,,,,group: skill-card flags/list
+json_key_mapping,skill_one_touch_pass,SkillCard,MEDIUM,,,,,group: skill-card flags/list
+json_key_mapping,skill_one_touch_shoot,SkillCard,MEDIUM,,,,,group: skill-card flags/list
+json_key_mapping,skill_out_spin_kick,SkillCard,MEDIUM,,,,,group: skill-card flags/list
+json_key_mapping,skill_pin_point_cross,SkillCard,MEDIUM,,,,,group: skill-card flags/list
+json_key_mapping,skill_pivot_foot_touch,SkillCard,MEDIUM,,,,,group: skill-card flags/list
+json_key_mapping,skill_quick_touch,SkillCard,MEDIUM,,,,,group: skill-card flags/list
+json_key_mapping,skill_roulette,SkillCard,MEDIUM,,,,,group: skill-card flags/list
+json_key_mapping,skill_scissors,SkillCard,MEDIUM,,,,,group: skill-card flags/list
+json_key_mapping,skill_sombrero,SkillCard,MEDIUM,,,,,group: skill-card flags/list
+json_key_mapping,skill_super_sub,SkillCard,MEDIUM,,,,,group: skill-card flags/list
+json_key_mapping,st,PositionAptitude,MEDIUM,,,,,group: position aptitude bitfield/table
+json_key_mapping,stability,,UNKNOWN,,,,,unmapped
+json_key_mapping,stronger_foot,StrongerFoot,MEDIUM,,,,,direct synonym
+json_key_mapping,uniform_name,NamePrint,HIGH,"0x75, 0xf7","pointer, u8",,GetNamePrint,direct synonym
+json_key_mapping,uniform_number,UniformNumber,HIGH,0x1ac,u32,SetUniformNumber,GetUniformNumber,direct synonym
+json_key_mapping,weight,,UNKNOWN,,,,,unmapped
+native_field_without_json_key,,AppearanceId,LOW,0x1b0,u32,SetAppearanceId,GetAppearanceId,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,AssociationRentalPlayer,LOW,0x334,u8,,IsAssociationRentalPlayer,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,BonusWT,LOW,0x310,u32,SetBonusWT,GetBonusWT,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,ComTeam,LOW,0x348,u8,,IsComTeam,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,CreateTime,LOW,0x218,u32,SetCreateTime,GetCreateTime,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,CupEntryRuleStatus,LOW,"0x378, 0x380, 0x388","u32, u64",SetCupEntryRuleStatus,GetCupEntryRuleStatus,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,CupEntryRuleStatusList,LOW,0x380,pointer,SetCupEntryRuleStatusList,GetCupEntryRuleStatusList,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,EnableElite,LOW,0x337,u8,,IsEnableElite,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,EnablePlayerInLegendTeam,LOW,0x314,u8,SetEnablePlayerInLegendTeam,IsEnablePlayerInLegendTeam,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,FamePoint,LOW,0x318,u32,SetFamePoint,GetFamePoint,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,FeaturedId,LOW,0x358,u32,SetFeaturedId,GetFeaturedId,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,GrowthListBase,LOW,0x230,pointer,SetGrowthListBase,GetGrowthListBase,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,GrowthListTraining,LOW,0x248,pointer,SetGrowthListTraining,GetGrowthListTraining,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,GrowthStartAge,LOW,0x228,u8,SetGrowthStartAge,GetGrowthStartAge,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,GrowthType,LOW,0x31c,u32,SetGrowthType,GetGrowthType,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,Id,LOW,0x2c,u64,SetId,GetId,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,IdExclusionSeazonDataType,LOW,0x30,u32,,GetIdExclusionSeazonDataType,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,IsAssociationRentalPlayer,LOW,0x334,u8,SetIsAssociationRentalPlayer,,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,IsComTeam,LOW,0x348,u8,SetIsComTeam,,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,IsEnableElite,LOW,0x337,u8,SetIsEnableElite,,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,IsRegulationOut,LOW,0x340,u8,SetIsRegulationOut,,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,LimitBreakNum,LOW,0x344,u32,SetLimitBreakNum,GetLimitBreakNum,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,LoanDealStatus,LOW,0x330,u32,SetLoanDealStatus,GetLoanDealStatus,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,MilestoneList,LOW,0x360,pointer,SetMilestoneList,GetMilestoneList,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,MomentumValue,LOW,0x35c,u32,SetMomentumValue,GetMomentumValue,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,MotivationTypeOnlineMode,LOW,0x20c,u8,,GetMotivationTypeOnlineMode,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,MotivationTypeTmpdb,LOW,0xf4,u32,,GetMotivationTypeTmpdb,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,NameSimple,LOW,"0x1, 0x38, 0x88, 0xf7","pointer, u8",,GetNameSimple,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,OrderNo,LOW,0x224,u32,SetOrderNo,GetOrderNo,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,OrderStatus,LOW,0x34c,u32,SetOrderStatus,GetOrderStatus,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,OriginalName,LOW,0x260,pointer,SetOriginalName,GetOriginalName,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,OriginalNameJp,LOW,0x29d,pointer,SetOriginalNameJp,GetOriginalNameJp,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,OverAllTeamWork,LOW,0x28,u32,,GetOverAllTeamWork,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,OverallFromServer,LOW,0x21c,u32,SetOverallFromServer,GetOverallFromServer,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,PlayStyleHas,LOW,0x338,u32,SetPlayStyleHas,GetPlayStyleHas,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,PlayStyleHasNum,LOW,"0x338, 0x33c",u32,,GetPlayStyleHasNum,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,PlayStyleIndex,LOW,"0x18, 0x338, 0x33c","u32, u64",,GetPlayStyleIndex,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,Playable,LOW,0x1d8,u32,SetPlayable,GetPlayable,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,PlayerCategory,LOW,0x208,u32,SetPlayerCategory,GetPlayerCategory,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,PlayerId,LOW,0x2c,u64,SetPlayerId,GetPlayerId,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,QualityDataAll,LOW,0x2e0,pointer,SetQualityDataAll,GetQualityDataAll,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,QualityDataCount,LOW,"0x2e0, 0x2e8",u64,,GetQualityDataCount,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,RedSuspension,LOW,0x19c,u32,SetRedSuspension,GetRedSuspension,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,RegulationOut,LOW,0x340,u8,,IsRegulationOut,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,RentalPlayerInfo,LOW,0x320,u8,SetRentalPlayerInfo,GetRentalPlayerInfo,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,RentalReturnInfo,LOW,"0x324, 0x328, 0x32c","pointer, u32, u8",SetRentalReturnInfo,GetRentalReturnInfo,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,RetireBonusList,LOW,0x2f8,pointer,,GetRetireBonusList,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,SameCode,LOW,0x1b4,u32,SetSameCode,GetSameCode,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,SeasonDataType,LOW,0x2dc,u32,SetSeasonDataType,GetSeasonDataType,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,SeasonDataTypeRaw,LOW,"0x204, 0x2068, 0x33, 0x348, 0xd80","u32, u64, u8",,GetSeasonDataTypeRaw,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,SquadPosition,LOW,0x220,u32,SetSquadPosition,GetSquadPosition,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,Stamina,LOW,"0xf4, 0xf6","u64, u8",SetStamina,GetStamina,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,TeamId,LOW,0xdc,pointer,,GetTeamId,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,TrainedAbilityParameter,LOW,0x138,pointer,SetTrainedAbilityParameter,GetTrainedAbilityParameter,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,TrainedAbilityParameterFromDB,LOW,0x138,pointer,SetTrainedAbilityParameterFromDB,,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,UseFameBooster,LOW,0x336,u8,SetUseFameBooster,,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,UserId,LOW,0x1b8,u32,SetUserId,GetUserId,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,Valid,LOW,0x1c8,u64,,IsValid,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,ValidRetireBonusList,LOW,"0x2f8, 0x300",u64,,IsValidRetireBonusList,native offset evidence has no Stage 4 JSON-key correlation
+native_field_without_json_key,,YellowMaxTimes,LOW,0x190,u32,SetYellowMaxTimes,GetYellowMaxTimes,native offset evidence has no Stage 4 JSON-key correlation
