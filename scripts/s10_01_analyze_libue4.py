@@ -62,6 +62,9 @@ class Lib:
         i = bisect.bisect_right(self.faddrs, addr) - 1
         return self.funcs[i][2][:width] if i >= 0 else "?"
 
+    def close(self):
+        self.f.close()
+
     def func_named(self, substr):
         return [(a, sz, n) for a, sz, n in self.funcs if substr in n]
 
@@ -75,10 +78,13 @@ class Lib:
 
     def plt_name(self, addr):
         off = addr - self.plt_base
-        if not (0 <= off < len(self.pdata)):
+        if not (0 <= off <= len(self.pdata) - 8):
             return self.func_at(addr)
         w0, = struct.unpack_from("<I", self.pdata, off)
         w1, = struct.unpack_from("<I", self.pdata, off + 4)
+        if w0 & 0x9F000000 != 0x90000000 or w1 & 0xFF000000 != 0x91000000:
+            # Not an ADRP+ADD PLT stub — don't decode garbage.
+            return self.func_at(addr)
         immlo = (w0 >> 29) & 3
         immhi = (w0 >> 5) & 0x7FFFF
         pg = ((immhi << 2) | immlo) << 12
@@ -112,6 +118,8 @@ class Lib:
                 continue
             rd = w & 0x1F
             for j in range(1, 9):
+                if (i + j) * 4 + 4 > len(self.tdata):
+                    break
                 w2, = struct.unpack_from("<I", self.tdata, (i + j) * 4)
                 if (w2 & 0xFF000000 == 0x91000000 and (w2 & 0x1F) == rd
                         and ((w2 >> 5) & 0x1F) == rd):
@@ -134,19 +142,22 @@ def main():
     args = ap.parse_args()
 
     lib = Lib(args.lib)
-    if args.symbols:
-        for a, sz, n in lib.func_named(args.symbols):
-            print(f"  {hex(a)} (+{sz}) {n[:110]}")
-    if args.xrefs:
-        targets = {}
-        for x in args.xrefs.split(","):
-            addr = int(x.strip(), 16)
-            s = lib.rstr(addr) or ""
-            targets[addr] = f"{hex(addr)} {s[:40]}"
-        for label, hs in lib.xrefs_to_strings(targets).items():
-            print(f"--- {label}: {len(hs)} xrefs")
-            for a, fn in sorted(set(hs))[:20]:
-                print(f"  {hex(a)} in {fn}")
+    try:
+        if args.symbols:
+            for a, sz, n in lib.func_named(args.symbols):
+                print(f"  {hex(a)} (+{sz}) {n[:110]}")
+        if args.xrefs:
+            targets = {}
+            for x in args.xrefs.split(","):
+                addr = int(x.strip(), 16)
+                s = lib.rstr(addr) or ""
+                targets[addr] = f"{hex(addr)} {s[:40]}"
+            for label, hs in lib.xrefs_to_strings(targets).items():
+                print(f"--- {label}: {len(hs)} xrefs")
+                for a, fn in sorted(set(hs))[:20]:
+                    print(f"  {hex(a)} in {fn}")
+    finally:
+        lib.close()
 
 
 if __name__ == "__main__":
