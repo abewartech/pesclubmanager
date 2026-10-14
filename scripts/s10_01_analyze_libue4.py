@@ -60,7 +60,11 @@ class Lib:
 
     def func_at(self, addr, width=80):
         i = bisect.bisect_right(self.faddrs, addr) - 1
-        return self.funcs[i][2][:width] if i >= 0 else "?"
+        if i >= 0:
+            a, sz, name = self.funcs[i]
+            if addr == a or (sz > 0 and a < addr < a + sz):
+                return name[:width]
+        return "?"
 
     def close(self):
         self.f.close()
@@ -71,6 +75,8 @@ class Lib:
     def rstr(self, addr, maxlen=100):
         if self.rbase <= addr < self.rbase + len(self.rdata):
             e = self.rdata.find(b"\x00", addr - self.rbase)
+            if e < 0:
+                e = len(self.rdata)
             s = self.rdata[addr - self.rbase:e]
             if 2 < len(s) < maxlen and all(32 <= c < 127 for c in s):
                 return s.decode()
@@ -82,8 +88,9 @@ class Lib:
             return self.func_at(addr)
         w0, = struct.unpack_from("<I", self.pdata, off)
         w1, = struct.unpack_from("<I", self.pdata, off + 4)
-        if w0 & 0x9F000000 != 0x90000000 or w1 & 0xFF000000 != 0x91000000:
-            # Not an ADRP+ADD PLT stub — don't decode garbage.
+        if w0 & 0x9F000000 != 0x90000000 or (w1 & 0xFFC00000) != 0xF9400000:
+            # Not an ADRP+LDR PLT stub (standard aarch64 stubs use LDR,
+            # 64-bit unsigned offset, for the GOT load) — don't decode garbage.
             return self.func_at(addr)
         immlo = (w0 >> 29) & 3
         immhi = (w0 >> 5) & 0x7FFFF
@@ -114,6 +121,8 @@ class Lib:
             off = ((immhi << 2) | immlo) << 12
             pc = self.tbase + i * 4
             page = (pc & ~0xFFF) + off
+            if off & (1 << 32):
+                page -= 1 << 33
             if page not in pages:
                 continue
             rd = w & 0x1F
