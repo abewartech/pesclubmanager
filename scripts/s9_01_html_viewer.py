@@ -31,19 +31,10 @@ def load_json(path):
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
 
-def field_rows(player):
-    """Flatten player sections into (section, key, value, evidence) rows."""
-    rows = []
-    evidence = player.get("native_evidence", {}) or {}
-    for section, fields in player.items():
-        if section in ("native_evidence", "provenance", "raw_unmapped"):
-            continue
-        if not isinstance(fields, dict):
-            continue
-        for key, value in fields.items():
-            ev = evidence.get(key, {}) if isinstance(evidence, dict) else {}
-            rows.append((section, key, value, ev))
-    return rows
+def json_for_script(obj):
+    """JSON safe to embed inside <script>: escape </ so a literal
+    </script> in the data can't break out of the script block."""
+    return json.dumps(obj, ensure_ascii=False).replace("</", "<\\/")
 
 
 def build_html(players, mapping):
@@ -51,8 +42,8 @@ def build_html(players, mapping):
     summary = mapping.get("summary", {})
     unknown_keys = mapping.get("unknown_json_keys", [])
 
-    players_json = json.dumps(players, ensure_ascii=False)
-    mappings_json = json.dumps(mappings, ensure_ascii=False)
+    players_json = json_for_script(players)
+    mappings_json = json_for_script(mappings)
 
     conf_counts = summary.get("confidence_counts", {})
 
@@ -210,7 +201,7 @@ $("sq").oninput = renderSchema; $("sconf").onchange = renderSchema;
 renderSchema();
 
 // unknown keys
-$("urows").innerHTML = {json.dumps([{"k": u["json_key"], "i": (u.get("prepare_data_from_json_evidence") or [{}])[0].get("instruction_address",""), "l": (u.get("prepare_data_from_json_evidence") or [{}])[0].get("literal_address","")} for u in unknown_keys], ensure_ascii=False)}.map(u =>
+$("urows").innerHTML = {json_for_script([{"k": u["json_key"], "i": (u.get("prepare_data_from_json_evidence") or [{}])[0].get("instruction_address",""), "l": (u.get("prepare_data_from_json_evidence") or [{}])[0].get("literal_address","")} for u in unknown_keys])}.map(u =>
   `<tr><td><code>${{esc(u.k)}}</code></td><td><code>${{esc(u.i)}}</code></td><td><code>${{esc(u.l)}}</code></td></tr>`).join("");
 </script>
 </body>
