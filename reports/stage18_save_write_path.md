@@ -2,10 +2,10 @@
 
 ## Scope
 
-Closes the Stage 17 caveat ("write-path builders not traced; assumed
-symmetric"). Traced the `sys::SaveData` write functions that persist the
-three JSON save files. Static, read-only arm64 disassembly of
-`libUE4.so`; strings via ADRP+ADD xref to `.rodata`.
+Verifies the `sys::SaveData` write path is symmetric with the load path
+(Stages 14–15). Traced the write functions that persist the three JSON
+save files. Static, read-only arm64 disassembly of `libUE4.so`; strings
+via ADRP+ADD xref to `.rodata`.
 
 ## 1. Writes use the same keys as loads
 
@@ -22,8 +22,9 @@ saver. Round-trip confirmed: no hidden keys, no binary side-channel.
 ## 2. Notes
 
 - `SaveLanguage` references `vibration` too: the saver rewrites the
-  whole `SystemData.dat` object, not just the changed key. The Stage 16
-  parser's unknown-key tolerance matches this (extra keys survive).
+  whole `SystemData.dat` object, not just the changed key. Extra keys
+  survive a rewrite, so an offline parser should report unknown keys
+  rather than reject them.
 - `SaveVibration` also references `first_notification_permission`
   (unrelated key handled in the same call flow; not traced further).
 - `SaveMultiplayStats` validates its input against a `WESYS` marker:
