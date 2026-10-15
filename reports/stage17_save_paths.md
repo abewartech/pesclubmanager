@@ -39,10 +39,10 @@ All are `<base>/`-relative, built by the same path-builder family.
 
 ## 3. What this means for offline parsing
 
-- To feed real saves into the Stage 16 parser, pull
-  `<app-files>/SaveData/*.dat` from a rooted device or backup
-  (`adb pull` needs the app debuggable or root; the dir is inside the
-  app sandbox, not on shared storage).
+- To parse real saves offline, pull `<app-files>/SaveData/*.dat` from a
+  rooted device or backup (`adb pull` needs the app debuggable or root;
+  the dir is inside the app sandbox, not on shared storage). The files
+  are plain JSON objects (Stages 14–15).
 - No path surprises: the three JSON files from Stages 14–15 are exactly
   the files this builder opens.
 
