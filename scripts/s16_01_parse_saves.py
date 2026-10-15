@@ -75,9 +75,9 @@ def parse_file(path):
                 warnings.append(f"missing key '{key}' (no documented default)")
             continue
         value = data[key]
-        # bool is subclass of int: exclude bool where only int wanted
-        ok = any(type(value) is t or (t is int and type(value) is int)
-                 for t in spec["types"])
+        # exact-type match: bool never matches int spec (bool is a subclass,
+        # but type() is exact), mirroring the loader's strict typing
+        ok = any(type(value) is t for t in spec["types"])
         if not ok:
             warnings.append(
                 f"key '{key}' has type {type(value).__name__}, "

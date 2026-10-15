@@ -23,7 +23,8 @@ Script: `scripts/s16_01_parse_saves.py`
     dict/list/str (Stage 15).
 - Mirrors loader tolerance: unknown keys are reported, not rejected;
   missing keys report the loader default where documented.
-- Exit code 0 = clean, 2 = warnings, 1 = no files / unreadable.
+- Exit code 0 = clean, 2 = warnings (including unreadable files),
+  1 = no `.dat` files found.
 
 ## Verification
 
