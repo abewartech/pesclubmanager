@@ -50,7 +50,9 @@ def parse_file(path):
     """Returns (data_dict_or_None, warnings list)."""
     warnings = []
     try:
-        raw = Path(path).read_text(encoding="utf-8")
+        # utf-8-sig tolerates a BOM (e.g. file edited on Windows); the
+        # native loader path is unchanged, this only affects our read
+        raw = Path(path).read_text(encoding="utf-8-sig")
     except OSError as e:
         return None, [f"cannot read file: {e}"]
     try:
