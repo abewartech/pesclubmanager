@@ -157,6 +157,7 @@ CANNED = {
         "rewards": "exp=50",
     },
     "top.php": {
+        "result": 0,
         "ms_ver": 0,
         "res_ver": 0,
         "session_id": "stub-session-001",
@@ -179,6 +180,479 @@ CANNED = {
         "session_id": "stub-debug-session",
         "user_code": "stub-user",
         "user_id": 1,
+    },
+    # Stage 44: achievement, facility, item stubs
+    "do_achievement_completion.php": {
+        "result": 0,
+        "achievement_id": 1,
+        "completed": 1,
+    },
+    "do_receive_achievement_reward.php": {
+        "result": 0,
+        "reward_id": 1,
+        "received": 1,
+    },
+    "get_achievement_list.php": {
+        "result": 0,
+        "achievement_size": 2,
+        "achievement_0_id": 1,
+        "achievement_0_name": "First Win",
+        "achievement_1_id": 2,
+        "achievement_1_name": "Score 10 Goals",
+    },
+    "do_cancel_facility.php": {
+        "result": 0,
+        "facility_id": 7001,
+        "cancelled": 1,
+    },
+    "do_completion_facility.php": {
+        "result": 0,
+        "facility_id": 7001,
+        "completed": 1,
+    },
+    "do_shorten_facility.php": {
+        "result": 0,
+        "facility_id": 7001,
+        "time_reduced": 1800,
+    },
+    "do_item_exchange.php": {
+        "result": 0,
+        "from_item_id": 5001,
+        "to_item_id": 5002,
+        "quantity": 1,
+    },
+    "do_item_use_legend.php": {
+        "result": 0,
+        "item_id": 5003,
+        "effect_applied": 1,
+    },
+    # Stage 45: scout operations
+    "check_scout_list_expand.php": {
+        "result": 0,
+        "can_expand": 1,
+        "cost": 100,
+    },
+    "do_scout_list_expand.php": {
+        "result": 0,
+        "new_capacity": 50,
+    },
+    "do_scout_list_favorite.php": {
+        "result": 0,
+        "scout_id": 1,
+        "favorited": 1,
+    },
+    "do_scout_multiple_chance.php": {
+        "result": 0,
+        "chance_id": 1,
+        "available": 1,
+    },
+    "do_select_scout_multiple.php": {
+        "result": 0,
+        "selected_id": 1,
+    },
+    "do_sell_scout_player.php": {
+        "result": 0,
+        "player_id": 1004,
+        "sold_price": 500,
+    },
+    "do_obtain_scout_player.php": {
+        "result": 0,
+        "player_id": 1004,
+        "obtained": 1,
+    },
+    "do_obtain_youth_player.php": {
+        "result": 0,
+        "player_id": 1005,
+        "player_name": "Youth Prospect",
+        "obtained": 1,
+    },
+    # Stage 46: auction + player ops
+    "do_bid_auction.php": {
+        "result": 0,
+        "auction_id": 1,
+        "bid_amount": 1000,
+        "is_highest": 1,
+    },
+    "do_favorite_auction.php": {
+        "result": 0,
+        "auction_id": 1,
+        "favorited": 1,
+    },
+    "get_auction_list.php": {
+        "result": 0,
+        "auction_size": 2,
+        "auction_0_id": 1,
+        "auction_0_player": "Star Player",
+        "auction_1_id": 2,
+        "auction_1_player": "Rising Star",
+    },
+    "get_auction_detail.php": {
+        "result": 0,
+        "auction_id": 1,
+        "current_bid": 1000,
+        "time_left": 3600,
+    },
+    "do_change_player_info.php": {
+        "result": 0,
+        "player_id": 1001,
+        "updated": 1,
+    },
+    "do_limit_over.php": {
+        "result": 0,
+        "player_id": 1001,
+        "new_limit": 99,
+    },
+    "do_quality_training.php": {
+        "result": 0,
+        "player_id": 1001,
+        "quality_up": 1,
+    },
+    "do_choice_quality.php": {
+        "result": 0,
+        "choice_id": 1,
+        "selected": 1,
+    },
+    # Stage 47: social + association
+    "check_social_id.php": {
+        "result": 0,
+        "social_id": "stub123",
+        "valid": 1,
+    },
+    "check_taboo_word.php": {
+        "result": 0,
+        "word": "test",
+        "is_taboo": 0,
+    },
+    "get_friend_list.php": {
+        "result": 0,
+        "friend_size": 2,
+        "friend_0_id": 2001,
+        "friend_0_name": "Friend One",
+        "friend_1_id": 2002,
+        "friend_1_name": "Friend Two",
+    },
+    "do_send_friend_request.php": {
+        "result": 0,
+        "target_id": 2001,
+        "sent": 1,
+    },
+    "do_accept_friend.php": {
+        "result": 0,
+        "friend_id": 2001,
+        "accepted": 1,
+    },
+    "association_cup_save_my_team_info.php": {
+        "result": 0,
+        "saved": 1,
+    },
+    "get_all_star_team_info.php": {
+        "result": 0,
+        "team_id": 9001,
+        "team_name": "All Stars",
+    },
+    "get_legend_team_info.php": {
+        "result": 0,
+        "team_id": 9002,
+        "team_name": "Legends",
+    },
+    "get_reserve_team_info.php": {
+        "result": 0,
+        "reserve_size": 5,
+    },
+    # Stage 48: coach/youth/team ops
+    "do_change_all_star_player_info.php": {
+        "result": 0,
+        "updated": 1,
+    },
+    "do_speedup_facility.php": {
+        "result": 0,
+        "facility_id": 7001,
+        "sped_up": 1,
+    },
+    "do_trade_scout.php": {
+        "result": 0,
+        "trade_id": 1,
+        "completed": 1,
+    },
+    "do_trans_coach.php": {
+        "result": 0,
+        "coach_id": 1,
+        "transferred": 1,
+    },
+    "do_trans_level_up_coach.php": {
+        "result": 0,
+        "coach_id": 1,
+        "new_level": 2,
+    },
+    "do_trans_limit_over_coach.php": {
+        "result": 0,
+        "coach_id": 1,
+        "limit_up": 1,
+    },
+    "do_trans_open_coach.php": {
+        "result": 0,
+        "coach_id": 1,
+        "opened": 1,
+    },
+    "do_update_team_info.php": {
+        "result": 0,
+        "team_id": 1001,
+        "updated": 1,
+    },
+    "do_youth_acquisition.php": {
+        "result": 0,
+        "player_id": 1006,
+        "acquired": 1,
+    },
+    "do_youth_remove_player.php": {
+        "result": 0,
+        "player_id": 1006,
+        "removed": 1,
+    },
+    "do_youth_scout.php": {
+        "result": 0,
+        "scout_id": 2,
+        "player_found": 1,
+    },
+    "do_youth_training.php": {
+        "result": 0,
+        "player_id": 1006,
+        "trained": 1,
+    },
+    # Stage 49: friend/agent/auction/facility
+    "friend_accept.php": {
+        "result": 0,
+        "accepted": 1,
+    },
+    "friend_append_info.php": {
+        "result": 0,
+        "info_updated": 1,
+    },
+    "friend_delete.php": {
+        "result": 0,
+        "deleted": 1,
+    },
+    "friend_request_delete.php": {
+        "result": 0,
+        "deleted": 1,
+    },
+    "friend_search.php": {
+        "result": 0,
+        "found_size": 1,
+        "found_0_id": 3001,
+        "found_0_name": "Search Result",
+    },
+    "friend_send_gift.php": {
+        "result": 0,
+        "gift_sent": 1,
+    },
+    "get_agent_offer.php": {
+        "result": 0,
+        "offer_size": 1,
+        "offer_0_id": 1,
+    },
+    "get_auction_result.php": {
+        "result": 0,
+        "won": 0,
+        "final_bid": 1000,
+    },
+    "get_bgm_data.php": {
+        "result": 0,
+        "bgm_id": 1,
+    },
+    "get_ceo_rewards.php": {
+        "result": 0,
+        "reward_size": 1,
+    },
+    "get_contract_player_info.php": {
+        "result": 0,
+        "player_id": 1004,
+        "contract_days": 30,
+    },
+    "get_facility_list.php": {
+        "result": 0,
+        "facility_size": 2,
+        "facility_0_id": 7001,
+        "facility_0_name": "Training Ground",
+    },
+    # Stage 50: misc get ops
+    "get_favorite_auction_list.php": {
+        "result": 0,
+        "fav_size": 1,
+    },
+    "get_limit_over_coach_list.php": {
+        "result": 0,
+        "coach_size": 1,
+    },
+    "get_locale_info.php": {
+        "result": 0,
+        "locale": "en",
+        "country": "ID",
+    },
+    "get_managers_score_info.php": {
+        "result": 0,
+        "score": 1000,
+        "rank": 5,
+    },
+    "get_menu_data.php": {
+        "result": 0,
+        "menu_version": 1,
+    },
+    "get_present_player.php": {
+        "result": 0,
+        "player_id": 1007,
+        "player_name": "Gift Player",
+    },
+    "get_quality_set_list.php": {
+        "result": 0,
+        "set_size": 1,
+    },
+    "get_quality_training_base_list.php": {
+        "result": 0,
+        "base_size": 1,
+    },
+    "get_quality_training_coach_list.php": {
+        "result": 0,
+        "coach_size": 1,
+    },
+    "get_replay_data.php": {
+        "result": 0,
+        "replay_id": 1,
+        "has_data": 0,
+    },
+    "get_running_commentary_data.php": {
+        "result": 0,
+        "commentary_size": 0,
+    },
+    "get_scout.php": {
+        "result": 0,
+        "scout_id": 1,
+        "scout_name": "Head Scout",
+    },
+    "get_scout_high_rarity_list.php": {
+        "result": 0,
+        "scout_size": 1,
+    },
+    # Stage 51: final batch - all 120 ops covered
+    "facebook_request.php": {
+        "result": 0,
+        "fb_connected": 0,
+    },
+    "get_shop_item_info.php": {
+        "result": 0,
+        "shop_size": 3,
+    },
+    "get_subscription_bg_data.php": {
+        "result": 0,
+        "has_subscription": 0,
+    },
+    "get_youth_list.php": {
+        "result": 0,
+        "youth_size": 2,
+    },
+    "get_youth_player_list.php": {
+        "result": 0,
+        "player_size": 2,
+    },
+    "load_reserve_team.php": {
+        "result": 0,
+        "loaded": 1,
+    },
+    "main.php": {
+        "result": 0,
+        "ok": 1,
+    },
+    "payment_limit.php": {
+        "result": 0,
+        "limit": 10000,
+        "used": 0,
+    },
+    "purchase_token.php": {
+        "result": 0,
+        "token_added": 10,
+    },
+    "receive_gift.php": {
+        "result": 0,
+        "gift_id": 1,
+        "received": 1,
+    },
+    "register_user.php": {
+        "result": 0,
+        "user_id": 1,
+        "registered": 1,
+    },
+    "request_data.php": {
+        "result": 0,
+        "data": "",
+    },
+    "save_all_star_team.php": {
+        "result": 0,
+        "saved": 1,
+    },
+    "save_legend_team.php": {
+        "result": 0,
+        "saved": 1,
+    },
+    "save_reserve_team.php": {
+        "result": 0,
+        "saved": 1,
+    },
+    "select_agent_offer.php": {
+        "result": 0,
+        "selected": 1,
+    },
+    "select_present_player.php": {
+        "result": 0,
+        "player_id": 1007,
+        "selected": 1,
+    },
+    "send_message.php": {
+        "result": 0,
+        "sent": 1,
+    },
+    "server_data.php": {
+        "result": 0,
+        "server_time": 0,
+    },
+    "set_language.php": {
+        "result": 0,
+        "language": "en",
+    },
+    "set_player_name_language.php": {
+        "result": 0,
+        "set": 1,
+    },
+    "set_youth_training.php": {
+        "result": 0,
+        "set": 1,
+    },
+    "use_item_auto.php": {
+        "result": 0,
+        "used": 1,
+    },
+    "use_item_auto_legend.php": {
+        "result": 0,
+        "used": 1,
+    },
+    "association14_do_player_rental.php": {
+        "result": 0,
+        "rented": 1,
+    },
+    "association19_get_rental_player_list.php": {
+        "result": 0,
+        "rental_size": 1,
+    },
+    "association6_do_chat.php": {
+        "result": 0,
+        "sent": 1,
+    },
+    "cup11_save_cup_team.php": {
+        "result": 0,
+        "saved": 1,
+    },
+    "cup_live11_save_cup_team.php": {
+        "result": 0,
+        "saved": 1,
     },
 }
 
