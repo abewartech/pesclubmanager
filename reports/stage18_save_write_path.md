@@ -1,0 +1,46 @@
+# Stage 18 — Save (Write) Path Key Symmetry
+
+## Scope
+
+Verifies the `sys::SaveData` write path is symmetric with the load path
+(Stages 14–15). Traced the write functions that persist the three JSON
+save files. Static, read-only arm64 disassembly of `libUE4.so`; strings
+via ADRP+ADD xref to `.rodata`.
+
+## 1. Writes use the same keys as loads
+
+| Function | VA | Writes to | JSON keys written |
+|---|---|---|---|
+| `SaveLanguage` | `0x4db2b4c` | `SystemData.dat` | `text_language`, `sound_language` (also refs `vibration` — whole-object rewrite) |
+| `SaveVibration` | `0x4db2e78` | `SystemData.dat` | `vibration` |
+| `SaveUserInfoData` | `0x4db63c0` | `UserInfoData.dat` | `auth_code`, `user_code`, `user_id` |
+| `SaveMultiplayStats` | `0x4dbc564` | `OnSysData.dat` | `multi_stats_data` |
+
+For the saver functions traced here, every key the loaders read is
+written by the matching saver: `text_language`/`sound_language`
+(`SaveLanguage`), `vibration` (`SaveVibration`), `auth_code`/`user_code`/
+`user_id` (`SaveUserInfoData`), `multi_stats_data` (`SaveMultiplayStats`).
+Writers were not traced for `SystemDataVersion`, `account_status`,
+`match_id`, `pid`, `peer_pid`, or `multi_stats_wait_upload_flag`, so
+key-level symmetry is verified only for the keys above. Value encoding,
+write ordering, and whether unknown keys survive a write were not
+verified.
+
+## 2. Notes
+
+- `SaveLanguage` references `vibration` too, which suggests the saver
+  rewrites the whole `SystemData.dat` object rather than patching one
+  key — but the write sequence was not traced, so treat whole-object
+  rewrite and key preservation as inference, not verified fact.
+- `SaveVibration` also references `first_notification_permission`
+  (unrelated key handled in the same call flow; not traced further).
+- `SaveMultiplayStats` validates its input against a `WESYS` marker:
+  strncmp-like compare of 5 bytes at input+3 (`0x4dbc910`). Exact
+  semantics not fully traced; likely a payload magic check.
+
+## 3. Caveats
+
+- Only key presence was verified on the write path, not value
+  encoding or write ordering.
+- `WESYS` marker semantics are inferred from the compare pattern,
+  not fully traced.
