@@ -1,0 +1,677 @@
+{
+  "count": 168,
+  "operations": {
+    "AssociationCupSaveMyTeamInfo": {
+      "address": "0x58d09a4",
+      "category": "other"
+    },
+    "AuthUser": {
+      "address": "0x49bbf14",
+      "category": "auth"
+    },
+    "CheckScoutListExpand": {
+      "address": "0x4a4bd6c",
+      "category": "check"
+    },
+    "CheckSocialId": {
+      "address": "0x592dbe0",
+      "category": "check"
+    },
+    "CheckTabooWord": {
+      "address": "0x49aa218",
+      "category": "check"
+    },
+    "CheckUpdate": {
+      "address": "0x7e64a68",
+      "category": "check"
+    },
+    "ClassicTournament": {
+      "address": "0x497dbc4",
+      "category": "other"
+    },
+    "DoAchievementCompletion": {
+      "address": "0x58a7430",
+      "category": "action"
+    },
+    "DoBidAuction": {
+      "address": "0x58e2410",
+      "category": "action"
+    },
+    "DoCancelFacility": {
+      "address": "0x592529c",
+      "category": "action"
+    },
+    "DoChangeAllStarPlayerInfo": {
+      "address": "0x4a6b9a4",
+      "category": "action"
+    },
+    "DoChangeAllStarPlayerInfoRequestParam": {
+      "address": "0x4a6c39c",
+      "category": "action"
+    },
+    "DoChangePlayerInfo": {
+      "address": "0x4a6c418",
+      "category": "action"
+    },
+    "DoChangePlayerInfoRequestParam": {
+      "address": "0x4a6db14",
+      "category": "action"
+    },
+    "DoChoiceQuality": {
+      "address": "0x4a82cac",
+      "category": "action"
+    },
+    "DoCompletionFacility": {
+      "address": "0x5925310",
+      "category": "action"
+    },
+    "DoConstructFacility": {
+      "address": "0x5926048",
+      "category": "action"
+    },
+    "DoContractPlayer": {
+      "address": "0x598ed04",
+      "category": "action"
+    },
+    "DoFavoriteAuction": {
+      "address": "0x58e2d7c",
+      "category": "action"
+    },
+    "DoItemExchange": {
+      "address": "0x592df0c",
+      "category": "action"
+    },
+    "DoItemPurchase": {
+      "address": "0x4a60fa4",
+      "category": "action"
+    },
+    "DoItemUse": {
+      "address": "0x592f0d0",
+      "category": "action"
+    },
+    "DoItemUseLegend": {
+      "address": "0x5931190",
+      "category": "action"
+    },
+    "DoLimitOver": {
+      "address": "0x4a82ee4",
+      "category": "action"
+    },
+    "DoObtainScoutPlayer": {
+      "address": "0x4a4be9c",
+      "category": "action"
+    },
+    "DoObtainYouthPlayer": {
+      "address": "0x4a93320",
+      "category": "action"
+    },
+    "DoQualityTraining": {
+      "address": "0x4a86028",
+      "category": "action"
+    },
+    "DoReceiveAchievementReward": {
+      "address": "0x58a8bb4",
+      "category": "action"
+    },
+    "DoScoutListExpand": {
+      "address": "0x4a4dc50",
+      "category": "action"
+    },
+    "DoScoutListFavorite": {
+      "address": "0x4a4e43c",
+      "category": "action"
+    },
+    "DoScoutMultipleChance": {
+      "address": "0x4a4e4b0",
+      "category": "action"
+    },
+    "DoScoutPlayer": {
+      "address": "0x4a4eda8",
+      "category": "action"
+    },
+    "DoSelectScoutMultiple": {
+      "address": "0x4a52044",
+      "category": "action"
+    },
+    "DoSellScoutPlayer": {
+      "address": "0x4a52a40",
+      "category": "action"
+    },
+    "DoShortenFacility": {
+      "address": "0x5926c78",
+      "category": "action"
+    },
+    "DoSpeedupFacility": {
+      "address": "0x59286ac",
+      "category": "action"
+    },
+    "DoTradeScout": {
+      "address": "0x4a53558",
+      "category": "action"
+    },
+    "DoTraining": {
+      "address": "0x4a8713c",
+      "category": "action"
+    },
+    "DoTransCoach": {
+      "address": "0x4a545a0",
+      "category": "action"
+    },
+    "DoTransLevelUpCoach": {
+      "address": "0x4a872c8",
+      "category": "action"
+    },
+    "DoTransLimitOverCoach": {
+      "address": "0x4a88068",
+      "category": "action"
+    },
+    "DoTransOpenCoach": {
+      "address": "0x4a88178",
+      "category": "action"
+    },
+    "DoUpdateTeamInfo": {
+      "address": "0x4a6db9c",
+      "category": "action"
+    },
+    "DoUpdateTeamInfoRequestParam": {
+      "address": "0x4a6ff94",
+      "category": "action"
+    },
+    "DoYouthAcquisition": {
+      "address": "0x4a94c5c",
+      "category": "action"
+    },
+    "DoYouthRemovePlayer": {
+      "address": "0x4a965d4",
+      "category": "action"
+    },
+    "DoYouthScout": {
+      "address": "0x4a975dc",
+      "category": "action"
+    },
+    "DoYouthTraining": {
+      "address": "0x4a97704",
+      "category": "action"
+    },
+    "Download": {
+      "address": "0x5931230",
+      "category": "action"
+    },
+    "FacebookRequest": {
+      "address": "0x5931878",
+      "category": "other"
+    },
+    "FriendAccept": {
+      "address": "0x5929ab8",
+      "category": "other"
+    },
+    "FriendAppendInfo": {
+      "address": "0x592a2ac",
+      "category": "other"
+    },
+    "FriendDelete": {
+      "address": "0x592a9a0",
+      "category": "other"
+    },
+    "FriendList": {
+      "address": "0x592a9dc",
+      "category": "other"
+    },
+    "FriendRequest": {
+      "address": "0x592b6e4",
+      "category": "other"
+    },
+    "FriendRequestDelete": {
+      "address": "0x49bb328",
+      "category": "other"
+    },
+    "FriendSearch": {
+      "address": "0x592be5c",
+      "category": "other"
+    },
+    "FriendSendGift": {
+      "address": "0x592d42c",
+      "category": "other"
+    },
+    "GetAPIName": {
+      "address": "0x4a993f8",
+      "category": "query"
+    },
+    "GetAPIVersion": {
+      "address": "0x4a99408",
+      "category": "query"
+    },
+    "GetAchievementList": {
+      "address": "0x58a916c",
+      "category": "query"
+    },
+    "GetAgentOffer": {
+      "address": "0x4a546b8",
+      "category": "query"
+    },
+    "GetAllStarTeamInfo": {
+      "address": "0x4a71ab0",
+      "category": "query"
+    },
+    "GetAuction": {
+      "address": "0x58e3940",
+      "category": "query"
+    },
+    "GetAuctionList": {
+      "address": "0x4967904",
+      "category": "query"
+    },
+    "GetAuctionResult": {
+      "address": "0x58e4f04",
+      "category": "query"
+    },
+    "GetBgmData": {
+      "address": "0x5931a8c",
+      "category": "query"
+    },
+    "GetCeoRewards": {
+      "address": "0x58f1744",
+      "category": "query"
+    },
+    "GetContractPlayerInfo": {
+      "address": "0x598f16c",
+      "category": "query"
+    },
+    "GetFacilityList": {
+      "address": "0x5928c5c",
+      "category": "query"
+    },
+    "GetFavoriteAuctionList": {
+      "address": "0x58e4fb0",
+      "category": "query"
+    },
+    "GetLegendTeamInfo": {
+      "address": "0x4a71be0",
+      "category": "query"
+    },
+    "GetLimitOverCoachList": {
+      "address": "0x4a88320",
+      "category": "query"
+    },
+    "GetLocaleInfo": {
+      "address": "0x49aa35c",
+      "category": "query"
+    },
+    "GetManagersScoreInfo": {
+      "address": "0x597c46c",
+      "category": "query"
+    },
+    "GetMenuData": {
+      "address": "0x5931c78",
+      "category": "query"
+    },
+    "GetPresentPlayer": {
+      "address": "0x591eab8",
+      "category": "query"
+    },
+    "GetQualitySetList": {
+      "address": "0x4a89000",
+      "category": "query"
+    },
+    "GetQualityTrainingBaseList": {
+      "address": "0x4a8a3bc",
+      "category": "query"
+    },
+    "GetQualityTrainingCoachList": {
+      "address": "0x4a8a770",
+      "category": "query"
+    },
+    "GetReplayData": {
+      "address": "0x594321c",
+      "category": "query"
+    },
+    "GetReserveTeamInfo": {
+      "address": "0x4a72bf0",
+      "category": "query"
+    },
+    "GetRunningCommentaryData": {
+      "address": "0x5943488",
+      "category": "query"
+    },
+    "GetScout": {
+      "address": "0x4a55188",
+      "category": "query"
+    },
+    "GetScoutHighRarityList": {
+      "address": "0x4a5561c",
+      "category": "query"
+    },
+    "GetScoutList": {
+      "address": "0x4a56d08",
+      "category": "query"
+    },
+    "GetScoutPlayerDetail": {
+      "address": "0x4a57630",
+      "category": "query"
+    },
+    "GetScoutPlayerList": {
+      "address": "0x4a57fac",
+      "category": "query"
+    },
+    "GetScoutPlayerListLength": {
+      "address": "0x4a585a4",
+      "category": "query"
+    },
+    "GetScoutPointTerm": {
+      "address": "0x4a58618",
+      "category": "query"
+    },
+    "GetShopItemInfo": {
+      "address": "0x4a6109c",
+      "category": "query"
+    },
+    "GetSubscriptionBgData": {
+      "address": "0x59436cc",
+      "category": "query"
+    },
+    "GetTeamInfo": {
+      "address": "0x4a73bf8",
+      "category": "query"
+    },
+    "GetTopMenuData": {
+      "address": "0x595eef8",
+      "category": "query"
+    },
+    "GetYouthList": {
+      "address": "0x4a98524",
+      "category": "query"
+    },
+    "GetYouthPlayerList": {
+      "address": "0x4a9865c",
+      "category": "query"
+    },
+    "LoadReserveTeam": {
+      "address": "0x4a74cc0",
+      "category": "other"
+    },
+    "Login": {
+      "address": "0x49c9240",
+      "category": "other"
+    },
+    "Main": {
+      "address": "0x4a383ec",
+      "category": "other"
+    },
+    "OnlineDialog": {
+      "address": "0x4a411e0",
+      "category": "other"
+    },
+    "PaymentLimit": {
+      "address": "0x4a64b28",
+      "category": "other"
+    },
+    "PurchaseToken": {
+      "address": "0x4a67d78",
+      "category": "other"
+    },
+    "ReceiveGift": {
+      "address": "0x49d12ac",
+      "category": "other"
+    },
+    "RegisterUser": {
+      "address": "0x49ac8f0",
+      "category": "other"
+    },
+    "RegisterUserRequestParam": {
+      "address": "0x49aca8c",
+      "category": "other"
+    },
+    "Request": {
+      "address": "0x4a41240",
+      "category": "other"
+    },
+    "RequestData": {
+      "address": "0x4a416f0",
+      "category": "other"
+    },
+    "Result": {
+      "address": "0x4a412d4",
+      "category": "other"
+    },
+    "SaveAllStarTeam": {
+      "address": "0x4a75904",
+      "category": "other"
+    },
+    "SaveLegendTeam": {
+      "address": "0x4a75bac",
+      "category": "other"
+    },
+    "SaveReserveTeam": {
+      "address": "0x4a765f0",
+      "category": "other"
+    },
+    "SelectAgentOffer": {
+      "address": "0x4a5b644",
+      "category": "other"
+    },
+    "SelectPresentPlayer": {
+      "address": "0x591f0d0",
+      "category": "other"
+    },
+    "SendMessage": {
+      "address": "0x49d252c",
+      "category": "other"
+    },
+    "ServerData": {
+      "address": "0x4a5ec14",
+      "category": "other"
+    },
+    "SetAPIVersion": {
+      "address": "0x4a99414",
+      "category": "other"
+    },
+    "SetLanguage": {
+      "address": "0x5963784",
+      "category": "other"
+    },
+    "SetPlayerNameLanguage": {
+      "address": "0x4a8fd94",
+      "category": "other"
+    },
+    "SetYouthTraining": {
+      "address": "0x4a98c68",
+      "category": "other"
+    },
+    "UseItemAuto": {
+      "address": "0x4a76a60",
+      "category": "other"
+    },
+    "UseItemAutoLegend": {
+      "address": "0x4a797ec",
+      "category": "other"
+    },
+    "allStar": {
+      "address": "0x4948d1c",
+      "category": "other"
+    },
+    "association": {
+      "address": "0x58c5b2c",
+      "category": "other"
+    },
+    "associationCup": {
+      "address": "0x58c5e7c",
+      "category": "other"
+    },
+    "associationGvg": {
+      "address": "0x49624f0",
+      "category": "other"
+    },
+    "buzzWorldTour": {
+      "address": "0x58eae40",
+      "category": "other"
+    },
+    "classicSeries": {
+      "address": "0x4974290",
+      "category": "other"
+    },
+    "clubData": {
+      "address": "0x4981f48",
+      "category": "other"
+    },
+    "clubhouse": {
+      "address": "0x5907bb0",
+      "category": "other"
+    },
+    "comebackMission": {
+      "address": "0x4997718",
+      "category": "other"
+    },
+    "cup": {
+      "address": "0x4997e38",
+      "category": "other"
+    },
+    "cupLive": {
+      "address": "0x5911c80",
+      "category": "other"
+    },
+    "database": {
+      "address": "0x49a9de4",
+      "category": "other"
+    },
+    "event": {
+      "address": "0x591f9b4",
+      "category": "other"
+    },
+    "exhibitionMatch": {
+      "address": "0x49b4d98",
+      "category": "other"
+    },
+    "facility": {
+      "address": "0x5929270",
+      "category": "other"
+    },
+    "finance": {
+      "address": "0x59296c8",
+      "category": "other"
+    },
+    "functionControl": {
+      "address": "0x595ef30",
+      "category": "other"
+    },
+    "geyser": {
+      "address": "0x5966850",
+      "category": "other"
+    },
+    "history": {
+      "address": "0x5966fac",
+      "category": "other"
+    },
+    "internationalRepresentative": {
+      "address": "0x596795c",
+      "category": "other"
+    },
+    "journey": {
+      "address": "0x5968978",
+      "category": "other"
+    },
+    "league": {
+      "address": "0x596a6a0",
+      "category": "other"
+    },
+    "leagueChallenge": {
+      "address": "0x49f6208",
+      "category": "other"
+    },
+    "loanPlayer": {
+      "address": "0x597c6f4",
+      "category": "other"
+    },
+    "managerMission": {
+      "address": "0x5983114",
+      "category": "other"
+    },
+    "match": {
+      "address": "0x4a04834",
+      "category": "other"
+    },
+    "news": {
+      "address": "0x4a0e620",
+      "category": "other"
+    },
+    "nextDay": {
+      "address": "0x4a138b0",
+      "category": "other"
+    },
+    "pass": {
+      "address": "0x598c7fc",
+      "category": "other"
+    },
+    "player": {
+      "address": "0x4a318e0",
+      "category": "other"
+    },
+    "portal": {
+      "address": "0x5995314",
+      "category": "other"
+    },
+    "privateLeague": {
+      "address": "0x59a1f5c",
+      "category": "other"
+    },
+    "pvp": {
+      "address": "0x4a1948c",
+      "category": "other"
+    },
+    "pvpClassic": {
+      "address": "0x4a30654",
+      "category": "other"
+    },
+    "scout": {
+      "address": "0x4a5af4c",
+      "category": "other"
+    },
+    "season": {
+      "address": "0x59a8b04",
+      "category": "other"
+    },
+    "settings": {
+      "address": "0x59b37e0",
+      "category": "other"
+    },
+    "shop": {
+      "address": "0x4a61b64",
+      "category": "other"
+    },
+    "soundSettings": {
+      "address": "0x59ba60c",
+      "category": "other"
+    },
+    "specialMatch": {
+      "address": "0x4a69220",
+      "category": "other"
+    },
+    "spotSponsor": {
+      "address": "0x59c1df0",
+      "category": "other"
+    },
+    "survivalLeague": {
+      "address": "0x59c4380",
+      "category": "other"
+    },
+    "town": {
+      "address": "0x59d564c",
+      "category": "other"
+    },
+    "trainer": {
+      "address": "0x59d880c",
+      "category": "other"
+    },
+    "ucl": {
+      "address": "0x59de24c",
+      "category": "other"
+    },
+    "user": {
+      "address": "0x4a8fb68",
+      "category": "other"
+    },
+    "userFollowup": {
+      "address": "0x4a92b5c",
+      "category": "other"
+    }
+  }
+}
