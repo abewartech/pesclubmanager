@@ -67,6 +67,9 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         length = int(self.headers.get("Content-Length", 0))
+        if length > 1_048_576:
+            self.send_error(413, "request too large")
+            return
         body = self.rfile.read(length).decode("utf-8", errors="replace")
         params = urllib.parse.parse_qs(body)
         endpoint = self.path.rsplit("/", 1)[-1].split("?")[0]
