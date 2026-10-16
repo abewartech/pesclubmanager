@@ -8,7 +8,7 @@
 
 | Component | Location | Purpose |
 |-----------|----------|---------|
-| Patched APK | `builds/pescm-patched-v1.apk` | Client with `https://`→`http://` and server→localhost patches |
+| Patched APK | `builds/pescm-patched-v1.apk` (local build, gitignored) | Client with `https://`→`http://` and server→localhost patches |
 | Stub server | `scripts/s24_01_stub_server.py` | Serves API endpoints + masterdata |
 | Integration test | `scripts/s36_01_integration_test.py` | Validates the stub (7/7) |
 | Masterdata templates | `analysis/masterdata_stub/templates/` | Sample roster data |
