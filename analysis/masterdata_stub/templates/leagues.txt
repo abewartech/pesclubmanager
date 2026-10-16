@@ -1,0 +1,3 @@
+league_size=1
+league_0_league_id=1
+league_0_name=Premier Division

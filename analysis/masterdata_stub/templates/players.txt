@@ -1,0 +1,16 @@
+player_size=3
+player_0_master_id=1001
+player_0_name=Striker Ronaldo
+player_0_rarity=5
+player_0_position=CF
+player_0_team_id=1001
+player_1_master_id=1002
+player_1_name=Defender Puyol
+player_1_rarity=4
+player_1_position=CB
+player_1_team_id=1002
+player_2_master_id=1003
+player_2_name=Midfielder Zidane
+player_2_rarity=5
+player_2_position=AMF
+player_2_team_id=1003
