@@ -29,6 +29,13 @@ STEPS = [
     ("top.php", {"ms_ver", "res_ver"}),
     ("get_team_info.php", {"team_id", "team_name"}),
     ("get_match_info.php", {"match_id", "home_team_id", "away_team_id"}),
+    ("do_training.php", {"exp_gained"}),
+    ("do_scout_player.php", {"player_id", "player_name"}),
+    ("do_contract_player.php", {"contract_id", "success"}),
+    ("do_item_purchase.php", {"item_id", "quantity"}),
+    ("do_item_use.php", {"effect_applied"}),
+    ("do_construct_facility.php", {"facility_id"}),
+    ("submit_match_result.php", {"match_id", "home_score"}),
 ]
 
 
