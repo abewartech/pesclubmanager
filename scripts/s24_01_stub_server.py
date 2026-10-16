@@ -59,6 +59,23 @@ CANNED = {
         "session_id": "stub-session-001",
         "tutorial": 0,
     },
+    # Stage 34: team data stubs
+    "get_team_info.php": {
+        "result": 0,
+        "team_id": 1001,
+        "team_name": "Stub United",
+        "formation": "4-4-2",
+        "player_size": 3,
+        "player_0_id": 1001,
+        "player_0_name": "Striker Ronaldo",
+        "player_0_position": "CF",
+        "player_1_id": 1002,
+        "player_1_name": "Defender Puyol",
+        "player_1_position": "CB",
+        "player_2_id": 1003,
+        "player_2_name": "Midfielder Zidane",
+        "player_2_position": "AMF",
+    },
     "top.php": {
         "ms_ver": 0,
         "res_ver": 0,
