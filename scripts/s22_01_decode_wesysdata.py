@@ -36,7 +36,10 @@ HEADER_SIZE = 16
 def load_payload(path, from_json):
     raw = Path(path).read_bytes()
     if from_json:
-        data = json.loads(raw.decode("utf-8-sig"))
+        try:
+            data = json.loads(raw.decode("utf-8-sig"))
+        except UnicodeDecodeError as e:
+            raise ValueError(f"file is not valid UTF-8 JSON: {e}")
         val = data.get("multi_stats_data")
         if val is None:
             raise ValueError("JSON has no 'multi_stats_data' key")
