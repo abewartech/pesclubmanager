@@ -1,4 +1,4 @@
-# Stage 18 — Save (Write) Path Confirms JSON Round-Trip
+# Stage 18 — Save (Write) Path Key Symmetry
 
 ## Scope
 
@@ -17,14 +17,15 @@ via ADRP+ADD xref to `.rodata`.
 | `SaveMultiplayStats` | `0x4dbc564` | `OnSysData.dat` | `multi_stats_data` |
 
 Every key the loaders read (Stages 14–15) is written by the matching
-saver. Round-trip confirmed: no hidden keys, no binary side-channel.
+saver. Key-level symmetry holds; value encoding, write ordering, and
+whether unknown keys survive a write were not verified.
 
 ## 2. Notes
 
-- `SaveLanguage` references `vibration` too: the saver rewrites the
-  whole `SystemData.dat` object, not just the changed key. Extra keys
-  survive a rewrite, so an offline parser should report unknown keys
-  rather than reject them.
+- `SaveLanguage` references `vibration` too, which suggests the saver
+  rewrites the whole `SystemData.dat` object rather than patching one
+  key — but the write sequence was not traced, so treat whole-object
+  rewrite and key preservation as inference, not verified fact.
 - `SaveVibration` also references `first_notification_permission`
   (unrelated key handled in the same call flow; not traced further).
 - `SaveMultiplayStats` validates its input against a `WESYS` marker:
