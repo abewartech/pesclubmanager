@@ -96,6 +96,25 @@ CANNED = {
         "away_player_2_name": "Opponent Defender",
         "away_player_2_position": "CB",
     },
+    # Stage 38: training stub
+    "do_training.php": {
+        "result": 0,
+        "training_id": 1,
+        "player_id": 1001,
+        "exp_gained": 100,
+        "level_up": 0,
+        "new_shot": 96,
+        "new_speed": 91,
+    },
+    # Stage 39: scouting stub
+    "do_scout_player.php": {
+        "result": 0,
+        "scout_id": 1,
+        "player_id": 1004,
+        "player_name": "Scouted Talent",
+        "rarity": 3,
+        "position": "CMF",
+    },
     "top.php": {
         "ms_ver": 0,
         "res_ver": 0,
