@@ -79,6 +79,9 @@ Detailed technical reports documenting each phase of the project can be found un
 *   **Agent Handoff**
     *   [AGENTS.md](AGENTS.md): Short operational guide for AI coding agents working in this workspace.
     *   [docs/ai_agent_handoff.md](docs/ai_agent_handoff.md): Detailed context, safety boundaries, stage summary, commands, and next steps for another agent.
+*   **Toolkits**
+    *   [docs/rea-toolkit.md](docs/rea-toolkit.md): REA + Ghidra 12.1.2 setup for deep decompilation.
+    *   [docs/rizin-toolkit.md](docs/rizin-toolkit.md): Rizin v0.9.1 for fast targeted disassembly.
 
 ---
 
