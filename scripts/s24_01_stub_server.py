@@ -115,6 +115,40 @@ CANNED = {
         "rarity": 3,
         "position": "CMF",
     },
+    # Stage 40: contract stub
+    "do_contract_player.php": {
+        "result": 0,
+        "contract_id": 1,
+        "player_id": 1004,
+        "player_name": "Scouted Talent",
+        "team_id": 1001,
+        "success": 1,
+    },
+    # Stage 41: item + facility + post-match stubs
+    "do_item_purchase.php": {
+        "result": 0,
+        "item_id": 5001,
+        "quantity": 1,
+        "remaining_currency": 9990,
+    },
+    "do_item_use.php": {
+        "result": 0,
+        "item_id": 5001,
+        "effect_applied": 1,
+    },
+    "do_construct_facility.php": {
+        "result": 0,
+        "facility_id": 7001,
+        "facility_name": "Training Ground",
+        "construction_time": 3600,
+    },
+    "submit_match_result.php": {
+        "result": 0,
+        "match_id": 1,
+        "home_score": 2,
+        "away_score": 1,
+        "rewards": "exp=50",
+    },
     "top.php": {
         "ms_ver": 0,
         "res_ver": 0,
