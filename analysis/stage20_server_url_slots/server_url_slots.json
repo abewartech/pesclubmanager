@@ -1,0 +1,36 @@
+{
+  "source": "original/PES-CLUB-MANAGER-v4-5-1.apk!lib/arm64-v8a/libUE4.so",
+  "symbol_owner": "onlineapi::ServerData",
+  "url_slot_array": {
+    "virtual_address": "0x0078252f8",
+    "entry_count": 14,
+    "entry_size_bytes": 8,
+    "note": "Consecutive qword array in .bss/.data used by GetResourceUrl()/related server helpers. Index 0 is production API, index 6 is the local trunk server."
+  },
+  "slots": [
+    { "index": 0, "host": "asj.s.konaminet.jp", "path": "/asj/", "confidence": "HIGH", "role": "production API" },
+    { "index": 1, "host": "asj.konaminet.jp", "path": "/asj/", "confidence": "HIGH", "role": "production variant" },
+    { "index": 2, "host": "dev-asj001.s.konaminet.jp", "path": "/asj/", "confidence": "HIGH", "role": "development" },
+    { "index": 3, "host": "dev-asj001.konaminet.jp", "path": "/asj/", "confidence": "HIGH", "role": "development variant" },
+    { "index": 4, "host": "chk-asj001.s.konaminet.jp", "path": "/asj/", "confidence": "HIGH", "role": "check/test" },
+    { "index": 5, "host": "asjrsc.konaminet.jp", "path": "/asj/", "confidence": "HIGH", "role": "resource server candidate for observed value 0x5" },
+    { "index": 6, "host": "localhost", "path": "/asj/trunk/", "confidence": "HIGH", "role": "local trunk/test server" },
+    { "index": 7, "host": "asjmng01.konaminet.jp", "path": "/asj/", "confidence": "HIGH", "role": "management server" },
+    { "index": 8, "host": "graph.facebook.com", "path": "/", "confidence": "MEDIUM", "role": "social/share endpoint embedded in the same table" },
+    { "index": 9, "host": "chk-asj001.konaminet.jp", "path": "/asj/", "confidence": "HIGH", "role": "check/test variant" },
+    { "index": 10, "host": "stg-asj.s.konaminet.jp", "path": "/asj/", "confidence": "HIGH", "role": "staging" },
+    { "index": 11, "host": "stg-asj.konaminet.jp", "path": "/asj/", "confidence": "HIGH", "role": "staging variant" },
+    { "index": 12, "host": "stg-asj11.s.konaminet.jp", "path": "/asj/", "confidence": "HIGH", "role": "staging v11" },
+    { "index": 13, "host": "stg-asj11.konaminet.jp", "path": "/asj/", "confidence": "HIGH", "role": "staging v11 variant" }
+  ],
+  "value_0x5_interpretation": {
+    "observed_value": 5,
+    "mapped_slot": "asjrsc.konaminet.jp/asj/",
+    "helper_symbol": "onlineapi::ServerData::GetResourceServerCount() reads the configured download/resource server count; SetDownloadServer(SERVER_CODE) writes the active download server slot",
+    "static_evidence": [
+      "Init() reads config key 'server_code', clamps/normalizes the value, and stores it into the ServerData singleton.",
+      "The URL table beginning at 0x78252f8 has 14 qword entries; index 5 is asjrsc.konaminet.jp/asj/."
+    ],
+    "dynamic_analysis_still_needed": "Runtime confirmation is still required to prove the client reads slot 5 as the active resource/download server on a live device, and whether the config value can override it at runtime."
+  }
+}

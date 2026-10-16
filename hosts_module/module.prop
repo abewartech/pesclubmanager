@@ -1,0 +1,6 @@
+id=pescm_hosts
+name=PESCM Hosts Redirect
+version=1.0
+versionCode=1
+author=You
+description=Redirect Konami domains to local mock server
