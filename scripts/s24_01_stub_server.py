@@ -31,12 +31,25 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 
 # Minimal canned responses per endpoint. The real server is dead;
 # these let us observe the client's boot sequence.
+# Schema inferred from client key strings (Stage 27).
 CANNED = {
     "top.php": {
-        "result": 0,
+        "ms_ver": 0,
+        "res_ver": 0,
         "session_id": "stub-session-001",
         "server_time": 0,
         "maintenance": 0,
+        "first_dialog": 0,
+        "use_facebook": 0,
+        "news_notice_size": 0,
+        "news_news_size": 0,
+        "news_friendReq_size": 0,
+        "news_friendGift_size": 0,
+        "news_asso_size": 0,
+        "news_data_size": 0,
+        "banner_data_length": 0,
+        "purchase_check": 0,
+        "online_cup_count": 0,
     },
     "debug_login.php": {
         "result": 0,
@@ -54,6 +67,9 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         length = int(self.headers.get("Content-Length", 0))
+        if length > 1_048_576:
+            self.send_error(413, "request too large")
+            return
         body = self.rfile.read(length).decode("utf-8", errors="replace")
         params = urllib.parse.parse_qs(body)
         endpoint = self.path.rsplit("/", 1)[-1].split("?")[0]
