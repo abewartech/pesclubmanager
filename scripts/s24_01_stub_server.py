@@ -59,12 +59,15 @@ CANNED = {
         "session_id": "stub-session-001",
         "tutorial": 0,
     },
-    # Stage 34: team data stubs
+    # Stage 34: team data stubs (refined Stage 43)
     "get_team_info.php": {
         "result": 0,
         "team_id": 1001,
         "team_name": "Stub United",
+        "team_short_name": "STU",
         "formation": "4-4-2",
+        "formation_value": 442,
+        "team_player_list": 3,
         "player_size": 3,
         "player_0_id": 1001,
         "player_0_name": "Striker Ronaldo",
@@ -96,22 +99,26 @@ CANNED = {
         "away_player_2_name": "Opponent Defender",
         "away_player_2_position": "CB",
     },
-    # Stage 38: training stub
+    # Stage 38: training stub (refined Stage 43)
     "do_training.php": {
         "result": 0,
         "training_id": 1,
+        "training_pt": 100,
         "player_id": 1001,
         "exp_gained": 100,
         "level_up": 0,
         "new_shot": 96,
         "new_speed": 91,
     },
-    # Stage 39: scouting stub
+    # Stage 39: scouting stub (refined Stage 43)
     "do_scout_player.php": {
         "result": 0,
         "scout_id": 1,
+        "scout_point": 500,
+        "scout_ticket_num": 2,
         "player_id": 1004,
         "player_name": "Scouted Talent",
+        "player_rare": 3,
         "rarity": 3,
         "position": "CMF",
     },
