@@ -15,7 +15,7 @@ function from Stage 6.2.
 | REA CLI | `~/workspace/rea-cli` (`npm install rea-agents`) | run via `node .../scripts/rea.mjs`; global npm is wiped on VM redeploy |
 | Ghidra 12.1.2 | `~/workspace/ghidra/ghidra_12.1.2_PUBLIC` | set `GHIDRA_INSTALL_DIR` |
 | JDK 21 (Temurin) | `~/workspace/.jdk21` | Ghidra 12.1.x requires JDK 21+; set `JAVA_HOME` |
-| Decompile script | `scripts/s19_01_ghidra_decompile_one.java` | single-function headless decompile |
+| Decompile script | `scripts/DecompileOne.java` | single-function headless decompile |
 
 Required env for every run:
 
@@ -73,6 +73,6 @@ disassembly against the Stage 6.2 key map.
 ## 4. What this unlocks
 
 - Any native function in `libUE4.so` can now be decompiled in ~90s via
-  `scripts/s19_01_ghidra_decompile_one.java`.
+  `scripts/DecompileOne.java`.
 - Next candidates: the `Save*` writers (Stage 18) for exact value
   encoding, and the `WESYS` check site (`0x4dbc910`).
