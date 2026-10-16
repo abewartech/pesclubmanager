@@ -4,7 +4,8 @@
 framework, the maintained successor of radare2 (which Stage 4 used).
 It complements the REA/Ghidra setup: Ghidra is for deep decompilation,
 Rizin is for fast targeted disassembly and scripted byte-level work
-with no 30-minute analysis phase.
+with no 30-minute analysis phase. (radare2, Rizin's predecessor, was
+used in Stage 3 for string extraction via `rabin2`.)
 
 ## Install
 
@@ -16,7 +17,7 @@ Static x86_64 build, no dependencies, kept durable under
 - `rz-asm`, `rz-bin`, `rz-find`, `rz-hash`, … — single-purpose tools
 
 Upstream: https://github.com/rizinorg/rizin/releases (v0.9.1,
-`rizin-v0.9.1-static-x86_64.tar.xz`, 137MB).
+`rizin-v0.9.1-static-x86_64.tar.xz`, 137,626,404 bytes).
 
 ## Tested (2026-10-16)
 
