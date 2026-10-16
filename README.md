@@ -15,7 +15,7 @@ The analysis is performed completely **read-only**, without bypassing anti-cheat
 | **Patch OBB** | 🟢 Decoupled | CRIWARE CPK container containing animation & definitions | **CONFIRMED** |
 | **Native Libraries** | 🟡 Analyzed | Static exports mapping of `libUE4.so`, `libafp-core.so`, `libavs2-core.so` | **HIGH** |
 | **Player Database** | 🟡 Discovered | In-memory schema mapped; file structure pending | **HIGH** |
-| **Save Data** | ⚪ Investigation | Leads identified: `sys::SaveData` & `systemdata::SystemData` | **MEDIUM** |
+| **Save Data** | 🟡 Mapped | `SystemData.dat` / `UserInfoData.dat` / `OnSysData.dat` are JSON; keys, paths, and write path traced (Stages 14–19) | **HIGH** |
 | **Network Endpoints** | ⚪ Investigation | Static domain seeds identified; no dynamic probing done | **HIGH** |
 
 ---
@@ -76,6 +76,17 @@ Detailed technical reports documenting each phase of the project can be found un
     *   [reports/stage4_player_symbol_schema.md](reports/stage4_player_symbol_schema.md): Complete C++ namespace mapping for `onlinemode::ParameterPlayerDefine`.
     *   [reports/stage4_player_offset_schema.md](reports/stage4_player_offset_schema.md): 73+ high-confidence field offsets (e.g., `AppearanceId`, `ContractSalary`, `Rarity`, `SquadPosition`) extracted from disassembling getter/setter models.
     *   [reports/stage6_player_cross_reference.md](reports/stage6_player_cross_reference.md): Read-only coverage report comparing normalized player records with native key/offset evidence.
+*   **💾 Save Data**
+    *   [reports/stage10_savedata_pesdb.md](reports/stage10_savedata_pesdb.md): Save-data tracing and PESDB discovery.
+    *   [reports/stage11_cpk_toc.md](reports/stage11_cpk_toc.md): CPK TOC deobfuscation attempt.
+    *   [reports/stage12_pesdb_layout.md](reports/stage12_pesdb_layout.md): `pesdb::PlayerData` layout via `SetWorkFromPesdb`.
+    *   [reports/stage13_save_crypto.md](reports/stage13_save_crypto.md): Save-file encryption scheme.
+    *   [reports/stage14_systemdata_json.md](reports/stage14_systemdata_json.md): `SystemData.dat` is JSON — schema from `LoadSystemData` (`0x4db1508`).
+    *   [reports/stage15_userinfo_onsys.md](reports/stage15_userinfo_onsys.md): `UserInfoData.dat` and `OnSysData.dat` schemas (JSON).
+    *   [reports/stage16_save_parser.md](reports/stage16_save_parser.md): Offline read-only save-file parser/validator.
+    *   [reports/stage17_save_paths.md](reports/stage17_save_paths.md): On-device save paths (`<app-files>/SaveData/`).
+    *   [reports/stage18_save_write_path.md](reports/stage18_save_write_path.md): Write-path key symmetry vs the load path.
+    *   [reports/stage19_rea_ghidra_first_decompile.md](reports/stage19_rea_ghidra_first_decompile.md): REA/Ghidra toolchain operational; first decompilation.
 *   **Agent Handoff**
     *   [AGENTS.md](AGENTS.md): Short operational guide for AI coding agents working in this workspace.
     *   [docs/ai_agent_handoff.md](docs/ai_agent_handoff.md): Detailed context, safety boundaries, stage summary, commands, and next steps for another agent.
@@ -121,6 +132,31 @@ The analysis progressed through distinct chronological phases, each driven by de
     *   JSON schema: [analysis/stage4_player_schema/parameter_player_define_offsets.json](analysis/stage4_player_schema/parameter_player_define_offsets.json)
     *   CSV schema: [analysis/stage4_player_schema/parameter_player_define_offsets.csv](analysis/stage4_player_schema/parameter_player_define_offsets.csv)
     *   Offset report: [reports/stage4_player_offset_schema.md](reports/stage4_player_offset_schema.md)
+
+### 📍 Stage 14: SystemData.dat Is JSON
+*   **Goal**: Map the unencrypted system save format from `sys::SaveData::LoadSystemData` (`0x4db1508`).
+*   **Tooling**: capstone 5 (arm64), pyelftools; PLT via `R_AARCH64_JUMP_SLOT`; strings via ADRP+ADD xref.
+*   **Result**: `SystemData.dat` is JSON with keys `SystemDataVersion`, `text_language`, `sound_language`, `vibration`.
+
+### 📍 Stage 15: UserInfoData.dat & OnSysData.dat Schemas
+*   **Goal**: Same method as Stage 14 on `LoadUserInfoData` (`0x4db63a4`) and `LoadOnsysData` (`0x4dbc064`).
+*   **Result**: Both files are JSON. `UserInfoData.dat`: `auth_code`, `user_code`, `user_id` (+ partially traced `account_status`). `OnSysData.dat`: `multi_stats_wait_upload_flag`, `match_id`, `pid`, `peer_pid`, `multi_stats_data`.
+
+### 📍 Stage 16: Offline Save-File Parser
+*   **Goal**: Turn the mapped schemas into a runnable read-only parser/validator.
+*   **Script**: [scripts/s16_01_parse_saves.py](scripts/s16_01_parse_saves.py) — validates `SystemData.dat`, `UserInfoData.dat`, `OnSysData.dat`; supports UTF-8 BOM.
+
+### 📍 Stage 17: On-Device Save-File Paths
+*   **Goal**: Find where the game stores the `.dat` files on-device (Stage 14 §5 caveat).
+*   **Result**: The path builder (`0x4db1ab8`) builds `<app-files>/SaveData/<filename>`, opened `rb`; sibling dirs `Download/`, `TempData/`, `SettingInfo/`, `DebugOutput/`.
+
+### 📍 Stage 18: Save Write-Path Key Symmetry
+*   **Goal**: Verify the write path is symmetric with the load path (Stages 14–15).
+*   **Result**: `SaveLanguage`/`SaveVibration`/`SaveUserInfoData`/`SaveMultiplayStats` write the same keys the loaders read; `SaveMultiplayStats` validates input against a `WESYS` marker (5-byte compare at input+3, `0x4dbc910`). Value encoding, write ordering, and whole-object rewrite remain unverified.
+
+### 📍 Stage 19: REA/Ghidra Toolchain Operational
+*   **Goal**: Put `morluto/rea` to real use and document the follow-up.
+*   **Result**: Ghidra 12.1.2 headless per-function decompile pipeline works (~80–100 s); first decompile of `PrepareDataFromJson` (`0x04b2ae68`). Guide: [docs/rea-toolkit.md](docs/rea-toolkit.md). A second toolkit guide covers [Rizin v0.9.1](docs/rizin-toolkit.md) for fast targeted disassembly.
 
 ---
 
