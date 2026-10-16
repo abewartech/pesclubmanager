@@ -16,9 +16,15 @@ via ADRP+ADD xref to `.rodata`.
 | `SaveUserInfoData` | `0x4db63c0` | `UserInfoData.dat` | `auth_code`, `user_code`, `user_id` |
 | `SaveMultiplayStats` | `0x4dbc564` | `OnSysData.dat` | `multi_stats_data` |
 
-Every key the loaders read (Stages 14–15) is written by the matching
-saver. Key-level symmetry holds; value encoding, write ordering, and
-whether unknown keys survive a write were not verified.
+For the saver functions traced here, every key the loaders read is
+written by the matching saver: `text_language`/`sound_language`
+(`SaveLanguage`), `vibration` (`SaveVibration`), `auth_code`/`user_code`/
+`user_id` (`SaveUserInfoData`), `multi_stats_data` (`SaveMultiplayStats`).
+Writers were not traced for `SystemDataVersion`, `account_status`,
+`match_id`, `pid`, `peer_pid`, or `multi_stats_wait_upload_flag`, so
+key-level symmetry is verified only for the keys above. Value encoding,
+write ordering, and whether unknown keys survive a write were not
+verified.
 
 ## 2. Notes
 
