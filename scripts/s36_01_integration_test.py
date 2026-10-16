@@ -29,6 +29,8 @@ STEPS = [
     ("top.php", {"ms_ver", "res_ver"}),
     ("get_team_info.php", {"team_id", "team_name"}),
     ("get_match_info.php", {"match_id", "home_team_id", "away_team_id"}),
+    ("do_training.php", {"exp_gained"}),
+    ("do_scout_player.php", {"player_id", "player_name"}),
 ]
 
 
