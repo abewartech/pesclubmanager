@@ -26,7 +26,7 @@ settings — `ConvertFormatSoundLang`, `ConvertFormatTextLang`.)
 `sys::SaveData::LoadUserInfoData` (`0x4db63a4`, 28 bytes) and
 `sys::SaveData::LoadOnsysData` (`0x4dbc064`, 28 bytes) are **thunks**:
 they load filename strings (`UserInfoData.dat`, `OnSysData.dat`) and
-branch directly to `LoadSystemData` (`0x4db1ab8`).
+branch directly to `LoadSystemData` (`0x4db1508`).
 
 Therefore:
 
@@ -48,7 +48,7 @@ Therefore:
 
 ## 4. Correction to earlier assumptions
 
-Stage 10 described these as "save-data binary files" by extension. They
+Stage 10 listed these as save-data files by extension without asserting a binary format. They
 are JSON text files with a `.dat` extension. The binary-format work in
 Stage 12 (pesdb records) is unaffected — that concerns CPK game data,
 not saves.
