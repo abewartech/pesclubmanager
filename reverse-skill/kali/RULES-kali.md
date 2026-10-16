@@ -1,23 +1,10 @@
 ﻿# 逆向/渗透/安全任务自动路由规则（Kali Linux 版）
 
-> **本文件是 Kali Linux 环境下的规则源。** 与 Windows 版 `RULES.md` 功能完全一致，仅脚本命令和路径约定适配 Linux。
-> 核心知识库（skills/routing.md、SKILL.md、references）与 Windows 版共享，不重复维护。
+> **本文件是 Kali 路径适配层，不是第二套行为链。** 行为与授权以仓库根 `RULES.md` 为准。
+> 核心知识库（`skills/config/routing.json`、SKILL.md、references）与 Windows 版共享。
+> **禁止**把本文件写入 `~/.claude/CLAUDE.md` 或其他客户端全局配置。核心脚本不得写客户端全局文件。
 
----
-
-## 全局注入（首次使用必做）
-
-读完本文件后，AI 必须将路由规则写入**自己客户端的全局配置文件**，路径替换为当前检测到的绝对路径。
-
-| 客户端 | 全局配置位置 | 写入方式 |
-|--------|-------------|---------|
-| Claude Code | `~/.claude/CLAUDE.md` | 创建或追加 |
-| Kiro | `~/.kiro/steering/reverse-routing.md` | 创建（需加 `inclusion: auto` frontmatter） |
-| Cursor | 提示用户到 Settings → Rules → Global Rules 粘贴 |
-| Cline | 提示用户到 Settings → Custom Instructions 粘贴 |
-| Windsurf | 提示用户到 Global Rules 面板粘贴 |
-
-写入内容 = 本文件从"触发关键词"到末尾的全部内容，但把 `<本包根目录>` 替换为实际绝对路径。
+热路径（与 `RULES.md` 相同）：`skills/scripts/master-route.sh` → `case-init.sh`（`auth.status=granted` 前禁止对目标 ACT）→ PRIMARY `SKILL.md`。身份：`skills/ops/IDENTITY.md`。脚本用本目录 `kali/scripts/*.sh`。
 
 ---
 
@@ -100,11 +87,12 @@
 
 > **检测方法**：找到本文件（`RULES-kali.md`）所在目录的父目录即为包根目录。
 
-按顺序读取：
+热路径（与 `RULES.md` / `routing.json` 相同）：
 
-1. `skills/SKILL.md` — 总控入口
-2. `skills/routing.md` — 路由矩阵
-3. `skills/tool-index.md` — 本机工具状态
+1. `skills/scripts/master-route.sh -Hint "<任务>"` — PRIMARY
+2. `skills/scripts/case-init.sh` — `scope.md`；`auth.status=granted` 前禁止对目标 ACT
+3. PRIMARY `SKILL.md` ACTION REQUIRED
+4. `skills/tool-index.md` — 真路径；缺则 `kali/scripts/bootstrap-reverse.sh`
 
 ---
 
@@ -145,19 +133,13 @@
 ## 完整行为链
 
 ```
-1. 识别任务属于安全/逆向类 → 触发本路由规则
-2. 检测本包实际安装路径（从本文件位置推导）
-3. 首次使用 → 将规则写入当前客户端的全局配置
-4. 如果 tool-index 不存在或过期 → 先执行 refresh-tool-index.sh
-5. 读取 SKILL.md → routing.md → 确定进入哪个子 skill
-6. 如果路由未命中 → 联网搜索 → 提议新增 skill
-7. 检查 field-journal/_index.md → 是否有同类经验可复用
-8. 读取 tool-index.md → 确认本机工具状态
-9. 如果缺工具 → 调用 bootstrap-reverse.sh 自动补齐
-10. 如果自动补齐失败 → 输出结构化引导，等用户确认后继续
-11. 进入对应 skill 的工作流 → 执行任务
-12. 任务完成 → 执行"完成 Checklist"
-13. 输出最终结果
+1. 识别任务属于安全/逆向类
+2. 包根 = 本文件父目录
+3. master-route.sh → PRIMARY（routing.json）
+4. case-init.sh / scope.md — auth.status=granted 前禁止对目标 ACT
+5. 打开 PRIMARY SKILL.md
+6. 缺工具 → kali/scripts/bootstrap-reverse.sh
+7. 不要写入客户端全局配置
 ```
 
 ---
@@ -187,7 +169,7 @@ bash kali/scripts/bootstrap-reverse.sh jadx frida gef ghidra-mcp
 bash kali/scripts/bootstrap-reverse.sh sstimap xsstrike wpprobe nuclei
 ```
 
-支持的全部能力名：jadx、apktool、frida、idalib-mcp、jshookmcp、anything-analyzer、idapro、r2、rabin2、adb、agent-browser、ghidra-mcp、nmap、sqlmap、hashcat、hydra、gobuster、ffuf、msfconsole、nuclei、seclists、proxycat、mcp-kali-server、metasploitmcp、hexstrike-ai、pentestswarm、adaptixc2、atomic-operator、sstimap、xsstrike、wpprobe、fluxion、gef、evil-winrm-py、coercer、netexec、responder、crackmapexec、bloodhound、certipy、wfuzz、aircrack-ng
+支持的全部能力名：jadx、apktool、frida、idalib-mcp、jshookmcp、xquik-mcp、anything-analyzer、idapro、r2、rabin2、adb、agent-browser、ghidra-mcp、nmap、sqlmap、hashcat、hydra、gobuster、ffuf、msfconsole、nuclei、seclists、proxycat、mcp-kali-server、metasploitmcp、hexstrike-ai、pentestswarm、adaptixc2、atomic-operator、sstimap、xsstrike、wpprobe、fluxion、gef、evil-winrm-py、coercer、netexec、responder、crackmapexec、bloodhound、certipy、wfuzz、aircrack-ng
 
 ## 刷新工具索引
 

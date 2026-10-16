@@ -11,11 +11,13 @@
 | [apk-reverse](apk-reverse/SKILL.md) | 在 CLI 环境下做 Android APK 逆向时使用。适用于 APK 解包、Java 反编译、smali 修改、重打包、Frida 动态 Hook，以及按需切换到 so/native 分析。优先使用本机已安装的 jadx、apktool、frida、adb、ida-reverse、radare2。 |
 | [attack-chain](attack-chain/SKILL.md) | Use for authorized multi-stage attack-path planning and orchestration when a task spans reconnaissance, initial access, privilege escalation, lateral movemen... |
 | [binary-diff](binary-diff/SKILL.md) | 跨版本符号迁移与二进制差分。当你有旧版本的符号/逆向结果，需要快速迁移到新版本时使用。 |
+| [binary-ninja-reverse](binary-ninja-reverse/SKILL.md) | Use for authorized binary analysis in Binary Ninja, including HLIL/MLIL/LLIL inspection, strings/imports/exports, cross-references, types, patch review, Pyth... |
 | [browser-automation](browser-automation/SKILL.md) | 统一自动化入口。覆盖浏览器自动化（Playwright）和 Windows 桌面应用自动化（OpenReverse）。 |
 | [browser-extension-reverse](browser-extension-reverse/SKILL.md) | Use for authorized reverse engineering of browser extensions (Chrome/Firefox) including manifest analysis, background workers, and extension-based credential... |
 | [case-review](case-review/SKILL.md) | Reviews a reverse-skill case package for scope readiness, Evidence to Finding to Path traceability, work item coverage, timeline references, and optional art... |
 | [cloud-k8s](cloud-k8s/SKILL.md) | Use for authorized cloud, container, and Kubernetes security assessment including metadata SSRF, IAM misconfig, container escape paths, and cluster RBAC review. |
 | [code-audit](code-audit/SKILL.md) | Use for authorized source-code security review and SAST workflows including Semgrep, CodeQL patterns, dangerous API hunting, and fix verification. |
+| [ctf-sandbox](ctf-sandbox/SKILL.md) | Thin PRIMARY for CTF / AWD / 靶场 multi-type orchestration. Hands off to the sidecar CTF-Sandbox-Orchestrator. Use when the user says CTF, AWD, 靶场, or 比赛题 and ... |
 | [database-security](database-security/SKILL.md) | Use for authorized database security assessment covering PostgreSQL/MySQL/MSSQL/Mongo/Redis exposure, authz, UDF/command paths, and misconfiguration review. |
 | [diagram-generator](diagram-generator/SKILL.md) | generate, refine, validate, and render diagrams from natural language, notes, code snippets, schemas, tables, or existing diagram source. use for flowcharts,... |
 | [digital-forensics](digital-forensics/SKILL.md) | Use for authorized digital forensics including memory dumps, disk timelines, PCAP investigation, artifact triage, and IR evidence preservation. |
@@ -47,6 +49,7 @@
 | [supply-chain-security](supply-chain-security/SKILL.md) | Use for software supply-chain security assessment covering SBOM, SCA, CI/CD pipelines, container images, build integrity, dependency provenance, and vulnerab... |
 | [thick-client](thick-client/SKILL.md) | Use for authorized security testing of desktop thick clients including local storage, update channels, IPC, traffic, and client-side trust boundaries. |
 | [threat-hunting](threat-hunting/SKILL.md) | Use for blue-team threat hunting, detection engineering with Sigma/YARA, SIEM query design, and incident detection validation. |
+| [threat-intelligence](threat-intelligence/SKILL.md) | Use for authorized OSINT and cyber threat intelligence that enriches IOCs, campaigns, impersonation, scams, or threat actors from public sources. Includes bo... |
 | [wifi-wireless](wifi-wireless/SKILL.md) | Use for authorized wireless security assessment including Wi-Fi capture, WPA handshake analysis, rogue AP detection research, and lab-only deauth testing. |
 | [windows-ad](windows-ad/SKILL.md) | Use for authorized Active Directory and Windows identity attacks including Kerberos, AD CS, BloodHound paths, NTLM relay, and domain privilege escalation res... |
 
@@ -57,11 +60,13 @@ skills/api-security/SKILL.md/
 skills/apk-reverse/SKILL.md/
 skills/attack-chain/SKILL.md/
 skills/binary-diff/SKILL.md/
+skills/binary-ninja-reverse/SKILL.md/
 skills/browser-automation/SKILL.md/
 skills/browser-extension-reverse/SKILL.md/
 skills/case-review/SKILL.md/
 skills/cloud-k8s/SKILL.md/
 skills/code-audit/SKILL.md/
+skills/ctf-sandbox/SKILL.md/
 skills/database-security/SKILL.md/
 skills/diagram-generator/SKILL.md/
 skills/digital-forensics/SKILL.md/
@@ -93,6 +98,7 @@ skills/reverse-engineering/SKILL.md/
 skills/supply-chain-security/SKILL.md/
 skills/thick-client/SKILL.md/
 skills/threat-hunting/SKILL.md/
+skills/threat-intelligence/SKILL.md/
 skills/wifi-wireless/SKILL.md/
 skills/windows-ad/SKILL.md/
 ```
