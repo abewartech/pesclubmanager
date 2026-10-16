@@ -39,7 +39,26 @@ MASTERDATA_DIR = Path(__file__).parent.parent / "analysis" / "masterdata_stub" /
 # Minimal canned responses per endpoint. The real server is dead;
 # these let us observe the client's boot sequence.
 # Schema inferred from client key strings (Stage 27).
+# Boot sequence: AuthUser -> CheckUpdate -> Login -> top.php (Stage 33).
 CANNED = {
+    "auth_user.php": {
+        "result": 0,
+        "session_id": "stub-session-001",
+        "auth_code": "stub-auth",
+        "user_code": "stub-user",
+        "user_id": 1,
+    },
+    "check_update.php": {
+        "result": 0,
+        "update_required": 0,
+        "latest_ms_ver": 0,
+        "latest_res_ver": 0,
+    },
+    "login.php": {
+        "result": 0,
+        "session_id": "stub-session-001",
+        "tutorial": 0,
+    },
     "top.php": {
         "ms_ver": 0,
         "res_ver": 0,
