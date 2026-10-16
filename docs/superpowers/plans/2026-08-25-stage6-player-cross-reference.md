@@ -1,5 +1,7 @@
 # Stage 6 Player Cross-Reference Implementation Plan
 
+> **Status: ✅ COMPLETED** — Delivered: `scripts/s6_01_cross_reference_player_schema.py`, `reports/stage6_player_cross_reference.md`.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Build a read-only Stage 6 utility that measures coverage between normalized player records and native evidence.

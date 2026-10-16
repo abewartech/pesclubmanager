@@ -1,5 +1,7 @@
 # Stage 6.2 JSON Key-To-Setter Tracing Implementation Plan
 
+> **Status: ✅ COMPLETED** — Delivered: `reports/stage6_json_key_mapping_report.md` (+ Stage 6.2 mapping artifacts).
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Build a read-only Stage 6.2 static mapper that correlates player JSON keys with native field candidates, setters, offsets, and confidence scores.

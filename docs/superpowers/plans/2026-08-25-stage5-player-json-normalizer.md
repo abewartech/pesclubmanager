@@ -1,5 +1,7 @@
 # Stage 5 Player JSON Normalizer Implementation Plan
 
+> **Status: ✅ COMPLETED** — Delivered: `scripts/s5_01_normalize_player_json.py`, `reports/stage5_player_json_normalizer.md`.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Build a read-only Stage 5 utility that normalizes offline player-shaped JSON into reviewable canonical player records.
