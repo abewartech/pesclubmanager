@@ -22,6 +22,7 @@
 | JavaScript / Web 前端 | `js-reverse/` — 5 阶段工作流 | anything-analyzer MCP 的浏览器工具，或 jshookmcp 的浏览器/CDP/Hook 能力 |
 | HTTP 抓包 / 浏览器采样 / 请求重放 | anything-analyzer MCP（23816） | Reqable MCP、`js-reverse/`、jshookmcp 或 `competition-web-runtime/` |
 | 固件 / IoT | `firmware-pentest/` — OWASP FSTM 全链路：提取→仿真→fuzz→利用 | `reverse-engineering/platforms.md` — 仅静态 RE / `reverse-engineering/tools.md` — Ghidra headless |
+| Binary Ninja / Binja | `binary-ninja-reverse/` — HLIL/MLIL/LLIL + Python API | 显式启用社区 MCP/本机 HTTP 适配器 |
 | WASM / Python 字节码 / .NET | `reverse-engineering/languages.md` | 按具体语言查对应章节 |
 | macOS / iOS | `reverse-engineering/platforms.md` — Mach-O/ObjC/Swift | — |
 | 内存转储 / PCAP | `reverse-engineering/platforms.md` | `reverse-engineering/patterns*.md` |
@@ -42,6 +43,7 @@
 | **REST / GraphQL / WebSocket API** | `api-security/SKILL.md` — 10 阶段方法论 | `pentest-tools/SKILL.md` — 基础 Web 渗透 |
 | **软件供应链 / SBOM / SCA** | `supply-chain-security/SKILL.md` — 六层治理框架 | `pentest-tools/SKILL.md` — 依赖扫描工具 |
 | **恶意软件 / 病毒样本** | `malware-analysis/SKILL.md` — 六阶段分析 + YARA/Sigma | `reverse-engineering/SKILL.md` — 仅通用逆向 / `ida-reverse/` 深度分析 |
+| **公开来源威胁情报 / OSINT** | `threat-intelligence/SKILL.md` — IOC 补充与活动关联 | 公开 X/Twitter 帖子必须由独立来源核验 |
 
 ## 按用户意图
 
@@ -160,10 +162,12 @@
 | "Wireshark/抓包分析/PCAP" | `digital-forensics/` 或 `protocol-reverse/` |
 | "协议逆向/Protobuf/自定义协议" | `protocol-reverse/SKILL.md` |
 | "Ghidra/无 IDA" | `ghidra-reverse/SKILL.md` |
+| "Binary Ninja/Binja/HLIL/MLIL/Binary Ninja MCP" | `binary-ninja-reverse/SKILL.md` |
 | "K8s/容器逃逸/云安全" | `cloud-k8s/SKILL.md` |
 | "域渗透/BloodHound/Certipy/Kerberoast" | `windows-ad/SKILL.md` |
 | "取证/Volatility/内存转储" | `digital-forensics/SKILL.md` |
 | "代码审计/SAST/Semgrep" | `code-audit/SKILL.md` |
+| "开源情报/威胁情报/公开 X IOC 补充" | `threat-intelligence/SKILL.md` — 公开帖子仅作为待核验线索 |
 | "威胁狩猎/蓝队/检测工程" | `threat-hunting/SKILL.md` |
 | "游戏逆向/IL2CPP/Unity" | `reverse-engineering/SKILL.md` + seed-014 |
 | "WiFi/无线渗透/aircrack" | `wifi-wireless/SKILL.md` |
@@ -216,6 +220,7 @@
 | Frida | `reverse-engineering/tools-dynamic.md` |
 | GDB / rr（通用调试） | `reverse-engineering/tools.md` |
 | Ghidra (headless) | `reverse-engineering/tools.md` + Ghidra MCP（免费 IDA 替代，可通过 bootstrap 自动注册） |
+| Binary Ninja / binary-ninja-mcp | `binary-ninja-reverse/` — 商业 GUI/API + 显式启用的社区 MCP 回环桥 |
 | Python 3 标准库 | `case-review/`: 只读 case Evidence 图审查 |
 | angr / Qiling / Unicorn | `reverse-engineering/tools-dynamic.md` |
 | BinDiff / Diaphora | `reverse-engineering/tools-advanced.md` |

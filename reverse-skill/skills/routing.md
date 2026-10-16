@@ -1,11 +1,13 @@
 # Reverse Engineering Skill Routing Matrix
 
+> **Advisory only.** PRIMARY comes from `config/routing.json` via `scripts/master-route.ps1`. This file is a 3-axis disambiguation view. If a row here disagrees with JSON, JSON wins.
+
 Route tasks to the most appropriate skill module by target type, user intent, and toolchain.
 
 ## CRITICAL: Routing Execution Protocol
 
 1. **MUST** complete routing BEFORE executing. Do NOT "do first, route later".
-2. **SHOULD** start from `MASTER-ROUTING.md` or `scripts/master-route.ps1` for PRIMARY; use this full matrix when ambiguous.
+2. **MUST** start from `scripts/master-route.ps1` (JSON). Use this matrix only when PRIMARY is ambiguous.
 3. **MUST** match dimensions (target type + user intent + toolchain) before entering a skill.
 4. If route not matched → propose new skill, do NOT force-fit.
 5. Cross-module tasks → combine skills per "Path Crossing" section.
@@ -44,8 +46,10 @@ Route tasks to the most appropriate skill module by target type, user intent, an
 | RF / SDR (non-Wi-Fi) | `radio-sdr/` | Wi-Fi → `wifi-wireless/` |
 | Browser extension (crx/xpi) | `browser-extension-reverse/` | page JS only → `js-reverse/` |
 | Wi-Fi / wireless | `wifi-wireless/` | close-range chain → `attack-chain/` |
+| Public-source threat intelligence / OSINT | `threat-intelligence/` | X/Twitter posts remain leads until independently corroborated |
 | Blue team / threat hunt | `threat-hunting/` | sample IOC → `malware-analysis/` |
 | Ghidra (no IDA) | `ghidra-reverse/` | `ida-reverse/` if IDA MCP available |
+| Binary Ninja / Binja | `binary-ninja-reverse/` — HLIL/MLIL/LLIL + Python API | Community Binary Ninja MCP/localhost HTTP adapter when explicitly enabled |
 
 | OLLVM-obfuscated binary (控制流平坦化/虚假控制流/MBA) | `reverse-engineering/references/ollvm-deobfuscation.md` — 完整脱密工作流 | obpo-plugin / d810-ng (IDA) / ollvm-unflattener (Miasm) / ollvm-breaker (Binary Ninja) / angr / deollvm (ARM64)
 | Cryptography / encryption algorithms | `reverse-engineering/patterns*.md` — crypto patterns | `js-reverse/` (if frontend crypto) |
@@ -58,7 +62,7 @@ Route tasks to the most appropriate skill module by target type, user intent, an
 | **CTF competition (full stack)** | `../CTF-Sandbox-Orchestrator/ctf-sandbox-orchestrator/SKILL.md` — master entry | Route to 40+ sub-skills by evidence |
 | **CTF ZIP / PKZIP archive** | `../CTF-Sandbox-Orchestrator/competition-zip-archive/SKILL.md` — legacy ZipCrypto + `bkcrack` known plaintext | Use before password brute force |
 | Web runtime / API | `../CTF-Sandbox-Orchestrator/competition-web-runtime/SKILL.md` | — |
-| Cloud / Container / K8s | `../CTF-Sandbox-Orchestrator/competition-agent-cloud/SKILL.md` | — |
+| Cloud / Container / K8s | `cloud-k8s/` | CTF-only extra: sidecar orchestrator after PRIMARY `ctf-sandbox/` |
 | Windows / AD / Identity | `../CTF-Sandbox-Orchestrator/competition-identity-windows/SKILL.md` | — |
 | Forensics / PCAP / Steganography | `../CTF-Sandbox-Orchestrator/competition-forensic-timeline/SKILL.md` | — |
 | Prompt injection / Agent | `../CTF-Sandbox-Orchestrator/competition-prompt-injection/SKILL.md` | — |
@@ -94,7 +98,7 @@ Route tasks to the most appropriate skill module by target type, user intent, an
 | "Python bytecode / pyc" | `reverse-engineering/languages.md` — Python section |
 | "symbol execution / angr" | `reverse-engineering/tools-dynamic.md` — angr section |
 | "patch environment / Node reproduce" | `js-reverse/references/env-patching.md` |
-| "CTF challenge / competition reverse" | `reverse-engineering/patterns-ctf*.md` |
+| "CTF challenge / competition reverse" | `ctf-sandbox/SKILL.md` → sidecar orchestrator |
 | "CTF ZIP / PKZIP / bkcrack / 压缩包明文攻击" | `../CTF-Sandbox-Orchestrator/competition-zip-archive/SKILL.md` |
 | "write report / documentation" | `docs-generator/` — technical documentation |
 | "review case / evidence chain / traceability" | `case-review/`: read-only Evidence Graph Review |
@@ -122,7 +126,7 @@ Route tasks to the most appropriate skill module by target type, user intent, an
 | "firmware / IoT / binwalk / ARM" | `reverse-engineering/platforms-hardware.md` |
 | "cryptography / AES / RSA" | `reverse-engineering/patterns*.md` — crypto pattern recognition |
 | "protocol reverse / Protobuf / custom protocol" | `reverse-engineering/platforms.md` |
-| "cloud security / container escape / K8s" | `../CTF-Sandbox-Orchestrator/competition-agent-cloud/SKILL.md` |
+| "cloud security / container escape / K8s" | `cloud-k8s/SKILL.md` |
 | "Prompt injection / AI security" | `llm-security/SKILL.md` — OWASP LLM + ASI Top 10 |
 | "internal network / lateral movement" | `pentest-tools/SKILL.md` + `references/network-attack-defense.md` |
 | "privilege escalation" | `pentest-tools/references/network-attack-defense.md` — escalation section |
@@ -143,8 +147,8 @@ Route tasks to the most appropriate skill module by target type, user intent, an
 | "red team / HW / attack exercise" | `attack-chain/SKILL.md` — full attack chain orchestration |
 | "initial breach / boundary breach" | `attack-chain/SKILL.md` — boundary breach phase |
 | "close-range pentest / BadUSB / WiFi phishing" | `attack-chain/SKILL.md` — close-range section |
-| "EDR bypass / evasion / AV bypass" | `attack-chain/SKILL.md` — EDR/AV evasion section |
-| "phishing / social engineering" | `attack-chain/SKILL.md` — phishing section |
+| "EDR bypass / evasion / AV bypass" | `edr-bypass-re/SKILL.md` |
+| "phishing / social engineering" | `email-security/SKILL.md` |
 | "supply chain attack" | `attack-chain/SKILL.md` — supply chain section |
 | "trace cleanup / anti-forensics" | `attack-chain/SKILL.md` — cleanup section |
 | "full pentest / end-to-end" | `attack-chain/SKILL.md` — full chain planning |
@@ -160,11 +164,11 @@ Route tasks to the most appropriate skill module by target type, user intent, an
 | "iOS reverse / IPA / Mach-O" | `mobile-reverse/SKILL.md` — class-dump/Hopper/Frida iOS |
 | "Objection / SSL Pinning bypass" | `mobile-reverse/SKILL.md` — dynamic instrumentation |
 | "YARA / malware detection rules" | `malware-analysis/SKILL.md` — YARA/Sigma/IOC |
-| "N-day / patch diff / CVE reproduction" | `binary-diff/SKILL.md` — ghidriff/Diaphora/DeepDiff |
+| "N-day / patch diff / CVE reproduction" | `patch-diff-exploit/SKILL.md` |
 | "MBA simplification / mixed boolean-arithmetic / 表达式化简" | `reverse-engineering/references/ollvm-deobfuscation.md` — SiMBA/D-810 |
 | "opaque predicate / 不透明谓词去除" | `reverse-engineering/references/ollvm-deobfuscation.md` — 符号执行去除 |
 | "Hikari deobfuscate / 字符串加密恢复" | `reverse-engineering/references/ollvm-deobfuscation.md` — Hikari 变种处理 |
-| "pwn / stack overflow / ROP / ret2libc" | `reverse-engineering/patterns-ctf*.md` + pwntools |
+| "pwn / stack overflow / ROP / ret2libc" | `pwn-chain/SKILL.md` |
 | "Agent not working / AI lazy / skip steps" | `llm-security/references/agent-obedience-engineering.md` |
 | "MSF stuck / orphan process / MSF protocol" | `pentest-tools/references/msf-protocol.md` |
 | "anonymize / placeholder / writeup desensitize" | `field-journal/anonymization.md` |
@@ -174,10 +178,12 @@ Route tasks to the most appropriate skill module by target type, user intent, an
 | "BurpSuite / web proxy / intercept" | `pentest-tools/SKILL.md` — web proxy |
 | "protocol reverse / Protobuf / gRPC / custom protocol" | `protocol-reverse/SKILL.md` |
 | "Ghidra / analyzeHeadless / no IDA" | `ghidra-reverse/SKILL.md` |
+| "Binary Ninja / Binja / HLIL / MLIL / binary-ninja-mcp" | `binary-ninja-reverse/SKILL.md` |
 | "Kubernetes / K8s / container escape / cloud IAM" | `cloud-k8s/SKILL.md` |
 | "Active Directory / Kerberoast / Certipy / BloodHound" | `windows-ad/SKILL.md` |
 | "forensics / Volatility / memory dump / IR timeline" | `digital-forensics/SKILL.md` |
 | "code audit / SAST / Semgrep / CodeQL / whitebox" | `code-audit/SKILL.md` |
+| "OSINT / threat intelligence / public X IOC enrichment" | `threat-intelligence/SKILL.md` — public posts require independent corroboration |
 | "threat hunting / blue team / detection engineering" | `threat-hunting/SKILL.md` |
 | "game reverse / IL2CPP / Unity / Unreal" | `reverse-engineering/SKILL.md` + seed-014 |
 | "Wi-Fi / aircrack / wireless pentest" | `wifi-wireless/SKILL.md` |
@@ -218,6 +224,7 @@ Do NOT force the user to repeatedly confirm "this is CTF/local." Carry the CTF/l
 | Frida | `reverse-engineering/tools-dynamic.md` |
 | GDB / GEF / pwndbg / rr | `reverse-engineering/tools.md` |
 | Ghidra (headless) | `reverse-engineering/tools.md` + Ghidra MCP |
+| Binary Ninja / binary-ninja-mcp | `binary-ninja-reverse/` — commercial GUI/API + explicit community MCP bridge on loopback |
 | Python 3 standard library | `case-review/`: read-only case evidence graph review |
 | angr / Qiling / Unicorn | `reverse-engineering/tools-dynamic.md` |
 | D-810 / d810-ng | `reverse-engineering/references/ollvm-deobfuscation.md` — IDA Pro 反混淆插件，OLLVM/Tigress/Hodur/Approov + Z3 SMT |
@@ -264,7 +271,7 @@ When the user's wording is vague, emotionally phrased, imprecise, mixed-language
 3. **Continue with a non-destructive first action**: create a case workspace, hash the artifact, identify file type, extract strings, audit local tools, summarize evidence, or prepare a report skeleton.
 4. **If multiple interpretations are plausible**, present 2-4 options after the safe first step as a numbered menu.
 5. **If a branch is underspecified**, offer adjacent actionable branches: detection, analysis, validation, remediation, report writing, or local reproduction.
-6. **Always provide a next-step menu** — never leave the user with only a dead end.
+6. **Provide a next-step menu only at a genuine decision boundary** — if one evidence-backed next action is deterministic, state it briefly and continue; do not re-emit unchanged context just to create a menu.
 
 Suggested Chinese phrasing when recovering ambiguous intent:
 

@@ -3,6 +3,7 @@
 > **SSoT role**: Decision-quality / evidence-sufficiency / agent-bias cookbook for reverse-skill agents.
 > **Not** a second master analysis workflow. Obey `re-agent-workflow.md`, feasibility gate (#73), IAT iron rule (#72), A-T / U-AV cookbooks, and `evidence-finding-path.md` first.
 > Rule IDs **R1-R51** keep the reporter numbering (**no R15**; includes **R50/R51**). Do not renumber.
+> **Namespace:** these are **ADF-*** overlay IDs. They are **not** `routing.json` PRIMARY ids (R1=APK, R6=IDA, …). Say "ADF-R1" when speaking. Load this file at Synthesis / stuck-loop only.
 
 ## 0. How to use
 
@@ -144,3 +145,9 @@ Effort band + A-T pointers -> `E-anti-adversarial` (**no** A-T table copy).
 3. R1 low confidence -> dynamic
 4. R43 deadlock -> replan under feasibility gate
 5. R8/R23 no default malice/IOC
+
+---
+
+## 5. Blindspot appendix (Issue #77 batch 2)
+
+Language runtimes, heavy obfuscation, injection/detect chains, formats, and agent-meta blindspots: see [analysis-blindspot-cookbook.md](analysis-blindspot-cookbook.md) (**R52-R81**). Decision rules R1-R51 in this file remain superior.

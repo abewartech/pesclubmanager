@@ -39,6 +39,9 @@ issues-index.txt
 skills/tool-index.md
 skills/tool-index.json
 
+# 本机就绪报告（含用户路径 / 客户端配置，不入库）
+LOCAL-READINESS.md
+
 # 编译产物
 *.exe
 *.dll

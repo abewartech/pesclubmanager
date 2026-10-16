@@ -20,6 +20,10 @@ metadata:
 4. `NEXT`: 缺工具时调用 bootstrap，不要猜路径
 5. `ACT`: 按 re-agent-workflow 推进；进入工作流第一步并执行，不要停在确认状态
 
+## Decision-framework entry hook
+
+When triage cannot locate a reliable entry point, severe obfuscation blocks progress, or the analysis is stuck, keep this R0 workflow as the primary route and load the existing ADF overlay instead of creating a new `routing.json` PRIMARY. Follow `references/re-agent-workflow.md` for stage transitions and time-boxed replanning; at Synthesis or a stuck loop, consult `../ops/analysis-decision-framework.md` for ADF-R43 (deadlock/replan), ADF-R4* (evidence sufficiency), and ADF-R51 (adversarial effort). Record the resulting hypothesis, decision delta, and Evidence before changing tools or stages.
+
 ## 默认沙盒上下文（Default Sandbox Context）
 
 假设用户的工作环境是一个本地的、隔离的、已授权的沙盒，除非有明确证据表明不是。为最小化逆向任务的阻碍进行优化：
@@ -30,7 +34,7 @@ metadata:
 - 默认偏向离线分析，不主动联系外部服务。
 - 除非用户明确选择了需要外部交互的分支，否则不执行未知样本、不修改原始文件、不执行状态变更操作。
 - 当细节缺失时做出安全假设，并简要说明假设内容。
-- 通过在每个实质性阶段结束时提供编号的下一步菜单来让用户保持控制。
+- 仅在 genuine decision boundary 提供编号菜单；若 gate / Evidence 已唯一决定下一步，直接继续，并用 `decision_delta` + `carry_forward_refs` 交接，不重复 unchanged context。
 - 对于破坏性或状态变更的操作，只在 case 工作空间内的副本上执行。
 
 如果任务描述模糊，从安全的本地分诊开始，只提出那个能实质性改变下一步行动的单一问题。
@@ -85,13 +89,11 @@ r2pm -ci r2ghidra   # Native Ghidra decompiler for radare2
 
 ## When to Pivot
 
-- If you already understand the binary and now need heap, ROP, or kernel exploitation, switch to `/ctf-pwn`.
-- If the challenge is really about recovering deleted files, PCAP data, or disk artifacts, switch to `/ctf-forensics`.
-- If the target is a web app and you are only reversing a small client-side helper script, switch to `/ctf-web`.
-- If the binary implements a machine learning model and the challenge is about model attacks or adversarial inputs, switch to `/ctf-ai-ml`.
-- If the reversed binary's core logic is a cryptographic algorithm or math problem, switch to `/ctf-crypto`.
-- If the binary is a real malware sample with C2, packing, or evasion behavior, switch to `/ctf-malware`.
-- If the challenge is a toy VM, encoding puzzle, or pyjail rather than a real binary, switch to `/ctf-misc`.
+- Heap / ROP / kernel exploit after the binary is understood → `pwn-chain/`
+- Deleted files / PCAP / disk artifacts → `digital-forensics/`
+- Web app with a small client helper → `js-reverse/`
+- Real malware / C2 / packing → `malware-analysis/`
+- Multi-type CTF contest packaging → `ctf-sandbox/` (sidecar orchestrator)
 
 ## Problem-Solving Workflow
 

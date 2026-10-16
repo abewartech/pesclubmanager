@@ -37,6 +37,14 @@ jobs:
             echo "syntax OK: $f"
           done
 
+      - name: Client-neutral bootstrap/discovery
+        shell: bash
+        run: /bin/bash skills/scripts/test-client-neutral-bootstrap.sh
+
+      - name: Run bash workflow regression (portable sed; case-guard reject paths)
+        shell: bash
+        run: /bin/bash skills/scripts/test-bash-workflow.sh
+
       - name: Exercise structured router and case contract
         shell: bash
         run: |

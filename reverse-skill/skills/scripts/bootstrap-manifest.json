@@ -77,6 +77,14 @@
       ]
     },
     {
+      "name": "binaryninja",
+      "bootstrapKind": "manual",
+      "docsUrl": "https://binary.ninja/",
+      "canAutoInstall": false,
+      "verifyCommand": "binaryninja",
+      "manualInstallHint": "Binary Ninja is commercial software. Obtain a valid Vector 35 license and install it manually. Optional community MCP plugins must pass the skill-supply-chain review and remain bound to loopback by default."
+    },
+    {
       "name": "reqable-mcp",
       "bootstrapKind": "npm-mcp",
       "npmPackage": "reqable-mcp-server@1.0.1",
@@ -116,6 +124,19 @@
       "canAutoInstall": true,
       "verifyCommand": "npx",
       "pinnedVersion": "0.3.4"
+    },
+    {
+      "name": "xquik-mcp",
+      "bootstrapKind": "remote-http-mcp",
+      "mcpNames": [
+        "xquik"
+      ],
+      "mcpUrl": "https://xquik.com/mcp",
+      "docsUrl": "https://docs.xquik.com/mcp/overview",
+      "canAutoInstall": true,
+      "pinPolicy": "remote-service-no-local-install",
+      "verificationMode": "registration-only",
+      "note": "Registers the first-party remote MCP URL only. OAuth is completed in the selected MCP client. No local package, bridge, or credential is installed."
     },
     {
       "name": "anything-analyzer",
@@ -298,12 +319,11 @@
     },
     {
       "name": "binwalk",
-      "bootstrapKind": "winget-package",
-      "wingetId": "ReFirmLabs.binwalk",
-      "pinPolicy": "winget-latest",
+      "bootstrapKind": "manual",
       "docsUrl": "https://github.com/ReFirmLabs/binwalk",
-      "canAutoInstall": true,
-      "verifyCommand": "binwalk"
+      "canAutoInstall": false,
+      "verifyCommand": "binwalk",
+      "manualInstallHint": "binwalk is not published to winget and ships no prebuilt binaries on any GitHub release. Install the Rust toolchain (winget install Rustlang.Rustup) and run: cargo install binwalk"
     },
     {
       "name": "yara",
@@ -321,7 +341,7 @@
       "pinnedVersion": "4.15.0",
       "docsUrl": "https://github.com/Gallopsled/pwntools",
       "canAutoInstall": true,
-      "verifyCommand": "pwntools"
+      "verifyCommand": "pwn"
     },
     {
       "name": "bkcrack",

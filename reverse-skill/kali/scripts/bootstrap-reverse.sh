@@ -30,7 +30,7 @@ for arg in "$@"; do
         --start-services) START_SERVICES=true ;;
         --skip-refresh) SKIP_REFRESH=true ;;
         --list|-l)
-            echo "jadx apktool jeb-pro frida frida-ps idalib-mcp jshookmcp reqable-mcp anything-analyzer idapro r2 rabin2 adb agent-browser ghidra-mcp seclists proxycat burpsuite-mcp nmap pentestswarm bkcrack"
+            echo "jadx apktool jeb-pro frida frida-ps idalib-mcp jshookmcp reqable-mcp xquik-mcp anything-analyzer idapro r2 rabin2 adb agent-browser ghidra-mcp seclists proxycat burpsuite-mcp nmap pentestswarm pwntools bkcrack"
             echo "mcp-kali-server metasploitmcp hexstrike-ai adaptixc2 atomic-operator sstimap xsstrike wpprobe fluxion gef coercer evil-winrm-py netexec responder bloodhound certipy"
             exit 0
             ;;
@@ -45,7 +45,7 @@ if [[ ${#CAPABILITIES[@]} -eq 0 ]]; then
     echo "可用能力:"
     echo ""
     echo "  [逆向分析]"
-    echo "    jadx apktool jeb-pro frida frida-ps idalib-mcp r2 rabin2 adb gef"
+    echo "    jadx apktool jeb-pro frida frida-ps idalib-mcp r2 rabin2 adb gef pwntools"
     echo ""
     echo "  [渗透测试 - 经典工具]"
     echo "    nmap sqlmap hashcat hydra gobuster ffuf msfconsole nuclei"
@@ -56,7 +56,7 @@ if [[ ${#CAPABILITIES[@]} -eq 0 ]]; then
     echo "    adaptixc2 atomic-operator sstimap xsstrike wpprobe fluxion"
     echo ""
     echo "  [MCP 服务]"
-    echo "    jshookmcp reqable-mcp anything-analyzer idapro agent-browser"
+    echo "    jshookmcp reqable-mcp xquik-mcp anything-analyzer idapro agent-browser"
     echo "    mcp-kali-server metasploitmcp hexstrike-ai pentestswarm"
     echo ""
     echo "  [CTF 压缩包]"
@@ -397,10 +397,14 @@ install_manifest_release() {
 
 ensure_capability() {
     local name="$1"
+    local verify_command="$name"
+    if [[ "$name" == "pwntools" ]]; then
+        verify_command="pwn"
+    fi
 
     # 先检查是否已可用
-    if command -v "$name" &>/dev/null; then
-        log_ok "$name 已可用: $(command -v "$name")"
+    if command -v "$verify_command" &>/dev/null; then
+        log_ok "$name 已可用: $(command -v "$verify_command")"
         return 0
     fi
 
@@ -619,6 +623,12 @@ EOF
                 "args": ["-y", "@jshookmcp/jshook@0.3.4"],
                 "env": {"JSHOOK_BASE_PROFILE": "search"}
             }'
+            ;;
+        xquik-mcp)
+            register_mcp_server "xquik" '{
+                "url": "https://xquik.com/mcp"
+            }'
+            log_info "Xquik remote MCP 已登记。请从 MCP 客户端完成 OAuth。"
             ;;
         agent-browser)
             if ! command -v node &>/dev/null; then
