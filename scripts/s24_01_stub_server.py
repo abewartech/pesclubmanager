@@ -25,8 +25,15 @@ Both are out of scope for this script.
 
 import argparse
 import json
+import os
 import urllib.parse
 from http.server import BaseHTTPRequestHandler, HTTPServer
+from pathlib import Path
+
+
+# Directory for masterdata stub files (Stage 31/32).
+# Maps URL path under /masterdata/ to template files.
+MASTERDATA_DIR = Path(__file__).parent.parent / "analysis" / "masterdata_stub" / "templates"
 
 
 # Minimal canned responses per endpoint. The real server is dead;
@@ -96,7 +103,26 @@ class Handler(BaseHTTPRequestHandler):
         self.wfile.write(data)
 
     def do_GET(self):
-        # serve a generic OK for GET probes
+        # Masterdata stub: serve template files for /masterdata/* paths
+        if "/masterdata/" in self.path:
+            # Extract filename from path
+            fname = self.path.rsplit("/", 1)[-1].split("?")[0]
+            # Try .txt template
+            for ext in ["", ".txt"]:
+                fpath = MASTERDATA_DIR / (fname + ext)
+                if fpath.is_file():
+                    data = fpath.read_bytes()
+                    print(f"== GET {self.path} -> {fpath.name} ({len(data)} bytes) ==")
+                    self.send_response(200)
+                    self.send_header("Content-Type", "text/plain")
+                    self.send_header("Content-Length", str(len(data)))
+                    self.end_headers()
+                    self.wfile.write(data)
+                    return
+            print(f"== GET {self.path} -> 404 (no template) ==")
+            self.send_error(404, "no masterdata template")
+            return
+        # serve a generic OK for other GET probes
         self.send_response(200)
         self.send_header("Content-Type", "application/json")
         data = b'{"result":0}'

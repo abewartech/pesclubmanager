@@ -1,0 +1,5 @@
+team_size=2
+team_0_team_id=1001
+team_0_name=Red Devils
+team_1_team_id=1002
+team_1_name=Blue Warriors
