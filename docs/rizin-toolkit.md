@@ -4,8 +4,8 @@
 framework, the maintained successor of radare2 (which Stage 4 used).
 It complements the REA/Ghidra setup: Ghidra is for deep decompilation,
 Rizin is for fast targeted disassembly and scripted byte-level work
-with no 30-minute analysis phase. (radare2, Rizin's predecessor, was
-used in Stage 3 for string extraction via `rabin2`.)
+with no 30-minute analysis phase. (radare2, Rizin's predecessor, was used in Stage 2 via `rabin2` for
+export dumping and in Stage 4 for scripted disassembly.)
 
 ## Install
 
